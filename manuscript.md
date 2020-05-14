@@ -1,7 +1,8 @@
 ---
 author-meta:
-- John Doe
-- Jane Roe
+- Taylor Reiter
+- C. Titus Brown
+- N. Tessa Pierce
 bibliography:
 - content/manual-references.json
 date-meta: '2020-05-14'
@@ -15,13 +16,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Manuscript Title" />
+  <meta name="dc.title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="citation_title" content="Manuscript Title" />
+  <meta name="citation_title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta property="og:title" content="Manuscript Title" />
+  <meta property="og:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
   <meta name="dc.date" content="2020-05-14" />
 
@@ -39,21 +40,29 @@ header-includes: '<!--
 
   <meta name="citation_technical_report_institution" content="Manubot" />
 
-  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author" content="Taylor Reiter" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author_orcid" content="0000-0002-7388-421X" />
 
-  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="twitter:creator" content="@ReiterTaylor" />
 
-  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author" content="C. Titus Brown" />
 
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
 
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_orcid" content="0000-0001-6001-2677" />
 
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@ctitusbrown" />
+
+  <meta name="citation_author" content="N. Tessa Pierce" />
+
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+
+  <meta name="citation_author_orcid" content="0000-0002-2942-5331" />
+
+  <meta name="twitter:creator" content="@saltyscientist" />
 
   <link rel="canonical" href="https://bluegenes.github.io/2020-gep/" />
 
@@ -67,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/da0d815c5820c318944efd3a299c6c962cb5f356/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/da0d815c5820c318944efd3a299c6c962cb5f356/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/da0d815c5820c318944efd3a299c6c962cb5f356/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -85,15 +94,16 @@ header-includes: '<!--
 
   <!-- end Manubot generated metadata -->'
 keywords:
-- markdown
-- publishing
-- manubot
+- sequencing
+- bioinformatics
+- workflows
+- open access
 lang: en-US
 manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Manuscript Title
+title: Streamlining data-intensive biology with workflow systems
 ...
 
 
@@ -103,9 +113,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/))
+([permalink](https://bluegenes.github.io/2020-gep/v/da0d815c5820c318944efd3a299c6c962cb5f356/))
 was automatically generated
-from [bluegenes/2020-gep@5f7c53a](https://github.com/bluegenes/2020-gep/tree/5f7c53abee60330e593a7d6cd52a0d7adc626c1b)
+from [bluegenes/2020-gep@da0d815](https://github.com/bluegenes/2020-gep/tree/da0d815c5820c318944efd3a299c6c962cb5f356)
 on May 14, 2020.
 </em></small>
 
@@ -113,324 +123,109 @@ on May 14, 2020.
 
 
 
-+ **John Doe**<br>
++ **Taylor Reiter**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-7388-421X](https://orcid.org/0000-0002-7388-421X)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [johndoe](https://github.com/johndoe)
+    [taylorreiter](https://github.com/taylorreiter)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [ReiterTaylor](https://twitter.com/ReiterTaylor)<br>
   <small>
-     Department of Something, University of Whatever
+     Department of Population Health and Reproduction, University of California, Davis
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**<br>
++ **C. Titus Brown**<br>
     ![ORCID icon](images/orcid.svg){.inline_icon}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0001-6001-2677](https://orcid.org/0000-0001-6001-2677)
     · ![GitHub icon](images/github.svg){.inline_icon}
-    [janeroe](https://github.com/janeroe)<br>
+    [ctb](https://github.com/ctb)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [ctitusbrown](https://twitter.com/ctitusbrown)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Population Health and Reproduction, University of California, Davis
+     · Funded by Moore Foundation GBMF4551
+  </small>
+
++ **N. Tessa Pierce**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-2942-5331](https://orcid.org/0000-0002-2942-5331)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [bluegenes](https://github.com/bluegenes)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [saltyscientist](https://twitter.com/saltyscientist)<br>
+  <small>
+     Department of Population Health and Reproduction, University of California, Davis
+     · Funded by NSF 1711984
   </small>
 
 
 
 ## Abstract {.page_break_before}
 
+As both sequencing technologies and data have proliferated, the bottleneck of biological sequence analysis has shifted from data generation to analysis. 
 
 
+The emergence of workflow systems designed for bioinformatics has altered the landscape of ...
 
-This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.
-Use this template as a starting point for your manuscript.
+Fortunately, analysis tools and techniques have evolved to cope with this ever-increasing flood of data. 
+Reliable and user-friendly workflow systems and software management have emerged to facilitate interrogation of many thousands of samples. 
+For fundamental steps such as quality control, standardized protocols are now available meaning researchers can spend less time rewriting common analyses and more time examining the biological intricacies of their data. 
+In cases where the data are too large for even high-performance computing environments, a series of tools have emerged that are capable of using small, representative subsets of massive datasets to produce comparable results. 
+While adoption of these tools can both facilitate and expedite reproducible data analysis, knowledge of and training in these techniques is still lacking. 
 
-The rest of this document is a full list of formatting elements/features supported by Manubot.
-Compare the input (`.md` files in the `/content` directory) to the output you see below.
+Here, we provide insight on workflow systems that have emerged to fill the gap for biologists....
 
-## Basic formatting
+Here, we provide a series of tips, tools, and "good enough" practices for biologists venturing into the realm of biological sequence analysis.
+The guidelines and tools presented below are designed to apply to novel or publicly-available sequencing data sets and across the range of computational resource options available to researchers.
 
-**Bold** __text__
+The majority of this manuscript will covers understanding how to conduct computational analyses on sequencing data, 
+Except for data acquisition, the tools and guidelines presented below apply to either novel or publicly-available data.  
 
-[Semi-bold text]{.semibold}
 
-[Centered text]{.center}
 
-[Right-aligned text]{.right}
+## Author Summary {.page_break_before}
 
-*Italic* _text_
+In this paper, we present our guide for biological sequence data analysis, developed through our own teaching, training and analysis. We recognize that this is currently biased towards our own use casea nd experiences, but we hope to engage in robust discussion with the open source community in order in include the best set of practices.
 
-Combined *italics and __bold__*
+Our main goal is to accelerate scientists conducting sequence analyses into organized workflow practices that benefit their own research while also facilitating open and reproducible science.
+%Our main goal is to accelerate biologists/bioinformaticians into organized workflow practices that benefit their own research while also facilitating open, reproducible analyses
 
-~~Strikethrough~~
 
-1. Ordered list item
-2. Ordered list item
-    a. Sub-item
-    b. Sub-item
-        i. Sub-sub-item
-3. Ordered list item
-    a. Sub-item
 
-- List item
-- List item
-- List item
+Sequencing data are now widely available for species across the tree of life, and new sequencing data continues to be generated at a fantastic clip. %(cite sra growth?).
+The wealth of information present in sequencing data has the potential to revolutionize our understanding of the diversity and function of communities, building basic understanding from ecosystems to human health.
+However, sequence analysis remains both complex and computationally intensive, problems that are compounded during analysis of large datasets.
 
-subscript: H~2~O is a liquid
+The magnitude of sequencing data requires a principled approach to management, analysis, and dissemination of results.
+As sequencing analysis has matured over the past decade, several papers have presented "best" or "good enough" practices for computational biological analyses ADD BACK CITATIONS 
+These recommendations have both helped build consensus and fueled additional tool and workflow development.
+Since the latest paper in 2017 WILSONCITE, a number of important tools have greatly reduced the barrier to entry and opened the door to end-to-end reproducible analyses. % simple, shareable, etc
+Many of these changes owe their origin, at least in part, to the open science movement and the recognition of the importance of entry-level training, such as that provided by The Carpentries TEALCITE (open sci movement CITE).
 
-superscript: 2^10^ is 1024.
+The key advancements over the past few years have come in workflow scripting, software management, and tools that handle biological data at scale. % and sharing? Role of github/open code?
+The combination of workflow languages (e.g. snakemake, nextflow, common workflow language) and package installations (e.g. conda) have revolutionized bioinformatic analysis development.
+These tools enable researchers to build reproducible analyses that can be automatically executed in a directed fashion. 
+With integrated installations, these workflows can work across different computational systems, and can even serve as a form of documentation for the analysis.
+Finally, when paired with new tools leveraging computational approximations, this suite of tools enables researchers to cope with the enormity of sequencing data.
+%have emerged a promising solution to coping with the enormity of sequencing data.
+%..provide researchers a framework/structure 
+%Adopting workflow-based systems may be the single best step you can take to improve your analyses (here's where to talk up workflows!)
+%bonus: these integrate with software installation! Also provide a bunch of other neat data-sciencey logging and benchmarking.
 
-[unicode superscripts](https://www.google.com/search?q=superscript+generator)⁰¹²³⁴⁵⁶⁷⁸⁹
+In this paper, we build on our experiences training researchers as part of The Carpentries and other courses and workshops. 
+We present a roadmap for biological sequence analysis, beginning at data acquisition and providing specific recommendations for tools that ensure the integrity of your data along the way.
+We emphasize the importance of adopting a workflow-based approach to enhance documentation, automation and reproducibility of your science.
+Adopting these approaches will not only propel your own research, but will also facilitate sharing, discussion, peer review, etc. 
+Here, we present our best advice on how to get the most out of your sequencing data and time.
 
-[unicode subscripts](https://www.google.com/search?q=superscript+generator)₀₁₂₃₄₅₆₇₈₉
+%- analogy: manual approach works well once, but learning to use power tools will make it work many times?
+%p3ish
+%Via these tips, we hope to accelerate biologists/bioinformaticians into open and reproducible workflow practices.
+%
+%- workflow tips and good approaches (e.g. making big data less big) to data analysis.
 
-A long paragraph of text.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Putting each sentence on its own line has numerous benefits with regard to [editing](https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line) and [version control](https://rhodesmill.org/brandon/2012/one-sentence-per-line/).
-
-Line break without starting a new paragraph by putting  
-two spaces at end of line.
-
-## Document organization
-
-Document section headings:
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-### A heading centered on its own printed page{.center .page_center}
-
-<!-- an arbitrary comment. visible in input, but not visible in output. -->
-
-Horizontal rule:
-
----
-
-`Heading 1`'s are recommended to be reserved for the title of the manuscript.
-
-`Heading 2`'s are recommended for broad sections such as *Abstract*, *Methods*, *Conclusion*, etc.
-
-`Heading 3`'s and `Heading 4`'s are recommended for sub-sections.
-
-## Links
-
-Bare URL link: <https://manubot.org>
-
-[Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah](https://manubot.org)
-
-[Link with text](https://manubot.org)
-
-[Link with hover text](https://manubot.org "Manubot Homepage")
-
-[Link by reference][manubot homepage]
-
-[Manubot Homepage]: https://manubot.org
-
-## Citations
-
-Citation by DOI [@doi:10.7554/eLife.32822].
-
-Citation by PubMed Central ID [@pmcid:PMC6103790].
-
-Citation by PubMed ID [@pmid:30718888].
-
-Citation by Wikidata ID [@wikidata:Q56458321].
-
-Citation by ISBN [@isbn:9780262517638].
-
-Citation by URL [@url:https://greenelab.github.io/meta-review/].
-
-Citation by tag [@tag:deep-review].
-
-Multiple citations can be put inside the same set of brackets [@doi:10.7554/eLife.32822; @tag:deep-review; @isbn:9780262517638].
-Manubot plugins provide easier, more convenient visualization of and navigation between citations [@doi:10.1371/journal.pcbi.1007128; @pmid:30718888; @pmcid:PMC6103790; @tag:deep-review].
-
-Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown's reference link syntax:
-
-[@tag:deep-review]: doi:10.1098/rsif.2017.0387
-
-## Referencing figures, tables, equations
-
-Figure @fig:square-image
-
-Figure @fig:wide-image
-
-Figure @fig:tall-image
-
-Figure @fig:vector-image
-
-Table @tbl:bowling-scores
-
-Equation @eq:regular-equation
-
-Equation @eq:long-equation
-
-## Quotes and code
-
-> Quoted text
-
-> Quoted block of text
->
-> Two roads diverged in a wood, and I—  
-> I took the one less traveled by,  
-> And that has made all the difference.
-
-Code `in the middle` of normal text, aka `inline code`.
-
-Code block with Python syntax highlighting:
-
-```python
-from manubot.cite.doi import expand_short_doi
-
-def test_expand_short_doi():
-    doi = expand_short_doi("10/c3bp")
-    # a string too long to fit within page:
-    assert doi == "10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah"
-```
-
-Code block with no syntax highlighting:
-
-```
-Exporting HTML manuscript
-Exporting DOCX manuscript
-Exporting PDF manuscript
-```
-
-## Figures
-
-![
-**A square image at actual size and with a bottom caption.**
-Loaded from the latest version of image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png "Square image"){#fig:square-image}
-
-![
-**An image too wide to fit within page at full size.**
-Loaded from a specific (hashed) version of the image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png "Wide image"){#fig:wide-image}
-
-![
-**A tall image with a specified height.**
-Loaded from a specific (hashed) version of the image on GitHub.
-](https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png "Tall image"){#fig:tall-image height=3in}
-
-![
-**A vector `.svg` image loaded from GitHub.**
-The parameter `sanitize=true` is necessary to properly load SVGs hosted via GitHub URLs.
-White background specified to serve as a backdrop for transparent sections of the image.
-](https://raw.githubusercontent.com/manubot/resources/master/test/vector.svg?sanitize=true "Vector image"){#fig:vector-image height=2.5in .white}
-
-## Tables
-
-| *Bowling Scores* | Jane          | John          | Alice         | Bob           |
-|:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
-| Game 1 | 150 | 187 | 210 | 105 |
-| Game 2 |  98 | 202 | 197 | 102 |
-| Game 3 | 123 | 180 | 238 | 134 |
-
-Table: A table with a top caption and specified relative column widths.
-{#tbl:bowling-scores}
-
-|         | Digits 1-33                        | Digits 34-66                      | Digits 67-99                      | Ref.                                                        |
-|:--------|:-----------------------------------|:----------------------------------|:----------------------------------|:------------------------------------------------------------|
-| pi      | 3.14159265358979323846264338327950 | 288419716939937510582097494459230 | 781640628620899862803482534211706 | [`piday.org`](https://www.piday.org/million/)               |
-| e       | 2.71828182845904523536028747135266 | 249775724709369995957496696762772 | 407663035354759457138217852516642 | [`nasa.gov`](https://apod.nasa.gov/htmltest/gifcity/e.2mil) |
-
-Table: A table too wide to fit within page.
-{#tbl:constant-digits}
-
-|          | **Colors** <!-- $colspan="2" --> |                      |
-|:--------:|:--------------------------------:|:--------------------:|
-| **Size** | **Text Color**                   | **Background Color** |
-| big      | blue                             | orange               |
-| small    | black                            | white                |
-
-Table: A table with merged cells using the `attributes` plugin.
-{#tbl: merged-cells}
-
-## Equations
-
-A LaTeX equation:
-
-$$\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$$ {#eq:regular-equation}
-
-An equation too long to fit within page:
-
-$$x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9$$ {#eq:long-equation}
-
-## Special
-
-<i class="fas fa-exclamation-triangle"></i> [WARNING]{.semibold} _The following features are only supported and intended for `.html` and `.pdf` exports._
-_Journals are not likely to support them, and they may not display correctly when converted to other formats such as `.docx`._
-
-[Link styled as a button](https://manubot.org "Manubot Homepage"){.button}
-
-Adding arbitrary HTML attributes to an element using Pandoc's attribute syntax:
-
-::: {#some_id_1 .some_class style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true"}
-Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-:::
-
-Adding arbitrary HTML attributes to an element with the Manubot `attributes` plugin (more flexible than Pandoc's method in terms of which elements you can add attributes to):
-
-Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" -->
-
-Available background colors for text, images, code, banners, etc:  
-
-`white`{.white}
-`lightgrey`{.lightgrey}
-`grey`{.grey}
-`darkgrey`{.darkgrey}
-`black`{.black}
-`lightred`{.lightred}
-`lightyellow`{.lightyellow}
-`lightgreen`{.lightgreen}
-`lightblue`{.lightblue}
-`lightpurple`{.lightpurple}
-`red`{.red}
-`orange`{.orange}
-`yellow`{.yellow}
-`green`{.green}
-`blue`{.blue}
-`purple`{.purple}
-
-Using the [Font Awesome](https://fontawesome.com/) icon set:
-
-<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-
-<i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i>
-
-[
-<i class="fas fa-scroll fa-lg"></i> **Light Grey Banner**<br>
-useful for *general information* - [manubot.org](https://manubot.org/)
-]{.banner .lightgrey}
-
-[
-<i class="fas fa-info-circle fa-lg"></i> **Blue Banner**<br>
-useful for *important information* - [manubot.org](https://manubot.org/)
-]{.banner .lightblue}
-
-[
-<i class="fas fa-ban fa-lg"></i> **Light Red Banner**<br>
-useful for *warnings* - [manubot.org](https://manubot.org/)
-]{.banner .lightred}
 
 
 ## References {.page_break_before}
