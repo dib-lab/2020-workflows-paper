@@ -1,22 +1,55 @@
-# Automated scholarly manuscripts on GitHub
+# README.MD
+
+# Streamlining data-intensive biology with workflow systems: a guide for workflow-enabled biology
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://bluegenes.github.io/2020-gep/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://bluegenes.github.io/2020-gep/manuscript.pdf)
-[![GitHub Actions Status](https://github.com/bluegenes/2020-gep/workflows/Manubot/badge.svg)](https://github.com/bluegenes/2020-gep/actions)
-[![Travis Build Status](https://travis-ci.com/bluegenes/2020-gep.svg?branch=master)](https://travis-ci.com/bluegenes/2020-gep)
+[![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/bluegenes/2020-gep/actions)
 <!-- usage note: delete CI badges above for services not used by your manuscript -->
 
-## Manuscript description
+## Code of Conduct
 
+This project operates under a code of conduct.
+Participating in the project in any way (issues, pull requests, gitter, or other media) indicates that you agree that you will follow the [code of conduct](CODE_OF_CONDUCT.md).
+We take this very seriously.
+If you experience harassment or notice violations of the code of conduct, please raise the issue to one of the project organizers (@taylorreiter or @bluegenes).
+
+## Project Description
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+With advances in technology and decreases in cost, high through put sequencing is now accessible and affordable at large scale. 
+Analysis, not data generation, is now the bottleneck for biological sequencing data. 
+This bottleneck can be partially alleviated by workflow systems. 
+We aim to generate a guide for biologists that are new to workflow-enabled data-intensive biology.
+This repository is an online, collaborative guide written with [manubot](https://manubot.org/). 
+We are seeking input from workflow-enabled biologists of all levels anywhere in the world.
+
+Our goal is to generate a helpful introduction to using workflow systems for large-scale analysis of sequencing data. 
+We originally sought to compile []"Good Enough Practices" (GEP) for data intensive biology](https://github.com/bluegenes/2020-latex-gep/tree/latex), but our goals changed through iterations of feedback primarily from members and friends of the [DIB-lab](http://ivory.idyll.org/lab/). 
+We aim to broaden the perspectives and guidance provided by the document to include strategies used by other workflow-enabled biologists.
+This repository is also a living document that aims to consolidate and integrate helpful information about workflow systems and their applications in data-intensive biology.
+We hope this document will facilitate and ease the adoption of workflow systems for large scale analysis of sequencing data.
+
+## Contributions
+
+You'll need to make a free [GitHub account](https://github.com/join?source=header-home).
+
+Instructions and procedures for contributing are [outlined here](CONTRIBUTING.md).
+
+We will follow the [ICMJE Guidelines](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html) for determining authorship.
+
+## Pull Requests
+
+If you are not familiar with git and GitHub, you can use [these directions](INSTRUCTIONS.md) to start contributing.
+
+Please feel encouraged to ask questions by opening a [Request for Help issue](https://github.com/greenelab/covid19-review/issues/new?assignees=rando2&labels=&template=request-for-help.md&title=Help%3A+%5BAdd+topic+here%5D)
+[![GitHub issues](https://img.shields.io/github/issues-raw/greenelab/covid19-review?label=Open%20Issue&style=social)](https://github.com/greenelab/covid19-review/issues/new/choose)
+
+This project is a collaborative effort that will benefit from the expertise of scientists across a wide range of workflow applications!
 
 ## Manubot
-
 <!-- usage note: do not edit this section -->
 
 Manubot is a system for writing scholarly manuscripts via GitHub.
@@ -27,65 +60,27 @@ See [`USAGE.md`](USAGE.md) for documentation how to write a manuscript.
 
 Please open [an issue](https://git.io/fhQHM) for questions related to Manubot usage, bug reports, or general inquiries.
 
-### Repository directories & files
+## Repository directories & files
+
++ This file is called [`README.md`](README.md)
+It is the centralized document for the repository and will help direct users to other relevant information.
++ [`CONTRIBUTING.md`](CONTRIBUTING.md) contains procedures and directions for contributing to this effort.
++ [`INSTRUCTIONS.md`](INSTRUCTIONS.md) contains instructions for new GitHub users for how to navigate GitHub in the browser as well as GitHub vocabulary.
+It also includes some instructions for more experienced users about the procedures we recommend and how to run manubot on the command line.
++ [`USAGE.md`](USAGE.md) describes formatting instructions for formatting text, citing references, adding figures and tables, etc.
++ [`SETUP.md`](SETUP.md) includes information about setting up manubot
++ [`LICENSE.md`](LICENSE.md) and [`LICENSE-CC0.md`](LICENSE-CC0.md) contain the licenses associated with manubot and with the content we are developing in this project. Please see the "License" section below.
 
 The directories are as follows:
 
-+ [`content`](content) contains the manuscript source, which includes markdown files as well as inputs for citations and references.
++ [`content`](content) contains the manuscript source, which includes markdown files as well as inputs for citations and references. 
+These are the files that most contributors will be editing.
   See [`USAGE.md`](USAGE.md) for more information.
 + [`output`](output) contains the outputs (generated files) from Manubot including the resulting manuscripts.
   You should not edit these files manually, because they will get overwritten.
 + [`webpage`](webpage) is a directory meant to be rendered as a static webpage for viewing the HTML manuscript.
 + [`build`](build) contains commands and tools for building the manuscript.
 + [`ci`](ci) contains files necessary for deployment via continuous integration.
-
-### Local execution
-
-The easiest way to run Manubot is to use [continuous integration](#continuous-integration) to rebuild the manuscript when the content changes.
-If you want to build a Manubot manuscript locally, install the [conda](https://conda.io) environment as described in [`build`](build).
-Then, you can build the manuscript on POSIX systems by running the following commands from this root directory.
-
-```sh
-# Activate the manubot conda environment (assumes conda version >= 4.4)
-conda activate manubot
-
-# Build the manuscript, saving outputs to the output directory
-bash build/build.sh
-
-# At this point, the HTML & PDF outputs will have been created. The remaining
-# commands are for serving the webpage to view the HTML manuscript locally.
-# This is required to view local images in the HTML output.
-
-# Configure the webpage directory
-manubot webpage
-
-# You can now open the manuscript webpage/index.html in a web browser.
-# Alternatively, open a local webserver at http://localhost:8000/ with the
-# following commands.
-cd webpage
-python -m http.server
-```
-
-Sometimes it's helpful to monitor the content directory and automatically rebuild the manuscript when a change is detected.
-The following command, while running, will trigger both the `build.sh` script and `manubot webpage` command upon content changes:
-
-```sh
-bash build/autobuild.sh
-```
-
-### Continuous Integration
-
-Whenever a pull request is opened, CI (continuous integration) will test whether the changes break the build process to generate a formatted manuscript.
-The build process aims to detect common errors, such as invalid citations.
-If your pull request build fails, see the CI logs for the cause of failure and revise your pull request accordingly.
-
-When a commit to the `master` branch occurs (for example, when a pull request is merged), CI builds the manuscript and writes the results to the [`gh-pages`](https://github.com/bluegenes/2020-gep/tree/gh-pages) and [`output`](https://github.com/bluegenes/2020-gep/tree/output) branches.
-The `gh-pages` branch uses [GitHub Pages](https://pages.github.com/) to host the following URLs:
-
-+ **HTML manuscript** at https://bluegenes.github.io/2020-gep/
-+ **PDF manuscript** at https://bluegenes.github.io/2020-gep/manuscript.pdf
-
-For continuous integration configuration details, see [`.github/workflows/manubot.yaml`](.github/workflows/manubot.yaml) if using GitHub Actions or [`.travis.yml`](.travis.yml) if using Travis CI.
 
 ## License
 
@@ -98,7 +93,7 @@ We encourage users to openly license their manuscripts, which is the default as 
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 Except when noted otherwise, the entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
-Please attribute by linking to https://github.com/bluegenes/2020-gep.
+Please attribute by linking to https://github.com/manubot/rootstock.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
 All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
@@ -118,4 +113,8 @@ All other files are only available under CC BY 4.0, including:
 + `*.pdf`
 + `*.docx`
 
-Please open [an issue](https://github.com/bluegenes/2020-gep/issues) for any question related to licensing.
+Please open [an issue](https://github.com/manubot/rootstock/issues) for any question related to licensing. 
+
+## Attribution
+
+Many of the documents (especially `*.md` documents) and issues presented in this repository were modified from [another manubot repository](https://github.com/greenelab/covid19-review).
