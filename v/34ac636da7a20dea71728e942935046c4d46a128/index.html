@@ -1,0 +1,4227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Taylor Reiter" />
+  <meta name="author" content="C. Titus Brown" />
+  <meta name="author" content="N. Tessa Pierce" />
+  <meta name="dcterms.date" content="2020-05-14" />
+  <meta name="keywords" content="sequencing, bioinformatics, workflows, open access" />
+  <title>Streamlining data-intensive biology with workflow systems</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta name="dc.title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta name="citation_title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta property="og:title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta name="dc.date" content="2020-05-14" />
+  <meta name="citation_publication_date" content="2020-05-14" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Taylor Reiter" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+  <meta name="citation_author_orcid" content="0000-0002-7388-421X" />
+  <meta name="twitter:creator" content="@ReiterTaylor" />
+  <meta name="citation_author" content="C. Titus Brown" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+  <meta name="citation_author_orcid" content="0000-0001-6001-2677" />
+  <meta name="twitter:creator" content="@ctitusbrown" />
+  <meta name="citation_author" content="N. Tessa Pierce" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+  <meta name="citation_author_orcid" content="0000-0002-2942-5331" />
+  <meta name="twitter:creator" content="@saltyscientist" />
+  <link rel="canonical" href="https://bluegenes.github.io/2020-gep/" />
+  <meta property="og:url" content="https://bluegenes.github.io/2020-gep/" />
+  <meta property="twitter:url" content="https://bluegenes.github.io/2020-gep/" />
+  <meta name="citation_fulltext_html_url" content="https://bluegenes.github.io/2020-gep/" />
+  <meta name="citation_pdf_url" content="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Streamlining data-intensive biology with workflow systems</h1>
+</header>
+<p><small><em>
+This manuscript
+(<a href="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/">permalink</a>)
+was automatically generated
+from <a href="https://github.com/bluegenes/2020-gep/tree/34ac636da7a20dea71728e942935046c4d46a128">bluegenes/2020-gep@34ac636</a>
+on May 14, 2020.
+</em></small></p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><p><strong>Taylor Reiter</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-7388-421X">0000-0002-7388-421X</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/taylorreiter">taylorreiter</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/ReiterTaylor">ReiterTaylor</a><br>
+<small>
+Department of Population Health and Reproduction, University of California, Davis
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>C. Titus Brown</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-6001-2677">0000-0001-6001-2677</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/ctb">ctb</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/ctitusbrown">ctitusbrown</a><br>
+<small>
+Department of Population Health and Reproduction, University of California, Davis
+· Funded by Moore Foundation GBMF4551
+</small></p></li>
+<li><p><strong>N. Tessa Pierce</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-2942-5331">0000-0002-2942-5331</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/bluegenes">bluegenes</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/saltyscientist">saltyscientist</a><br>
+<small>
+Department of Population Health and Reproduction, University of California, Davis
+· Funded by NSF 1711984
+</small></p></li>
+</ul>
+<h2 class="page_break_before" id="abstract">Abstract</h2>
+<p>As both sequencing technologies and data have proliferated, the bottleneck of biological sequence analysis has shifted from data generation to analysis.</p>
+<p>The emergence of workflow systems designed for bioinformatics has altered the landscape of …</p>
+<p>Fortunately, analysis tools and techniques have evolved to cope with this ever-increasing flood of data.
+Reliable and user-friendly workflow systems and software management have emerged to facilitate interrogation of many thousands of samples.
+For fundamental steps such as quality control, standardized protocols are now available meaning researchers can spend less time rewriting common analyses and more time examining the biological intricacies of their data.
+In cases where the data are too large for even high-performance computing environments, a series of tools have emerged that are capable of using small, representative subsets of massive datasets to produce comparable results.
+While adoption of these tools can both facilitate and expedite reproducible data analysis, knowledge of and training in these techniques is still lacking.</p>
+<p>Here, we provide insight on workflow systems that have emerged to fill the gap for biologists….</p>
+<p>Here, we provide a series of tips, tools, and “good enough” practices for biologists venturing into the realm of biological sequence analysis.
+The guidelines and tools presented below are designed to apply to novel or publicly-available sequencing data sets and across the range of computational resource options available to researchers.</p>
+<p>The majority of this manuscript will covers understanding how to conduct computational analyses on sequencing data,
+Except for data acquisition, the tools and guidelines presented below apply to either novel or publicly-available data.</p>
+<h2 class="page_break_before" id="author-summary">Author Summary</h2>
+<p>In this paper, we present our guide for biological sequence data analysis, developed through our own teaching, training and analysis. We recognize that this is currently biased towards our own use casea nd experiences, but we hope to engage in robust discussion with the open source community in order in include the best set of practices.</p>
+<p>Our main goal is to accelerate scientists conducting sequence analyses into organized workflow practices that benefit their own research while also facilitating open and reproducible science.
+%Our main goal is to accelerate biologists/bioinformaticians into organized workflow practices that benefit their own research while also facilitating open, reproducible analyses</p>
+<h2 id="introduction">Introduction</h2>
+<p>Sequencing data are now widely available for species across the tree of life, and new sequencing data continues to be generated at a fantastic clip. %(cite sra growth?).
+The wealth of information present in sequencing data has the potential to revolutionize our understanding of the diversity and function of communities, building basic understanding from ecosystems to human health.
+However, sequence analysis remains both complex and computationally intensive, problems that are compounded during analysis of large datasets.</p>
+<p>The magnitude of sequencing data requires a principled approach to management, analysis, and dissemination of results.
+As sequencing analysis has matured over the past decade, several papers have presented “best” or “good enough” practices for computational biological analyses .
+These recommendations have both helped build consensus and fueled additional tool and workflow development.
+Since the latest paper in 2017 , a number of important tools have greatly reduced the barrier to entry and opened the door to end-to-end reproducible analyses. % simple, shareable, etc
+Many of these changes owe their origin, at least in part, to the open science movement and the recognition of the importance of entry-level training, such as that provided by The Carpentries  (open sci movement CITE).</p>
+<p>The key advancements over the past few years have come in workflow scripting, software management, and tools that handle biological data at scale. % and sharing? Role of github/open code?
+The combination of workflow languages (e.g. snakemake, nextflow, common workflow language) and package installations (e.g. conda) have revolutionized bioinformatic analysis development.
+These tools enable researchers to build reproducible analyses that can be automatically executed in a directed fashion.
+With integrated installations, these workflows can work across different computational systems, and can even serve as a form of documentation for the analysis.
+Finally, when paired with new tools leveraging computational approximations, this suite of tools enables researchers to cope with the enormity of sequencing data.
+%have emerged a promising solution to coping with the enormity of sequencing data.
+%..provide researchers a framework/structure
+%Adopting workflow-based systems may be the single best step you can take to improve your analyses (here’s where to talk up workflows!)
+%bonus: these integrate with software installation! Also provide a bunch of other neat data-sciencey logging and benchmarking.</p>
+<p>In this paper, we build on our experiences training researchers as part of The Carpentries and other courses and workshops.
+We present a roadmap for biological sequence analysis, beginning at data acquisition and providing specific recommendations for tools that ensure the integrity of your data along the way.
+We emphasize the importance of adopting a workflow-based approach to enhance documentation, automation and reproducibility of your science.
+Adopting these approaches will not only propel your own research, but will also facilitate sharing, discussion, peer review, etc.
+Here, we present our best advice on how to get the most out of your sequencing data and time.</p>
+<h2 id="workflows-and-software-management">Workflows and Software Management</h2>
+<p>Workflows are the workhorses of modern bioinformatics – most analyses require researchers to combine computational steps that involve multiple tools and often multiple programming languages.
+When multiple steps are combined together to execute a single analysis, this can generically be referred to as workflow.
+While a workflow can be manually executed step-by-step, this is both time-consuming and has the potential to introduce unintended errors.
+Automating a workflow using workflow languages can instead ensure that the entire data analysis is documented and repeatable from start to finish.</p>
+<p>A number of tailored workflow systems have emerged that empower researchers to execute scalable workflows.
+Within these systems, the users specify steps using a system-specific syntax.
+The system then represents these steps as a directed graph in which each node is a step in the workflow, and edges connect sequential steps.
+This back-end organization, paired with additional scaffolding, makes workflows encoded in workflow systems automated, scalable, and transferable across systems.
+These traits are highly desirable in bioinformatic workflows where many steps commonly produce thousands of intermediate files.</p>
+<div id="fig:workflow" class="fignos">
+<figure>
+<embed src="images/workflow_figure.pdf" /><figcaption><span>Figure 1:</span> <strong>Workflow Systems</strong> Bioinformatic workflow systems have built-in functionality that simplifies running analysis pipelines. <strong>A. Samples</strong> Workflow systems enable you to use the same code to run each step on each sample. Samples can be easily added if the analysis expands. <strong>B. Software Management</strong> Integration with software management tools (e.g. conda, sigularity) can automate software installation for each step. <strong>C. Branching, F. Ordering, G. Parallization</strong> Workflow systems ensure tasks
+are executed in the correct order for each sample file, and can automatically execute independent steps in parallel. <strong>D.Standard Steps</strong> Many steps are now considered “standard” (e.g. quality control). Workflow languages keep all information for a step together and can be written to enable you to remix and reuse each individual step across pipelines. <strong>E. Rerun as necessary</strong> Workflow systems keep track of which steps executed properly and on which samples, and allow you to rerun failed steps
+(or additional steps) rather than reexecuting the entire workflow. <strong>H. Reporting</strong> Workflow languages enable comprehensive reporting on workflow execution and resource utilization by each tool. <strong>I. Portability</strong> Analyses written in workflow languages (with integrated software management) can be run across computing systems without changes to code.</figcaption>
+</figure>
+</div>
+<h3 id="why-are-workflows-now-useful-what-has-changed-aka-why-were-people-not-using-them-before">Why are workflows now useful? what has changed? (aka why were people not using them before)</h3>
+<p>The need for workflow management systems has increased with the plummeting cost of sequencing and availability of public data.
+While workflows are ubiquitous in bioinformatics and scientific computing in general, workflow systems designed by bioinformaticians for bioinformatic tasks are relatively new.
+Prior to the development of robust workflow systems, common tools for scripting a workflow included make, pydoit, or bash scripting.
+These systems required the user to implement substantial scaffolding around core commands on a per-workflow basis.
+Workflow systems have alleviated this overhead and simplified the process of scripting a workflow.</p>
+<p>Advances in workflow systems have led to wide-spread community adoption in part attributable to the open science movement .
+A critical mass of workflow system-specific code has accumulated such that many routine tasks are already encoded and available for others to use .
+At the same time, consensus approaches for routine tasks have emerged, further encouraging reuse of existing code .</p>
+<h3 id="how-will-your-life-be-changed-with-workflows">How will your life be changed with workflows?</h3>
+<p>Workflow systems have revolutionized computing in data intensive biology.
+Pipelines written in a workflow system are better documented, repeatable, transferable, and scalable.
+Because workflow systems generate directed graphs to execute a workflow, relationships between steps need to be precisely and completely specified for a workflow to execute properly.
+This leads to two beneficial side effects.
+First, workflows are more likely to be fully enclosed without undocumented steps that are executed by hand.
+Second, workflows become self-documented; the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see <a href="#fig:sgc_workflow">6</a>).</p>
+<p>When a workflow is specified in this way, each step is executed in the proper order and will be rerun if a failure occurs.
+This frees the user from manually keeping track of execution and monitoring of each step.
+Fully-contained workflows (when paired with software management, SEE NEXT SECTION) scripted in a workflow system instill confidence that the code will still execute the same set of commands with little investment by the user in weeks, months, or years from the time of writing.
+Similarly, the standard syntax used to specify each step in the workflow lends itself to easy reuse in future project.
+This is in part enabled by cross-system compatibility of most workflow systems, which allows users to develop a workflow e.g. locally, and scale it on a cluster or a cloud computer.</p>
+<p>Workflow systems contain powerful built-in features for workflow management that are available to users without the need to write additional code.
+The workflow system coordinates execution of the full workflow, including parallelization of non-independent steps.
+When a step fails, it optionally continues with independent steps.
+The workflow system keeps track of finished files and removes files if there was a problem in execution.
+In addition to coordinating runtime behavior, workflow systems can self-monitor and document resource usage, as well as compile reports that document the results of a workflow.
+The minimal overhead associated with implementing these features greatly empowers the user.</p>
+<h3 id="getting-the-benefits-without-having-to-learn-a-scriptable-workflow-system">Getting the benefits without having to learn a scriptable workflow system</h3>
+<p>While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
+It is possible to obtain the benefits of workflow systems without learning a workflow software.</p>
+<p>Many research groups have used workflow software to build user-friendly pipelines that do not require learning or working with the underlying workflow software.
+These tools allow users to take advantage of the benefits of workflow software without needing to invest in curating and writing their own pipeline.
+These tools are specified in an underlying workflow language, but the user interacts with a command-line script and configuration file that coordinate and execute the workflow.
+Often times, workflow parameters are exposed to the user, allowing the user to control certain behaviors such as parallelization or ``dry-runs" when executing the command-line script.
+Some examples include the ATLAS metagenome assembly and binning pipeline (https://github.com/metagenome-atlas/atlas) , the Sunbeam metagenome analysis pipeline (https://github.com/sunbeam-labs/sunbeam) , the Elvers  transcriptome and differential expression pipeline (https://github.com/dib-lab/elvers), the dammit eukaryotic transcriptome pipeline (https://github.com/dib-lab/dammit), and the nf-core RNA-seq pipeline (https://github.com/nf-core/rnaseq/).</p>
+<p>Workflow systems are also available as graphical user interface systems.
+Websites like Galaxy, Cavatica, and EMBL-EBI MGnify offer online portals in which users build workflows around publicly-available or user-uploaded data .</p>
+<h3 id="how-to-learn-to-use-workflows-systems">How to learn to use workflows systems?</h3>
+<p>There are many scriptable workflow systems that offer similar benefits for data intensive biology.
+Given the plethora of choices and the steep learning curve associated with integrating a workflow system into daily workflow management, it can be difficult to decide which workflow system to adopt.
+While there are many workflow softwares to choose from, each software has it own strengths, meaning each software will meet an individuals computing goals differently (see ).
+Our lab has adopted Snakemake given its integration with Python and its flexibility to execute code with different languages (e.g. bash and R) and software management tools (see section XXX) .
+Software like Nextflow and Common Workflow Language scale better to pipelines with hundreds of thousands of steps and support containerization more rigidly, making them ideal for production-level pipelines .
+There are also language-specific workflow managers, such as ROpenSci’s Drake for R .
+Further, workflow systems are not necessarily exclusive entities; Snakemake can export pipelines in Common Workflow Language, allowing the same workflow to be fully compatible with two separate workflow systems.</p>
+<p>Independent of computational needs, selecting a workflow system with a strong local or online community can facilitate the adoption process.
+These communities can provide support for new users, and have likely generated many open and accessible workflows that can be modified to analyze new data.</p>
+<h3 id="alternatives-to-workflow-systems">Alternatives to workflow systems</h3>
+<p>Workflow systems are not the only option for constructing and executing a workflow.
+Workflow automation can be conducted by scripting the ordered execution of each step in a language such as bash.
+While command line scripting is an effective solution to coordinate and execute a workflow, workflows automated in this way do not take advantage of the built-in infrastructure in workflow systems.
+In our experience, it is more difficult to identify partially-completed workflow steps that produced truncated files, to rerun specific steps in a workflow, and to add additional files to a workflow when using bash scripting.
+These shortcomings are magnified when executing workflows on large-scale sequencing datasets.</p>
+<h3 id="wrangling-scientific-software">Wrangling Scientific Software</h3>
+<p>Most workflows rely on multiple software packages to generate final results.
+Bioinformatics research software is heterogeneous, where tools are written by different research groups, in different languages, and with varied target audiences.
+Each program has a number of other programs it depends upon to function (“dependencies”), and as software changes over time to meet research needs, the results may change, even when run with identical parameters.
+As a result, it is critical to take an organized approach to installing, managing, and keeping track of software and software versions.
+To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker .</p>
+<p>Software management systems perform some combination of software installation, management, and packaging that alleviate problems that arise from dependencies and that facilitate documentation of software versions.
+Conda has a emerged as the leading software installation and management solution ().
+Conda is a package management and environment management system that allows users to install and organize software.
+By enabling installation of software from many languages and disciplines, and managing dependency needs and conflicts for those installations, conda brought about a revolution in package management.
+Although portions of conda may eventually be superceded by alternative solutions (e.g. https://github.com/QuantStack/mamba), the model of software installation and management established by conda will likely remain.
+Alternatively, container solutions like docker and singularity allow for for the entire computational environment to be captured and distributed, including the operating systems.
+This ensures that an environment is completely reproducible across different computer systems, and is common for production workflows.</p>
+<p>While package managers and containers greatly increase reprodubility, there are a number of ways to test out software without needing to worry about installation.
+Some software packages are available as web-based tools and through a series of data upload and parameter specifications, allow the user to interact with a tool that is running on a back-end server.
+This approach is ideal for testing a tool prior to installation to determine whether it produces an appropriate or useful output on your data.
+Integrated development environments like PyCharm and RStudio can also manage software installation for the user for language-specific tools.</p>
+<div id="fig:conda_figure" class="fignos">
+<figure>
+<embed src="images/conda_figure.pdf" /><figcaption><span>Figure 2:</span> <strong>The conda package and environment manager simplifies software installation and management.</strong>
+<strong>A. Conda Recipe Repositories</strong> Each program distributed via Conda has a “recipe” describing all software dependencies needed for Conda installation (each of which must also be installable via conda). These are stored and managed in separate “channels”, some of which specialize (e.g. “bioconda” specializes in bioinformatic software, “r” specializes in R language packages) . \
+<strong>B. Use Conda Environments to Avoid Installation Conflicts</strong> Conda does not require root privileges for software installation, thus enabling use by researchers working on shared cluster systems. However, even user-based software installation can encounter dependency conflicts. For example, you might need to use python2 to install and run a program (e.g. older scripts written by members of your lab), while also using snakemake to execute your workflows (requires python3.5). By installing each
+program into an isolated “environment” that contains only the software required to run that program, you can ensure all programs will run without issue. Using small, separate environments for your software and building many simple environments to accommodate different steps in your workflow also reduces the amount of time it takes conda to resolve dependency conflicts between different software tools (“solve” an environment). Conda virtual environments can be created and installed either on the
+command line, or via an environment YAML file, as shown. In this case, the environment file also specifies which Conda channels to search and download programs from. When specified in a YAML file, conda environments are easily transferable between computers and operating systems. Further, because the version of each package installed in an environment is recorded, workflow reproducibility is enhanced.</figcaption>
+</figure>
+</div>
+<h2 id="strategies-to-get-the-most-out-of-your-workflows">Strategies to get the most out of your workflows</h2>
+<h3 id="developing-steps-that-go-into-your-workflow">Developing steps that go into your workflow</h3>
+<h4 id="build-your-workflow-using-subsampled-data">Build your workflow using subsampled data</h4>
+<p>It is rare to find a workflow that will analyze your data from start to finish without testing, troubleshooting, and iteration.
+Testing each step with a small dataset prior to running the full analysis greatly facilitates workflow design and saves resources.
+After installing a program, if the program comes with test data, run it and check results against the expected results, to verify that it is working on your system.
+After that, subsample your own data and check you can run the program on this subsampled data.
+For example, if working with FASTQ data, you can subsample the first million lines of your data (first 250k reads) by running:</p>
+<p>"<code>head -n 1000000 FASTQ_FILE.fq &gt; test_fastq.fq "</code></p>
+<p>While there are many more sophisticated ways to subsample reads, this technique should be sufficient for testing each step of a workflow prior to running your full dataset.
+Note, some programs will fail with too few reads or too few results, so be sure to examine that possibility if running into errors at this stage, either in the literature, program manual, or by running larger subsets of data.
+% add sentence here to reiterate concept of testing on public data!…and that workflows make this easy.</p>
+<h3 id="computational-notebooks">Computational Notebooks</h3>
+<p>Computational notebooks allow users to combine narrative, code, and code output (e.g. visualizations) in a single location, enabling the user to conduct analysis and visually assess the results in a single file.
+Jupyter notebooks and Rmarkdown are the two most popular notebook platforms (see Figure {fig:nb_figure}) .
+Notebooks are particularly useful for data exploration and developing visualizations prior to integration into a workflow or as a report generated by a workflow that can be shared with collaborators.</p>
+<div id="fig:nb_figure" class="fignos">
+<figure>
+<img src="images/nb_figure.png" alt="" /><figcaption><span>Figure 3:</span> <strong>Examples of computational notebooks.</strong>
+Computational notebooks allow the user to mix text, code, and results in one document.
+<strong>A</strong> shows a raw RMarkdown document viewed in the RStudio integrated development environment, while <strong>B</strong> shows a rendered HTML file produced by knitting the RMarkdown.
+<strong>C</strong> shows a Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed.
+The second grey chunk is a raw markdown chunk with text that will be rendered inline when executed.
+Both notebooks generate a histogram of a metadata feature, number of generations, from a long-term evolution experiment with  .
+Computational notebooks facilitate sharing by packaging narrative, code, and visualizations together.</figcaption>
+</figure>
+</div>
+<h3 id="version-control">Version Control</h3>
+<p>As your project develops, version control allows you to keep track of changes over time.
+You may already do this in some ways, perhaps with frequent hard drive backups or by manually saving different versions of the same file - e.g. by appending the date to a script name or appending “version_1” or “version_FINAL” to a manuscript draft.
+For computational workflows that will inevitably undergo multiple changes in parameters, data, visualizations, and analysis, it is essential to keep track of which analysis produced which output files, so that the final analysis is reproducible.
+However, version control can also save time and effort at every step.
+If a key piece of a workflow inexplicably stops working, good version control can allow you to rewind in time and identify differences from when the pipeline worked to when it stopped working.
+If multiple people are working on the same project, version control can both avoid conflict and ensure that no productivity is lost.</p>
+<p>Version control systems such as Git or Mercurial can be used to properly keep track of all changes over time, even across multiple users, scripting languages, and including visualizations.
+In particular, Git has emerged as the dominant version control system for biological code, particularly when combined with online repositories such as Github, GitLab, or Bitbucket, which store online version histories for all tracked files .
+In addition to acting as an additional backup location, the online services support drag-and-drop file addition and full control over the repository using the web interface, which greatly lowers the barrier to getting started with version control systems.
+While these systems do not work well with Google Docs or Microsoft Word, they can greatly simplify asynchronous collaborative manuscript writing when combined with services such as Overleaf and Manubot .</p>
+<p>Git version control is primarily designed to handle small text files, but version control also exists for data sets.
+Data version control can be used to store a read-only copy of raw sequencing files and accompanying metadata, or to keep track of difference in intermediate files that change with tool paramters or versions.
+The Open Science Framework (OSF) , maintained and developed by the Center for Open Science, provides free storage of an unlimited number of files up to 5GB each in size, and allows the user to keep the data private until they are ready to share (make the project public).
+OSF provides built-in version control and is supported by a data preservation fund that will keep the data available for 50+ years.
+While OSF and other similar repositories (e.g. figshare) are suitable for use at any stage of a research project, repositories such as Zenodo and the Dryad Digital Repository (Dryad), are designed to make publication-ready data discoverable, citable, and reusable.
+Other services are compatible with git version control, e.g. Git Large File Storage (LFS) and Data Version Control (DVC).</p>
+<p>These version control systems can also facilitate code and data availability and reproducibility for publication.
+For example, to ensure the correct version of the code is preserved, you can create a “release”, a snapshot of the current code and files in a GitHub repository.
+You can then generate a DOI for that release using Zenodo and make it available to reviewers and beyond (see “sharing” section, below).</p>
+<div id="fig:version_control" class="fignos">
+<figure>
+<embed src="images/version_control.pdf" /><figcaption><span>Figure 4:</span> <strong>Version Control</strong>
+In this example, a typo in version 1 (in red) was corrected (green).
+Version control systems such as git and mercurial track line-by-line changes and store the information.
+These systems are particularly useful to handle accidental deletions or early code or text you’d like to return to after deletion.</figcaption>
+</figure>
+</div>
+<h3 id="documenting-reproducible-workflows-for-yourself-and-others">Documenting reproducible workflows for yourself and others</h3>
+<p>As with experimental biology, it is essential to write down everything you do - that is, record the origin of every file (e.g. download URL) and all metadata, record the version of software and each parameter you used, record any manual filtering or data preprocessing steps, and keep track of the order in which you executed each program.
+Without the ability to fully examine and reproduce your analysis, it will be impossible for you or your collaborators to assess whether the results are accurate, or even to understand how the heuristic decisions you took impact the conclusions made from an analysis.</p>
+<p>Computational project management is a learned skill that will take time to implement. There are a myriad of ways to document your computational work, and you’ll need to experiment with the ways that work for you.
+For some portions of your project, you may want to document your work using a narrative approach, using written language to detail what steps you took and to communicate how the steps relate to one another.
+For other portions, it may be more useful to keep short, bulleted notes with your code or intersperse your commands with helpful diagrams.
+What is most important is to develop a clear documentation strategy and stick with it tenaciously.
+While the preferred tools discussed below will certainly change over time, these principles apply broadly and will help you design clear, well-documented, and reproducible analyses.</p>
+<h4 id="use-consistent-and-descriptive-names">Use consistent and descriptive names</h4>
+<p>Consistent, descriptive names keep your project organized and interpretable for yourself and collaborators.
+This applies to your files, your scripts, your variables, your workflows, your manuscripts, and even your projects, each of which should have a unique and descriptive identifier.
+Since the number of files in data-intensive biology can quickly get out of hand, consistent file naming is especially important.
+For example, you can implement a numbering scheme for your files, where the first file in your analysis starts with “00”, the next with “01”, etc.
+You can also append the tool name to output to make it clear where the file came from.
+Additionally, using a standardized yet flexible folder structure from the outset of your project facilitates file organization, even as a project becomes increasingly complex.
+Keeping independent portions of your analysis in descriptive folders can help keep your project workspace clean and organized.
+Within your files, using consistent and descriptive variable names will help build a readable codebase.</p>
+<div id="fig:filenaming" class="fignos">
+<figure>
+<embed src="images/filenaming.pdf" /><figcaption><span>Figure 5:</span> filenaming caption goes here</figcaption>
+</figure>
+</div>
+<h4 id="store-metadata-about-your-workflow-with-your-workflow">Store metadata about your workflow with your workflow</h4>
+<p>Biological analyses often span hundreds of steps and involve many small decisions: What parameters for each step?
+Why did you use a certain reference file for annotation as compared with other available files?
+How did you finally manage to get around the program or installation error?
+All of these pieces of information contextualize your results and may be helpful when writing your manuscript.
+Keeping information about these decisions in an intuitive and easily accessible place helps you find it when you need it.
+Each main directory should include notes on the data or scripts contained within, so that a collaborator could look into the directory and understand what to find there (especially since that collaborator is likely to be you, a few months from now!).
+Code itself can be (or contain) documentation - you can add comments with the reasoning behind parameter choice or include a link to the seqanswers post that helped you decide how to shape your differential expression analysis.
+Larger pieces of information can be kept in “README” or notes documents kept alongside your code and other documents.
+For example, a GitHub repository documenting the reanalysis of the Marine Microbial Eukaryote Transcriptome Sequencing Project uses a README alongside the code to document the workflow and digital object identifiers for data products (https://github.com/dib-lab/dib-MMETSP) .</p>
+<h4 id="add-visual-representations">Add visual representations</h4>
+<p>Visual representations illustrate the connections in a workflow.
+At the highest level, flowcharts that detail relationships between steps of a workflow can help provide big-picture clarification, especially when the pipeline is complicated.
+For individual steps, a graphical representation of the output can show the status of the project or provide insight on additional analyses that should be added.
+Whenever possible, adding visualizations can help improve the readability and reproducibility of your project. Figure <a href="#fig:sgc_workflow">6</a> illustrates a workflow visualization modified from a graph produced by the workflow software Snakemake .</p>
+<div id="fig:sgc_workflow" class="fignos">
+<figure>
+<img src="images/hu_dag.png" alt="" /><figcaption><span>Figure 6:</span> A directed acyclic graph (DAG) that illustrates connections between all steps of a sequencing data analysis workflow. Each box represents a step in the workflow, while lines connect sequential steps.
+The DAG shown in this figure illustrates a real bioinformatics workflow and was generated by modifying the default Snakemake workflow DAG .
+The colors represent arms of the workflow that achieve a final result, such as a multiple sequence alignment of a protein of interest.
+While the workflow is complex, it is coordinated by a workflow system, alleviating the need for a user to manage file interdependencies.</figcaption>
+</figure>
+</div>
+<h3 id="sharing-your-reproducible-analyses">Sharing Your Reproducible Analyses</h3>
+<p>Sharing your workflow is a useful way to communicate every step you took in a data analysis pipeline.
+Your collaborators, peer reviewers, and scientists seeking to use a similar method as your own will all benefit from open and accessible code.
+Sticking to a clear documentation strategy, using a version control system, and packaging your code in notebooks or as a workflow prepare them to be easily shared with others.
+However, sharing code in this way can still be burdensome for others to interact with given the need for software installation and differences in user operating systems.
+Tools like Binder, Whole Tale, and Shiny apps can reduce the time to reproduction by other scientists by constructing controlled environments identical to those in which the original computation was performed .
+These tools substantially reduce overhead associated with interacting with someones code base and data, and in doing so, make it fast and easy to rerun portions of the analysis, check accuracy, or even tweak the analysis to produce new results.
+These tools are also great for teaching, as they provide consistent learner interfaces and environments.</p>
+<h4 id="sharing-greybox">sharing greybox</h4>
+<p><strong>Binder (mybinder.org)</strong> Binder is a tool that makes a GitHub repository executable in a specified environment .
+It uses package management by R, pip, or conda to build a docker container with the software required to run the analyses contained in a GitHub repository.
+This is especially useful for computational notebooks.
+The binder can then be shared with collaborators (or students in a classroom setting), where the analysis or visualizations can be reproduced using your provided code.
+Binder instances are not static and can be modified by collaborators during a binder session.
+The underlying code will not be changed unless changes are committed into the original GitHub repository, preserving the reproducibility of the original analysis.</p>
+<p><strong>Shiny Apps</strong> Shiny is a tool that allows you to build interactive web pages using R code.
+It allows you to package data that is manipulated by R code in real-time in a web page, producing analysis and visualizations of a data set.
+Shiny apps can contain user-specifiable parameters, allowing a user to control visualizations or analyses.
+For example, if a Shiny app contained RNA-seq differential expression data, it might allow the user to specify which gene counts it should plot.
+Shiny apps allow collaborators who may or may not know R to change R visualisations to fit their interests.</p>
+<p><strong>Other tools</strong> There are many other tools that aid in reproducibility or sharing of results.
+Some tools, such as Whole Tale, aim to package the entire research object by capturing data, code and software environments in one executable package .
+Other tools such as Vega-lite and plotly produce single interactive visualizations that can be shared with collaborators or integrated into websites .</p>
+<h3 id="scaling-workflows">Scaling Workflows</h3>
+<h4 id="assess-required-resources">Assess required resources</h4>
+<p>Bioinformatic tools vary in the resources they require: some analysis steps are compute-intensive, other steps are memory intensive, and still others will have large intermediate storage needs.
+While it can be difficult to estimate resources required for each tool, workflow systems provide built-in tools to monitor resource usage for each step.
+This reporting can be used while running a workflow on a single or a few samples to estimate required resources.
+These resources can then be specified to run the workflow on all samples.</p>
+<h4 id="scale-workflows-with-tools-that-leverage-computational-approximations">Scale workflows with tools that leverage computational approximations</h4>
+<p>Many bioinformatics workflows take a long time and significant computational resources to run, and interpretable results are often only produced by the last few steps.
+This means that time-to-insight from sequencing data is often very high.</p>
+<p>Understanding the basic structure of data, the relationship between samples, and the approximate composition of each sample is very helpful at the beginning of data analysis, and can often drive analysis decisions in different directions than those originally intended.
+Although most bioinformatics workflows generate these types of insights, there are a few tools that do so rapidly, allowing the user to generate quick hypotheses that can be further tested by more extensive, fine-grained analyses.</p>
+<p><strong>Sketching</strong> Sketching algorithms work with compressed approximate representations of sequencing data and thereby reduce runtimes and computational resources.
+These approximate representations retain enough information about the original sequence to recapitulate the main findings from many exact but computationally intensive workflows.
+Most sketching algorithms estimate sequence similarity in some way, allowing the user to gain insights from these comparisons.
+For example, sketching algorithms can be used to estimate all-by-all sample similarity which can be visualized as a Principle Component Analysis or a multidimensional scaling plot, or can be used to build a phylogenetic tree with accurate topology.
+Sketching algorithms also dramatically reduce the runtime for comparisons against databases (e.g. all of GenBank), allowing users to quickly compare their data against large public databases.
+Sketching algorithms have been reviewed in-depth by Rowe .</p>
+<p><strong>Read quasi-mapping vs alignment</strong> RNA-seq analysis approaches like differential expression or transcript clustering rely on transcript or gene counts.
+Many tools can be used to generate these counts by quantifying the number of reads that overlap with each transcript or gene.
+For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts .
+However, these tools generate information-rich output, specifying per-base alignments for each read.
+Quasi-mapping produces the minimum information necessary for read quantification, thereby reducing the time and resources needed to generate and store read count information .</p>
+<p>discuss blast approximations?</p>
+<h2 class="page_break_before" id="references">References</h2>
+<!-- Explicitly insert bibliography here -->
+<div id="refs" role="doc-bibliography">
+
+</div>
+<!-- default theme -->
+
+<style>
+    /* import google fonts */
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+    @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+    /* -------------------------------------------------- */
+    /* global */
+    /* -------------------------------------------------- */
+
+    /* all elements */
+    * {
+        /* force sans-serif font unless specified otherwise */
+        font-family: "Open Sans", "Helvetica", sans-serif;
+
+        /* prevent text inflation on some mobile browsers */
+        -webkit-text-size-adjust: none !important;
+        -moz-text-size-adjust: none !important;
+        -o-text-size-adjust: none !important;
+        text-size-adjust: none !important;
+    }
+
+    @media only screen {
+        /* "page" element */
+        body {
+            position: relative;
+            box-sizing: border-box;
+            font-size: 12pt;
+            line-height: 1.5;
+            max-width: 8.5in;
+            margin: 20px auto;
+            padding: 40px;
+            border-radius: 5px;
+            border: solid 1px #bdbdbd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+        }
+    }
+
+    /* when on screen < 8.5in wide */
+    @media only screen and (max-width: 8.5in) {
+        /* "page" element */
+        body {
+            padding: 20px;
+            margin: 0;
+            border-radius: 0;
+            border: none;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
+            background: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* headings */
+    /* -------------------------------------------------- */
+
+    /* all headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 20px 0;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    /* biggest heading */
+    h1 {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    /* second biggest heading */
+    h2 {
+        margin-top: 30px;
+        padding-bottom: 5px;
+        border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* -------------------------------------------------- */
+    /* manuscript header */
+    /* -------------------------------------------------- */
+
+    /* manuscript title */
+    header > h1 {
+        margin: 0;
+    }
+
+    /* manuscript title caption text (ie "automatically generated on") */
+    header + p {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* -------------------------------------------------- */
+    /* text elements */
+    /* -------------------------------------------------- */
+
+    /* links */
+    a {
+        color: #2196f3;
+        overflow-wrap: break-word;
+    }
+
+    /* normal links (not empty, not button link, not syntax highlighting link) */
+    a:not(:empty):not(.button):not(.sourceLine) {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    /* superscripts and subscripts */
+    sub,
+    sup {
+        /* prevent from affecting line height */
+        line-height: 0;
+    }
+
+    /* unordered and ordered lists*/
+    ul,
+    ol {
+        padding-left: 20px;
+    }
+
+    /* class for styling text semibold */
+    .semibold {
+        font-weight: 600;
+    }
+
+    /* class for styling elements horizontally left aligned */
+    .left {
+        display: block;
+        text-align: left;
+        margin-left: auto;
+        margin-right: 0;
+        justify-content: left;
+    }
+
+    /* class for styling elements horizontally centered */
+    .center {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    /* class for styling elements horizontally right aligned */
+    .right {
+        display: block;
+        text-align: right;
+        margin-left: 0;
+        margin-right: auto;
+        justify-content: right;
+    }
+
+    /* -------------------------------------------------- */
+    /* section elements */
+    /* -------------------------------------------------- */
+
+    /* horizontal divider line */
+    hr {
+        border: none;
+        height: 1px;
+        background: #bdbdbd;
+    }
+
+    /* paragraphs, horizontal dividers, figures, tables, code */
+    p,
+    hr,
+    figure,
+    table,
+    pre {
+        /* treat all as "paragraphs", with consistent vertical margins */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* -------------------------------------------------- */
+    /* figures */
+    /* -------------------------------------------------- */
+
+    /* figure */
+    figure {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* figure caption */
+    figcaption {
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    /* figure image element */
+    figure img {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* figure auto-number */
+    img + figcaption > span:first-of-type {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    /* -------------------------------------------------- */
+    /* tables */
+    /* -------------------------------------------------- */
+
+    /* table */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* table cells */
+    th,
+    td {
+        border: solid 1px #bdbdbd;
+        padding: 10px;
+        /* squash table if too wide for page by forcing line breaks */
+        overflow-wrap: break-word;
+        word-break: break-word;
+    }
+
+    /* header row and even rows */
+    th,
+    tr:nth-child(2n) {
+        background-color: #fafafa;
+    }
+
+    /* odd rows */
+    tr:nth-child(2n + 1) {
+        background-color: #ffffff;
+    }
+
+    /* table caption */
+    caption {
+        text-align: left;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    /* table auto-number */
+    table > caption > span:first-of-type,
+    div.table_wrapper > table > caption > span:first-of-type {
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    /* -------------------------------------------------- */
+    /* code */
+    /* -------------------------------------------------- */
+
+    /* multi-line code block */
+    pre {
+        padding: 10px;
+        background-color: #eeeeee;
+        color: #000000;
+        border-radius: 5px;
+        break-inside: avoid;
+        text-align: left;
+    }
+
+    /* inline code, ie code within normal text */
+    :not(pre) > code {
+        padding: 0 4px;
+        background-color: #eeeeee;
+        color: #000000;
+        border-radius: 5px;
+    }
+
+    /* code text */
+    /* apply all children, to reach syntax highlighting sub-elements */
+    code,
+    code * {
+        /* force monospace font */
+        font-family: "Source Code Pro", "Courier New", monospace;
+    }
+
+    /* -------------------------------------------------- */
+    /* quotes */
+    /* -------------------------------------------------- */
+
+    /* quoted text */
+    blockquote {
+        margin: 0;
+        padding: 0;
+        border-left: 4px solid #bdbdbd;
+        padding-left: 16px;
+        break-inside: avoid;
+    }
+
+    /* -------------------------------------------------- */
+    /* banners */
+    /* -------------------------------------------------- */
+
+    /* info banners */
+    .banner {
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* paragraph in banner */
+    .banner > p {
+        margin: 0;
+    }
+
+    /* -------------------------------------------------- */
+    /* highlight colors */
+    /* -------------------------------------------------- */
+
+    .white {
+        background: #ffffff;
+    }
+    .lightgrey {
+        background: #eeeeee;
+    }
+    .grey {
+        background: #757575;
+    }
+    .darkgrey {
+        background: #424242;
+    }
+    .black {
+        background: #000000;
+    }
+    .lightred {
+        background: #ffcdd2;
+    }
+    .lightyellow {
+        background: #ffecb3;
+    }
+    .lightgreen {
+        background: #dcedc8;
+    }
+    .lightblue {
+        background: #e3f2fd;
+    }
+    .lightpurple {
+        background: #f3e5f5;
+    }
+    .red {
+        background: #f44336;
+    }
+    .orange {
+        background: #ff9800;
+    }
+    .yellow {
+        background: #ffeb3b;
+    }
+    .green {
+        background: #4caf50;
+    }
+    .blue {
+        background: #2196f3;
+    }
+    .purple {
+        background: #9c27b0;
+    }
+    .white,
+    .lightgrey,
+    .lightred,
+    .lightyellow,
+    .lightgreen,
+    .lightblue,
+    .lightpurple,
+    .orange,
+    .yellow,
+    .white a,
+    .lightgrey a,
+    .lightred a,
+    .lightyellow a,
+    .lightgreen a,
+    .lightblue a,
+    .lightpurple a,
+    .orange a,
+    .yellow a {
+        color: #000000;
+    }
+    .grey,
+    .darkgrey,
+    .black,
+    .red,
+    .green,
+    .blue,
+    .purple,
+    .grey a,
+    .darkgrey a,
+    .black a,
+    .red a,
+    .green a,
+    .blue a,
+    .purple a {
+        color: #ffffff;
+    }
+
+    /* -------------------------------------------------- */
+    /* buttons */
+    /* -------------------------------------------------- */
+
+    /* class for styling links like buttons */
+    .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        padding: 10px 20px;
+        font-size: 0.75em;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        background: none;
+        color: #2196f3;
+        border: solid 1px #bdbdbd;
+        border-radius: 5px;
+    }
+
+    /* buttons when hovered */
+    .button:hover:not([disabled]),
+    .icon_button:hover:not([disabled]) {
+        cursor: pointer;
+        background: #f5f5f5;
+    }
+
+    /* buttons when disabled */
+    .button[disabled],
+    .icon_button[disabled] {
+        opacity: 0.35;
+        pointer-events: none;
+    }
+
+    /* class for styling buttons containg only single icon */
+    .icon_button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border-radius: 5px;
+        border: none;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+    }
+
+    /* icon button inner svg image */
+    .icon_button > svg {
+        height: 16px;
+    }
+
+    /* -------------------------------------------------- */
+    /* icons */
+    /* -------------------------------------------------- */
+
+    /* class for styling icons inline with text */
+    .inline_icon {
+        height: 1em;
+        position: relative;
+        top: 0.125em;
+    }
+
+    /* -------------------------------------------------- */
+    /* print control */
+    /* -------------------------------------------------- */
+
+    @media print {
+        @page {
+            /* suggested printing margin */
+            margin: 0.5in;
+        }
+
+        /* document and "page" elements */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* "page" element */
+        body {
+            font-size: 11pt !important;
+            line-height: 1.35;
+        }
+
+        /* all headings */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 15px 0;
+        }
+
+        /* heading 1 */
+        h1 {
+            font-size: 1.75em;
+        }
+
+        /* heading 2 */
+        h2 {
+            font-size: 1.25em;
+            margin-top: 0;
+        }
+
+        /* heading 3 */
+        h3 {
+            font-size: 1.10em;
+        }
+
+        /* figures and tables */
+        figure, table {
+            font-size: 0.85em;
+        }
+
+        /* table cells */
+        th,
+        td {
+            padding: 5px;
+        }
+
+        /* shrink font awesome icons */
+        i.fas,
+        i.fab,
+        i.far,
+        i.fal {
+            transform: scale(0.85);
+        }
+
+        /* decrease banner margins */
+        .banner {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+
+        /* class for centering an element vertically on its own page */
+        .page_center {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            vertical-align: middle;
+            break-before: page;
+            break-after: page;
+        }
+
+        /* always insert a page break before the element */
+        .page_break_before {
+            break-before: page;
+        }
+
+        /* always insert a page break after the element */
+        .page_break_after {
+            break-after: page;
+        }
+
+        /* avoid page break before the element */
+        .page_break_before_avoid {
+            break-before: avoid;
+        }
+
+        /* avoid page break after the element */
+        .page_break_after_avoid {
+            break-after: avoid;
+        }
+
+        /* avoid page break inside the element */
+        .page_break_inside_avoid {
+            break-inside: avoid;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* override pandoc css quirks */
+    /* -------------------------------------------------- */
+
+    .sourceCode {
+        /* prevent unsightly overflow in wide code blocks */
+        overflow: auto !important;
+    }
+
+    div.sourceCode {
+        /* prevent background fill on top-most code block  container */
+        background: none !important;
+    }
+
+    .sourceCode * {
+        /* force consistent line spacing */
+        line-height: 1.5 !important;
+    }
+
+    div.sourceCode {
+        /* style code block margins same as <pre> element */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* -------------------------------------------------- */
+    /* tablenos */
+    /* -------------------------------------------------- */
+
+    /* tablenos wrapper */
+    .tablenos {
+        /* show scrollbar on tables if necessary to prevent overflow */
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .tablenos > table {
+        /* move margins from table to table_wrapper to allow margin collapsing */
+        margin: 0;
+    }
+
+    @media only screen {
+        /* tablenos wrapper */
+        .tablenos {
+            /* show scrollbar on tables if necessary to prevent overflow */
+            overflow-x: auto !important;
+        }
+
+        .tablenos th,
+        .tablenos td {
+            overflow-wrap: unset !important;
+            word-break: unset !important;
+        }
+
+        /* table in wrapper */
+        .tablenos table,
+        .tablenos table * {
+            /* don't break table words */
+            overflow-wrap: normal !important;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* mathjax */
+    /* -------------------------------------------------- */
+
+    /* mathjax containers */
+    .math.display > span:not(.MathJax_Preview) {
+        /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
+        display: flex !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    /* right click menu */
+    .MathJax_Menu {
+        border-radius: 5px !important;
+        border: solid 1px #bdbdbd !important;
+        box-shadow: none !important;
+    }
+
+    /* equation auto-number */
+    span[id^="eq:"] > span.math.display + span {
+        font-weight: 600;
+    }
+
+    /* equation */
+    span[id^="eq:"] > span.math.display > span {
+        /* nudge to make room for equation auto-number and anchor */
+        margin-right: 60px !important;
+    }
+
+    /* -------------------------------------------------- */
+    /* anchors plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* anchor button */
+        .anchor {
+            opacity: 0;
+            margin-left: 5px;
+        }
+
+        /* anchor buttons within <h2>'s */
+        h2 .anchor {
+            margin-left: 10px;
+        }
+
+        /* anchor buttons when hovered/focused and anything containing an anchor button when hovered */
+        *:hover > .anchor,
+        .anchor:hover,
+        .anchor:focus {
+            opacity: 1;
+        }
+
+        /* anchor button when hovered */
+        .anchor:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* always show anchor button on devices with no mouse/hover ability */
+    @media (hover: none) {
+        .anchor {
+            opacity: 1;
+        }
+    }
+
+    /* always hide anchor button on print */
+    @media only print {
+        .anchor {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* accordion plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* accordion arrow button */
+        .accordion_arrow {
+            margin-right: 10px;
+        }
+
+        /* arrow icon when <h2> data-collapsed attribute true */
+        h2[data-collapsed="true"] > .accordion_arrow > svg {
+            transform: rotate(-90deg);
+        }
+
+        /* all elements (except <h2>'s) when data-collapsed attribute true */
+        *:not(h2)[data-collapsed="true"] {
+            display: none;
+        }
+
+        /* accordion arrow button when hovered and <h2>'s when hovered */
+        .accordion_arrow:hover,
+        h2[data-collapsed="true"]:hover,
+        h2[data-collapsed="false"]:hover {
+            cursor: pointer;
+        }
+    }
+
+    /* always hide accordion arrow button on print */
+    @media only print {
+        .accordion_arrow {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* tooltips plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* tooltip container */
+        #tooltip {
+            position: absolute;
+            width: 50%;
+            min-width: 240px;
+            max-width: 75%;
+            z-index: 1;
+        }
+
+        /* tooltip content */
+        #tooltip_content {
+            margin-bottom: 5px;
+            padding: 20px;
+            border-radius: 5px;
+            border: solid 1px #bdbdbd;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+            overflow-wrap: break-word;
+        }
+
+        /* tooltip copy of paragraphs and figures */
+        #tooltip_content > p,
+        #tooltip_content > figure {
+            margin: 0;
+            max-height: 320px;
+            overflow-y: auto;
+        }
+
+        /* tooltip copy of <img> */
+        #tooltip_content > figure > img {
+            max-height: 260px;
+        }
+
+        /* navigation bar */
+        #tooltip_nav_bar {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* navigation bar previous/next buton */
+        #tooltip_nav_bar > .icon_button {
+            position: relative;
+            top: 3px;
+        }
+
+        /* navigation bar previous button */
+        #tooltip_nav_bar > .icon_button:first-of-type {
+            margin-right: 5px;
+        }
+
+        /* navigation bar next button */
+        #tooltip_nav_bar > .icon_button:last-of-type {
+            margin-left: 5px;
+        }
+    }
+
+    /* always hide tooltip on print */
+    @media only print {
+        #tooltip {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* jump to first plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* jump button */
+        .jump_arrow {
+            position: relative;
+            top: 0.125em;
+            margin-right: 5px;
+        }
+    }
+
+    /* always hide jump button on print */
+    @media only print {
+        .jump_arrow {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* link highlight plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* anything with data-highlighted attribute true */
+        [data-highlighted="true"] {
+            background: #ffeb3b;
+        }
+
+        /* anything with data-selected attribute true */
+        [data-selected="true"] {
+            background: #ff8a65 !important;
+        }
+
+        /* animation definition for glow */
+        @keyframes highlight_glow {
+            0% {
+                background: none;
+            }
+            10% {
+                background: #bbdefb;
+            }
+            100% {
+                background: none;
+            }
+        }
+
+        /* anything with data-glow attribute true */
+        [data-glow="true"] {
+            animation: highlight_glow 2s;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* table of contents plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* toc panel */
+        #toc_panel {
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            z-index: 2;
+        }
+
+        /* toc panel when closed */
+        #toc_panel[data-open="false"] {
+            min-width: 60px;
+            width: 60px;
+            height: 60px;
+            border-right: solid 1px #bdbdbd;
+            border-bottom: solid 1px #bdbdbd;
+        }
+
+        /* toc panel when open */
+        #toc_panel[data-open="true"] {
+            min-width: 260px;
+            max-width: 480px;
+            /* keep panel edge consistent distance away from "page" edge */
+            width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+            bottom: 0;
+            border-right: solid 1px #bdbdbd;
+        }
+
+        /* toc panel header */
+        #toc_header {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 60px;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* toc panel header when hovered */
+        #toc_header:hover {
+            cursor: pointer;
+        }
+
+        /* toc panel header when panel open */
+        #toc_panel[data-open="true"] > #toc_header {
+            border-bottom: solid 1px #bdbdbd;
+        }
+
+        /* toc open/close header button */
+        #toc_button {
+            margin-right: 20px;
+        }
+
+        /* hide toc list and header text when closed */
+        #toc_panel[data-open="false"] > #toc_header > *:not(#toc_button),
+        #toc_panel[data-open="false"] > #toc_list {
+            display: none;
+        }
+
+        /* toc list of entries */
+        #toc_list {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 20px;
+            position: absolute;
+            top: calc(60px + 1px);
+            bottom: 0;
+            overflow: auto;
+        }
+
+        /* toc entry, link to section in document */
+        .toc_link {
+            display: block;
+            padding: 5px;
+            position: relative;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        /* toc entry when hovered or when "viewed" */
+        .toc_link:hover,
+        .toc_link[data-viewing="true"] {
+            background: #f5f5f5;
+        }
+
+        /* toc entry, level 1 indentation */
+        .toc_link[data-level="1"] {
+            margin-left: 0;
+        }
+
+        /* toc entry, level 2 indentation */
+        .toc_link[data-level="2"] {
+            margin-left: 20px;
+        }
+
+        /* toc entry, level 3 indentation */
+        .toc_link[data-level="3"] {
+            margin-left: 40px;
+        }
+
+        /* toc entry, level 4 indentation */
+        .toc_link[data-level="4"] {
+            margin-left: 60px;
+        }
+
+        /* toc entry bullets */
+        #toc_panel[data-bullets="true"] .toc_link[data-level]:before {
+            position: absolute;
+            left: -15px;
+            top: -1px;
+            font-size: 1.5em;
+        }
+
+        /* toc entry, level 2 bullet */
+        #toc_panel[data-bullets="true"] .toc_link[data-level="2"]:before {
+            content: "\2022";
+        }
+
+        /* toc entry, level 3 bullet */
+        #toc_panel[data-bullets="true"] .toc_link[data-level="3"]:before {
+            content: "\25AB";
+        }
+
+        /* toc entry, level 4 bullet */
+        #toc_panel[data-bullets="true"] .toc_link[data-level="4"]:before {
+            content: "-";
+        }
+    }
+
+    /* when on screen < 8.5in wide */
+    @media only screen and (max-width: 8.5in) {
+        /* push <body> ("page") element down to make room for toc icon */
+        .toc_body_nudge {
+            padding-top: 60px;
+        }
+
+        /* toc icon when panel closed and not hovered */
+        #toc_panel[data-open="false"]:not(:hover) {
+            background: rgba(255, 255, 255, 0.75);
+        }
+    }
+
+    /* always hide toc panel on print */
+    @media only print {
+        #toc_panel {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* lightbox plugin */
+    /* -------------------------------------------------- */
+
+    @media only screen {
+        /* regular <img> in document when hovered */
+        .lightbox_document_img:hover {
+            cursor: pointer;
+        }
+
+        .body_no_scroll {
+            overflow: hidden !important;
+        }
+
+        /* screen overlay */
+        #lightbox_overlay {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+            z-index: 3;
+        }
+
+        /* middle area containing lightbox image */
+        #lightbox_image_container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* bottom area containing caption */
+        #lightbox_bottom_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        /* image number info text box */
+        #lightbox_number_info {
+            position: absolute;
+            color: #ffffff;
+            font-weight: 600;
+            left: 2px;
+            top: 0;
+            z-index: 4;
+        }
+
+        /* zoom info text box */
+        #lightbox_zoom_info {
+            position: absolute;
+            color: #ffffff;
+            font-weight: 600;
+            right: 2px;
+            top: 0;
+            z-index: 4;
+        }
+
+        /* copy of image caption */
+        #lightbox_caption {
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100%;
+            max-height: 100%;
+            padding: 10px 0;
+            text-align: center;
+            overflow-y: auto;
+            color: #ffffff;
+        }
+
+        /* navigation previous/next button */
+        .lightbox_button {
+            width: 100px;
+            height: 100%;
+            min-width: 100px;
+            min-height: 100%;
+            color: #ffffff;
+        }
+
+        /* navigation previous/next button when hovered */
+        .lightbox_button:hover {
+            background: none !important;
+        }
+
+        /* navigation button icon */
+        .lightbox_button > svg {
+            height: 25px;
+        }
+
+        /* figure auto-number */
+        #lightbox_caption > span:first-of-type {
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        /* lightbox image when hovered */
+        #lightbox_img:hover {
+            cursor: grab;
+        }
+
+        /* lightbox image when grabbed */
+        #lightbox_img:active {
+            cursor: grabbing;
+        }
+    }
+
+    /* when on screen < 480px wide */
+    @media only screen and (max-width: 480px) {
+        /* make navigation buttons skinnier on small screens to make more room for caption text */
+        .lightbox_button {
+            width: 50px;
+            min-width: 50px;
+        }
+    }
+
+    /* always hide lightbox on print */
+    @media only print {
+        #lightbox_overlay {
+            display: none;
+        }
+    }
+
+    /* -------------------------------------------------- */
+    /* hypothesis (annotations) plugin */
+    /* -------------------------------------------------- */
+
+    /* side panel */
+    .annotator-frame {
+        width: 280px !important;
+        z-index: 0 !important;
+    }
+
+    /* match highlight color to rest of theme */
+    .annotator-highlights-always-on .annotator-hl {
+        background-color: #ffeb3b !important;
+    }
+
+    /* match focused color to rest of theme */
+    .annotator-hl.annotator-hl-focused {
+        background-color: #ff8a65 !important;
+    }
+
+    /* match bucket bar color to rest of theme */
+    .annotator-bucket-bar {
+        background: #f5f5f5 !important;
+    }
+
+    /* always hide toolbar and tooltip on print */
+    @media only print {
+        .annotator-frame {
+            display: none !important;
+        }
+
+        hypothesis-adder {
+            display: none !important;
+        }
+    }
+</style>
+<!-- anchors plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin adds an anchor next to each of a certain type
+        // of element that provides a human-readable url to that specific
+        // item/position in the document (eg "manuscript.html#abstract"). It
+        // also makes it such that scrolling out of view of a target removes
+        // its identifier from the url.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'anchors';
+
+        // default plugin options
+        const options = {
+            // which types of elements to add anchors next to, in
+            // "document.querySelector" format
+            typesQuery: 'h1, h2, h3, [id^="fig:"], [id^="tbl:"], [id^="eq:"]',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // add anchor to each element of specified types
+            const elements = document.querySelectorAll(options.typesQuery);
+            for (const element of elements)
+                addAnchor(element);
+
+            // attach scroll listener to window
+            window.addEventListener('scroll', onScroll);
+        }
+
+        // when window is scrolled
+        function onScroll() {
+            // if url has hash and user has scrolled out of view of hash
+            // target, remove hash from url
+            const tolerance = 100;
+            const target = getHashTarget();
+            if (target) {
+                if (
+                    target.getBoundingClientRect().top >
+                        window.innerHeight + tolerance ||
+                    target.getBoundingClientRect().bottom < 0 - tolerance
+                )
+                    history.pushState(null, null, ' ');
+            }
+        }
+
+        // add anchor to element
+        function addAnchor(element) {
+            let addTo; // element to add anchor button to
+
+            // if figure or table, modify withId and addTo to get expected
+            // elements
+            if (element.id.indexOf('fig:') === 0) {
+                addTo = element.querySelector('figcaption');
+            } else if (element.id.indexOf('tbl:') === 0) {
+                addTo = element.querySelector('caption');
+            } else if (element.id.indexOf('eq:') === 0) {
+                addTo = element.querySelector('.eqnos-number');
+            }
+
+            addTo = addTo || element;
+            const id = element.id || null;
+
+            // do not add anchor if element doesn't have assigned id.
+            // id is generated by pandoc and is assumed to be unique and
+            // human-readable
+            if (!id)
+                return;
+
+            // create anchor button
+            const anchor = document.createElement('a');
+            anchor.innerHTML = document.querySelector('.icon_link').innerHTML;
+            anchor.title = 'Link to this part of the document';
+            anchor.classList.add('icon_button', 'anchor');
+            anchor.dataset.ignore = 'true';
+            anchor.href = '#' + id;
+            addTo.appendChild(anchor);
+        }
+
+        // get element that is target of link or url hash
+        function getHashTarget() {
+            const hash = window.location.hash;
+            const id = hash.slice(1);
+            let target = document.querySelector('[id="' + id + '"]');
+            if (!target)
+                return;
+
+            // if figure or table, modify target to get expected element
+            if (id.indexOf('fig:') === 0)
+                target = target.querySelector('figure');
+            if (id.indexOf('tbl:') === 0)
+                target = target.querySelector('table');
+
+            return target;
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- link icon -->
+
+<template class="icon_link">
+    <!-- modified from: https://fontawesome.com/icons/link -->
+    <svg width="16" height="16" viewBox="0 0 512 512">
+        <path
+            fill="currentColor"
+            d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+        ></path>
+    </svg>
+</template>
+<!-- accordion plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin allows sections of content under <h2> headings
+        // to be collapsible.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'accordion';
+
+        // default plugin options
+        const options = {
+            // whether to always start expanded ('false'), always start
+            // collapsed ('true'), or start collapsed when screen small ('auto')
+            startCollapsed: 'auto',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // run through each <h2> heading
+            const headings = document.querySelectorAll('h2');
+            for (const heading of headings) {
+                addArrow(heading);
+
+                // start expanded/collapsed based on option
+                if (
+                    options.startCollapsed === 'true' ||
+                    (options.startCollapsed === 'auto' && isSmallScreen())
+                )
+                    collapseHeading(heading);
+                else
+                    expandHeading(heading);
+            }
+
+            // attach hash change listener to window
+            window.addEventListener('hashchange', onHashChange);
+        }
+
+        // when hash (eg manuscript.html#introduction) changes
+        function onHashChange() {
+            const target = getHashTarget();
+            if (target)
+                goToElement(target);
+        }
+
+        // add arrow to heading
+        function addArrow(heading) {
+            // add arrow button
+            const arrow = document.createElement('button');
+            arrow.innerHTML = document.querySelector(
+                '.icon_angle_down'
+            ).innerHTML;
+            arrow.classList.add('icon_button', 'accordion_arrow');
+            heading.insertBefore(arrow, heading.firstChild);
+
+            // attach click listener to heading and button
+            heading.addEventListener('click', onHeadingClick);
+            arrow.addEventListener('click', onArrowClick);
+        }
+
+        // determine if on mobile-like device with small screen
+        function isSmallScreen() {
+            return Math.min(window.innerWidth, window.innerHeight) < 480;
+        }
+
+        // scroll to and focus element
+        function goToElement(element, offset) {
+            // expand accordion section if collapsed
+            expandElement(element);
+            const y =
+                getRectInView(element).top -
+                getRectInView(document.documentElement).top -
+                (offset || 0);
+            // trigger any function listening for "onscroll" event
+            window.dispatchEvent(new Event('scroll'));
+            window.scrollTo(0, y);
+            document.activeElement.blur();
+            element.focus();
+        }
+
+        // get element that is target of hash
+        function getHashTarget(link) {
+            const hash = link ? link.hash : window.location.hash;
+            const id = hash.slice(1);
+            let target = document.querySelector('[id="' + id + '"]');
+            if (!target)
+                return;
+
+            // if figure or table, modify target to get expected element
+            if (id.indexOf('fig:') === 0)
+                target = target.querySelector('figure');
+            if (id.indexOf('tbl:') === 0)
+                target = target.querySelector('table');
+
+            return target;
+        }
+
+        // when <h2> heading is clicked
+        function onHeadingClick(event) {
+            // only collapse if <h2> itself is target of click (eg, user did
+            // not click on anchor within <h2>)
+            if (event.target === this)
+                toggleCollapse(this);
+        }
+
+        // when arrow button is clicked
+        function onArrowClick() {
+            toggleCollapse(this.parentNode);
+        }
+
+        // collapse section if expanded, expand if collapsed
+        function toggleCollapse(heading) {
+            if (heading.dataset.collapsed === 'false')
+                collapseHeading(heading);
+            else
+                expandHeading(heading);
+        }
+
+        // elements to exclude from collapse, such as table of contents panel,
+        // hypothesis panel, etc
+        const exclude = '#toc_panel, div.annotator-frame, #lightbox_overlay';
+
+        // collapse section
+        function collapseHeading(heading) {
+            heading.setAttribute('data-collapsed', 'true');
+            const children = getChildren(heading);
+            for (const child of children)
+                child.setAttribute('data-collapsed', 'true');
+        }
+
+        // expand section
+        function expandHeading(heading) {
+            heading.setAttribute('data-collapsed', 'false');
+            const children = getChildren(heading);
+            for (const child of children)
+                child.setAttribute('data-collapsed', 'false');
+        }
+
+        // get list of elements between this <h2> and next <h2> or <h1>
+        // ("children" of the <h2> section)
+        function getChildren(heading) {
+            return nextUntil(heading, 'h2, h1', exclude);
+        }
+
+        // get position/dimensions of element or viewport
+        function getRectInView(element) {
+            let rect = {};
+            rect.left = 0;
+            rect.top = 0;
+            rect.right = document.documentElement.clientWidth;
+            rect.bottom = document.documentElement.clientHeight;
+            let style = {};
+
+            if (element instanceof HTMLElement) {
+                rect = element.getBoundingClientRect();
+                style = window.getComputedStyle(element);
+            }
+
+            const margin = {};
+            margin.left = parseFloat(style.marginLeftWidth) || 0;
+            margin.top = parseFloat(style.marginTopWidth) || 0;
+            margin.right = parseFloat(style.marginRightWidth) || 0;
+            margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+            const border = {};
+            border.left = parseFloat(style.borderLeftWidth) || 0;
+            border.top = parseFloat(style.borderTopWidth) || 0;
+            border.right = parseFloat(style.borderRightWidth) || 0;
+            border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+            const newRect = {};
+            newRect.left = rect.left + margin.left + border.left;
+            newRect.top = rect.top + margin.top + border.top;
+            newRect.right = rect.right + margin.right + border.right;
+            newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+            newRect.width = newRect.right - newRect.left;
+            newRect.height = newRect.bottom - newRect.top;
+
+            return newRect;
+        }
+
+        // get list of elements after a start element up to element matching
+        // query
+        function nextUntil(element, query, exclude) {
+            const elements = [];
+            while (element = element.nextElementSibling, element) {
+                if (element.matches(query))
+                    break;
+                if (!element.matches(exclude))
+                    elements.push(element);
+            }
+            return elements;
+        }
+
+        // get closest element before specified element that matches query
+        function firstBefore(element, query) {
+            while (
+                element &&
+                element !== document.body &&
+                !element.matches(query)
+            )
+                element = element.previousElementSibling || element.parentNode;
+
+            return element;
+        }
+
+        // check if element is part of collapsed heading
+        function isCollapsed(element) {
+            while (element && element !== document.body) {
+                if (element.dataset.collapsed === 'true')
+                    return true;
+                element = element.parentNode;
+            }
+            return false;
+        }
+
+        // expand heading containing element if necesary
+        function expandElement(element) {
+            if (isCollapsed(element)) {
+                const heading = firstBefore(element, 'h2');
+                if (heading)
+                    heading.click();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- angle down icon -->
+
+<template class="icon_angle_down">
+    <!-- modified from: https://fontawesome.com/icons/angle-down -->
+    <svg width="16" height="16" viewBox="0 0 448 512">
+        <path
+            fill="currentColor"
+            d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+        ></path>
+    </svg>
+</template>
+<!-- tooltips plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin makes it such that when the user hovers or
+        // focuses a link to a citation or figure, a tooltip appears with a
+        // preview of the reference content, along with arrows to navigate
+        // between instances of the same reference in the document.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'tooltips';
+
+        // default plugin options
+        const options = {
+            // whether user must click off to close tooltip instead of just
+            // un-hovering
+            clickClose: 'false',
+            // delay (in ms) between opening and closing tooltip
+            delay: '100',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            const links = getLinks();
+            for (const link of links) {
+                // attach hover and focus listeners to link
+                link.addEventListener('mouseover', onLinkHover);
+                link.addEventListener('mouseleave', onLinkUnhover);
+                link.addEventListener('focus', onLinkFocus);
+                link.addEventListener('touchend', onLinkTouch);
+            }
+
+            // attach mouse, key, and resize listeners to window
+            window.addEventListener('mousedown', onClick);
+            window.addEventListener('touchstart', onClick);
+            window.addEventListener('keyup', onKeyUp);
+            window.addEventListener('resize', onResize);
+        }
+
+        // when link is hovered
+        function onLinkHover() {
+            // function to open tooltip
+            const delayOpenTooltip = function() {
+                openTooltip(this);
+            }.bind(this);
+
+            // run open function after delay
+            this.openTooltipTimer = window.setTimeout(
+                delayOpenTooltip,
+                options.delay
+            );
+        }
+
+        // when mouse leaves link
+        function onLinkUnhover() {
+            // cancel opening tooltip
+            window.clearTimeout(this.openTooltipTimer);
+
+            // don't close on unhover if option specifies
+            if (options.clickClose === 'true')
+                return;
+
+            // function to close tooltip
+            const delayCloseTooltip = function() {
+                // if tooltip open and if mouse isn't over tooltip, close
+                const tooltip = document.getElementById('tooltip');
+                if (tooltip && !tooltip.matches(':hover'))
+                    closeTooltip();
+            };
+
+            // run close function after delay
+            this.closeTooltipTimer = window.setTimeout(
+                delayCloseTooltip,
+                options.delay
+            );
+        }
+
+        // when link is focused (tabbed to)
+        function onLinkFocus(event) {
+            openTooltip(this);
+        }
+
+        // when link is touched on touch screen
+        function onLinkTouch(event) {
+            // attempt to force hover state on first tap always, and trigger
+            // regular link click (and navigation) on second tap
+            if (event.target === document.activeElement)
+                event.target.click();
+            else {
+                document.activeElement.blur();
+                event.target.focus();
+            }
+            if (event.cancelable)
+                event.preventDefault();
+            event.stopPropagation();
+            return false;
+        }
+
+        // when mouse is clicked anywhere in window
+        function onClick(event) {
+            closeTooltip();
+        }
+
+        // when key pressed
+        function onKeyUp(event) {
+            if (!event || !event.key)
+                return;
+
+            switch (event.key) {
+                // trigger click of prev button
+                case 'ArrowLeft':
+                    const prevButton = document.getElementById(
+                        'tooltip_prev_button'
+                    );
+                    if (prevButton)
+                        prevButton.click();
+                    break;
+                // trigger click of next button
+                case 'ArrowRight':
+                    const nextButton = document.getElementById(
+                        'tooltip_next_button'
+                    );
+                    if (nextButton)
+                        nextButton.click();
+                    break;
+                // close on esc
+                case 'Escape':
+                    closeTooltip();
+                    break;
+            }
+        }
+
+        // when window is resized or zoomed
+        function onResize() {
+            closeTooltip();
+        }
+
+        // get all links of types we wish to handle
+        function getLinks() {
+            const queries = [];
+            // exclude buttons, anchor links, toc links, etc
+            const exclude =
+                ':not(.button):not(.icon_button):not(.anchor):not(.toc_link)';
+            queries.push('a[href^="#ref-"]' + exclude); // citation links
+            queries.push('a[href^="#fig:"]' + exclude); // figure links
+            const query = queries.join(', ');
+            return document.querySelectorAll(query);
+        }
+
+        // get links with same target, get index of link in set, get total
+        // same links
+        function getSameLinks(link) {
+            const sameLinks = [];
+            const links = getLinks();
+            for (const otherLink of links) {
+                if (
+                    otherLink.getAttribute('href') === link.getAttribute('href')
+                )
+                    sameLinks.push(otherLink);
+            }
+
+            return {
+                elements: sameLinks,
+                index: sameLinks.indexOf(link),
+                total: sameLinks.length
+            };
+        }
+
+        // open tooltip
+        function openTooltip(link) {
+            // delete tooltip if it exists, start fresh
+            closeTooltip();
+
+            // make tooltip element
+            const tooltip = makeTooltip(link);
+
+            // if source couldn't be found and tooltip not made, exit
+            if (!tooltip)
+                return;
+
+            // make navbar elements
+            const navBar = makeNavBar(link);
+            if (navBar)
+                tooltip.firstElementChild.appendChild(navBar);
+
+            // attach tooltip to page
+            document.body.appendChild(tooltip);
+
+            // position tooltip
+            const position = function() {
+                positionTooltip(link);
+            };
+            position();
+
+            // if tooltip contains images, position again after they've loaded
+            const imgs = tooltip.querySelectorAll('img');
+            for (const img of imgs)
+                img.addEventListener('load', position);
+        }
+
+        // close (delete) tooltip
+        function closeTooltip() {
+            const tooltip = document.getElementById('tooltip');
+            if (tooltip)
+                tooltip.remove();
+        }
+
+        // make tooltip
+        function makeTooltip(link) {
+            // get target element that link points to
+            const source = getSource(link);
+
+            // if source can't be found, exit
+            if (!source)
+                return;
+
+            // create new tooltip
+            const tooltip = document.createElement('div');
+            tooltip.id = 'tooltip';
+            const tooltipContent = document.createElement('div');
+            tooltipContent.id = 'tooltip_content';
+            tooltip.appendChild(tooltipContent);
+
+            // make copy of source node and put in tooltip
+            const sourceCopy = makeCopy(source);
+            tooltipContent.appendChild(sourceCopy);
+
+            // attach mouse event listeners
+            tooltip.addEventListener('click', onTooltipClick);
+            tooltip.addEventListener('mousedown', onTooltipClick);
+            tooltip.addEventListener('touchstart', onTooltipClick);
+            tooltip.addEventListener('mouseleave', onTooltipUnhover);
+
+            // (for interaction with lightbox plugin)
+            // transfer click on tooltip copied img to original img
+            const sourceImg = source.querySelector('img');
+            const sourceCopyImg = sourceCopy.querySelector('img');
+            if (sourceImg && sourceCopyImg) {
+                const clickImg = function() {
+                    sourceImg.click();
+                    closeTooltip();
+                };
+                sourceCopyImg.addEventListener('click', clickImg);
+            }
+
+            return tooltip;
+        }
+
+        // make carbon copy of html dom element
+        function makeCopy(source) {
+            const sourceCopy = source.cloneNode(true);
+
+            // delete elements marked with ignore (eg anchor and jump buttons)
+            const deleteFromCopy = sourceCopy.querySelectorAll(
+                '[data-ignore="true"]'
+            );
+            for (const element of deleteFromCopy)
+                element.remove();
+
+            // delete certain element attributes
+            const attributes = [
+                'id',
+                'data-collapsed',
+                'data-selected',
+                'data-highlighted',
+                'data-glow'
+            ];
+            for (const attribute of attributes) {
+                sourceCopy.removeAttribute(attribute);
+                const elements = sourceCopy.querySelectorAll(
+                    '[' + attribute + ']'
+                );
+                for (const element of elements)
+                    element.removeAttribute(attribute);
+            }
+
+            return sourceCopy;
+        }
+
+        // when tooltip is clicked
+        function onTooltipClick(event) {
+            // when user clicks on tooltip, stop click from transferring
+            // outside of tooltip (eg, click off to close tooltip, or eg click
+            // off to unhighlight same refs)
+            event.stopPropagation();
+        }
+
+        // when tooltip is unhovered
+        function onTooltipUnhover(event) {
+            if (options.clickClose === 'true')
+                return;
+
+            // make sure new mouse/touch/focus no longer over tooltip or any
+            // element within it
+            const tooltip = document.getElementById('tooltip');
+            if (!tooltip)
+                return;
+            if (this.contains(event.relatedTarget))
+                return;
+
+            closeTooltip();
+        }
+
+        // make nav bar to go betwen prev/next instances of same reference
+        function makeNavBar(link) {
+            // find other links to the same source
+            const sameLinks = getSameLinks(link);
+
+            // don't show nav bar when singular reference
+            if (sameLinks.total <= 1)
+                return;
+
+            // find prev/next links with same target
+            const prevLink = getPrevLink(link, sameLinks);
+            const nextLink = getNextLink(link, sameLinks);
+
+            // create nav bar
+            const navBar = document.createElement('div');
+            navBar.id = 'tooltip_nav_bar';
+            const text = sameLinks.index + 1 + ' of ' + sameLinks.total;
+
+            // create nav bar prev/next buttons
+            const prevButton = document.createElement('button');
+            const nextButton = document.createElement('button');
+            prevButton.id = 'tooltip_prev_button';
+            nextButton.id = 'tooltip_next_button';
+            prevButton.title =
+                'Jump to the previous occurence of this item in the document [←]';
+            nextButton.title =
+                'Jump to the next occurence of this item in the document [→]';
+            prevButton.classList.add('icon_button');
+            nextButton.classList.add('icon_button');
+            prevButton.innerHTML = document.querySelector(
+                '.icon_caret_left'
+            ).innerHTML;
+            nextButton.innerHTML = document.querySelector(
+                '.icon_caret_right'
+            ).innerHTML;
+            navBar.appendChild(prevButton);
+            navBar.appendChild(document.createTextNode(text));
+            navBar.appendChild(nextButton);
+
+            // attach click listeners to buttons
+            prevButton.addEventListener('click', function() {
+                onPrevNextClick(link, prevLink);
+            });
+            nextButton.addEventListener('click', function() {
+                onPrevNextClick(link, nextLink);
+            });
+
+            return navBar;
+        }
+
+        // get previous link with same target
+        function getPrevLink(link, sameLinks) {
+            if (!sameLinks)
+                sameLinks = getSameLinks(link);
+            // wrap index to other side if < 1
+            let index;
+            if (sameLinks.index - 1 >= 0)
+                index = sameLinks.index - 1;
+            else
+                index = sameLinks.total - 1;
+            return sameLinks.elements[index];
+        }
+
+        // get next link with same target
+        function getNextLink(link, sameLinks) {
+            if (!sameLinks)
+                sameLinks = getSameLinks(link);
+            // wrap index to other side if > total
+            let index;
+            if (sameLinks.index + 1 <= sameLinks.total - 1)
+                index = sameLinks.index + 1;
+            else
+                index = 0;
+            return sameLinks.elements[index];
+        }
+
+        // get element that is target of link or url hash
+        function getSource(link) {
+            const hash = link ? link.hash : window.location.hash;
+            const id = hash.slice(1);
+            let target = document.querySelector('[id="' + id + '"]');
+            if (!target)
+                return;
+
+            // if ref or figure, modify target to get expected element
+            if (id.indexOf('ref-') === 0)
+                target = target.querySelector('p');
+            else if (id.indexOf('fig:') === 0)
+                target = target.querySelector('figure');
+
+            return target;
+        }
+
+        // when prev/next arrow button is clicked
+        function onPrevNextClick(link, prevNextLink) {
+            if (link && prevNextLink)
+                goToElement(prevNextLink, window.innerHeight * 0.5);
+        }
+
+        // scroll to and focus element
+        function goToElement(element, offset) {
+            // expand accordion section if collapsed
+            expandElement(element);
+            const y =
+                getRectInView(element).top -
+                getRectInView(document.documentElement).top -
+                (offset || 0);
+            // trigger any function listening for "onscroll" event
+            window.dispatchEvent(new Event('scroll'));
+            window.scrollTo(0, y);
+            document.activeElement.blur();
+            element.focus();
+        }
+
+        // determine position to place tooltip based on link position in
+        // viewport and tooltip size
+        function positionTooltip(link, left, top) {
+            const tooltipElement = document.getElementById('tooltip');
+            if (!tooltipElement)
+                return;
+
+            // get convenient vars for position/dimensions of
+            // link/tooltip/page/view
+            link = getRectInPage(link);
+            const tooltip = getRectInPage(tooltipElement);
+            const view = getRectInPage();
+
+            // horizontal positioning
+            if (left)
+                // use explicit value
+                left = left;
+            else if (link.left + tooltip.width < view.right)
+                // fit tooltip to right of link
+                left = link.left;
+            else if (link.right - tooltip.width > view.left)
+                // fit tooltip to left of link
+                left = link.right - tooltip.width;
+            // center tooltip in view
+            else
+                left = (view.right - view.left) / 2 - tooltip.width / 2;
+
+            // vertical positioning
+            if (top)
+                // use explicit value
+                top = top;
+            else if (link.top - tooltip.height > view.top)
+                // fit tooltip above link
+                top = link.top - tooltip.height;
+            else if (link.bottom + tooltip.height < view.bottom)
+                // fit tooltip below link
+                top = link.bottom;
+            else {
+                // center tooltip in view
+                top = view.top + view.height / 2 - tooltip.height / 2;
+                // nudge off of link to left/right if possible
+                if (link.right + tooltip.width < view.right)
+                    left = link.right;
+                else if (link.left - tooltip.width > view.left)
+                    left = link.left - tooltip.width;
+            }
+
+            tooltipElement.style.left = left + 'px';
+            tooltipElement.style.top = top + 'px';
+        }
+
+        // get position/dimensions of element or viewport
+        function getRectInView(element) {
+            let rect = {};
+            rect.left = 0;
+            rect.top = 0;
+            rect.right = document.documentElement.clientWidth;
+            rect.bottom = document.documentElement.clientHeight;
+            let style = {};
+
+            if (element instanceof HTMLElement) {
+                rect = element.getBoundingClientRect();
+                style = window.getComputedStyle(element);
+            }
+
+            const margin = {};
+            margin.left = parseFloat(style.marginLeftWidth) || 0;
+            margin.top = parseFloat(style.marginTopWidth) || 0;
+            margin.right = parseFloat(style.marginRightWidth) || 0;
+            margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+            const border = {};
+            border.left = parseFloat(style.borderLeftWidth) || 0;
+            border.top = parseFloat(style.borderTopWidth) || 0;
+            border.right = parseFloat(style.borderRightWidth) || 0;
+            border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+            const newRect = {};
+            newRect.left = rect.left + margin.left + border.left;
+            newRect.top = rect.top + margin.top + border.top;
+            newRect.right = rect.right + margin.right + border.right;
+            newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+            newRect.width = newRect.right - newRect.left;
+            newRect.height = newRect.bottom - newRect.top;
+
+            return newRect;
+        }
+
+        // get position of element relative to page
+        function getRectInPage(element) {
+            const rect = getRectInView(element);
+            const body = getRectInView(document.body);
+
+            const newRect = {};
+            newRect.left = rect.left - body.left;
+            newRect.top = rect.top - body.top;
+            newRect.right = rect.right - body.left;
+            newRect.bottom = rect.bottom - body.top;
+            newRect.width = rect.width;
+            newRect.height = rect.height;
+
+            return newRect;
+        }
+
+        // (for interaction with accordion plugin)
+        // get closest element before specified element that matches query
+        function firstBefore(element, query) {
+            while (
+                element &&
+                element !== document.body &&
+                !element.matches(query)
+            )
+                element = element.previousElementSibling || element.parentNode;
+
+            return element;
+        }
+
+        // (for interaction with accordion plugin)
+        // check if element is part of collapsed heading
+        function isCollapsed(element) {
+            while (element && element !== document.body) {
+                if (element.dataset.collapsed === 'true')
+                    return true;
+                element = element.parentNode;
+            }
+            return false;
+        }
+
+        // (for interaction with accordion plugin)
+        // expand heading containing element if necesary
+        function expandElement(element) {
+            if (isCollapsed(element)) {
+                const heading = firstBefore(element, 'h2');
+                if (heading)
+                    heading.click();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+    <!-- modified from: https://fontawesome.com/icons/caret-left -->
+    <svg width="16" height="16" viewBox="0 0 192 512">
+        <path
+            fill="currentColor"
+            d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+        ></path>
+    </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+    <!-- modified from: https://fontawesome.com/icons/caret-right -->
+    <svg width="16" height="16" viewBox="0 0 192 512">
+        <path
+            fill="currentColor"
+            d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+        ></path>
+    </svg>
+</template>
+<!-- jump to first plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin adds a button next to each reference entry,
+        // figure, and table that jumps the page to the first occurrence of a
+        // link to that item in the manuscript.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'jumpToFirst';
+
+        // default plugin options
+        const options = {
+            // whether to add buttons next to reference entries
+            references: 'true',
+            // whether to add buttons next to figures
+            figures: 'true',
+            // whether to add buttons next to tables
+            tables: 'true',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            if (options.references !== 'false')
+                makeReferenceButtons();
+            if (options.figures !== 'false')
+                makeFigureButtons();
+            if (options.tables !== 'false')
+                makeTableButtons();
+        }
+
+        // when jump button clicked
+        function onButtonClick() {
+            const first = getFirstOccurrence(this.dataset.id);
+            if (!first)
+                return;
+
+            // update url hash so navigating "back" in history will return
+            // user to jump button
+            window.location.hash = this.dataset.id;
+            // scroll to link
+            window.setTimeout(function() {
+                goToElement(first, window.innerHeight * 0.5);
+            }, 0);
+        }
+
+        // get first occurence of link to item in document
+        function getFirstOccurrence(id) {
+            let query = 'a';
+            query += '[href="#' + id + '"]';
+            // exclude buttons, anchor links, toc links, etc
+            query +=
+                ':not(.button):not(.icon_button):not(.anchor):not(.toc_link)';
+            return document.querySelector(query);
+        }
+
+        // add button next to each reference entry
+        function makeReferenceButtons() {
+            const references = document.querySelectorAll('div[id^="ref-"]');
+            for (const reference of references) {
+                // get reference id and element to add button to
+                const id = reference.id;
+                const container = reference.firstElementChild;
+                const first = getFirstOccurrence(id);
+
+                // if can't find link to reference, ignore
+                if (!first)
+                    continue;
+
+                // make jump button
+                let button = document.createElement('button');
+                button.classList.add('icon_button', 'jump_arrow');
+                button.title =
+                    'Jump to the first occurence of this reference in the document';
+                button.innerHTML = document.querySelector(
+                    '.icon_angle_double_up'
+                ).innerHTML;
+                button.dataset.id = id;
+                button.dataset.ignore = 'true';
+                container.innerHTML = button.outerHTML + container.innerHTML;
+                button = container.firstElementChild;
+                button.addEventListener('click', onButtonClick);
+            }
+        }
+
+        // add button next to each figure
+        function makeFigureButtons() {
+            const figures = document.querySelectorAll('[id^="fig:"]');
+            for (const figure of figures) {
+                // get figure id and element to add button to
+                const id = figure.id;
+                const container = figure.querySelector('figcaption') || figure;
+                const first = getFirstOccurrence(id);
+
+                // if can't find link to figure, ignore
+                if (!first)
+                    continue;
+
+                // make jump button
+                const button = document.createElement('button');
+                button.classList.add('icon_button', 'jump_arrow');
+                button.title =
+                    'Jump to the first occurence of this figure in the document';
+                button.innerHTML = document.querySelector(
+                    '.icon_angle_double_up'
+                ).innerHTML;
+                button.dataset.id = id;
+                button.dataset.ignore = 'true';
+                container.insertBefore(button, container.firstElementChild);
+                button.addEventListener('click', onButtonClick);
+            }
+        }
+
+        // add button next to each figure
+        function makeTableButtons() {
+            const tables = document.querySelectorAll('[id^="tbl:"]');
+            for (const table of tables) {
+                // get ref id and element to add button to
+                const id = table.id;
+                const container = table.querySelector('caption') || table;
+                const first = getFirstOccurrence(id);
+
+                // if can't find link to table, ignore
+                if (!first)
+                    continue;
+
+                // make jump button
+                const button = document.createElement('button');
+                button.classList.add('icon_button', 'jump_arrow');
+                button.title =
+                    'Jump to the first occurence of this table in the document';
+                button.innerHTML = document.querySelector(
+                    '.icon_angle_double_up'
+                ).innerHTML;
+                button.dataset.id = id;
+                button.dataset.ignore = 'true';
+                container.insertBefore(button, container.firstElementChild);
+                button.addEventListener('click', onButtonClick);
+            }
+        }
+
+        // scroll to and focus element
+        function goToElement(element, offset) {
+            // expand accordion section if collapsed
+            expandElement(element);
+            const y =
+                getRectInView(element).top -
+                getRectInView(document.documentElement).top -
+                (offset || 0);
+            // trigger any function listening for "onscroll" event
+            window.dispatchEvent(new Event('scroll'));
+            window.scrollTo(0, y);
+            document.activeElement.blur();
+            element.focus();
+        }
+
+        // get position/dimensions of element or viewport
+        function getRectInView(element) {
+            let rect = {};
+            rect.left = 0;
+            rect.top = 0;
+            rect.right = document.documentElement.clientWidth;
+            rect.bottom = document.documentElement.clientHeight;
+            let style = {};
+
+            if (element instanceof HTMLElement) {
+                rect = element.getBoundingClientRect();
+                style = window.getComputedStyle(element);
+            }
+
+            const margin = {};
+            margin.left = parseFloat(style.marginLeftWidth) || 0;
+            margin.top = parseFloat(style.marginTopWidth) || 0;
+            margin.right = parseFloat(style.marginRightWidth) || 0;
+            margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+            const border = {};
+            border.left = parseFloat(style.borderLeftWidth) || 0;
+            border.top = parseFloat(style.borderTopWidth) || 0;
+            border.right = parseFloat(style.borderRightWidth) || 0;
+            border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+            const newRect = {};
+            newRect.left = rect.left + margin.left + border.left;
+            newRect.top = rect.top + margin.top + border.top;
+            newRect.right = rect.right + margin.right + border.right;
+            newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+            newRect.width = newRect.right - newRect.left;
+            newRect.height = newRect.bottom - newRect.top;
+
+            return newRect;
+        }
+
+        // get closest element before specified element that matches query
+        function firstBefore(element, query) {
+            while (
+                element &&
+                element !== document.body &&
+                !element.matches(query)
+            )
+                element = element.previousElementSibling || element.parentNode;
+
+            return element;
+        }
+
+        // check if element is part of collapsed heading
+        function isCollapsed(element) {
+            while (element && element !== document.body) {
+                if (element.dataset.collapsed === 'true')
+                    return true;
+                element = element.parentNode;
+            }
+            return false;
+        }
+
+        // (for interaction with accordion plugin)
+        // expand heading containing element if necesary
+        function expandElement(element) {
+            if (isCollapsed(element)) {
+                const heading = firstBefore(element, 'h2');
+                if (heading)
+                    heading.click();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- angle double up icon -->
+
+<template class="icon_angle_double_up">
+    <!-- modified from: https://fontawesome.com/icons/angle-double-up -->
+    <svg width="16" height="16" viewBox="0 0 320 512">
+        <path
+            fill="currentColor"
+            d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"
+        ></path>
+    </svg>
+</template>
+<!-- link highlight plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin makes it such that when a user hovers or
+        // focuses a link, other links that have the same target will be
+        // highlighted. It also makes it such that when clicking a link, the
+        // target of the link (eg reference, figure, table) is briefly
+        // highlighted.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'linkHighlight';
+
+        // default plugin options
+        const options = {
+            // whether to also highlight links that go to external urls
+            externalLinks: 'false',
+            // whether user must click off to unhighlight instead of just
+            // un-hovering
+            clickUnhighlight: 'false',
+            // whether to also highlight links that are unique
+            highlightUnique: 'true',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            const links = getLinks();
+            for (const link of links) {
+                // attach mouse and focus listeners to link
+                link.addEventListener('mouseenter', onLinkFocus);
+                link.addEventListener('focus', onLinkFocus);
+                link.addEventListener('mouseleave', onLinkUnhover);
+            }
+
+            // attach click and hash change listeners to window
+            window.addEventListener('click', onClick);
+            window.addEventListener('touchstart', onClick);
+            window.addEventListener('hashchange', onHashChange);
+
+            // run hash change on window load in case user has navigated
+            // directly to hash
+            onHashChange();
+        }
+
+        // when link is focused (tabbed to) or hovered
+        function onLinkFocus() {
+            highlight(this);
+        }
+
+        // when link is unhovered
+        function onLinkUnhover() {
+            if (options.clickUnhighlight !== 'true')
+                unhighlightAll();
+        }
+
+        // when the mouse is clicked anywhere in window
+        function onClick(event) {
+            unhighlightAll();
+        }
+
+        // when hash (eg manuscript.html#introduction) changes
+        function onHashChange() {
+            const target = getHashTarget();
+            if (target)
+                glowElement(target);
+        }
+
+        // get element that is target of link or url hash
+        function getHashTarget(link) {
+            const hash = link ? link.hash : window.location.hash;
+            const id = hash.slice(1);
+            let target = document.querySelector('[id="' + id + '"]');
+            if (!target)
+                return;
+
+            return target;
+        }
+
+        // start glow sequence on an element
+        function glowElement(element) {
+            const startGlow = function() {
+                onGlowEnd();
+                element.dataset.glow = 'true';
+                element.addEventListener('animationend', onGlowEnd);
+            };
+            const onGlowEnd = function() {
+                element.removeAttribute('data-glow');
+                element.removeEventListener('animationend', onGlowEnd);
+            };
+            startGlow();
+        }
+
+        // highlight link and all others with same target
+        function highlight(link) {
+            // force unhighlight all to start fresh
+            unhighlightAll();
+
+            // get links with same target
+            if (!link)
+                return;
+            const sameLinks = getSameLinks(link);
+
+            // if link unique and option is off, exit and don't highlight
+            if (sameLinks.length <= 1 && options.highlightUnique !== 'true')
+                return;
+
+            // highlight all same links, and "select" (special highlight) this
+            // one
+            for (const sameLink of sameLinks) {
+                if (sameLink === link)
+                    sameLink.setAttribute('data-selected', 'true');
+                else
+                    sameLink.setAttribute('data-highlighted', 'true');
+            }
+        }
+
+        // unhighlight all links
+        function unhighlightAll() {
+            const links = getLinks();
+            for (const link of links) {
+                link.setAttribute('data-selected', 'false');
+                link.setAttribute('data-highlighted', 'false');
+            }
+        }
+
+        // get links with same target
+        function getSameLinks(link) {
+            const results = [];
+            const links = getLinks();
+            for (const otherLink of links) {
+                if (
+                    otherLink.getAttribute('href') === link.getAttribute('href')
+                )
+                    results.push(otherLink);
+            }
+            return results;
+        }
+
+        // get all links of types we wish to handle
+        function getLinks() {
+            let query = 'a';
+            if (options.externalLinks !== 'true')
+                query += '[href^="#"]';
+            // exclude buttons, anchor links, toc links, etc
+            query +=
+                ':not(.button):not(.icon_button):not(.anchor):not(.toc_link)';
+            return document.querySelectorAll(query);
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+<!-- table of contents plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin provides a "table of contents" (toc) panel on
+        // the side of the document that allows the user to conveniently
+        // navigate between sections of the document.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'tableOfContents';
+
+        // default plugin options
+        const options = {
+            // which types of elements to add links for, in
+            // "document.querySelector" format
+            typesQuery: 'h1, h2, h3',
+            // whether default behavior is to be closed ('false'), open
+            // ('true'), or only open when screen wide enough to fit panel
+            // ('auto'). note: still always starts closed when page loads.
+            open: 'auto',
+            // if list item is more than this many characters, text will be
+            // truncated
+            charLimit: '50',
+            // whether or not to show bullets next to each toc item
+            bullets: 'false',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // make toc panel and populate with entries (links to document
+            // sections)
+            const panel = makePanel();
+            if (!panel)
+                return;
+            makeEntries(panel);
+            document.body.insertBefore(panel, document.body.firstChild);
+
+            closePanel();
+
+            // attach click, scroll, and hash change listeners to window
+            window.addEventListener('click', onClick);
+            window.addEventListener('touchstart', onClick);
+            window.addEventListener('scroll', onScroll);
+            window.addEventListener('hashchange', onScroll);
+            window.addEventListener('keyup', onKeyUp);
+            onScroll();
+
+            // add class to push document body down out of way of toc button
+            document.body.classList.add('toc_body_nudge');
+        }
+
+        // determine if screen wide enough to fit toc panel
+        function isSmallScreen() {
+            // in default theme:
+            // 816px = 8.5in = width of "page" (<body>) element
+            // 260px = min width of toc panel (*2 for both sides of <body>)
+            return window.innerWidth < 816 + 260 * 2;
+        }
+
+        // open/close panel based on option and screen size
+        function openOrClosePanel() {
+            if (
+                options.open === 'true' ||
+                (options.open === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
+        }
+
+        // when mouse is clicked anywhere in window
+        function onClick() {
+            const panel = document.getElementById('toc_panel');
+            if (!panel)
+                return;
+
+            if (panel.dataset.open === 'true')
+                openOrClosePanel();
+        }
+
+        // when window is scrolled or hash changed
+        function onScroll() {
+            highlightViewed();
+        }
+
+        // when key pressed
+        function onKeyUp(event) {
+            if (!event || !event.key)
+                return;
+
+            // close on esc
+            if (event.key === 'Escape')
+                closePanel();
+        }
+
+        // find entry of currently viewed document section in toc and highlight
+        function highlightViewed() {
+            const firstId = getFirstInView(options.typesQuery);
+
+            // get toc entries (links), unhighlight all, then highlight viewed
+            const list = document.getElementById('toc_list');
+            if (!firstId || !list)
+                return;
+            const links = list.querySelectorAll('a');
+            for (const link of links)
+                link.dataset.viewing = 'false';
+            const link = list.querySelector('a[href="#' + firstId + '"]');
+            if (!link)
+                return;
+            link.dataset.viewing = 'true';
+        }
+
+        // get first or previous toc listed element in top half of view
+        function getFirstInView(query) {
+            // get all elements matching query and with id
+            const elements = document.querySelectorAll(query);
+            const elementsWithIds = [];
+            for (const element of elements) {
+                if (element.id)
+                    elementsWithIds.push(element);
+            }
+
+
+            // get first or previous element in top half of view
+            for (let i = 0; i < elementsWithIds.length; i++) {
+                const element = elementsWithIds[i];
+                const prevElement = elementsWithIds[Math.max(0, i - 1)];
+                if (element.getBoundingClientRect().top >= 0) {
+                    if (
+                        element.getBoundingClientRect().top <
+                        window.innerHeight / 2
+                    )
+                        return element.id;
+                    else
+                        return prevElement.id;
+                }
+            }
+        }
+
+        // make panel
+        function makePanel() {
+            // create panel
+            const panel = document.createElement('div');
+            panel.id = 'toc_panel';
+            if (options.bullets === 'true')
+                panel.dataset.bullets = 'true';
+
+            // create header
+            const header = document.createElement('div');
+            header.id = 'toc_header';
+
+            // create toc button
+            const button = document.createElement('button');
+            button.id = 'toc_button';
+            button.innerHTML = document.querySelector(
+                '.icon_th_list'
+            ).innerHTML;
+            button.classList.add('icon_button');
+
+            // create header text
+            const text = document.createElement('h3');
+            text.innerHTML = 'Table of Contents';
+
+            // create container for toc list
+            const list = document.createElement('div');
+            list.id = 'toc_list';
+
+            // attach click listeners
+            panel.addEventListener('click', onPanelClick);
+            header.addEventListener('click', onHeaderClick);
+            button.addEventListener('click', onButtonClick);
+
+            // attach elements
+            header.appendChild(button);
+            header.appendChild(text);
+            panel.appendChild(header);
+            panel.appendChild(list);
+
+            return panel;
+        }
+
+        // create toc entries (links) to each element of the specified types
+        function makeEntries(panel) {
+            const elements = document.querySelectorAll(options.typesQuery);
+            for (const element of elements) {
+                // do not add link if element doesn't have assigned id
+                if (!element.id)
+                    continue;
+
+                // create link/list item
+                const link = document.createElement('a');
+                link.classList.add('toc_link');
+                switch (element.tagName.toLowerCase()) {
+                    case 'h1':
+                        link.dataset.level = '1';
+                        break;
+                    case 'h2':
+                        link.dataset.level = '2';
+                        break;
+                    case 'h3':
+                        link.dataset.level = '3';
+                        break;
+                    case 'h4':
+                        link.dataset.level = '4';
+                        break;
+                }
+                link.title = element.innerText;
+                let text = element.innerText;
+                if (text.length > options.charLimit)
+                    text = text.slice(0, options.charLimit) + '...';
+                link.innerHTML = text;
+                link.href = '#' + element.id;
+                link.addEventListener('click', onLinkClick);
+
+                // attach link
+                panel.querySelector('#toc_list').appendChild(link);
+            }
+        }
+
+        // when panel is clicked
+        function onPanelClick(event) {
+            // stop click from propagating to window/document and closing panel
+            event.stopPropagation();
+        }
+
+        // when header itself is clicked
+        function onHeaderClick(event) {
+            togglePanel();
+        }
+
+        // when button is clicked
+        function onButtonClick(event) {
+            togglePanel();
+            // stop header underneath button from also being clicked
+            event.stopPropagation();
+        }
+
+        // when link is clicked
+        function onLinkClick() {
+            openOrClosePanel();
+        }
+
+        // open panel if closed, close if opened
+        function togglePanel() {
+            const panel = document.getElementById('toc_panel');
+            if (!panel)
+                return;
+
+            if (panel.dataset.open === 'true')
+                closePanel();
+            else
+                openPanel();
+        }
+
+        // open panel
+        function openPanel() {
+            const panel = document.getElementById('toc_panel');
+            if (panel)
+                panel.dataset.open = 'true';
+        }
+
+        // close panel
+        function closePanel() {
+            const panel = document.getElementById('toc_panel');
+            if (panel)
+                panel.dataset.open = 'false';
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- th list icon -->
+
+<template class="icon_th_list">
+    <!-- modified from: https://fontawesome.com/icons/th-list -->
+    <svg width="16" height="16" viewBox="0 0 512 512" tabindex="-1">
+        <path
+            fill="currentColor"
+            d="M96 96c0 26.51-21.49 48-48 48S0 122.51 0 96s21.49-48 48-48 48 21.49 48 48zM48 208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm96-236h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            tabindex="-1"
+        ></path>
+    </svg>
+</template>
+<!-- lightbox plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin makes it such that when a user clicks on an
+        // image, the image fills the screen and the user can pan/drag/zoom
+        // the image and navigate between other images in the document.
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'lightbox';
+
+        // default plugin options
+        const options = {
+            // list of possible zoom/scale factors
+            zoomSteps:
+                '0.1, 0.25, 0.333333, 0.5, 0.666666, 0.75, 1,' +
+                '1.25, 1.5, 1.75, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8',
+            // whether to fit image to view ('fit'), display at 100% and shrink
+            // if necessary ('shrink'), or always display at 100% ('100')
+            defaultZoom: 'fit',
+            // whether to zoom in/out toward center of view ('true') or mouse
+            // ('false')
+            centerZoom: 'false',
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // run through each <img> element
+            const imgs = document.querySelectorAll('figure > img');
+            let count = 1;
+            for (const img of imgs) {
+                img.classList.add('lightbox_document_img');
+                img.dataset.number = count;
+                img.dataset.total = imgs.length;
+                img.addEventListener('click', openLightbox);
+                count++;
+            }
+
+            // attach mouse and key listeners to window
+            window.addEventListener('mousemove', onWindowMouseMove);
+            window.addEventListener('keyup', onKeyUp);
+        }
+
+        // when mouse is moved anywhere in window
+        function onWindowMouseMove(event) {
+            window.mouseX = event.clientX;
+            window.mouseY = event.clientY;
+        }
+
+        // when key pressed
+        function onKeyUp(event) {
+            if (!event || !event.key)
+                return;
+
+            switch (event.key) {
+                // trigger click of prev button
+                case 'ArrowLeft':
+                    const prevButton = document.getElementById(
+                        'lightbox_prev_button'
+                    );
+                    if (prevButton)
+                        prevButton.click();
+                    break;
+                // trigger click of next button
+                case 'ArrowRight':
+                    const nextButton = document.getElementById(
+                        'lightbox_next_button'
+                    );
+                    if (nextButton)
+                        nextButton.click();
+                    break;
+                // close on esc
+                case 'Escape':
+                    closeLightbox();
+                    break;
+            }
+        }
+
+        // open lightbox
+        function openLightbox() {
+            const lightbox = makeLightbox(this);
+            if (!lightbox)
+                return;
+
+            blurBody(lightbox);
+            document.body.appendChild(lightbox);
+        }
+
+        // make lightbox
+        function makeLightbox(img) {
+            // delete lightbox if it exists, start fresh
+            closeLightbox();
+
+            // create screen overlay containing lightbox
+            const overlay = document.createElement('div');
+            overlay.id = 'lightbox_overlay';
+
+            // create image info boxes
+            const numberInfo = document.createElement('div');
+            const zoomInfo = document.createElement('div');
+            numberInfo.id = 'lightbox_number_info';
+            zoomInfo.id = 'lightbox_zoom_info';
+
+            // create container for image
+            const imageContainer = document.createElement('div');
+            imageContainer.id = 'lightbox_image_container';
+            const lightboxImg = makeLightboxImg(
+                img,
+                imageContainer,
+                numberInfo,
+                zoomInfo
+            );
+            imageContainer.appendChild(lightboxImg);
+
+            // create bottom container for caption and navigation buttons
+            const bottomContainer = document.createElement('div');
+            bottomContainer.id = 'lightbox_bottom_container';
+            const caption = makeCaption(img);
+            const prevButton = makePrevButton(img);
+            const nextButton = makeNextButton(img);
+            bottomContainer.appendChild(prevButton);
+            bottomContainer.appendChild(caption);
+            bottomContainer.appendChild(nextButton);
+
+            // attach top middle and bottom to overlay
+            overlay.appendChild(numberInfo);
+            overlay.appendChild(zoomInfo);
+            overlay.appendChild(imageContainer);
+            overlay.appendChild(bottomContainer);
+
+            return overlay;
+        }
+
+        // make <img> object that is intuitively draggable and zoomable
+        function makeLightboxImg(
+            sourceImg,
+            container,
+            numberInfoBox,
+            zoomInfoBox
+        ) {
+            // create copy of source <img>
+            const img = sourceImg.cloneNode(true);
+            img.classList.remove('lightbox_document_img');
+            img.removeAttribute('id');
+            img.removeAttribute('width');
+            img.removeAttribute('height');
+            img.style.position = 'unset';
+            img.style.margin = '0';
+            img.style.padding = '0';
+            img.style.width = '';
+            img.style.height = '';
+            img.style.minWidth = '';
+            img.style.minHeight = '';
+            img.style.maxWidth = '';
+            img.style.maxHeight = '';
+            img.id = 'lightbox_img';
+
+            // build sorted list of unique zoomSteps, always including a 100%
+            let zoomSteps = [];
+            const optionsZooms = options.zoomSteps.split(/[^0-9.]/);
+            for (const optionZoom of optionsZooms) {
+                const newZoom = parseFloat(optionZoom);
+                if (newZoom && !zoomSteps.includes(newZoom))
+                    zoomSteps.push(newZoom);
+            }
+            if (!zoomSteps.includes(1))
+                zoomSteps.push(1);
+            zoomSteps = zoomSteps.sort(function sortNumber(a, b) {
+                return a - b;
+            });
+
+            // <img> object property variables
+            let zoom = 1;
+            let translateX = 0;
+            let translateY = 0;
+            let clickMouseX = undefined;
+            let clickMouseY = undefined;
+            let clickTranslateX = undefined;
+            let clickTranslateY = undefined;
+
+            updateNumberInfo();
+
+            // update image numbers displayed in info box
+            function updateNumberInfo() {
+                numberInfoBox.innerHTML =
+                    sourceImg.dataset.number + ' of ' + sourceImg.dataset.total;
+            }
+
+            // update zoom displayed in info box
+            function updateZoomInfo() {
+                let zoomInfo = zoom * 100;
+                if (!Number.isInteger(zoomInfo))
+                    zoomInfo = zoomInfo.toFixed(2);
+                zoomInfoBox.innerHTML = zoomInfo + '%';
+            }
+
+            // move to closest zoom step above current zoom
+            const zoomIn = function() {
+                for (const zoomStep of zoomSteps) {
+                    if (zoomStep > zoom) {
+                        zoom = zoomStep;
+                        break;
+                    }
+                }
+                updateTransform();
+            };
+
+            // move to closest zoom step above current zoom
+            const zoomOut = function() {
+                zoomSteps.reverse();
+                for (const zoomStep of zoomSteps) {
+                    if (zoomStep < zoom) {
+                        zoom = zoomStep;
+                        break;
+                    }
+                }
+                zoomSteps.reverse();
+
+                updateTransform();
+            };
+
+            // update display of <img> based on scale/translate properties
+            const updateTransform = function() {
+                // set transform
+                img.style.transform =
+                    'translate(' +
+                    (translateX || 0) +
+                    'px,' +
+                    (translateY || 0) +
+                    'px) scale(' +
+                    (zoom || 1) +
+                    ')';
+
+                // get new width/height after scale
+                const rect = img.getBoundingClientRect();
+                // limit translate
+                translateX = Math.max(translateX, -rect.width / 2);
+                translateX = Math.min(translateX, rect.width / 2);
+                translateY = Math.max(translateY, -rect.height / 2);
+                translateY = Math.min(translateY, rect.height / 2);
+
+                // set transform
+                img.style.transform =
+                    'translate(' +
+                    (translateX || 0) +
+                    'px,' +
+                    (translateY || 0) +
+                    'px) scale(' +
+                    (zoom || 1) +
+                    ')';
+
+                updateZoomInfo();
+            };
+
+            // fit <img> to container
+            const fit = function() {
+                // no x/y offset, 100% zoom by default
+                translateX = 0;
+                translateY = 0;
+                zoom = 1;
+
+                // widths of <img> and container
+                const imgWidth = img.naturalWidth;
+                const imgHeight = img.naturalHeight;
+                const containerWidth = parseFloat(
+                    window.getComputedStyle(container).width
+                );
+                const containerHeight = parseFloat(
+                    window.getComputedStyle(container).height
+                );
+
+                // how much zooming is needed to fit <img> to container
+                const xRatio = imgWidth / containerWidth;
+                const yRatio = imgHeight / containerHeight;
+                const maxRatio = Math.max(xRatio, yRatio);
+                const newZoom = 1 / maxRatio;
+
+                // fit <img> to container according to option
+                if (options.defaultZoom === 'shrink') {
+                    if (maxRatio > 1)
+                        zoom = newZoom;
+                } else if (options.defaultZoom === 'fit')
+                    zoom = newZoom;
+
+                updateTransform();
+            };
+
+            // when mouse wheel is rolled anywhere in container
+            const onContainerWheel = function(event) {
+                if (!event)
+                    return;
+
+                // let ctrl + mouse wheel to zoom behave as normal
+                if (event.ctrlKey)
+                    return;
+
+                // prevent normal scroll behavior
+                event.preventDefault();
+                event.stopPropagation();
+
+                // point around which to scale img
+                const viewRect = container.getBoundingClientRect();
+                const viewX = (viewRect.left + viewRect.right) / 2;
+                const viewY = (viewRect.top + viewRect.bottom) / 2;
+                const originX = options.centerZoom === 'true' ? viewX : mouseX;
+                const originY = options.centerZoom === 'true' ? viewY : mouseY;
+
+                // get point on image under origin
+                const oldRect = img.getBoundingClientRect();
+                const oldPercentX = (originX - oldRect.left) / oldRect.width;
+                const oldPercentY = (originY - oldRect.top) / oldRect.height;
+
+                // increment/decrement zoom
+                if (event.deltaY < 0)
+                    zoomIn();
+                if (event.deltaY > 0)
+                    zoomOut();
+
+                // get offset between previous image point and origin
+                const newRect = img.getBoundingClientRect();
+                const offsetX =
+                    originX - (newRect.left + newRect.width * oldPercentX);
+                const offsetY =
+                    originY - (newRect.top + newRect.height * oldPercentY);
+
+                // translate image to keep image point under origin
+                translateX += offsetX;
+                translateY += offsetY;
+
+                // perform translate
+                updateTransform();
+            };
+
+            // when container is clicked
+            function onContainerClick(event) {
+                // if container itself is target of click, and not other
+                // element above it
+                if (event.target === this)
+                    closeLightbox();
+            }
+
+            // when mouse button is pressed on image
+            const onImageMouseDown = function(event) {
+                // store original mouse position relative to image
+                clickMouseX = window.mouseX;
+                clickMouseY = window.mouseY;
+                clickTranslateX = translateX;
+                clickTranslateY = translateY;
+                event.stopPropagation();
+                event.preventDefault();
+            };
+
+            // when mouse button is released anywhere in window
+            const onWindowMouseUp = function(event) {
+                // reset original mouse position
+                clickMouseX = undefined;
+                clickMouseY = undefined;
+                clickTranslateX = undefined;
+                clickTranslateY = undefined;
+
+                // remove global listener if lightbox removed from document
+                if (!document.body.contains(container))
+                    window.removeEventListener('mouseup', onWindowMouseUp);
+            };
+
+            // when mouse is moved anywhere in window
+            const onWindowMouseMove = function(event) {
+                if (
+                    clickMouseX === undefined ||
+                    clickMouseY === undefined ||
+                    clickTranslateX === undefined ||
+                    clickTranslateY === undefined
+                )
+                    return;
+
+                // offset image based on original and current mouse position
+                translateX = clickTranslateX + window.mouseX - clickMouseX;
+                translateY = clickTranslateY + window.mouseY - clickMouseY;
+                updateTransform();
+                event.preventDefault();
+
+                // remove global listener if lightbox removed from document
+                if (!document.body.contains(container))
+                    window.removeEventListener('mousemove', onWindowMouseMove);
+            };
+
+            // when window is resized
+            const onWindowResize = function(event) {
+                fit();
+
+                // remove global listener if lightbox removed from document
+                if (!document.body.contains(container))
+                    window.removeEventListener('resize', onWindowResize);
+            };
+
+            // attach the necessary event listeners
+            img.addEventListener('dblclick', fit);
+            img.addEventListener('mousedown', onImageMouseDown);
+            container.addEventListener('wheel', onContainerWheel);
+            container.addEventListener('mousedown', onContainerClick);
+            container.addEventListener('touchstart', onContainerClick);
+            window.addEventListener('mouseup', onWindowMouseUp);
+            window.addEventListener('mousemove', onWindowMouseMove);
+            window.addEventListener('resize', onWindowResize);
+
+            // run fit() after lightbox atttached to document and <img> Loaded
+            // so needed container and img dimensions available
+            img.addEventListener('load', fit);
+
+            return img;
+        }
+
+        // make caption
+        function makeCaption(img) {
+            const caption = document.createElement('div');
+            caption.id = 'lightbox_caption';
+            const captionSource = img.nextElementSibling;
+            if (captionSource.tagName.toLowerCase() === 'figcaption') {
+                const captionCopy = makeCopy(captionSource);
+                caption.innerHTML = captionCopy.innerHTML;
+            }
+
+            caption.addEventListener('touchstart', function(event) {
+                event.stopPropagation();
+            });
+
+            return caption;
+        }
+
+        // make carbon copy of html dom element
+        function makeCopy(source) {
+            const sourceCopy = source.cloneNode(true);
+
+            // delete elements marked with ignore (eg anchor and jump buttons)
+            const deleteFromCopy = sourceCopy.querySelectorAll(
+                '[data-ignore="true"]'
+            );
+            for (const element of deleteFromCopy)
+                element.remove();
+
+            // delete certain element attributes
+            const attributes = [
+                'id',
+                'data-collapsed',
+                'data-selected',
+                'data-highlighted',
+                'data-glow'
+            ];
+            for (const attribute of attributes) {
+                sourceCopy.removeAttribute(attribute);
+                const elements = sourceCopy.querySelectorAll(
+                    '[' + attribute + ']'
+                );
+                for (const element of elements)
+                    element.removeAttribute(attribute);
+            }
+
+            return sourceCopy;
+        }
+
+        // make button to jump to previous image in document
+        function makePrevButton(img) {
+            const prevButton = document.createElement('button');
+            prevButton.id = 'lightbox_prev_button';
+            prevButton.title = 'Jump to the previous image in the document [←]';
+            prevButton.classList.add('icon_button', 'lightbox_button');
+            prevButton.innerHTML = document.querySelector(
+                '.icon_caret_left'
+            ).innerHTML;
+
+            // attach click listeners to button
+            prevButton.addEventListener('click', function() {
+                getPrevImg(img).click();
+            });
+
+            return prevButton;
+        }
+
+        // make button to jump to next image in document
+        function makeNextButton(img) {
+            const nextButton = document.createElement('button');
+            nextButton.id = 'lightbox_next_button';
+            nextButton.title = 'Jump to the next image in the document [→]';
+            nextButton.classList.add('icon_button', 'lightbox_button');
+            nextButton.innerHTML = document.querySelector(
+                '.icon_caret_right'
+            ).innerHTML;
+
+            // attach click listeners to button
+            nextButton.addEventListener('click', function() {
+                getNextImg(img).click();
+            });
+
+            return nextButton;
+        }
+
+        // get previous image in document
+        function getPrevImg(img) {
+            const imgs = document.querySelectorAll('.lightbox_document_img');
+
+            // find index of provided img
+            let index;
+            for (index = 0; index < imgs.length; index++) {
+                if (imgs[index] === img)
+                    break;
+            }
+
+
+            // wrap index to other side if < 1
+            if (index - 1 >= 0)
+                index--;
+            else
+                index = imgs.length - 1;
+            return imgs[index];
+        }
+
+        // get next image in document
+        function getNextImg(img) {
+            const imgs = document.querySelectorAll('.lightbox_document_img');
+
+            // find index of provided img
+            let index;
+            for (index = 0; index < imgs.length; index++) {
+                if (imgs[index] === img)
+                    break;
+            }
+
+
+            // wrap index to other side if > total
+            if (index + 1 <= imgs.length - 1)
+                index++;
+            else
+                index = 0;
+            return imgs[index];
+        }
+
+        // close lightbox
+        function closeLightbox() {
+            focusBody();
+
+            const lightbox = document.getElementById('lightbox_overlay');
+            if (lightbox)
+                lightbox.remove();
+        }
+
+        // make all elements behind lightbox non-focusable
+        function blurBody(overlay) {
+            const all = document.querySelectorAll('*');
+            for (const element of all)
+                element.tabIndex = -1;
+            document.body.classList.add('body_no_scroll');
+        }
+
+        // make all elements focusable again
+        function focusBody() {
+            const all = document.querySelectorAll('*');
+            for (const element of all)
+                element.removeAttribute('tabIndex');
+            document.body.classList.remove('body_no_scroll');
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+    <!-- modified from: https://fontawesome.com/icons/caret-left -->
+    <svg width="16" height="16" viewBox="0 0 192 512">
+        <path
+            fill="currentColor"
+            d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+        ></path>
+    </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+    <!-- modified from: https://fontawesome.com/icons/caret-right -->
+    <svg width="16" height="16" viewBox="0 0 192 512">
+        <path
+            fill="currentColor"
+            d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+        ></path>
+    </svg>
+</template>
+<!-- attributes plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin allows arbitrary HTML attributes to be attached
+        // to (almost) any element. Place an HTML comment inside or next to the
+        // desired element in the format <!-- $attribute="value" -->
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'attributes';
+
+        // default plugin options
+        const options = {
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // get list of comments in document
+            const comments = findComments();
+
+            for(const comment of comments)
+                if (comment.parentElement)
+                    addAttributes(
+                        comment.parentElement,
+                        comment.nodeValue.trim()
+                    );
+        }
+
+        // add html attributes to specified element based on string of 
+        // html attributes and values
+        function addAttributes(element, text) {
+            // regex's for finding attribute/value pairs in the format of
+            // attribute="value" or attribute='value
+            const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+            const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+            // loop through attribute/value pairs
+            let match;
+            while(match = text.match(regex2) || text.match(regex1)) {
+                // get attribute and value from regex capture groups
+                let attribute = match[1];
+                let value = match[2];
+
+                // remove from string
+                text = text.substring(match.index + match[0].length);
+
+                if (!attribute || !value)
+                    break;
+
+                // set attribute of parent element
+                try {
+                    element.setAttribute(attribute, value);
+                } catch(error) {
+                    console.log(error);
+                }
+
+                // special case for colspan
+                if (attribute === 'colspan')
+                    removeTableCells(element, value);
+            }
+        }
+
+        // get list of comment elements in document
+        function findComments() {
+            const comments = [];
+
+            // iterate over comment nodes in document
+            function acceptNode(node) {
+                return NodeFilter.FILTER_ACCEPT;
+            }
+            const iterator = document.createNodeIterator(
+                document.body,
+                NodeFilter.SHOW_COMMENT,
+                acceptNode
+            );
+            let node;
+            while(node = iterator.nextNode())
+                comments.push(node);
+
+            return comments;
+        }
+
+        // remove certain number of cells after specified cell
+        function removeTableCells(cell, number) {
+            number = parseInt(number);
+            if (!number)
+                return;
+
+            // remove elements
+            for(; number > 1; number--) {
+                if (cell.nextElementSibling)
+                    cell.nextElementSibling.remove();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
+<!-- math plugin configuration -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        "CommonHTML": { linebreaks: { automatic: true } },
+        "HTML-CSS": { linebreaks: { automatic: true } },
+        "SVG": { linebreaks: { automatic: true } },
+        "fast-preview": { disabled: true }
+    });
+</script>
+
+<!-- math plugin -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'>
+    // /////////////////////////
+    // DESCRIPTION
+    // /////////////////////////
+
+    // This third-party plugin 'MathJax' allows the proper rendering of
+    // math/equations written in LaTeX.
+
+    // https://www.mathjax.org/
+</script>
+<!-- annotations plugin configuration -->
+
+<script>
+    window.hypothesisConfig = function() {
+        return {
+            branding: {
+                accentColor: '#2196f3',
+                appBackgroundColor: '#f8f8f8',
+                ctaBackgroundColor: '#f8f8f8',
+                ctaTextColor: '#000000',
+                selectionFontFamily: 'Open Sans, Helvetica, sans serif',
+                annotationFontFamily: 'Open Sans, Helvetica, sans serif'
+            }
+        };
+    };
+</script>
+
+<!-- annotations plugin -->
+
+<script src='https://hypothes.is/embed.js'>
+    // /////////////////////////
+    // DESCRIPTION
+    // /////////////////////////
+
+    // This third-party plugin 'Hypothesis' allows public annotation of the
+    // manuscript.
+
+    // https://web.hypothes.is/
+</script>
+<!-- analytics plugin -->
+
+<!-- copy and paste code from Google Analytics or similar service here -->
+</body>
+</html>
