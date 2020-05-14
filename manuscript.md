@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/f24f98ae16030dfcbfb730b2aaf0348a449f3a94/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/f24f98ae16030dfcbfb730b2aaf0348a449f3a94/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/f24f98ae16030dfcbfb730b2aaf0348a449f3a94/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/f24f98ae16030dfcbfb730b2aaf0348a449f3a94/))
+([permalink](https://bluegenes.github.io/2020-gep/v/5f7c53abee60330e593a7d6cd52a0d7adc626c1b/))
 was automatically generated
-from [bluegenes/2020-gep@f24f98a](https://github.com/bluegenes/2020-gep/tree/f24f98ae16030dfcbfb730b2aaf0348a449f3a94)
+from [bluegenes/2020-gep@5f7c53a](https://github.com/bluegenes/2020-gep/tree/5f7c53abee60330e593a7d6cd52a0d7adc626c1b)
 on May 14, 2020.
 </em></small>
 
