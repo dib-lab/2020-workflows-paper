@@ -1,26 +1,40 @@
 ---
-title: "Manuscript Title"
+title: "Streamlining data-intensive biology with workflow systems" 
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - sequencing
+  - bioinformatics
+  - workflows
+  - open access
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  -
+    github: taylorreiter
+    name: Taylor Reiter
+    initials: TER
+    orcid: 0000-0002-7388-421X
+    twitter: ReiterTaylor
+    email: tereiter@ucdavis.edu 
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Department of Population Health and Reproduction, University of California, Davis
+    funders: Grant XXXXXXXX
+  -
+   github: ctb
+   name: C. Titus Brown
+   initials: CTB
+   orcid: 0000-0001-6001-2677
+   twitter: ctitusbrown
+   email: ctbrown@ucdavis.edu
+   affiliations:
+    - Department of Population Health and Reproduction, University of California, Davis
+   funders: Moore Foundation GBMF4551
+  -
+    github: bluegenes
+    name: N. Tessa Pierce
+    initials: NTP
+    orcid: 0000-0002-2942-5331
+    twitter: saltyscientist
+    email: ntpierce@ucdavis.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+     - Department of Population Health and Reproduction, University of California, Davis
+    funders: NSF 1711984
+
