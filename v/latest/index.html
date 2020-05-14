@@ -17,6 +17,68 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -56,9 +118,9 @@
   <meta name="citation_fulltext_html_url" content="https://bluegenes.github.io/2020-gep/" />
   <meta name="citation_pdf_url" content="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/" />
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/e511f0ea572aff402b9d741f7041bfdfb291f7ce/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/e511f0ea572aff402b9d741f7041bfdfb291f7ce/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/e511f0ea572aff402b9d741f7041bfdfb291f7ce/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,9 +134,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://bluegenes.github.io/2020-gep/v/34ac636da7a20dea71728e942935046c4d46a128/">permalink</a>)
+(<a href="https://bluegenes.github.io/2020-gep/v/e511f0ea572aff402b9d741f7041bfdfb291f7ce/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/bluegenes/2020-gep/tree/34ac636da7a20dea71728e942935046c4d46a128">bluegenes/2020-gep@34ac636</a>
+from <a href="https://github.com/bluegenes/2020-gep/tree/e511f0ea572aff402b9d741f7041bfdfb291f7ce">bluegenes/2020-gep@e511f0e</a>
 on May 14, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -395,6 +457,153 @@ For example, tools like STAR and HISAT2 produce alignments that can be post-proc
 However, these tools generate information-rich output, specifying per-base alignments for each read.
 Quasi-mapping produces the minimum information necessary for read quantification, thereby reducing the time and resources needed to generate and store read count information .</p>
 <p>discuss blast approximations?</p>
+<h2 id="practical-considerations-for-workflow-enabled-biology">Practical considerations for workflow-enabled biology</h2>
+<p>While workflows enable data intensive biology, many steps like finding or backing up data are orchestrated outside of a workflow.
+Below we discuss practical considerations for working with large-scale data sets.</p>
+<h3 id="obtaining-data">Obtaining data</h3>
+<p>As with all biological analyses, a critical step of sequence analysis is obtaining high-quality data for your scientific question.
+With vast amounts of sequencing data already available in public repositories, it is often possible to begin investigating your research question by seeking out publicly available data.
+In some cases, these data will be sufficient to conduct your entire analysis.
+In others cases, particularly for biologists conducting novel experiments, these data can inform decisions about sequencing type, depth, and replication, and can help uncover potential pitfalls before they cost valuable time and resources.</p>
+<h3 id="accessing-publicly-available-data">Accessing publicly-available data</h3>
+<p>Most journals now require data for all manuscripts to be made accessible, either at publication or after a short moratorium.
+You can find relevant sequencing data either by starting from the “data accessibility” sections of papers relevant to your research or by directly searching for your organism, environment, or treatment of choice in public data portals and repositories.</p>
+<p>The International Nucleotide Sequence Database Collaboration (INSDC), which includes the Sequence Read Archive (SRA), European Nucleotide Archive (ENA), and DataBank of Japan (DDBJ) is the largest repository for raw sequencing data .
+Additional curated databases focus on processed data instead, such as gene expression in the Gene Expression Omnibus (GEO) .
+Organism-specific databases such as <strong>Wormbase</strong> (<em>Caenorhabditis elegas</em>) specialize on curating and integrating sequencing and other data associated with a model organism .
+The SRA, ENA, and DDBJ no longer accept raw sequencing data from large consortia projects, so data from these efforts are often hosted in consortia-specific databases such as those hosted by the Tara Ocean Foundation .
+Unlike the SRA and associated databases which are centralized and searchable, databases overseen by consortia often require domain-specific knowledge and have unique download and authentication protocols.
+Finally, rather than focusing on certain data types or organisms, some repositories are designed to hold any data and metadata associated with a specific project or manuscript (e.g. Open Science Framework, Dryad, Zenodo ).</p>
+<h3 id="generating-your-own-data">Generating your own data</h3>
+<p>If generating your own data, proper experimental design and planning are essential.
+For cost-intensive sequencing data, there are a range of decisions about experimental design and sequencing (including sequencing type, sequencing depth per sample, and biological replication) that impact your ability to properly address your research question.
+These considerations will be different for different types of sequence analysis.
+While we have curated a series of domain-specific references that may be useful as go about designing your experiment (see Table ??), conducting discussions with experienced bioinformaticians and statisticians, <strong>prior to beginning your experiments</strong> if possible, is the best way to ensure you will have sufficient statistical power to detect effects.
+Given the resources invested in collecting samples for sequencing, it’s important to build in a buffer to preserve your experimental design in the face of unexpected laboratory or technical issues.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a>|  Sequencing type | Resources |</span>
+<span id="cb1-2"><a href="#cb1-2"></a>| --- | --- |</span>
+<span id="cb1-3"><a href="#cb1-3"></a>|  RNA-sequencing | \cite{conesa2016, schurch2016, ching2014} |</span>
+<span id="cb1-4"><a href="#cb1-4"></a>|  Metagenomic sequencing | \cite{knight2012, quince2017, eisenhofer2019} |</span>
+<span id="cb1-5"><a href="#cb1-5"></a>|  Amplicon sequencing | \cite{mclaren2019, murray2015, sinha2017 } |</span>
+<span id="cb1-6"><a href="#cb1-6"></a>|  Microbial isolate sequencing | \cite{liao2015} |</span>
+<span id="cb1-7"><a href="#cb1-7"></a>|  Eurkaryotic genome sequencing |  |</span>
+<span id="cb1-8"><a href="#cb1-8"></a>|  Whole-genome resequencing | \cite{fuentes2017} |</span>
+<span id="cb1-9"><a href="#cb1-9"></a>|  Rad seq |  |</span>
+<span id="cb1-10"><a href="#cb1-10"></a>|  Chip seq |  |</span>
+<span id="cb1-11"><a href="#cb1-11"></a>|  ATAC seq |  |</span>
+<span id="cb1-12"><a href="#cb1-12"></a>|  single cell RNA-seq | \cite{bacher2016, haque2017} |</span>
+<span id="cb1-13"><a href="#cb1-13"></a>|  ? |  |</span>
+<span id="cb1-14"><a href="#cb1-14"></a>Table: References for experimental design and considerations for common sequencing chemistries. </span>
+<span id="cb1-15"><a href="#cb1-15"></a>{#tbl:seq_resources}</span></code></pre></div>
+<p>As your experiment progresses, keep track of as much information as possible – dates and times of sample collection, storage, and extraction, sample names, aberrations that occurred during collection, kit lot used for extraction, and any other sample measurements you might be able to obtain (temperature, location, metabolite concentration, name of collector, etc).
+This metadata allows you to keep track of your samples, to control for batch effects that may arise from unintended batching during sampling or experimental procedures and makes the data you collect reusable for future applications and analysis by yourself and others.
+When working with metadata, using a standardized format that is easy for a computer to read can simplify downstream analysis.
+Standard guidelines for formatting data for scientific computing are given in .</p>
+<h3 id="securing-computational-resources">Securing Computational Resources</h3>
+<p>Sequence analysis requires access to computing systems with adequate storage and analysis power for your data.
+For some smaller-scale datasets, local desktop or even laptop systems can be sufficient, especially if using tools that implement data-reduction strategies such as minhashing .
+However, larger projects require additional computing power, or may be restricted to certain operating systems (e.g. linux).
+For these projects, solutions range from research-focused high performance computing systems to research-integrated commercial analysis platforms.
+Both research-only and and commercial clusters provide avenues for research and educational proposals to enable access to their computing resources (see Table ??).
+In preparing for data analysis, be sure to allocate sufficient computational resources and funding for storage and analysis, including large intermediate files and resources required for personnel training.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a>|  Cloud Provider | Standard Model | Limits |</span>
+<span id="cb2-2"><a href="#cb2-2"></a>| --- | --- | --- |</span>
+<span id="cb2-3"><a href="#cb2-3"></a>|  Amazon Web Services | Paid |  |</span>
+<span id="cb2-4"><a href="#cb2-4"></a>|  Bionimbus Protected Data Cloud | Research allocation | users with eRA commons account |</span>
+<span id="cb2-5"><a href="#cb2-5"></a>|  Cyverse Atmosphere | Free with limits | storage and compute hours |</span>
+<span id="cb2-6"><a href="#cb2-6"></a>|  EGI federated cloud | Access by contact | European partner countries |</span>
+<span id="cb2-7"><a href="#cb2-7"></a>|  Galaxy | Free with storage limits | data storage limits |</span>
+<span id="cb2-8"><a href="#cb2-8"></a>|  Google Cloud Platform | Paid |  |</span>
+<span id="cb2-9"><a href="#cb2-9"></a>|  Google Colab | Free | computational notebooks, no resource guaruntees |</span>
+<span id="cb2-10"><a href="#cb2-10"></a>|  Microsoft Azure | Paid |  |</span>
+<span id="cb2-11"><a href="#cb2-11"></a>|  NSF XSEDE | Research allocation | USA researchers or collaborators |</span>
+<span id="cb2-12"><a href="#cb2-12"></a>|  Open Science Data Cloud | Research allocation |  |</span>
+<span id="cb2-13"><a href="#cb2-13"></a>|  Wasabi | Paid | data storage solution only |</span>
+<span id="cb2-14"><a href="#cb2-14"></a></span>
+<span id="cb2-15"><a href="#cb2-15"></a>Table: **Research cloud resources** </span>
+<span id="cb2-16"><a href="#cb2-16"></a>Cloud provider indicates the name of the cloud, standard model indicates the most common route toward using the cloud, and limitations indicates limitations in access or services provided by the cloud.</span>
+<span id="cb2-17"><a href="#cb2-17"></a>{#tbl:computational<span class="sc">\_</span>resources}</span></code></pre></div>
+<h3 id="transferring-data-or-not">Transferring Data (or not)</h3>
+<p>If you’re working with publicly-available data, you may be able to work on a compute system where the data are already available, circumventing time and effort required for downloading and moving the data.
+Databases such as the Sequence Read Archive (SRA) are now available on commercial cloud computing systems, and open source projects such as Galaxy enable import and work on SRA sequence files directly from a web browser .
+Ongoing projects such as the NIH Common Fund Data Ecosystem, aim to develop a data portal to make NIH Common Fund data, including biomedical sequencing data, more findable,
+accessible, interoperable, and reusable (FAIR).</p>
+<p>In most cases, you’ll still need to transfer some data - either downloading raw data or transferring important intermediate and results files for backup and sharing (or both).
+Checksums can be used to to check file integrity and ensure proper transfer (see Figure <a href="#fig:checksum">7</a>).
+File compression (gzip, bzip2, BAM/CRAM, etc.) can improve transfer speed and save space.
+Tools like Rsync and Rclone automate file transfer between computers or between computers and remote storage providers .
+These tools automatically use checksums to verify that files were transferred properly.
+Some GUI file transfer tools (e.g. cyberduck) also assess checksums when they are provided.</p>
+<div id="fig:checksum" class="fignos">
+<figure>
+<embed src="images/checksum.pdf" /><figcaption><span>Figure 7:</span> <strong>Use Checksums to ensure file integrity</strong>
+Checksum programs (e.g. md5, sha256) encode file size in a single value known as a “checksum”.
+For any file, this value will be identical across platforms when calculated using the same checksum program. %hash algorithm.
+When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer.
+If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc).
+For publicly-available files, a checksum value is often provided, so that you can check the integrity of the file after download.</figcaption>
+</figure>
+</div>
+<h3 id="backup-and-storage">Backup and storage</h3>
+<p>Workflow sysems allow users to generate an automatable, repeatable workflow.
+This removes the necessity of storing some intermediate files as these can be easily regenerated.
+However, storing or backing up raw data or computationally intensive results can be a burden in data intensive workflows.
+Many universities provide cloud storage space (e.g. through google drive, box, dropbox etc), and researchers can pay for individual storage on these services, or services attached to cloud computing (e.g. Amazon Web Services).
+Full computer backups can be conducted to these storage locations (e.g. with rclone ), or there are also a number of paid services that will conduct backups at regular intervals (e.g. Backblaze, Dropbox Pro).
+Free online repositories mentioned in the version control section like OSF, Dryad, and Zenodo can also store or backup important files.</p>
+<p>Regardless of which storage or backup strategy you choose, it is a good idea to have multiple independent backups of raw data and workflows; these cannot be easily regenerated if lost to a computer failure or other unforseeable event like a lab fire.</p>
+<p>% Link out to data/project management info? e.g. Many of these considerations are addressed in a data carpentry lesson (https://datacarpentry.org/organization-genomics/).</p>
+<h3 id="ensuring-you-have-quality-data">Ensuring you have quality data</h3>
+<p>The adage, “garbage in, garbage out” describes most sequencing data analysis: the quality of the input data determines the quality of the output results.
+This is true whether your workflow analyzes six samples or 600 samples.
+Assessing data at every analysis step can reveal problems and errors early.
+You are the single most effective quality control tool that you have, so its important to interrogate your data to search for problems.
+While simply looking at your data is sometimes sufficient to catch issues, visualization and software tools make quality control easier.</p>
+<h3 id="critically-assess-your-data">Critically assess your data</h3>
+<p>Quality control can be as simple as looking at the first few and last few lines of input and output data files, or checking the size of those files (Table ??).
+To develop an intuition for what proper inputs and outputs look like for a given tool, it is often helpful to first run the test example or data that is packaged with the software.
+Comparing these input and output file formats to your own data can help identify and address inconsistencies.</p>
+<p>Visualization is another powerful way to pick out unusual or unexpected patterns.
+Although large abnormalities may be clear from looking at files, others may be small and difficult to find.
+Visualizing raw sequencing data with FastQC (Figure <a href="#fig:multiqc">8</a>) and processed sequencing data with tools like the Integrative Genome Viewer and plotting tabular results files using python or R can make aberrant or inconsistent results easier to track down .</p>
+<p>Many tools generate log files or messages while running.
+These files contain information about the quantity, quality, and results from the run, or error messages about why a run failed.
+Inspecting these files can be helpful to make sure tools ran properly and consistently, or to debug failed runs.
+Parsing and visualizing log files with a tool like MultiQC can improve interpretability of program-specific log files (Figure <a href="#fig:multiqc">8</a> ).</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode md"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a>|  command | function | example |</span>
+<span id="cb3-2"><a href="#cb3-2"></a>| --- | --- | --- |</span>
+<span id="cb3-3"><a href="#cb3-3"></a>|  ls -lh | list files with information in a human-readable format | ls -lh *fastq.gz |</span>
+<span id="cb3-4"><a href="#cb3-4"></a>|  head | print the first 6 lines of a file to standard out | head samples.csv |</span>
+<span id="cb3-5"><a href="#cb3-5"></a>|  tail | print the last 6 lines of a file to standard out | tail samples.csv |</span>
+<span id="cb3-6"><a href="#cb3-6"></a>|  less | show the contents of a file in a scrollable screen | less samples.csv |</span>
+<span id="cb3-7"><a href="#cb3-7"></a>|  zless | show the contents of a gzipped file in a scrollable screen | zless sample1.fastq.gz |</span>
+<span id="cb3-8"><a href="#cb3-8"></a>|  wc -l | count the number of lines in a file | wc -l ecoli.fasta |</span>
+<span id="cb3-9"><a href="#cb3-9"></a>|  cat | print a file to standard out | cat samples.csv |</span>
+<span id="cb3-10"><a href="#cb3-10"></a>|  grep | find matching text and print the line to standard out | grep &quot;&gt;&quot; ecoli.fasta |</span>
+<span id="cb3-11"><a href="#cb3-11"></a>|  cut | cut columns from a table | cut -d&quot;,&quot; -f1 samples.csv |</span>
+<span id="cb3-12"><a href="#cb3-12"></a></span>
+<span id="cb3-13"><a href="#cb3-13"></a>Table: Some bash commands are useful to quickly explore the contents of a file. By using these commands, the user can detect common formatting problems or other abnormalities.</span>
+<span id="cb3-14"><a href="#cb3-14"></a>{#tbl:bash_commands}</span></code></pre></div>
+<div id="fig:multiqc" class="fignos">
+<figure>
+<embed src="images/multiqc.pdf" /><figcaption><span>Figure 8:</span> <strong>Visualizations produced by MultiQC.</strong>
+<strong>A</strong> MultiQC summary of FastQC Per Sequence GC Content for 1905 metagenome samples. FastQC provides quality control measurements and visualizations for raw sequencing data, and is a near-universal first step in sequencing data analysis because of the insights it provides .
+FastQC measures and summarizes 10 quality metrics and provides recommendations for whether the sample is within an acceptable quality range.
+Not all metrics readily apply to all sequencing data types. For example, while multiple GC peaks might be concerning in whole genome sequencing of a bacterial isolate, we would expect a non-normal distrubtion for some metagenome samples that contain organisms with diverse GC content.
+Samples like this can be seen in red in this figure.
+<strong>B</strong> MultiQC summary of Salmon <em>quant</em> reads mapped per sample for RNA-seq samples . MultiQC finds and automatically parses log files from other tools and generates a combined report and parsed data tables that include all samples. MultiQC currently supports 78 tools. In this figure, we see that MultiQC summarizes the number of reads mapped and percent of reads mapped, two values that are reported in the Salmon log files.</figcaption>
+</figure>
+</div>
+<h3 id="handling-common-biases-in-sequencing-data">Handling common biases in sequencing data</h3>
+<p>Biases in sequencing data originate from experimental design, methodology, sequencing chemistry, or workflows, and are helpful to target specifically with quality control measures.
+For example, PCR duplicates can cause problems in libraries that underwent an amplification step, and often need to be removed prior to downstream analysis .
+Contamination can arise during sample collection, nucleotide extraction, library prepartion, or through sequencing spike-ins like PhiX, and could change data interpretation if not removed .
+Libraries sequenced with high concentrations of free adapters or with low concentration samples may have increased barcode hopping, leading to contamination between samples .
+Stringent trimming of RNA-sequencing data may reduce isoform discovery .
+The exact biases in a specific data set or workflow will vary greatly between experiments.
+To determine what issues are most likely to plague your specific data set, it can be helpful to find recent publications using a similar experimental design, or to speak with experts at a sequencing core.</p>
+<p>Because sequencing data and applications are so diverse, there is no one-size-fits-all solution for quality control.
+Therefore, it is important to think critically about your expectations, and what patterns you expect to see given your data and your biological problem.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
