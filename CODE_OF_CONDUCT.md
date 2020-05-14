@@ -55,6 +55,6 @@ Only contributors in good standing with respect to the code of conduct will be o
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), [version 1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html) and from the [covid-19 review effot](https://github.com/greenelab/covid19-review/blob/master/CODE_OF_CONDUCT.md).
+This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), [version 1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html) and from the [covid-19 review effort](https://github.com/greenelab/covid19-review/blob/master/CODE_OF_CONDUCT.md).
 
 For answers to common questions about this code of conduct, see https://www.contributor-covenant.org/faq
