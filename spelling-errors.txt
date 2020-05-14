@@ -1,7 +1,8 @@
 benchmarking
+bioconda
 Bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 bluegenes
 Carpentries
 casea
@@ -14,10 +15,10 @@ EBI
 EMBL
 eukaryotic
 GBMF
-ish
+installable
 metagenome
 MGnify
-Nextflow
+nextflow
 parallelization
 Parallization
 PyCharm
@@ -42,7 +43,6 @@ softwares
 sra
 superceded
 taylorreiter
-TEALCITE
 transcriptome
-WILSONCITE
 XXXXXXXX
+YAML

@@ -56,9 +56,9 @@
   <meta name="citation_fulltext_html_url" content="https://bluegenes.github.io/2020-gep/" />
   <meta name="citation_pdf_url" content="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/b0b913f38c09a921837591aed0a6f12641bf58e6/" />
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/b0b913f38c09a921837591aed0a6f12641bf58e6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/b0b913f38c09a921837591aed0a6f12641bf58e6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/2d19e7e1942f0321bd55e9b45f5195ab401841a3/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/2d19e7e1942f0321bd55e9b45f5195ab401841a3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/2d19e7e1942f0321bd55e9b45f5195ab401841a3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,9 +72,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://bluegenes.github.io/2020-gep/v/b0b913f38c09a921837591aed0a6f12641bf58e6/">permalink</a>)
+(<a href="https://bluegenes.github.io/2020-gep/v/2d19e7e1942f0321bd55e9b45f5195ab401841a3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/bluegenes/2020-gep/tree/b0b913f38c09a921837591aed0a6f12641bf58e6">bluegenes/2020-gep@b0b913f</a>
+from <a href="https://github.com/bluegenes/2020-gep/tree/2d19e7e1942f0321bd55e9b45f5195ab401841a3">bluegenes/2020-gep@2d19e7e</a>
 on May 14, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -135,10 +135,10 @@ Except for data acquisition, the tools and guidelines presented below apply to e
 The wealth of information present in sequencing data has the potential to revolutionize our understanding of the diversity and function of communities, building basic understanding from ecosystems to human health.
 However, sequence analysis remains both complex and computationally intensive, problems that are compounded during analysis of large datasets.</p>
 <p>The magnitude of sequencing data requires a principled approach to management, analysis, and dissemination of results.
-As sequencing analysis has matured over the past decade, several papers have presented “best” or “good enough” practices for computational biological analyses ADD BACK CITATIONS
+As sequencing analysis has matured over the past decade, several papers have presented “best” or “good enough” practices for computational biological analyses .
 These recommendations have both helped build consensus and fueled additional tool and workflow development.
-Since the latest paper in 2017 WILSONCITE, a number of important tools have greatly reduced the barrier to entry and opened the door to end-to-end reproducible analyses. % simple, shareable, etc
-Many of these changes owe their origin, at least in part, to the open science movement and the recognition of the importance of entry-level training, such as that provided by The Carpentries TEALCITE (open sci movement CITE).</p>
+Since the latest paper in 2017 , a number of important tools have greatly reduced the barrier to entry and opened the door to end-to-end reproducible analyses. % simple, shareable, etc
+Many of these changes owe their origin, at least in part, to the open science movement and the recognition of the importance of entry-level training, such as that provided by The Carpentries  (open sci movement CITE).</p>
 <p>The key advancements over the past few years have come in workflow scripting, software management, and tools that handle biological data at scale. % and sharing? Role of github/open code?
 The combination of workflow languages (e.g. snakemake, nextflow, common workflow language) and package installations (e.g. conda) have revolutionized bioinformatic analysis development.
 These tools enable researchers to build reproducible analyses that can be automatically executed in a directed fashion.
@@ -153,11 +153,6 @@ We present a roadmap for biological sequence analysis, beginning at data acquisi
 We emphasize the importance of adopting a workflow-based approach to enhance documentation, automation and reproducibility of your science.
 Adopting these approaches will not only propel your own research, but will also facilitate sharing, discussion, peer review, etc.
 Here, we present our best advice on how to get the most out of your sequencing data and time.</p>
-<p>%- analogy: manual approach works well once, but learning to use power tools will make it work many times?
-%p3ish
-%Via these tips, we hope to accelerate biologists/bioinformaticians into open and reproducible workflow practices.
-%
-%- workflow tips and good approaches (e.g. making big data less big) to data analysis.</p>
 <h2 id="workflows-and-software-management">Workflows and Software Management</h2>
 <p>Workflows are the workhorses of modern bioinformatics – most analyses require researchers to combine computational steps that involve multiple tools and often multiple programming languages.
 When multiple steps are combined together to execute a single analysis, this can generically be referred to as workflow.
@@ -181,17 +176,17 @@ While workflows are ubiquitous in bioinformatics and scientific computing in gen
 Prior to the development of robust workflow systems, common tools for scripting a workflow included make, pydoit, or bash scripting.
 These systems required the user to implement substantial scaffolding around core commands on a per-workflow basis.
 Workflow systems have alleviated this overhead and simplified the process of scripting a workflow.</p>
-<p>Advances in workflow systems have led to wide-spread community adoption in part attributable to the open science movement CITE
-A critical mass of workflow system-specific code has accumulated such that many routine tasks are already encoded and available for others to use CITE
-At the same time, consensus approaches for routine tasks have emerged, further encouraging reuse of existing code CITE</p>
+<p>Advances in workflow systems have led to wide-spread community adoption in part attributable to the open science movement .
+A critical mass of workflow system-specific code has accumulated such that many routine tasks are already encoded and available for others to use .
+At the same time, consensus approaches for routine tasks have emerged, further encouraging reuse of existing code .</p>
 <h3 id="how-will-your-life-be-changed-with-workflows">How will your life be changed with workflows?</h3>
 <p>Workflow systems have revolutionized computing in data intensive biology.
 Pipelines written in a workflow system are better documented, repeatable, transferable, and scalable.
 Because workflow systems generate directed graphs to execute a workflow, relationships between steps need to be precisely and completely specified for a workflow to execute properly.
 This leads to two beneficial side effects.
 First, workflows are more likely to be fully enclosed without undocumented steps that are executed by hand.
-Second, workflows become self-documented; the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see ??).
-When a workflow is specified in this way, each step is executed in the proper order and will be rerun if a failure occurs.
+Second, workflows become self-documented; the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see ??).</p>
+<p>When a workflow is specified in this way, each step is executed in the proper order and will be rerun if a failure occurs.
 This frees the user from manually keeping track of execution and monitoring of each step.
 Fully-contained workflows (when paired with software management, SEE NEXT SECTION) scripted in a workflow system instill confidence that the code will still execute the same set of commands with little investment by the user in weeks, months, or years from the time of writing.
 Similarly, the standard syntax used to specify each step in the workflow lends itself to easy reuse in future project.
@@ -208,7 +203,7 @@ It is possible to obtain the benefits of workflow systems without learning a wor
 <p>Many research groups have used workflow software to build user-friendly pipelines that do not require learning or working with the underlying workflow software.
 These tools allow users to take advantage of the benefits of workflow software without needing to invest in curating and writing their own pipeline.
 These tools are specified in an underlying workflow language, but the user interacts with a command-line script and configuration file that coordinate and execute the workflow.
-Often times, workflow parameters are exposed to the user, allowing the user to control certain behaviors such as parallelization or “dry-runs” when executing the command-line script.
+Often times, workflow parameters are exposed to the user, allowing the user to control certain behaviors such as parallelization or ``dry-runs" when executing the command-line script.
 Some examples include the ATLAS metagenome assembly and binning pipeline (https://github.com/metagenome-atlas/atlas) , the Sunbeam metagenome analysis pipeline (https://github.com/sunbeam-labs/sunbeam) , the Elvers  transcriptome and differential expression pipeline (https://github.com/dib-lab/elvers), the dammit eukaryotic transcriptome pipeline (https://github.com/dib-lab/dammit), and the nf-core RNA-seq pipeline (https://github.com/nf-core/rnaseq/).</p>
 <p>Workflow systems are also available as graphical user interface systems.
 Websites like Galaxy, Cavatica, and EMBL-EBI MGnify offer online portals in which users build workflows around publicly-available or user-uploaded data .</p>
@@ -245,6 +240,15 @@ This ensures that an environment is completely reproducible across different com
 Some software packages are available as web-based tools and through a series of data upload and parameter specifications, allow the user to interact with a tool that is running on a back-end server.
 This approach is ideal for testing a tool prior to installation to determine whether it produces an appropriate or useful output on your data.
 Integrated development environments like PyCharm and RStudio can also manage software installation for the user for language-specific tools.</p>
+<div id="fig:conda_figure" class="fignos">
+<figure>
+<embed src="images/conda_figure.pdf" /><figcaption><span>Figure 2:</span> <strong>The conda package and environment manager simplifies software installation and management.</strong>
+<strong>A. Conda Recipe Repositories</strong> Each program distributed via Conda has a “recipe” describing all software dependencies needed for Conda installation (each of which must also be installable via conda). These are stored and managed in separate “channels”, some of which specialize (e.g. “bioconda” specializes in bioinformatic software, “r” specializes in R language packages) . \
+<strong>B. Use Conda Environments to Avoid Installation Conflicts</strong> Conda does not require root privileges for software installation, thus enabling use by researchers working on shared cluster systems. However, even user-based software installation can encounter dependency conflicts. For example, you might need to use python2 to install and run a program (e.g. older scripts written by members of your lab), while also using snakemake to execute your workflows (requires python3.5). By installing each
+program into an isolated “environment” that contains only the software required to run that program, you can ensure all programs will run without issue. Using small, separate environments for your software and building many simple environments to accommodate different steps in your workflow also reduces the amount of time it takes conda to resolve dependency conflicts between different software tools (“solve” an environment). Conda virtual environments can be created and installed either on the
+command line, or via an environment YAML file, as shown. In this case, the environment file also specifies which Conda channels to search and download programs from. When specified in a YAML file, conda environments are easily transferable between computers and operating systems. Further, because the version of each package installed in an environment is recorded, workflow reproducibility is enhanced.</figcaption>
+</figure>
+</div>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
