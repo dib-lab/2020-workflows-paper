@@ -49,7 +49,7 @@ if [ "${BUILD_PDF:-}" != "false" ] && [ -z "$DOCKER_EXISTS" ]; then
     --defaults=common.yaml \
     --defaults=html.yaml \
     --defaults=pdf-weasyprint.yaml
-  rm images
+  #rm images
 fi
 
 # If Docker is available, use athenapdf to create PDF
@@ -73,7 +73,7 @@ if [ "${BUILD_PDF:-}" != "false" ] && [ -n "$DOCKER_EXISTS" ]; then
     --delay=${MANUBOT_ATHENAPDF_DELAY:-1100} \
     --pagesize=A4 \
     manuscript.html manuscript.pdf
-  rm -rf output/images
+  #rm -rf output/images
 fi
 
 # Create DOCX output (if BUILD_DOCX environment variable equals "true")
