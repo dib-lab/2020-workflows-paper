@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/48c3f9bfea39bdf85cf12793ad42b02b0a1030f5/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/b6dc0a5bbbbd362d6720e3f7027c6bf38f4c1337/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/48c3f9bfea39bdf85cf12793ad42b02b0a1030f5/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/b6dc0a5bbbbd362d6720e3f7027c6bf38f4c1337/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/48c3f9bfea39bdf85cf12793ad42b02b0a1030f5/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/b6dc0a5bbbbd362d6720e3f7027c6bf38f4c1337/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,9 +113,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/48c3f9bfea39bdf85cf12793ad42b02b0a1030f5/))
+([permalink](https://bluegenes.github.io/2020-gep/v/b6dc0a5bbbbd362d6720e3f7027c6bf38f4c1337/))
 was automatically generated
-from [bluegenes/2020-gep@48c3f9b](https://github.com/bluegenes/2020-gep/tree/48c3f9bfea39bdf85cf12793ad42b02b0a1030f5)
+from [bluegenes/2020-gep@b6dc0a5](https://github.com/bluegenes/2020-gep/tree/b6dc0a5bbbbd362d6720e3f7027c6bf38f4c1337)
 on May 15, 2020.
 </em></small>
 
@@ -295,7 +295,7 @@ Given the plethora of choices and the steep learning curve associated with integ
 While there are many workflow softwares to choose from, each software has it own strengths, meaning each software will meet an individuals computing goals differently (see **Table @tbl:workflows**).
 Our lab has adopted Snakemake given its integration with Python and its flexibility to execute code with different languages (e.g. bash and R) and software management tools (SEE SECTION XXX) [@doi:10.1093/bioinformatics/bts480].
 Software like Nextflow and Common Workflow Language scale better to pipelines with hundreds of thousands of steps and support containerization more rigidly, making them ideal for production-level pipelines [@doi:10.1038/nbt.3820; @doi:10.6084/m9.figshare.3115156.v2]. 
-There are also language-specific workflow managers, such as ROpenSci's Drake for R [@doi:0.21105/joss.00550]. 
+There are also language-specific workflow managers, such as ROpenSci's Drake for R [@doi:10.21105/joss.00550].
 Further, workflow systems are not necessarily exclusive entities; Snakemake can export pipelines in Common Workflow Language, allowing the same workflow to be fully compatible with two separate workflow systems. 
 
 
@@ -558,7 +558,7 @@ Given the resources invested in collecting samples for sequencing, it's importan
 |  Sequencing type | Resources |
 | --- | --- |
 |  RNA-sequencing | [@doi:10.1186/s13059-016-0881-8; @doi:10.1261/rna.058339.116; @doi:10.1261/rna.046011.114] |
-|  Metagenomic sequencing | [@doi:10.1038/nbt.2235; @doi:10.1038/nbt.393; @doi:10.1016/j.tim.2018.11.003]|
+|  Metagenomic sequencing | [@doi:10.1038/nbt.2235; @doi:10.1038/nbt.3935; @doi:10.1016/j.tim.2018.11.003]|
 |  Amplicon sequencing | [@doi:10.7554/eLife.46923; @doi:10.1371/journal.pone.0124671; @doi:10.1038/nbt.3981] |
 |  Microbial isolate sequencing | [@doi:10.1038/srep08747] |
 |  Eurkaryotic genome sequencing |  |
@@ -566,7 +566,7 @@ Given the resources invested in collecting samples for sequencing, it's importan
 |  Rad seq |  |
 |  Chip seq |  |
 |  ATAC seq |  |
-|  single cell RNA-seq | [@doi:10.1186/s13059-016-0927-y; @doi10.1186/s13073-017-0467-4] |
+|  single cell RNA-seq | [@doi:10.1186/s13059-016-0927-y; @doi:10.1186/s13073-017-0467-4] |
 |  ? |  |
 Table: References for experimental design and considerations for common sequencing chemistries. {#tbl:seq_resources}
 
@@ -598,7 +598,7 @@ In preparing for data analysis, be sure to allocate sufficient computational res
 |  NSF XSEDE | Research allocation | USA researchers or collaborators |
 |  Open Science Data Cloud | Research allocation |  |
 |  Wasabi | Paid | data storage solution only |
-Table: **Research cloud resources** Cloud provider indicates the name of the cloud, standard model indicates the most common route toward using the cloud, and limitations indicates limitations in access or services provided by the cloud.{#tbl:computational_resources}
+Table: **Research cloud resources** Cloud provider indicates the name of the cloud, standard model indicates the most common route toward using the cloud, and limitations indicates limitations in access or services provided by the cloud. {#tbl:computational_resources}
 
 ### Transferring Data (or not)
 

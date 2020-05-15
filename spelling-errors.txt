@@ -7,7 +7,7 @@ BAM
 barcode
 benchmarking
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
 Bioinformatics
 Bionimbus
@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 casea
 Cavatica
-Checksums
+checksums
 chemistries
 citable
 codebase
@@ -47,7 +47,7 @@ Eukaryote
 eukaryotic
 Eurkaryotic
 fasta
-FASTQ
+fastq
 FastQC
 filenaming
 findable
@@ -76,7 +76,7 @@ metagenome
 metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 novo
 OSF
@@ -101,7 +101,7 @@ ReiterTaylor
 reprodubility
 reproducibility
 resequencing
-RMarkdown
+Rmarkdown
 roadmap
 ROpenSci’s
 RStudio
@@ -119,14 +119,14 @@ sha
 sigularity
 snakemake
 softwares
-SRA
+sra
 subsample
 subsampled
 superceded
 sysems
 taylorreiter
 transcriptional
-transcriptome
+Transcriptome
 unforseeable
 visualisations
 vizualization
