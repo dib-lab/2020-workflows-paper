@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/bluegenes/2020-gep/tree/gh-pages) branch hosts the contents of this directory at <https://bluegenes.github.io/2020-gep/>.
-The permalink for this webpage version is <https://bluegenes.github.io/2020-gep/v/a2921c9fdcd7d845718a0b566e7320d3b0ac8256/>.
+The permalink for this webpage version is <https://bluegenes.github.io/2020-gep/v/92c537037e9ed5bee094a3313b4c12c33320d356/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://bluegenes.github.io/2020-gep/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`a2921c9fdcd7d845718a0b566e7320d3b0ac8256`](https://github.com/bluegenes/2020-gep/commit/a2921c9fdcd7d845718a0b566e7320d3b0ac8256).
+[`92c537037e9ed5bee094a3313b4c12c33320d356`](https://github.com/bluegenes/2020-gep/commit/92c537037e9ed5bee094a3313b4c12c33320d356).
