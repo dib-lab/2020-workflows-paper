@@ -1,5 +1,3 @@
-# README.MD
-
 # Streamlining data-intensive biology with workflow systems: a guide for workflow-enabled biology
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
