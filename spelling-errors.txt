@@ -9,7 +9,7 @@ benchmarking
 bioconda
 Bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -25,7 +25,7 @@ citable
 codebase
 Colab
 coli
-conda
+Conda
 csv
 ctb
 ctitusbrown
@@ -47,7 +47,7 @@ Eukaryote
 eukaryotic
 Eurkaryotic
 fasta
-fastq
+FASTQ
 FastQC
 filenaming
 findable
@@ -73,10 +73,10 @@ Jupyter
 LFS
 lh
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 novo
 OSF
@@ -93,7 +93,7 @@ preprocessing
 PyCharm
 pydoit
 quant
-Rclone
+rclone
 README
 reexecuting
 Reiter
@@ -117,7 +117,7 @@ seqanswers
 sgc
 sha
 sigularity
-Snakemake
+snakemake
 softwares
 sra
 subsample
@@ -126,7 +126,7 @@ superceded
 sysems
 taylorreiter
 transcriptional
-transcriptome
+Transcriptome
 unforseeable
 visualisations
 vizualization
