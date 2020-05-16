@@ -1,5 +1,3 @@
-# CODE_OF_CONDUCT.MD
-
 # Contributor Covenant Code of Conduct
 
 ## Our Values
