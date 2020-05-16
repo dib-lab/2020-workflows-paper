@@ -1,5 +1,3 @@
-# INSTRUCTIONS.MD
-
 # Instructions for Contributing with GitHub
 
 ## Instructions for New Users
