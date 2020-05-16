@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 casea
 Cavatica
-checksums
+Checksums
 chemistries
 citable
 codebase
@@ -76,7 +76,7 @@ metagenome
 metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 novo
 OSF
@@ -93,7 +93,7 @@ preprocessing
 PyCharm
 pydoit
 quant
-rclone
+Rclone
 README
 reexecuting
 Reiter
@@ -117,7 +117,7 @@ seqanswers
 sgc
 sha
 sigularity
-snakemake
+Snakemake
 softwares
 sra
 subsample
@@ -126,7 +126,7 @@ superceded
 sysems
 taylorreiter
 transcriptional
-Transcriptome
+transcriptome
 unforseeable
 visualisations
 vizualization
