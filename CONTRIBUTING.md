@@ -1,4 +1,3 @@
-# CONTRIBUTING.MD
 # How to Contribute
 
 ## What to Contribute
