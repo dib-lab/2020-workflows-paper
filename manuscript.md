@@ -5,7 +5,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-18'
+date-meta: '2020-05-19'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -24,9 +24,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-05-18" />
+  <meta name="dc.date" content="2020-05-19" />
 
-  <meta name="citation_publication_date" content="2020-05-18" />
+  <meta name="citation_publication_date" content="2020-05-19" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/9d31aa87eec1c702f966319522b3e15f4bbd9157/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/9d31aa87eec1c702f966319522b3e15f4bbd9157/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/9d31aa87eec1c702f966319522b3e15f4bbd9157/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,10 +113,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/9d31aa87eec1c702f966319522b3e15f4bbd9157/))
+([permalink](https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/))
 was automatically generated
-from [bluegenes/2020-gep@9d31aa8](https://github.com/bluegenes/2020-gep/tree/9d31aa87eec1c702f966319522b3e15f4bbd9157)
-on May 18, 2020.
+from [bluegenes/2020-gep@432df35](https://github.com/bluegenes/2020-gep/tree/432df3587e7d0976436767568a188297cae35c77)
+on May 19, 2020.
 </em></small>
 
 ## Authors
@@ -166,8 +166,8 @@ on May 18, 2020.
 As both sequencing technologies and data have proliferated, the bottleneck of biological sequence analysis has shifted from data generation to analysis.
 Fortunately, analysis tools and techniques have evolved to cope with this ever-increasing flood of data.
 Reliable and user-friendly workflow systems and software management have emerged to facilitate interrogation of many thousands of samples.
-For fundamental steps such as quality control, standardized protocols are now available meaning researchers can spend less time rewriting common analyses and more time examining the biological intricacies of their data.
-In cases where the data are too large for even high-performance computing environments, a series of tools have emerged that are capable of using small, representative subsets of massive datasets to produce comparable results.
+Driven and adopted by the open source scientific community, workflow systems improve reproducibility and sharing in data-intensive biology.
+When combined with standardization of protocols for fundamental steps like quality control, researchers can spend less time rewriting common analyses and more time examining biological intricacies of their data.
 While adoption of these tools can both facilitate and expedite reproducible data analysis, knowledge of and training in these techniques is still lacking.
 Here, we provide a series of tips, tools, and "good enough" practices for leveraging workflow systems to streamline biological analysis.
 
@@ -189,18 +189,18 @@ These recommendations have both helped build consensus and fueled additional too
 Since the latest paper in 2017 [@doi:10.1371/journal.pcbi.1005510],  key advancements in workflow scripting, software management, and tools that handle biological data at scale have vastly increased the power of analysis management.
 In particular, the emergence of bioinformatics-focused workflow systems has empowered biologists to analyze biological data at scale.
 
-Bioinformatics-focused workflow systems and software management tools contain powerful infrastructure for task and tool management and can self-monitor progress, resource usage, and dependencies.
-When paired with proper software management, fully-contained workflows are scaleable, robust to software updates, and executable across platforms.
-These workflow systems have quickly become the workhorses of modern bioinformatics, enabling researchers to build workflows that execute dozens of analysis tools in a systematic manner across all experimental samples, producing hundreds to thousands of intermediate files for a single analysis.
+Workflow systems contain powerful infrastructure for task and tool management and can self-monitor progress, resource usage, and dependencies.
+When paired with software management, fully-contained workflows are scaleable, robust to software updates, and executable across platforms.
+These workflow systems have quickly become the workhorses of modern bioinformatics, empowering researchers to execute dozens of analysis tools in a systematic manner across all experimental samples.
 In concert, sharing of data analysis lessons and workflows has created a critical mass of analysis code now openly available for research and training, including that done by nonprofit organizations such as the Carpentries [@doi:10.2218/ijdc.v10i1.351].
 
-In our experiences with both research and training biologists in computational techniques, workflow systems have greatly reduced the barrier to entry for data analysis at scale and opened the door to end-to-end reproducible analyses.
+In our experiences with both research and training, workflow systems have greatly reduced the barrier to entry for data analysis at scale and opened the door to end-to-end reproducibility.
 Here, we present some tools, strategies, and "good enough" practices for leveraging workflow systems to streamline data-intensive biology and to enhance the documentation, automation and reproducibility of your science.
 
 
 ## Workflows facilitate data-intensive biology
 
-Sequence analyses require researchers to build workflows that synthesize multiple analytic tools and execute them in a systematic manner across all experimental samples.
+Sequence analyses require researchers to build workflows that include multiple analytic tools and execute them in a systematic manner across all experimental samples.
 These workflows commonly produce hundreds to thousands of intermediate files and require incremental changes as experimental insights demand tool and parameter modifications.
 Managing these steps can be both time-consuming and error-prone, even when automated using scripting languages (e.g. bash).
 
@@ -209,17 +209,17 @@ Workflow systems contain powerful infrastructure for workflow management that ca
 These features ensure that the steps for data analysis are documented and repeatable from start to finish.
 When paired with proper software management, fully-contained workflows are scaleable, robust to software updates, and executable across platforms, meaning they will likely still execute the same set of commands with little investment by the user in weeks, months, or years from the time of writing.
 
-![**Workflow Systems** Bioinformatic workflow systems have built-in functionality that facilitate/streamline/simplify running analysis pipelines.
+![**Workflow Systems** Bioinformatic workflow systems have built-in functionality that facilitates and simplifies running analysis pipelines.
 **A. Samples** Workflow systems enable you to use the same code to run each step on each sample. Samples can be easily added if the analysis expands.
-**B. Software Management** Integration with software management tools (e.g. conda, singularity) can automate software installation for each step.
+**B. Software Management** Integration with software management tools (e.g. conda, singularity, docker) can automate software installation for each step.
 **C. Branching, F. Ordering, G. Parallelization** Workflow systems ensure
 tasks are executed in the correct order for each sample file, and can automatically execute independent steps in parallel.
-**D.Standard Steps** Many steps are now considered "standard" (e.g. quality control). Workflow languages keep all information for a step together and can be written to enable you to remix and reuse each individual step across pipelines.
+**D. Standard Steps** Many steps are now considered "standard" (e.g. quality control). Workflow languages keep all information for a step together and can be written to enable you to remix and reuse individual steps across pipelines.
 **E. Rerun as necessary** Workflow systems keep track of which steps executed properly and on which samples, and allow you to rerun failed steps (or additional steps) rather than re-executing the entire workflow.
 **H. Reporting** Workflow languages enable comprehensive reporting on workflow execution and resource utilization by each tool.
 **I. Portability** Analyses written in workflow languages (with integrated software management) can be run across computing systems without changes to code.](images/workflow_figure.svg){#fig:workflow}
 
-In order to properly direct a workflow, workflow systems need to encode information about the relationships between workflow steps.
+To properly direct a workflow, workflow systems need to encode information about the relationships between workflow steps.
 In practice, this means that each analysis step must specify the input (or types of inputs) needed for that step, and the output (or types of outputs) being produced.
 This structure results in several added benefits, beyond those mentioned above.
 First, workflows become self-documented; the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see **Figure @fig:sgc_workflow**).
@@ -228,23 +228,23 @@ Finally, each step becomes a self-contained unit that can be used and re-used ac
 In sum, the internal scaffolding provided by workflow systems helps build analyses that are generally better documented, repeatable, transferable, and scalable.
 
 
-#### Choosing a workflow system
-While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
+#### Getting started with workflows
+
+**Using existing workflows** While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
 It is possible to obtain the benefits of workflow systems without learning a workflow system.
 Websites like Galaxy, Cavatica, and EMBL-EBI MGnify offer online portals in which users build workflows around publicly-available or user-uploaded data [@doi:10.1093/nar/gky379; @doi:10.14694/EDBK_175029; @doi:10.1093/nar/gkz1035].
 On the command line, many research groups have used workflow systems to build user-friendly pipelines that do not require learning or working with the underlying workflow software.
-These tools are specified in an underlying workflow language, but are packaged in a more user-friendly manner command-line script that coordinates and executes the workflow.
+These tools are specified in an underlying workflow language, but are packaged in a user-friendly command-line script that coordinates and executes the workflow.
 Rather than writing each workflow step, the user can specify data and parameters in a configuration file to customize the run.
 Some examples include the nf-core RNA-seq pipeline [@url:https://github.com/nf-core/rnaseq/; @doi:10.1038/s41587-020-0439-x], the ATLAS metagenome assembly and binning pipeline [@url:https://github.com/metagenome-atlas/atlas; @doi:10.1101/737528], the Sunbeam metagenome analysis pipeline [@url:https://github.com/sunbeam-labs/sunbeam; @doi:10.1186/s40168-019-0658-x], and two from our own lab, the Elvers *de novo* transcriptome and differential expression pipeline [@url:https://github.com/dib-lab/elvers], and dammit eukaryotic transcriptome annotation pipeline [@url:https://github.com/dib-lab/dammit].
 These tools allow users to take advantage of the benefits of workflow software without needing to invest in curating and writing their own pipeline. They are designed to execute a series of standard steps, and provide varying degrees of customizability.
 
-While these systems can be incredibly powerful and versatile, bioinformatic analyses are highly dependent on experimental design, and researchers often need to build custom workflows or steps for their analyses.
+**Choosing a workflow system**
 At this time, there are several scriptable workflow systems that offer similar benefits for data intensive biology.
 Each has it own strengths, meaning each software will meet an individuals computing goals differently (see **Table @tbl:workflows**).
 Our lab has adopted Snakemake, in part due to its similarity and integration with Python, its flexibility for building and testing new analyses in different languages, and its intuitive integration with software management tools (SEE SECTION XXX)[@doi:10.1093/bioinformatics/bts480].
 Software like Nextflow and Common Workflow Language require slightly more infrastructure, but in return, scale much better to pipelines with hundreds of thousands of steps and support containerization more rigidly, making them ideal for production-level pipelines [@doi:10.1038/nbt.3820; @doi:10.6084/m9.figshare.3115156.v2].
 Language-specific workflow systems, such as ROpenSci's Drake [@doi:10.21105/joss.00550], are limited in the scope of tasks they can execute, but are powerful within their language and easier to integrate if comfortable in that language.
-
 
 |Workflow System | Documentation | Example Workflow | Tutorial |
 |----------------|---------------|------------------|------------------|
@@ -252,7 +252,6 @@ Language-specific workflow systems, such as ROpenSci's Drake [@doi:10.21105/joss
 | Nextflow | https://www.nextflow.io/ | https://github.com/nf-core/sarek | https://www.nextflow.io/docs/latest/getstarted.html |
 | Common workflow language | https://www.commonwl.org/ | https://github.com/EBI-Metagenomics/pipeline-v5 | https://www.commonwl.org/user_guide/02-1st-example/index.html |
 | Workflow description language | https://openwdl.org/ | https://github.com/gatk-workflows/gatk4-data-processing |  https://support.terra.bio/hc/en-us/articles/360037127992--1-howto-Write-your-first-WDL-script-running-GATK-HaplotypeCaller |
-
 Table: Popular bioinformatics workflow systems, documentation, example workflows, and tutorials.
 While we have linked to general tutorials, there may be more relevant tutorials online for your field.
 Not all workflow systems are not necessarily exclusive entities: some workflow systems can translate workflows between languages or run tools or tasks written in other languages.
@@ -264,17 +263,15 @@ The availability of field-specific data analysis code for reuse and modification
 Fortunately, the standardized syntax required by workflow systems, combined with widespread adoption in the open science community, has resulted in a proliferation of open access workflow-system code for routine analysis steps [@doi:10.1007/978-1-4939-9074-0_24, @doi:10.1038/s41587-020-0439-x; @doi:10.21105/joss.00352].
 At the same time, consensus approaches for data analysis are emerging, further encouraging reuse of existing code [@doi:10.1186/s13059-016-0881-8; @doi:10.1038/nbt.3935; @doi:10.15252/msb.20188746; @doi:10.1016/j.margen.2016.04.012; @doi:10.1038/s41579-018-0029-9].
 
-#### Getting started with workflows
-
-The first place to start with any workflow language is the tutorials and available code. We have linked some examples in **Table {@tbl:workflows}**, but you may be able to find tutorials that are specific to your analysis or field. After working through at least one tutorial, you can move to running example workflows that somewhat closely resemble the tool or task you need to accomplish. Read through the script with the system documentation on hand in order to make sense of the structure. If available, run the test data to see what the output will look like. The "Getting started developing workflows" section will contain strategies for developing and modifying workflows for your own analyses.
+The [Getting started developing workflows](### getting-started-developing-workflows) section contains strategies for modifying and developing workflows for your own analyses.
 
 ### Wrangling Scientific Software
 
 Analysis workflows rely on multiple software packages to generate final results.
-These tools are heterogeneous in nature: written by researchers working in different coding languages, with varying types software design and optimization, and often for specific analysis goals.
+These tools are heterogeneous in nature: written by researchers working in different coding languages, with varied approaches to software design and optimization, and often for specific analysis goals.
 Each program has a number of other programs it depends upon to function ("dependencies"), and as software changes over time to meet research needs, the results may change, even when run with identical parameters.
 As a result, it is critical to take an organized approach to installing, managing, and keeping track of software and software versions.
-To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker [@url:https://pyvideo.org/pycon-au-2015/conda-a-cross-platform-python-agnostic-binary-p.html; @doi:10.1371/journal.pone.0177459; @doi:10.5555/2600239.2600241].
+To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker [@url:https://conda.io; @doi:10.1038/s41592-018-0046-7; @doi:10.1371/journal.pone.0177459; @doi:10.5555/2600239.2600241].
 
 Software management systems perform some combination of software installation, management, and packaging that alleviate problems that arise from dependencies and that facilitate documentation of software versions.
 On many systems, system-wide software management is overseen by system administrators, who ensure commonly-used and requested software is installed into a "module" system available to all users.
@@ -293,8 +290,9 @@ remain.](images/conda_figure.svg){#fig:conda_figure height=8in}
 
 #### Getting started with software management
 
-Using these software management tools within workflow systems is relatively straightforward: install the manager if needed, then add a line to each workflow step specifying information for software installation. (see conda environment example in **Figure {@fig:conda_figure}, B**).
-When the workflow is executed, the specified environment or container will be downloaded and installed (or system module will be loaded), used to run that analysis step, and stored for future analysis runs. The specific syntax for using package managers with your chosen workflow system will be available in the documentation.
+Workflow systems provide seamless integration with software management tools.
+Each workflow requires different specification for initiation of software management, but typically requires about one additional line of code per step using software. 
+If the software management tool is installed locally, the workflow will automatically download and install the specified environment or container and use it for specified step.
 
 While package managers and containers greatly increase reproducibility, there are a number of ways to test software before (or without ever) needing to worry about installation.
 Some software packages are available as web-based tools and through a series of data upload and parameter specifications, allow the user to interact with a tool that is running on a back-end server.
@@ -306,36 +304,33 @@ In our experience, the complete solution for using scientific software involves 
 ## Workflow-Based Project Management
 
 Computational project management is a learned skill that takes time to implement.
-Biological analyses often span hundreds of steps and involve a myriad of decisions ranging from small-scale tool and parameter choices to larger-scale decisions around computational experimental design and statistical analyses.
-It is rare (if not impossible) to build or find a workflow that analyzes your data from start to finish without testing, troubleshooting, and iteration.
-Fortunately, with a little direction, workflow systems both simplify and improve computational project management.
+The umbrella term project management refers to the strategies and decisions used to keep a project organized, documented, functional, and shareable. 
+Fortunately, workflow systems both simplify and improve computational project management.
 
 ### Systematically document your workflows
 
-Workflow systems link each analysis step, so that downstream files are regenerated if upstream files and parameters change, as long as you re-run the workflow manager each time (steps will only be rerun if necessary).
-In this way, the coded portions of workflows can be self-documenting, with each analysis step (and parameters) completely specified.
-The simplest way to document your workflow, then, is to include as much of it as possible within the automated workflow framework.
-However, this is limited in a few ways.
-First, there may be portions of the workflow that you have not been able to automate, such as downloads of data from protected servers (e.g. containing protected identity information), or manual data and metadata cleaning steps.
-Second, some steps may take a long time to rerun, so you may end up breaking your workflow into several independently-executed steps.
-Third, even if the code and parameters are documented, it is critical to record the reasoning behind each particular analysis decision, so that you can assess the influence of each choice on the downstream results.
+Pervasive documentation facilitates transparency in computing and makes the goals and results of a workflow clear. 
+This increases reusability of a workflow and provides context for biological insights derived from an analysis.
+To achieve this purpose, documentation is necessary for all parts of a workflow and includes things like file names, folder organization, commented and clear code, and accompanying explanatory documents. 
+While good documentation can be generated by the user alone, workflow systems are self-documenting to a degree, with each analysis step (and parameters) and the links between those steps completely specified. 
+The simplest way to document your code, then, is to include as much of it as possible within the automated workflow framework.
+For other parts of the workflow, including data analysis decisions and file organization, we discuss workflow-compatible strategies below.
 
 #### Use consistent, self-documenting names
 
-For analysis workflows, it is useful to be able to look at a file and understand exactly which sample it belongs to, and which processing or analysis steps were used to generate it.
 Using consistent and descriptive identifiers for your files, scripts, variables, workflows, projects, and even manuscripts helps keep your projects organized and interpretable for yourself and collaborators.
 For workflow systems, this strategy can be implemented by tagging output files with a descriptive identifier for each analysis step, either in the filename or by placing output files within a descriptive output folder.
 For example, the file shown in **Figure {@fig:filenaming}** has been preprocessed with a quality control trimming step.
 For large workflows, placing results from each step of your analysis in isolated, descriptive folders can be essential for keeping your project workspace clean and organized.
 
-![Since the number of files in data-intensive biology can quickly get out of hand, consistent file naming is especially important. It is useful to keep unique sample identification in the filename, often with a metadata file explaining the meaning of each unique descriptor. For analysis scripts, it can help to implement a numbering scheme, where the name of first file in the analysis begins with "00", the next with "01", etc. For output files, it can help to add a short, unique identifier to output files processed with each analysis step. This particular file is a RADsequencing fastq file of a fish species that has been preprocessed with a fastq quality trimming tool (courtesy of Shannon Joslin).](images/filenaming.svg){#fig:filenaming}
+![Consistent and informative file naming improves organization and interpretability. It is useful to keep unique sample identification in the filename, often with a metadata file explaining the meaning of each unique descriptor. For analysis scripts, it can help to implement a numbering scheme, where the name of first file in the analysis begins with "00", the next with "01", etc. For output files, it can help to add a short, unique identifier to output files processed with each analysis step. This particular file is a RADsequencing fastq file of a fish species that has been preprocessed with a fastq quality trimming tool (courtesy of Shannon Joslin).](images/filenaming.svg){#fig:filenaming}
 
 #### Store workflow metadata with the workflow
 
 Developing biological analysis workflows can involve hundreds of small decisions: What parameters work best for each step?
 Why did you use a certain reference file for annotation as compared with other available files?
 How did you finally manage to get around the program or installation error?
-All of these pieces of information contextualize your results and may be helpful when writing your manuscript.
+All of these pieces of information contextualize your results and may be helpful when sharing your findings.
 Keeping information about these decisions in an intuitive and easily accessible place helps you find it when you need it.
 To capitalize on the utility of version control systems described below, it is most useful to store this information in plain text files.
 Each main directory should include notes on the data or scripts contained within, so that a collaborator could look into the directory and understand what to find there (especially since that "collaborator" is likely to be you, a few months from now!).
@@ -351,7 +346,7 @@ These notebooks allow for fully documented iterative analysis development, and a
 
 ![**Examples of computational notebooks.** Computational notebooks allow the user to mix text, code, and results in one document.
 **A** A shows an RMarkdown document viewed in the RStudio integrated development environment, while **B** shows a rendered HTML file produced by knitting the RMarkdown document [@url:https://rmarkdown.rstudio.com/].
-**C** A Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed  [@doi:10.3233/978-1-61499-649-1-87].
+**C** A Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed [@doi:10.3233/978-1-61499-649-1-87].
 The second grey chunk is a raw markdown chunk with text that will be rendered inline when executed.
 Both notebooks generate a histogram of a metadata feature, number of generations, from a long-term evolution experiment with *Escherichia coli* [@doi:10.1038/nature18959].
 Computational notebooks facilitate sharing by packaging narrative, code, and visualizations together.
@@ -375,13 +370,13 @@ While the workflow is complex, it is coordinated by a workflow system, alleviati
 
 As your project develops, version control allows you to keep track of changes over time.
 You may already do this in some ways, perhaps with frequent hard drive backups or by manually saving different versions of the same file  - e.g. by appending the date to a script name or appending "version_1" or "version_FINAL" to a manuscript draft.
-For computational workflows, using version control systems such as Git or Mercurial can be used to properly keep track of all changes over time, even across multiple systems, scripting languages, and project contributors (see **Figure {@fig:version_control}**).
+For computational workflows, using version control systems such as Git or Mercurial can be used to keep track of all changes over time, even across multiple systems, scripting languages, and project contributors (see **Figure {@fig:version_control}**).
 If a key piece of a workflow inexplicably stops working, good version control can allow you to rewind in time and identify differences from when the pipeline worked to when it stopped working.
 
 ![**Version Control** Version control systems (e.g. Git, Mercurial) work by storing incremental differences in files from one saved version ("commit") to the next. To visualize the differences between each version, text editors such as Atom and online services such as GitHub, GitLab and Bitbucket use red highlight to denote deletions, and green highlighting to denote additions. In this trivial example, a typo in version 1 (in red) was corrected (green). These systems are extremely useful for code and manuscript development, as it is possible to return to the snapshot of any saved version. This means that version control systems save you from accidental deletions, preserve code you thought you no longer needed, and preserve a record of project changes over time.](images/version_control.svg){#fig:version_control}
 
 Version control systems also facilitate code and data availability and reproducibility for publication.
-For example, to ensure the correct version of the code is preserved, you can create a "release", a snapshot of the current code and files in a GitHub repository.
+For example, to preserve the version of code that produced published results, you can create a "release", a snapshot of the current code and files in a GitHub repository.
 You can then generate a digital object identifier (DOI) for that release using Zenodo and make it available to reviewers and beyond (see "sharing" section, below).
 
 ### Share your workflow and analysis code
@@ -396,7 +391,7 @@ These tools substantially reduce overhead associated with interacting with someo
 Shiny allows you to build interactive web pages using R code.
 Data is manipulated  by R code in real-time in a web page, producing analysis and visualizations of a data set.
 Shiny apps can contain user-specifiable parameters, allowing a user to control visualizations or analyses. As seen above, sample "PT1" is selected, and taxonomic ranks class and order are excluded.
-Shiny apps allow collaborators who may or may not know R to change R visualisations to fit their interests.   
+Shiny apps allow collaborators who may or may not know R to modify R visualizations to fit their interests.
 **B** Plotly heatmap of transcriptional profiling in human brain samples [@url:https://plotly.com/python/v3/ipython-notebooks/bioinformatics/#4-heatmap-of-gene-expression].
 Hovering over a cell in the heatmap displays the sample names from the x and y axis, as well as the intensity value.
 Plotting tools like plotly and vega-lite produce single interactive plots that can be shared with collaborators or integrated into websites [@url:https://plotly.com/; @doi:10.1109/TVCG.2016.2599030].
@@ -408,48 +403,54 @@ Interactive visualizations are also helpful in exploratory data analysis.
 
 In our experience, the best way to have your workflow system work _for_ you is to include as much of your analysis as possible within the automated workflow framework, use self-documenting names, include analysis visualizations, and keep rigorous documentation alongside your workflow that enables you to understand each decision and entirely reproduce any manual steps. 
 Some of the tools discussed above will inevitably change over time, but these principles apply broadly and will help you design clear, well-documented, and reproducible analyses. 
-Ultimately, you'll need to experiment with the ways that work for you -- what is most important is to develop a clear set of strategies and implement them tenaciously. 
-Here are a few practical tips to get started.
+Ultimately, you'll need to experiment with strategies that work for you -- what is most important is to develop a clear set of strategies and implement them tenaciously. 
+Below, we provide a few practical strategies to try as you begin developing your own workflows.
 
 **Start with working code**
-The best way to develop your own workflow analysis is to start from working code: either from the workflow tutorials or code sharing websites like GitHub, GitLab, and Bitbucket.
-If a workflow is available through Binder, you can test and experiment with workflow modification on Binder's cloud system, without needing to install a workflow manager or software management tool.
-When you're building a workflow for the first time, choose code in official repositories or reasonably well-used that provides sample data that can be run to verify the analysis works.
-The "Workflows and Software Management" Section links to a number of official repositories containing tutorials and example biological analysis workflows.
+Starting workflow development with functioning code provides a reliable workflow framework free of syntax errors, allowing the user to customize and tailor the workflow to their data while minimizing cognitive load.
+Workflow tutorials and code sharing websites like GitHub, GitLab, and Bitbucket have many publicly available workflows.
+If a workflow is available through Binder, you can test and experiment with workflow modification on Binder's cloud system without needing to install a workflow manager or software management tool [@doi:10.25080/Majora-4af1f417-011].
+When building a workflow for the first time, selecting an example workflow with sample data can help verify the analysis works.
+**Table @tbl:workflows** provides links to official repositories containing tutorials and example biological analysis workflows.
 
 **Test with subsampled data**
-After verifying your chosen example workflow is functional, try running it with your own data or some public data related to your species or condition of interest (see **Table {@tbl:seq_resources}**)
-To save yourself time, energy, and computational resources, first create a small test subset of the data.
+While a workflow may run on test data, this is not a guarantee it will run on all data.
+After verifying your chosen example workflow is functional, try running it with your own data or some public data related to your species or condition of interest.
+Trying the workflow on a small subset of the data first can save time, energy, and computational resources.
 For example, if working with FASTQ data, you can subsample the first million lines of a file (first 250k reads) by running:
 
 `head -n 1000000 FASTQ_FILE.fq > test_fastq.fq`
 
 While there are many more sophisticated ways to subsample reads, this technique should be sufficient for testing each step of a workflow prior to running your full dataset.
 
-**Document your process** Write documentation in plain text, so your notes files can be saved under version control with your workflow. We recommend using Markdown language for your notes so they can include helpful headings, code formatting, and embedded images. We recommend using software with visual text previewing such as Hackmd or Atom [@url:https://hackmd.io/, @url:https://atom.io/].
+**Document your process** 
+Writing documentation in plain text allows your note files to be saved under version control along with your workflow. 
+We recommend using Markdown language for your notes so they can include helpful headings, code formatting, and embedded images. 
+While there are many text editors to choose from, editors with visual formatting previewing such as Hackmd or Atom render previews of text written in Markdown [@url:https://hackmd.io/, @url:https://atom.io/], as do webservices like GitHub.
 
 **Develop your workflow**
-Now that you have the workflow running on new data, you can begin to modify a workflow step to meet your needs.
-Run each modified step on your subsampled data, checking that the output files look correct.
-Keep the tool documentation and tutorials on hand; as with any language, remembering workflow-specific syntax takes time and practice.
+We recommend iteratively modifying and adding workflow steps to meet your data analysis needs. 
+This strategy allows you to find and fix mistakes on small sections of the workflow. 
+Working with subsampled data while building new steps can make development more efficient. 
+Tutorials and tool documentation are useful companions during development; as with any language, remembering workflow-specific syntax takes time and practice.
 
 **Back up early and often**
 As you write new code, back up your changes in an online repository such as GitHub, GitLab, or Bitbucket.
-These services support drag-and-drop interaction: after creating and naming a project repository for your code, you can upload files by dragging and dropping on the web browser.
-Data backup will be discussed in the next section, "Practical considerations for workflow-enabled biology".
+These services support both drag-and-drop and command line interaction.
+Data backup will be discussed in the next section, [Data and resource management for workflow-enabled biology](## data-and-resource-management-for-workflow-enabled-biology).
 
 **Scale up your workflow**
 Bioinformatic tools vary in the resources they require: some analysis steps are compute-intensive, other steps are memory intensive, and still others will have large intermediate storage needs.
-If using high-performance computing system, you will need to request resources for running your pipeline, often provided as a simultaneous execution limit or purchased by your research group on a cost-per-compute basis.
+If using high-performance computing system or the cloud, you will need to request resources for running your pipeline, often provided as a simultaneous execution limit or purchased by your research group on a cost-per-compute basis.
 Workflow systems provide built-in tools to monitor resource usage for each step.
-Turn on this reporting according to workflow documentation and record the resources required for running each tool on a full-size single sample.
-Use these estimates to set appropriate resource limits for each step when executing the workflow on your remaining samples.
+Running a complete workflow on a single sample with resource monitoring enabled generates an estimate of computational resources needed for each step. 
+These estimates can be used to set appropriate resource limits for each step when executing the workflow on your remaining samples.
 
 **Find a community and ask for help when you need it**
-If there are local user groups for your workflow language, try to get involved with the community.
+Local users groups are helpful communities when learning a workflow language.
 When you are first learning, help from more advanced users can save you hours of frustration.
 After you've progressed, providing that same help to new users can help you cement the syntax in your mind and tackle more advanced uses.
-If no local community is available, look online for forums related to your workflow language.
+If no local community is available, there are online forums related to workflow languages.
 These workflow systems have been enthusiastically adopted by the open science community, and as a consequence, there is a critical mass of tutorials and open access code, code discussion on forums and via social media, particularly twitter.
 Be respectful of people's time and energy: post in the relevant workflow forums only when you have hit a stopping point you are unable to work through.
 
@@ -460,13 +461,12 @@ Advancements in sequencing technologies have greatly increased the volume of dat
 Workflow systems, by virtue of automating many of the time-intensive project management steps traditionally required for data-intensive biology, can increase our capacity for data analysis.
 However, conducting biological analyses at this scale requires a coordinated approach to data and computational resource management.
 Below, we provide recommendations for data acquisition, management, and quality control that have become especially important as the scale of data has increased.
-In the "Getting Started" section, we offer a selection of tools and strategies useful for critically assessing sequencing data, quickly gaining insights from large datasets, and conducting computational resource management.
 
 ### Managing large-scale datasets
 
-Two important aspects of workflow-enabled data management cannot yet be automated: experimental design and quality control.
+Experimental design, finding or generating data, and quality control cannot yet be automated but are quintessential parts of data intensive biology.
 There is no substitute for taking the time to properly design your analysis, identify appropriate data, and conduct sanity checks on your files.
-Many tools can aid in this process by providing quality control metrics, but each type of data will have different characteristics that are important to assess.
+While these tasks are not automatable, many tools and databases can aid in these processes.
 
 *maybe link: Many of these considerations are addressed in a data carpentry lesson (https://datacarpentry.org/organization-genomics/).*
 
@@ -514,13 +514,16 @@ As your experiment progresses, keep track of as much information as possible: da
 This metadata allows you to keep track of your samples, to control for batch effects that may arise from unintended batching during sampling or experimental procedures and makes the data you collect reusable for future applications and analysis by yourself and others.
 Wherever possible, follow the standard guidelines for formatting data for scientific computing to limit downstream processing and simplify analyses requiring these metadata (see: [@doi:10.1371/journal.pcbi.1005510]).
 
+### Getting started with sequencing data
+
 #### Protect valuable data
 
-When building your workflow, keep a write-protected copy of your raw data available (as well as backed up) in order to facilitate running the analysis in a fully reproducible manner.
-When used this way, workflow systems remove the imperative of backing up or storing intermediate files that can be easily regenerated.
-Given the size of data involved, backing up and storing files associated with data-intensive biology can be burdensome.
-However, depending on your analysis, you may wish to back up these intermediate files anyway, particularly when they require significant computational time to regenerate.
-Data version control can be used to store a read-only copy of raw sequencing files and accompanying metadata, or to keep track of difference in intermediate files that change with tool parameters or versions. The version control tools discussed in the "Project Management" section are primarily designed to handle small files, but version control and backup repositories also exist for larger files and datasets.
+Other than the workflow itself, raw data are the most important files associated with a workflow as they cannot regenerated if accidentally altered or deleted.
+Keeping a read-only copy of raw data alongside a workflow as well multiple backups protects your data from accidents and computer failure. 
+This also removes the imperative of storing intermediate files as these can be easily regenerated by the workflow.
+
+When sharing or storing files and results, data version control keeps track of differences in files such as changes from tool parameters or versions.
+The version control tools discussed in the [Workflow-based project management](## workflow-based-project-management) section are primarily designed to handle small files, but version control and backup repositories also exist for larger files and datasets.
 
 The Open Science Framework (OSF; [@doi:10.5195/JMLA.2017.88]) is a free service that provides powerful collaboration and sharing tools, provides built-in version control, integrates with other storage and version control repositories, guarantees data preservation, and enables you to keep projects private until they are ready to share. Like other services geared towards data sharing, OSF also enables generation of a digital object identifier (doi) for each project.
 While other services such as Git Large File Storage (LFS), Figshare [@url:https://figshare.com/], Zenodo [@url:https://zenodo.org/], and the Dryad Digital Repository [@url:https://datadryad.org/] each provide important services for sharing and version control, OSF provides the most comprehensive set of free tools for managing data storage and backup.
@@ -533,12 +536,12 @@ Databases such as the Sequence Read Archive (SRA) are now available on commercia
 Ongoing projects such as the NIH Common Fund Data Ecosystem aim to develop a data portal to make NIH Common Fund data, including biomedical sequencing data, more findable, accessible, interoperable, and reusable (FAIR).
 
 In most cases, you'll still need to transfer some data - either downloading raw data or transferring important intermediate and results files for backup and sharing (or both).
-Transferring compressed files (gzip, bzip2, BAM/CRAM, etc.) can improve transfer speed and save space, and checksums can be used to to ensure file integrity after transfer (see **Figure @fig:checksum**). For publicly-available files, a checksum value is often provided with each data file, so that you can check the integrity of the file after download.
+Transferring compressed files (gzip, bzip2, BAM/CRAM, etc.) can improve transfer speed and save space, and checksums can be used to to ensure file integrity after transfer (see **Figure @fig:checksum**). 
 
-![**Use Checksums to ensure file integrity** Checksum programs (e.g. md5, sha256) encode file size in a single value known as a "checksum". For any file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Tools like Rsync and Rclone that automate file transfers use checksums internally to verify that files were transferred properly [@doi:10.1111/2041-210X.12550]. Some GUI file transfer tools (e.g. cyberduck) also assess checksums when they are provided [@url:https://cyberduck.io/].
+![**Use Checksums to ensure file integrity** Checksum programs (e.g. md5, sha256) encode file size in a single value known as a "checksum". For any file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like Rsync and Rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. cyberduck) can assess checksums when they are provided [@doi:10.1111/2041-210X.12550, @url:https://cyberduck.io/].
 ](images/checksum.svg){#fig:checksum height=2.5in}
 
-### Getting started: strategies for quality control
+#### Perform quality control at every step
 
 The quality of your input data has a major impact on the quality of the output results, no matter whether your workflow analyzes six samples or 600 samples.
 Assessing data at every analysis step can reveal problems and errors early, before they waste valuable time and resources.
@@ -632,16 +635,11 @@ As the scale of data increases, the resources required for analysis can balloon.
 **Apply for research units if eligible**
 There are a number of cloud computing services that offer grants providing computing resources to data-intensive researchers (**Table {@tbl:computational_resources}**). In some cases, the resources provided may be sufficient to cover your entire analysis.
 
-**Use workflow reporting**
-Workflow systems can facilitate use of your available resources.
-Workflow systems provide built-in reporting of resource usage by each tool that can be used to limit requested computing resources.
-However, reports or benchmarking often need to be enabled with workflow-specific syntax. Enable reporting for all of your workflow steps so that you can see exactly how many resources each step uses for each of your files.
-You can then use workflow resource specifications to set the resources requested per task to match your recorded values (include a small excess buffer to account for differences in samples and file sizes).
-
 **Develop on a local computer when possible**
 Since workflows transfer easily across systems, it can be useful to develop individual analysis steps on a local laptop.
 If the analysis tool will run on your local system, test the step with subsampled data, such as that created in the "Getting started developing workflows" section.
 Once working, the new workflow component can be run at scale on a larger computing system.
+Workflow system tool resource usage reporting can help determine the increased resources needed to execute the workflow on larger systems. 
 For researchers without access to free or granted computing resources, this strategy can save significant cost.
 
 **Gain quick insights using sketching algorithms**
