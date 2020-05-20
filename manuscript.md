@@ -5,7 +5,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-19'
+date-meta: '2020-05-20'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -24,9 +24,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-05-19" />
+  <meta name="dc.date" content="2020-05-20" />
 
-  <meta name="citation_publication_date" content="2020-05-19" />
+  <meta name="citation_publication_date" content="2020-05-20" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,10 +113,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/432df3587e7d0976436767568a188297cae35c77/))
+([permalink](https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/))
 was automatically generated
-from [bluegenes/2020-gep@432df35](https://github.com/bluegenes/2020-gep/tree/432df3587e7d0976436767568a188297cae35c77)
-on May 19, 2020.
+from [bluegenes/2020-gep@f7949d0](https://github.com/bluegenes/2020-gep/tree/f7949d068443f6c83989ef962fbfbf002359b1e8)
+on May 20, 2020.
 </em></small>
 
 ## Authors
@@ -230,7 +230,7 @@ In sum, the internal scaffolding provided by workflow systems helps build analys
 
 #### Getting started with workflows
 
-**Using existing workflows** While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
+**Using workflows without learning workflow systems** While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
 It is possible to obtain the benefits of workflow systems without learning a workflow system.
 Websites like Galaxy, Cavatica, and EMBL-EBI MGnify offer online portals in which users build workflows around publicly-available or user-uploaded data [@doi:10.1093/nar/gky379; @doi:10.14694/EDBK_175029; @doi:10.1093/nar/gkz1035].
 On the command line, many research groups have used workflow systems to build user-friendly pipelines that do not require learning or working with the underlying workflow software.
@@ -303,9 +303,9 @@ In our experience, the complete solution for using scientific software involves 
 
 ## Workflow-Based Project Management
 
-Computational project management is a learned skill that takes time to implement.
-The umbrella term project management refers to the strategies and decisions used to keep a project organized, documented, functional, and shareable. 
-Fortunately, workflow systems both simplify and improve computational project management.
+Project management, including the strategies and decisions used to keep a project organized, documented, functional, and shareable, is foundational to any research program.
+Clear organization and management is a learned skill that takes time to implement.
+Workflow systems both simplify and improve computational project management, but even workflows that are fully specified in workflow systems require additional investment to stay organized and documented.
 
 ### Systematically document your workflows
 
@@ -477,6 +477,7 @@ In some cases, these data will be sufficient to conduct your entire analysis.
 In others cases, particularly for biologists conducting novel experiments, these data can inform decisions about sequencing type, depth, and replication, and can help uncover potential pitfalls before they cost valuable time and resources.
 
 Most journals now require data for all manuscripts to be made accessible, either at publication or after a short moratorium.
+Further, the FAIR (findable, accessible, interoperable, reusable) data movement has improved the data sharing ecosystem for data-intensive biology [@doi:10.1038/sdata.2016.18; @doi:10.1093/nar/gkx1097; @doi:10.1128/AEM.01444-19; @doi:10.1186/s13059-018-1491-4; @doi:10.1016/j.molp.2018.07.005; @doi:10.1038/s41586-019-1238-8; @doi:10.1038/s41586-019-1238-8; @doi:10.1093/nar/gky995].
 You can find relevant sequencing data either by starting from the "data accessibility" sections of papers relevant to your research or by directly searching for your organism, environment, or treatment of choice in public data portals and repositories.
 The International Nucleotide Sequence Database Collaboration (INSDC), which includes the Sequence Read Archive (SRA), European Nucleotide Archive (ENA), and DataBank of Japan (DDBJ) is the largest repository for raw sequencing data [@doi:10.1093/nar/gkv1323].
 Additional curated databases focus on processed data instead, such as gene expression in the Gene Expression Omnibus (GEO) [@doi:10.1093/nar/30.1.207].

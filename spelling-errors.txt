@@ -7,7 +7,7 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -76,7 +76,7 @@ metagenome
 Metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 novo
 OSF
@@ -85,7 +85,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-plotly
+Plotly
 prepartion
 preprocessed
 PyCharm
@@ -119,7 +119,7 @@ subsampled
 superceded
 taylorreiter
 transcriptional
-Transcriptome
+transcriptome
 vizualization
 vizualizations
 webservices
