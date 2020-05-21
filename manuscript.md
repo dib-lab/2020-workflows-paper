@@ -5,7 +5,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-20'
+date-meta: '2020-05-21'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -24,9 +24,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-05-20" />
+  <meta name="dc.date" content="2020-05-21" />
 
-  <meta name="citation_publication_date" content="2020-05-20" />
+  <meta name="citation_publication_date" content="2020-05-21" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,10 +113,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/f7949d068443f6c83989ef962fbfbf002359b1e8/))
+([permalink](https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/))
 was automatically generated
-from [bluegenes/2020-gep@f7949d0](https://github.com/bluegenes/2020-gep/tree/f7949d068443f6c83989ef962fbfbf002359b1e8)
-on May 20, 2020.
+from [bluegenes/2020-gep@ae504bb](https://github.com/bluegenes/2020-gep/tree/ae504bbb28012600f0819fd3e675a3ab98cbb392)
+on May 21, 2020.
 </em></small>
 
 ## Authors
@@ -186,13 +186,22 @@ The wealth of information present in high-throughput sequencing data has already
 
 As sequencing analysis has matured over the past decade, several papers have presented "best" or "good enough" practices for computational biological analyses [@doi:10.1371/journal.pbio.1001745; @doi:10.1371/journal.pbio.1002303; @doi:10.1371/journal.pcbi.1005510].
 These recommendations have both helped build consensus and fueled additional tool and workflow development.
-Since the latest paper in 2017 [@doi:10.1371/journal.pcbi.1005510],  key advancements in workflow scripting, software management, and tools that handle biological data at scale have vastly increased the power of analysis management.
+Since the latest paper in 2017 [@doi:10.1371/journal.pcbi.1005510], key advancements in workflow scripting, software management, and tools that handle biological data at scale have vastly increased the power of analysis management.
 In particular, the emergence of bioinformatics-focused workflow systems has empowered biologists to analyze biological data at scale.
 
-Workflow systems contain powerful infrastructure for task and tool management and can self-monitor progress, resource usage, and dependencies.
-When paired with software management, fully-contained workflows are scaleable, robust to software updates, and executable across platforms.
-These workflow systems have quickly become the workhorses of modern bioinformatics, empowering researchers to execute dozens of analysis tools in a systematic manner across all experimental samples.
+Biological analyses often span hundreds of steps and involve a myriad of decisions ranging from small-scale tool and parameter choices to larger-scale decisions around computational experimental design and statistical analyses.
+These analyses not only rely upon code written by the user, but on software, its dependencies, and the compute infrastructure and operating system on which the code is executed. 
+Historically, this has led to a lack of interoperability of pipelines and compute systems and difficulties with reproducibility [@doi:10.1038/s41587-020-0439-x]. 
+A rich community of workflow management systems has matured over the last decade, ushering in advances across workflow systems that are tailored to the needs of specific communities [@doi:10.1016/j.future.2017.05.041].
+Modern workflow sytems separate analysis code written by the user from software and compute infrastructure, but manage and integrate both pieces [@doi:10.1038/s41587-020-0439-x].
+This approach improves interoperability and therefore repeatability of workflows encoded in workflow sytems.
+Further, convergence on rule-based workflow specification means code is inherently modular and easily transferable between projects [@doi:10.1007/s00778-005-0153-9; @doi:10.1016/j.future.2017.05.041].
+This means the upfront cost of specifying a workflow in a system is mitigated as this code is reused, leading to faster time-to-insight [@doi:10.1016/j.future.2017.05.041; @doi:10.1007/s41019-017-0050-4].
 In concert, sharing of data analysis lessons and workflows has created a critical mass of analysis code now openly available for research and training, including that done by nonprofit organizations such as the Carpentries [@doi:10.2218/ijdc.v10i1.351].
+This code can be easily reused and modified to accomodate advances in bioinformatics across diverse workflow system applications, further improving efficiency [@doi:10.1007/s41019-017-0050-4].
+
+Taken together, modern workflow management systems enable fully-contained workflows to be automated, scaleable, robust to software updates, and executable across platforms.
+These workflow systems have quickly become the workhorses of modern bioinformatics, empowering researchers to execute dozens of analysis tools in a systematic manner across all experimental samples.
 
 In our experiences with both research and training, workflow systems have greatly reduced the barrier to entry for data analysis at scale and opened the door to end-to-end reproducibility.
 Here, we present some tools, strategies, and "good enough" practices for leveraging workflow systems to streamline data-intensive biology and to enhance the documentation, automation and reproducibility of your science.

@@ -1,3 +1,4 @@
+accomodate
 Acknowledgements
 acyclic
 Amplicon
@@ -18,7 +19,7 @@ bzip
 Caenorhabditis
 Carpentries
 Cavatica
-Checksums
+checksums
 chemistries
 Colab
 coli
@@ -63,6 +64,7 @@ INSDC
 installable
 interactiveviz
 interdependencies
+interoperability
 interoperable
 interpretability
 interpretable
@@ -76,7 +78,7 @@ metagenome
 Metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 novo
 OSF
@@ -112,14 +114,15 @@ scrollable
 seqanswers
 sgc
 sha
-Snakemake
+snakemake
 SRA
 subsample
 subsampled
 superceded
+sytems
 taylorreiter
 transcriptional
-transcriptome
+Transcriptome
 vizualization
 vizualizations
 webservices
