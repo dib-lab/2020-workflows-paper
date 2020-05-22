@@ -42,8 +42,8 @@ We will follow the [ICMJE Guidelines](http://www.icmje.org/recommendations/brows
 
 If you are not familiar with git and GitHub, you can use [these directions](INSTRUCTIONS.md) to start contributing.
 
-Please feel encouraged to ask questions by opening a [Request for Help issue](https://github.com/greenelab/covid19-review/issues/new?assignees=rando2&labels=&template=request-for-help.md&title=Help%3A+%5BAdd+topic+here%5D)
-[![GitHub issues](https://img.shields.io/github/issues-raw/greenelab/covid19-review?label=Open%20Issue&style=social)](https://github.com/greenelab/covid19-review/issues/new/choose)
+Please feel encouraged to ask questions by opening a [Request for Help issue](https://github.com/bluegenes/2020-gep/issues/new?assignees=rando2&labels=&template=request-for-help.md&title=Help%3A+%5BAdd+topic+here%5D)
+[![GitHub issues](https://img.shields.io/github/issues-raw/bluegenes/2020-gep?label=Open%20Issue&style=social)](https://github.com/bluegenes/2020-gep/issues/new/choose)
 
 This project is a collaborative effort that will benefit from the expertise of scientists across a wide range of workflow applications!
 
