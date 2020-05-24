@@ -5,7 +5,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-21'
+date-meta: '2020-05-24'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -24,9 +24,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-05-21" />
+  <meta name="dc.date" content="2020-05-24" />
 
-  <meta name="citation_publication_date" content="2020-05-21" />
+  <meta name="citation_publication_date" content="2020-05-24" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,10 +113,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/ae504bbb28012600f0819fd3e675a3ab98cbb392/))
+([permalink](https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/))
 was automatically generated
-from [bluegenes/2020-gep@ae504bb](https://github.com/bluegenes/2020-gep/tree/ae504bbb28012600f0819fd3e675a3ab98cbb392)
-on May 21, 2020.
+from [bluegenes/2020-gep@165dd4e](https://github.com/bluegenes/2020-gep/tree/165dd4e261e7dfc28ab08325856a74cfb1197f30)
+on May 24, 2020.
 </em></small>
 
 ## Authors

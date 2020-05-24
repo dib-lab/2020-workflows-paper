@@ -8,7 +8,7 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -19,7 +19,7 @@ bzip
 Caenorhabditis
 Carpentries
 Cavatica
-checksums
+Checksums
 chemistries
 Colab
 coli
@@ -78,7 +78,7 @@ metagenome
 Metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 novo
 OSF
@@ -87,7 +87,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-Plotly
+plotly
 prepartion
 preprocessed
 PyCharm
@@ -114,7 +114,7 @@ scrollable
 seqanswers
 sgc
 sha
-snakemake
+Snakemake
 SRA
 subsample
 subsampled
