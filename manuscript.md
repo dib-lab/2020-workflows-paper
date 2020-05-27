@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/66643b7cc92d129f2e55e12acb6c1121dcc99d43/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/08ee519f536e8d3e44b548c02f6cf310463c20c6/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/66643b7cc92d129f2e55e12acb6c1121dcc99d43/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/08ee519f536e8d3e44b548c02f6cf310463c20c6/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/66643b7cc92d129f2e55e12acb6c1121dcc99d43/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/08ee519f536e8d3e44b548c02f6cf310463c20c6/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,9 +113,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/66643b7cc92d129f2e55e12acb6c1121dcc99d43/))
+([permalink](https://bluegenes.github.io/2020-gep/v/08ee519f536e8d3e44b548c02f6cf310463c20c6/))
 was automatically generated
-from [bluegenes/2020-gep@66643b7](https://github.com/bluegenes/2020-gep/tree/66643b7cc92d129f2e55e12acb6c1121dcc99d43)
+from [bluegenes/2020-gep@08ee519](https://github.com/bluegenes/2020-gep/tree/08ee519f536e8d3e44b548c02f6cf310463c20c6)
 on May 27, 2020.
 </em></small>
 

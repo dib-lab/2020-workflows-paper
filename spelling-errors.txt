@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-checksums
+Checksums
 chemistries
 Colab
 coli
@@ -45,7 +45,7 @@ Eukaryote
 eukaryotic
 Eurkaryotic
 fasta
-FASTQ
+fastq
 FastQC
 Figshare
 filenaming
@@ -99,7 +99,7 @@ preprocessed
 PyCharm
 quant
 RADsequencing
-Rclone
+rclone
 README
 Reiter
 ReiterTaylor
@@ -127,7 +127,7 @@ subsampled
 superceded
 taylorreiter
 transcriptional
-Transcriptome
+transcriptome
 Wormbase
 XSEDE
 XXXXXXXX
