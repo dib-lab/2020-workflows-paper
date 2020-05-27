@@ -7,9 +7,9 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -49,7 +49,7 @@ fastq
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
@@ -80,7 +80,7 @@ LFS
 lh
 liklihood
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
 MultiQC
@@ -99,7 +99,7 @@ preprocessed
 PyCharm
 quant
 RADsequencing
-rclone
+Rclone
 README
 Reiter
 ReiterTaylor
@@ -127,7 +127,7 @@ subsampled
 superceded
 taylorreiter
 transcriptional
-transcriptome
+Transcriptome
 Wormbase
 XSEDE
 XXXXXXXX
