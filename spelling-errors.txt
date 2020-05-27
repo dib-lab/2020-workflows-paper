@@ -23,7 +23,7 @@ checksums
 chemistries
 Colab
 coli
-Conda
+conda
 csv
 ctb
 ctitusbrown
@@ -45,7 +45,7 @@ Eukaryote
 eukaryotic
 Eurkaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -69,7 +69,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-Interoperable
+interoperable
 interpretability
 interpretable
 isoform
@@ -99,7 +99,7 @@ preprocessed
 PyCharm
 quant
 RADsequencing
-rclone
+Rclone
 README
 Reiter
 ReiterTaylor
