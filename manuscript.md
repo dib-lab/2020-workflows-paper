@@ -5,7 +5,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-05-24'
+date-meta: '2020-05-27'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -24,9 +24,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-05-24" />
+  <meta name="dc.date" content="2020-05-27" />
 
-  <meta name="citation_publication_date" content="2020-05-24" />
+  <meta name="citation_publication_date" content="2020-05-27" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/18f56da00097174cbe7243f0e09efa2efd111fd0/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/18f56da00097174cbe7243f0e09efa2efd111fd0/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/18f56da00097174cbe7243f0e09efa2efd111fd0/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,10 +113,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/165dd4e261e7dfc28ab08325856a74cfb1197f30/))
+([permalink](https://bluegenes.github.io/2020-gep/v/18f56da00097174cbe7243f0e09efa2efd111fd0/))
 was automatically generated
-from [bluegenes/2020-gep@165dd4e](https://github.com/bluegenes/2020-gep/tree/165dd4e261e7dfc28ab08325856a74cfb1197f30)
-on May 24, 2020.
+from [bluegenes/2020-gep@18f56da](https://github.com/bluegenes/2020-gep/tree/18f56da00097174cbe7243f0e09efa2efd111fd0)
+on May 27, 2020.
 </em></small>
 
 ## Authors
@@ -179,32 +179,29 @@ Our main goal is to accelerate scientists conducting sequence analyses into orga
 
 
 ## Introduction
-*(draft)*
 
-Sequencing data are now widely available for species across the tree of life, and new sequencing data continues to be generated at an incredible rate [@url:https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/].
-The wealth of information present in high-throughput sequencing data has already revolutionized our understanding of the diversity and function of organisms and communities, building basic understanding from ecosystems to human health.
+Biological research has become increasingly computational.
+The field of genomics, in particular, has experienced a deluge of high-throughput sequencing data that has already revolutionized our understanding of the diversity and function of organisms and communities, building basic understanding from ecosystems to human health.
+The analysis workflows used to produce these insights often span hundreds of steps and involve a myriad of decisions ranging from small-scale tool and parameter choices to larger-scale decisions around computational experimental design and statistical analyses.
+Each step relies not only upon code written by the user, but on software, its dependencies, and the compute infrastructure and operating system on which the code is executed.
+Historically, this has led to patchwork availability of underlying code for analyses and a lack of interoperability of software and analysis pipelines across compute systems [@doi:10.1038/s41587-020-0439-x].
+Combined with unmet training needs in biological data analysis, these conditions undermine the reuse of data and the reproducibility of biological research, vastly limiting the value of our generated data [@doi:10.1371/journal.pcbi.1005755].
 
-As sequencing analysis has matured over the past decade, several papers have presented "best" or "good enough" practices for computational biological analyses [@doi:10.1371/journal.pbio.1001745; @doi:10.1371/journal.pbio.1002303; @doi:10.1371/journal.pcbi.1005510].
-These recommendations have both helped build consensus and fueled additional tool and workflow development.
-Since the latest paper in 2017 [@doi:10.1371/journal.pcbi.1005510], key advancements in workflow scripting, software management, and tools that handle biological data at scale have vastly increased the power of analysis management.
-In particular, the emergence of bioinformatics-focused workflow systems has empowered biologists to analyze biological data at scale.
+The biological research community is strongly committed to addressing these issues, recently formalizing the idea that all life sciences research (including data and analysis workflows) should be Findable, Accessible, Interoperable, and Reusable (FAIR) [@doi:10.1016/j.cels.2018.03.014].
+For computational analyses, these ideals are achievable given current technologies, but implementing them in practice has proven difficult, particularly for biologists with insufficient training in computing [@doi:10.1016/j.cels.2018.03.014, @doi:10.1139/facets-2019-0020].
+However, the recent maturation of data-centric workflow systems designed to automate and facilitate computational workflows are revolutionizing our capacity to conduct end-to-end FAIR analyses [@doi:10.1016/j.future.2017.05.041, @doi:10.1038/s41587-020-0439-x].
+These workflow systems are designed to handle some aspects of computational workflows internally: namely, the interactions with software and computing infrastructure, and the ordered execution of each step.
+By reducing the manual input and monitoring required at each analysis juncture, these integrated systems ensure that analyses are repeatable and can be executed at much larger scales.
+In concert, the standardized information and syntax required for rule-based workflow specification makes code inherently modular and more easily transferable between projects [@doi:10.1007/s00778-005-0153-9; @doi:10.1016/j.future.2017.05.041].
+For these reasons, workflow systems are rapidly becoming the workhorses of modern bioinformatics.
 
-Biological analyses often span hundreds of steps and involve a myriad of decisions ranging from small-scale tool and parameter choices to larger-scale decisions around computational experimental design and statistical analyses.
-These analyses not only rely upon code written by the user, but on software, its dependencies, and the compute infrastructure and operating system on which the code is executed. 
-Historically, this has led to a lack of interoperability of pipelines and compute systems and difficulties with reproducibility [@doi:10.1038/s41587-020-0439-x]. 
-A rich community of workflow management systems has matured over the last decade, ushering in advances across workflow systems that are tailored to the needs of specific communities [@doi:10.1016/j.future.2017.05.041].
-Modern workflow sytems separate analysis code written by the user from software and compute infrastructure, but manage and integrate both pieces [@doi:10.1038/s41587-020-0439-x].
-This approach improves interoperability and therefore repeatability of workflows encoded in workflow sytems.
-Further, convergence on rule-based workflow specification means code is inherently modular and easily transferable between projects [@doi:10.1007/s00778-005-0153-9; @doi:10.1016/j.future.2017.05.041].
-This means the upfront cost of specifying a workflow in a system is mitigated as this code is reused, leading to faster time-to-insight [@doi:10.1016/j.future.2017.05.041; @doi:10.1007/s41019-017-0050-4].
-In concert, sharing of data analysis lessons and workflows has created a critical mass of analysis code now openly available for research and training, including that done by nonprofit organizations such as the Carpentries [@doi:10.2218/ijdc.v10i1.351].
-This code can be easily reused and modified to accomodate advances in bioinformatics across diverse workflow system applications, further improving efficiency [@doi:10.1007/s41019-017-0050-4].
+Adopting workflow systems requires some level of up-front investment, first to understand the structure of the system, and then to learn the workflow-specific syntax.
+These challenges can preclude adoption, particularly for researchers without significant computational experience [@doi:10.1139/facets-2019-0020].
+In our experiences with both research and training, these initial learning costs are similar to those required for learning more traditional analysis strategies, but then provide a myriad of additional benefits that both facilitate and accelerate research.
+Furthermore, online communities for sharing reusable workflow code have proliferated, meaning the initial cost of specifying a workflow in a system is mitigated via use and re-use of common steps, leading to faster time-to-insight [@doi:10.1016/j.future.2017.05.041; @doi:10.1007/s41019-017-0050-4].
 
-Taken together, modern workflow management systems enable fully-contained workflows to be automated, scaleable, robust to software updates, and executable across platforms.
-These workflow systems have quickly become the workhorses of modern bioinformatics, empowering researchers to execute dozens of analysis tools in a systematic manner across all experimental samples.
-
-In our experiences with both research and training, workflow systems have greatly reduced the barrier to entry for data analysis at scale and opened the door to end-to-end reproducibility.
-Here, we present some tools, strategies, and "good enough" practices for leveraging workflow systems to streamline data-intensive biology and to enhance the documentation, automation and reproducibility of your science.
+Building upon the rich literature of "best" and "good enough" practices for computational biology [@doi:10.1371/journal.pbio.1001745; @doi:10.1371/journal.pbio.1002303; @doi:10.1371/journal.pcbi.1005510], we present a series of strategies and "good enough" practices for adopting workflow systems to streamline data-intensive biology research. This manuscript is designed to help guide biologists, particularly those with insufficient computational training, towards project, data, and resource management strategies that facilitate and expedite reproducible data analysis in their research.
+We present these strategies in the context of our own experiences working with high-throughput sequencing data, but many are broadly applicable to biologists working beyond this field.
 
 
 ## Workflows facilitate data-intensive biology
@@ -670,28 +667,68 @@ However, these tools generate information-rich output, specifying per-base align
 If you are only interested in counts per read, quasi-mapping tools produce the minimum information necessary for read quantification, thereby reducing the time and resources needed to generate and store read count information [@doi:10.1093/bioinformatics/btw277].
 
 
-## Troubleshooting: how to help yourself and when to get help
+## Troubleshooting strategically
+ - strategic troubleshooting? troubleshooting strategies? workflow troubleshooting? other better title?
 
-If you have tried the strategies above and are having trouble with your workflow, it's time to ask for help.
-The first point of attack is always to Google the error, including any identifying error message or code, the program name, and if necessary, the type of data you're running.
-There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs or even tutorials and lessons written by experts in the field [@doi:10.1371/journal.pcbi.1002216].
-In most cases, the error you've encountered has been encountered many times before, and often the solution is readily available.
-If you can't find any solutions in the relevant search results, it's time to escalate.
-If the error is with a specific program, it's best to post on that program's help or issue location (e.g. GitHub Issues), or google group mailing list.
-Often the authors of your software will post their preferred location for answering questions and solving errors related to their program.
-Be sure to include the relevant details of your error, including terminal output and the version of the software you are using.
- If your error or question is more general, such as asking about program choice or workflows, Stack Overflow is a good choice.
-First, search through related topics to ensure your question has not already been answered.
-If it hasn't, make a post to a relevant section, and be sure to include all relevant information in your post - type of data you have, approaches you've tried already, relevant error message, etc.
+Workflows, and research software in general, invariably require troubleshooting and iteration.
+When first starting with a workflow system, it can be difficult to grok code and usage errors from unfamiliar tools or languages [@doi:10.1371/journal.pcbi.1005755].
+Further, the iterative development process of research software means functionality may change, new features may be added, or documentation may be out of date [@doi:10.1007/s10606-018-9333-1].
+The challenges of learning and interacting with research software require time and patience [@doi:10.1139/facets-2019-0020].
 
-While there is lots of help available online, there's no substitute for local communities where you can get help working with your data and learning to troubleshoot.
-Many people around you may be experiencing similar issues and finding it difficult to find appropriate help.
-Developing a local bioinformatics community, either via seminar series or meetup sessions for data analysis, can also help in both improving and expanding your work in this area.
-Once you establish a local community, it may also be useful to set up a local online sites (e.g. discourse) for group troubleshooting.
+One of the largest barriers to surmounting these challenges is learning how, when, and where to ask for help.
+Below we outline a strategy for troubleshooting that can help build your own knowledge while respecting both your own time and that of research software developers and the larger bioinformatic community.
+In the "where to seek help" section, we also recommend locations for asking general questions around data-intensive analysis, including discussion of tool choice, parameter selection, and other analysis strategies.
+Beyond these tips, workshops and materials from training organizations such as the Carpentries can arm you with the tools you need to start troubleshooting and jump-start software and data literacy in your community [@doi:10.2218/ijdc.v10i1.351]
+
+### How to help yourself: Try to pinpoint your issue or error
+
+Software errors can be the result of syntax errors, dependency issues, operating system conflicts, bugs in the software, problems with the input data, and many other issues.
+Running the software on the provided test data can help narrow the scope of error sources: if the test data successfully runs, the command is likely free of syntax errors, the source code is functioning, and the tool is likely interacting appropriately with dependencies and the operating system. 
+If the test data runs but the tool still produces an error when run with your data and parameters, the error message can be helpful in discovering the cause of the error.
+In many cases, the error you've encountered has been encountered many times before, and searching for the error online can turn up a working solution.
+If there is a software issue tracker for the software (e.g. on the GitHub, GitLab, or Bitbucket repository), or a gitter, slack, or google groups page, performing a targeted search with the error message may provide additional context or a solution for the error.
+If targeted searches do not return a results, Googling the error message with the program name is a good next step. 
+Searching with several variants and iteratively adding information such as the type of input data, the name of the coding language or computational platform, or other relevant information, can improve the liklihood that a there will be a match.
+There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs and even tutorials and lessons written by experts in the field [@doi:10.1371/journal.pcbi.1002216].
+This increases the discoverability of error messages and their solutions.
+
+Sometimes, programs fail without outputting an error message. 
+In cases like these, the software's help (usually accessible on the command line via `tool-name --help`) and official documentation may provide clues or additional example use cases that may be helpful in resolving an error. 
+Syntax errors are extremely common, and typos as small as a single, misplaced character can affect the code.
+If a command matches the documentation and appears syntactically correct, the software version (often accessible at the command line `tool-name --version`) may be causing the error.  
+Best practices for software development follow "semantic versioning" principles, which aim to keep the arguments and functionality the same for all minor releases of the program (e.g. 1.1 to 1.2) and only change functions with major releases (e.g. 1.x to 2.0).
+
+### How to seek help: include the right details with your question
+
+When searching for the error message and reading the documentation do not resolve an error, it is usually appropriate to for seek help either from the software developers or from a bioinformatics community.
+When asking for help, it's essential to provide the right details so that other users and developers can understand the exact conditions that produced the error.
+At minimum, include the name and version of the program, the method used to install it, whether or not the test data ran, the exact code that produced the error, the error message, and the full output text from the run (if any is produced).
+The type and version of the operating system you are using is also helpful to include.
+Sometimes, this is enough information for others to spot the error.
+However, if it appears that there may bug in the underlying code, specifying or providing the minimum amount of data required to reproduce the error (e.g. reproducible example [@url:https://stackoverflow.com/help/minimal-reproducible-example; @url:https://community.rstudio.com/t/faq-how-to-do-a-minimal-reproducible-example-reprex-for-beginners/23061]) enables other to reproduce and potentially solve the error at hand. 
+Putting the effort into gathering this information both increases your own understanding of the problem and makes it easier and faster for others to help solve your issue.
+Furthermore, it signals respect for the time that these developers and community members dedicate to helping troubleshoot and solve user issues.
+
+### Where to seek help: online and local communities of practice
+
+Online communities and forums are a rich source of archived bioinformatics errors with many helpful community members.
+For errors with specific programs, often the best place to post is the developers' preferred location for answering questions and solving errors related to their program.
+For open source programs on GitHub, GitLab, or Bitbucket, this is often the "Issues" tab within the software repository, but it could alternatively be a google groups list, gitter page, or other specified forum.
+Usually, the documentation indicates the best location questions.
+If question is more general, such as asking about program choice or workflows, forums relevant to your field such as Stack Overflow or BioStars are good choices, as posts here are often seen by a large community of researchers.
+Before posting, search through related topics to double check the question has not already been answered.
+As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harrassment-free discussion environment [@doi:10.1109/SANER.2017.7884606].
+Look for codes of conduct in the online forums you participate in, and make sure you do your part to help ensure a welcoming community for participants of all backgrounds and computational competencies.
+
+While there is lots of help available online, there is no substitute for local communities.
+Local communities may come in the form of a tech meetup, a users group, a hacky hour, or an informal meetup of researchers using similar tools.
 While this may seem like just a local version of Stack Overflow, the local, member-only nature can help create a safe and collaborative online space for troubleshooting problems often encountered by your local bioinformatics community.
-The benefit to beginners is clear: learning the best way to post questions and the important parts of errors, while getting their questions answered so they can move forward in their research.
-However, intermediate users may find these communities most useful, as they can also accelerate their own troubleshooting skills by helping others solve issues that they have already struggled through.
+The benefit to beginners is clear: learning the best way to post questions and the important parts of errors, while getting questions answered so they can move forward in their research.
+Intermediate users may actually find these communities most useful, as they can also accelerate their own troubleshooting skills by helping others solve issues that they have already struggled through.
 While it can be helpful to have some experts available to help answer questions or to know when to escalate to Stack Overflow or other communities, a collaborative community of practice with members at all experience levels can help all its members move their science forward faster.
+
+If such a community does not yet exist in your area, building this sort of community (discussed in detail in [@doi:10.1371/journal.pbio.2005561]), can be as simple as hosting a seminar series or starting meetup sessions for data analysis co-working.
+In our experience, it can also be useful to set up a local online forum (e.g. discourse) for group troubleshooting.
 
 
 ## Conclusion
