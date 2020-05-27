@@ -9,7 +9,7 @@ barcode
 bioconda
 Bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -80,7 +80,7 @@ LFS
 lh
 liklihood
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
 MultiQC
@@ -93,7 +93,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-Plotly
+plotly
 prepartion
 preprocessed
 PyCharm
