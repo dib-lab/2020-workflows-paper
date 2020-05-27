@@ -30,8 +30,6 @@ While the practices are written with specific examples for high-throughput seque
 This repository is a living document (written with [manubot](https://manubot.org/)) that aims to consolidate and integrate helpful information about workflow systems and their applications in data-intensive biology.
 **We welcome constructive feedback from workflow-enabled biologists of all levels anywhere in the world.**
 
-We hope this document will facilitate and ease the adoption of workflow systems for large scale analysis of sequencing data.
-
 
 ## Contributions
 
