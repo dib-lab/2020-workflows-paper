@@ -7,7 +7,7 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -80,7 +80,7 @@ LFS
 lh
 liklihood
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
 MultiQC
@@ -93,7 +93,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-plotly
+Plotly
 prepartion
 preprocessed
 PyCharm
