@@ -1,0 +1,22 @@
+---
+title: "Distribution of generations in a long-term evolution experiment"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, messages = FALSE, warnings = F)
+```
+
+```{r}
+library(ggplot2)
+```
+
+This plot shows the number of samples sequenced at each generation in a 
+long-term evolution experiment.
+
+```{r, fig.height = 2}
+metadata <- read.csv("Ecoli_metadata_composite.tsv", sep = "\t")
+ggplot(metadata, aes(x = generation)) +
+  geom_histogram(bins = 10)
+```
+
