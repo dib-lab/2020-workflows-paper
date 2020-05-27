@@ -1,11 +1,15 @@
 # Streamlining data-intensive biology with workflow systems: a guide for workflow-enabled biology
 
-<!-- usage note: edit the H1 title above to personalize the manuscript -->
+[![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/bluegenes/2020-gep/actions)
+
+
+## Current Manuscript:
+
+[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://bluegenes.github.io/2020-gep/manuscript.pdf)
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://bluegenes.github.io/2020-gep/)
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://bluegenes.github.io/2020-gep/manuscript.pdf)
-[![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/bluegenes/2020-gep/actions)
-<!-- usage note: delete CI badges above for services not used by your manuscript -->
+
+
 
 ## Code of Conduct
 
