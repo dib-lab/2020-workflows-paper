@@ -14,23 +14,24 @@ Participating in the project in any way (issues, pull requests, gitter, or other
 We take this very seriously.
 If you experience harassment or notice violations of the code of conduct, please raise the issue to one of the project organizers (@taylorreiter or @bluegenes).
 
+
 ## Project Description
 <!-- usage note: edit this section. -->
 
-With advances in technology and decreases in cost, high through put sequencing is now accessible and affordable at large scale. 
-Analysis, not data generation, is now the bottleneck for biological sequencing data. 
-This bottleneck can be partially alleviated by workflow systems. 
+
+As the scale of biological data generation has increased, the bottleneck of research has shifted from data generation to analysis. Researchers commonly need to build computational workflows that include multiple analytic tools and require incremental development as experimental insights demand tool and parameter modifications. 
+Data-centric workflow systems can alleviate some of these challenges, but knowledge of and training in these techniques is still lacking.
 We aim to generate a guide for biologists that are new to workflow-enabled data-intensive biology.
-This repository is an online, collaborative guide written with [manubot](https://manubot.org/). 
-We are seeking input from workflow-enabled biologists of all levels anywhere in the world.
 
 Our goal is to generate a helpful set of "Good Enough" Practices (GEP) for leveraging workflow systems to streamline large-scale biological analyses. 
  [Our initial version](https://github.com/bluegenes/2020-latex-gep) has been much improved through iterations of feedback primarily from members and friends of the [DIB-lab](http://ivory.idyll.org/lab/). 
 While the practices are written with specific examples for high-throughput sequencing data, we hope many of the perspectives and guidance provided by the document apply more generally to all workflow-enabled biology. 
 
-We would be happy to broaden this document with additional practices and strategies used by other members of the data-intensive biology community, and welcome all constructive feedback.
-This repository is also a living document that aims to consolidate and integrate helpful information about workflow systems and their applications in data-intensive biology.
+This repository is a living document (written with [manubot](https://manubot.org/)) that aims to consolidate and integrate helpful information about workflow systems and their applications in data-intensive biology.
+**We welcome constructive feedback from workflow-enabled biologists of all levels anywhere in the world.**
+
 We hope this document will facilitate and ease the adoption of workflow systems for large scale analysis of sequencing data.
+
 
 ## Contributions
 
