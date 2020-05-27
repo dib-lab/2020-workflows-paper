@@ -3,7 +3,7 @@
 [![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/bluegenes/2020-gep/actions)
 
 
-## Current Manuscript:
+## Current Manuscript
 
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://bluegenes.github.io/2020-gep/manuscript.pdf)
 
