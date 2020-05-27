@@ -26,7 +26,9 @@ We are seeking input from workflow-enabled biologists of all levels anywhere in 
 
 Our goal is to generate a helpful set of "Good Enough" Practices (GEP) for leveraging workflow systems to streamline large-scale biological analyses. 
  [Our initial version](https://github.com/bluegenes/2020-latex-gep) has been much improved through iterations of feedback primarily from members and friends of the [DIB-lab](http://ivory.idyll.org/lab/). 
-While the practices are written with specific examples for high-throughput sequencing data, we aim to broaden the perspectives and guidance provided by the document to include strategies used by other workflow-enabled biologists.
+While the practices are written with specific examples for high-throughput sequencing data, we hope many of the perspectives and guidance provided by the document apply more generally to all workflow-enabled biology. 
+
+We would be happy to broaden this document with additional practices and strategies used by other members of the data-intensive biology community, and welcome all constructive feedback.
 This repository is also a living document that aims to consolidate and integrate helpful information about workflow systems and their applications in data-intensive biology.
 We hope this document will facilitate and ease the adoption of workflow systems for large scale analysis of sequencing data.
 
