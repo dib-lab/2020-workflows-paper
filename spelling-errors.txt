@@ -9,7 +9,7 @@ barcode
 bioconda
 Bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -45,11 +45,11 @@ Eukaryote
 eukaryotic
 Eurkaryotic
 fasta
-FASTQ
+fastq
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
@@ -69,7 +69,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-Interoperable
+interoperable
 interpretability
 interpretable
 isoform
@@ -80,7 +80,7 @@ LFS
 lh
 liklihood
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
 multiqc
@@ -120,14 +120,14 @@ scrollable
 seqanswers
 sgc
 sha
-Snakemake
+snakemake
 SRA
 subsample
 subsampled
 superceded
 taylorreiter
 transcriptional
-transcriptome
+Transcriptome
 Wormbase
 XSEDE
 XXXXXXXX
