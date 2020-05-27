@@ -45,7 +45,7 @@ Eukaryote
 eukaryotic
 Eurkaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -69,7 +69,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-interoperable
+Interoperable
 interpretability
 interpretable
 isoform
@@ -80,7 +80,7 @@ LFS
 lh
 liklihood
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
 MultiQC
@@ -93,13 +93,13 @@ Pavian
 PCR
 PhiX
 phylogenetic
-plotly
+Plotly
 prepartion
 preprocessed
 PyCharm
 quant
 RADsequencing
-Rclone
+rclone
 README
 Reiter
 ReiterTaylor
@@ -127,7 +127,7 @@ subsampled
 superceded
 taylorreiter
 transcriptional
-Transcriptome
+transcriptome
 Wormbase
 XSEDE
 XXXXXXXX
