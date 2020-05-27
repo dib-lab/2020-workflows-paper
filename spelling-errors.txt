@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-Checksums
+checksums
 chemistries
 Colab
 coli
@@ -49,7 +49,7 @@ FASTQ
 FastQC
 Figshare
 filenaming
-findable
+Findable
 GBMF
 GC
 GenBank
@@ -80,10 +80,10 @@ LFS
 lh
 liklihood
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 notetaking
 novo
@@ -93,13 +93,13 @@ Pavian
 PCR
 PhiX
 phylogenetic
-Plotly
+plotly
 prepartion
 preprocessed
 PyCharm
 quant
 RADsequencing
-rclone
+Rclone
 README
 Reiter
 ReiterTaylor

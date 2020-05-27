@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/d294cdb66c56bc606a7caf25a68d7fc0d24b5f04/" />
+  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/9c58976a02ee1f38aa1d025f00cf24f612a88051/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/d294cdb66c56bc606a7caf25a68d7fc0d24b5f04/" />
+  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/9c58976a02ee1f38aa1d025f00cf24f612a88051/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/d294cdb66c56bc606a7caf25a68d7fc0d24b5f04/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/9c58976a02ee1f38aa1d025f00cf24f612a88051/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,9 +113,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/d294cdb66c56bc606a7caf25a68d7fc0d24b5f04/))
+([permalink](https://bluegenes.github.io/2020-gep/v/9c58976a02ee1f38aa1d025f00cf24f612a88051/))
 was automatically generated
-from [bluegenes/2020-gep@d294cdb](https://github.com/bluegenes/2020-gep/tree/d294cdb66c56bc606a7caf25a68d7fc0d24b5f04)
+from [bluegenes/2020-gep@9c58976](https://github.com/bluegenes/2020-gep/tree/9c58976a02ee1f38aa1d025f00cf24f612a88051)
 on May 27, 2020.
 </em></small>
 
@@ -275,7 +275,7 @@ Analysis workflows commonly rely on multiple software packages to generate final
 These tools are heterogeneous in nature: written by researchers working in different coding languages, with varied approaches to software design and optimization, and often for specific analysis goals.
 Each program has a number of other programs it depends upon to function ("dependencies"), and as software changes over time to meet research needs, the results may change, even when run with identical parameters.
 As a result, it is critical to take an organized approach to installing, managing, and keeping track of software and software versions.
-To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker [@url:https://docs.conda.io/en/latest/; @doi:10.1038/s41592-018-0046-7; @doi:10.1371/journal.pone.0177459; @doi:10.5555/2600239.2600241].
+To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker [@doi:10.1038/s41592-018-0046-7; @doi:10.1371/journal.pone.0177459; @doi:10.5555/2600239.2600241].
 
 Software management systems perform some combination of software installation, management, and packaging that alleviate problems that arise from dependencies and that facilitate documentation of software versions.
 On many systems, system-wide software management is overseen by system administrators, who ensure commonly-used and requested software is installed into a "module" system available to all users.
@@ -354,7 +354,7 @@ These notebooks allow for fully documented iterative analysis development, and a
 
 ![**Examples of computational notebooks.** Computational notebooks allow the user to mix text, code, and results in one document.
 **A** A shows an RMarkdown document viewed in the RStudio integrated development environment, while **B** shows a rendered HTML file produced by knitting the RMarkdown document [@url:https://rmarkdown.rstudio.com/].
-**C** A Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed [@doi:10/gf48c9].
+**C** A Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed [@https://dx.doi.org/10.3233/978-1-61499-649-1-87].
 The second grey chunk is a raw markdown chunk with text that will be rendered inline when executed.
 Both notebooks generate a histogram of a metadata feature, number of generations, from a long-term evolution experiment with *Escherichia coli* [@doi:10.1038/nature18959].
 Computational notebooks facilitate sharing by packaging narrative, code, and visualizations together.

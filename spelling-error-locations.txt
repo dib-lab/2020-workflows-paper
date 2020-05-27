@@ -41,7 +41,6 @@ content/04.workflows-and-software.md:51:Nextflow
 content/04.workflows-and-software.md:52:EBI
 content/04.workflows-and-software.md:54:bioinformatics
 content/04.workflows-and-software.md:73:conda
-content/04.workflows-and-software.md:73:conda
 content/04.workflows-and-software.md:78:Conda
 content/04.workflows-and-software.md:78:installable
 content/04.workflows-and-software.md:79:Conda
