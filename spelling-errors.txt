@@ -7,9 +7,9 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -19,11 +19,11 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-Checksums
+checksums
 chemistries
 Colab
 coli
-conda
+Conda
 csv
 ctb
 ctitusbrown
@@ -49,7 +49,7 @@ fastq
 FastQC
 Figshare
 filenaming
-findable
+Findable
 GBMF
 GC
 GenBank
@@ -69,7 +69,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-interoperable
+Interoperable
 interpretability
 interpretable
 isoform
@@ -99,7 +99,7 @@ preprocessed
 PyCharm
 quant
 RADsequencing
-Rclone
+rclone
 README
 Reiter
 ReiterTaylor
