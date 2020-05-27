@@ -80,7 +80,7 @@ LFS
 lh
 liklihood
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
 MultiQC
