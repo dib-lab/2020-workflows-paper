@@ -5,9 +5,9 @@
 
 ## Current Manuscript
 
-[![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://bluegenes.github.io/2020-gep/manuscript.pdf)
+PDF: [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://bluegenes.github.io/2020-gep/manuscript.pdf)
 
-[![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://bluegenes.github.io/2020-gep/)
+HTML: [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://bluegenes.github.io/2020-gep/)
 
 
 
