@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-checksums
+Checksums
 chemistries
 Colab
 coli
@@ -49,7 +49,7 @@ fastq
 FastQC
 Figshare
 filenaming
-findable
+Findable
 GBMF
 GC
 GenBank
@@ -83,7 +83,7 @@ metagenome
 metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 notetaking
 novo
@@ -93,7 +93,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-plotly
+Plotly
 prepartion
 preprocessed
 PyCharm
