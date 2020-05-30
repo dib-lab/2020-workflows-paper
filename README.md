@@ -22,13 +22,10 @@ If you experience harassment or notice violations of the code of conduct, please
 ## Project Description
 <!-- usage note: edit this section. -->
 
-
 As the scale of biological data generation has increased, the bottleneck of research has shifted from data generation to analysis. Researchers commonly need to build computational workflows that include multiple analytic tools and require incremental development as experimental insights demand tool and parameter modifications. 
-Data-centric workflow systems can alleviate some of these challenges, but knowledge of and training in these techniques is still lacking.
+Data-centric workflow systems can alleviate some of these challenges, but knowledge of and training in these techniques is still lacking. Our goal is to generate a helpful set of strategies for leveraging workflow systems to streamline large-scale biological analyses. 
 
-Our goal is to generate a helpful set of strategies for leveraging workflow systems to streamline large-scale biological analyses. 
-
- [Our initial version](https://github.com/bluegenes/2020-latex-gep) has been much improved through iterations of feedback primarily from members and friends of the [DIB-lab](http://ivory.idyll.org/lab/). 
+[Our initial version](https://github.com/bluegenes/2020-latex-gep) has been much improved through iterations of feedback primarily from members and friends of the [DIB-lab](http://ivory.idyll.org/lab/). 
 While the practices are written with specific examples for high-throughput sequencing data, we hope many of the perspectives and guidance provided by the document apply more generally to all workflow-enabled biology. 
 
 This repository is a living document (written with [manubot](https://manubot.org/)) that aims to consolidate and integrate helpful information about workflow systems and their applications in data-intensive biology.
