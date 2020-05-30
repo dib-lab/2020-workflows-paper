@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,9 +113,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@392fc63](https://github.com/dib-lab/2020-workflows-paper/tree/392fc6307e30db9d31fb09e5af1e448b5c21f32f)
+from [dib-lab/2020-workflows-paper@ec46598](https://github.com/dib-lab/2020-workflows-paper/tree/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8)
 on May 30, 2020.
 </em></small>
 
@@ -180,7 +180,7 @@ Our main goal is to accelerate the research of scientists conducting sequence an
 ## Introduction
 
 Biological research has become increasingly computational.
-In particular, genomics has experienced a deluge of high-throughput sequencing data that has already revolutionized our understanding of the diversity and function of organisms and communities, building basic understanding from ecosystems to human health.
+In particular, genomics has experienced a deluge of high-throughput sequencing data that has already reshaped our understanding of the diversity and function of organisms and communities, building basic understanding from ecosystems to human health.
 The analysis workflows used to produce these insights often integrate hundreds of steps and involve a myriad of decisions ranging from small-scale tool and parameter choices to larger-scale design decisions around data processing and statistical analyses.
 Each step relies not just on analysis code written by the researcher, but on third-party software, its dependencies, and the compute infrastructure and operating system on which the code is executed.
 Historically, this has led to the patchwork availability of underlying code for analyses as well as a lack of interoperability of the resulting software and analysis pipelines across compute systems [@doi:10.1038/s41587-020-0439-x].
@@ -188,7 +188,7 @@ Combined with unmet training needs in biological data analysis, these conditions
 
 The biological research community is strongly committed to addressing these issues, recently formalizing the FAIR practices: the idea that all life sciences research (including data and analysis workflows) should be Findable, Accessible, Interoperable, and Reusable [@doi:10.1016/j.cels.2018.03.014].
 For computational analyses, these ideals are readily achievable with current technology, but implementing them in practice has proven difficult, particularly for biologists with little training in computing [@doi:10.1016/j.cels.2018.03.014, @doi:10.1139/facets-2019-0020].
-However, the recent maturation of data-centric workflow systems designed to automate and facilitate computational workflows is revolutionizing our capacity to conduct end-to-end FAIR analyses [@doi:10.1016/j.future.2017.05.041, @doi:10.1038/s41587-020-0439-x].
+However, the recent maturation of data-centric workflow systems designed to automate and facilitate computational workflows is expanding our capacity to conduct end-to-end FAIR analyses [@doi:10.1016/j.future.2017.05.041, @doi:10.1038/s41587-020-0439-x].
 These workflow systems are designed to handle some aspects of computational workflows internally: namely, the interactions with software and computing infrastructure, and the ordered execution of each step.
 By reducing the manual input and monitoring required at each analysis juncture, these integrated systems ensure that analyses are repeatable and can be executed at much larger scales.
 In concert, the standardized information and syntax required for rule-based workflow specification makes code inherently modular and more easily transferable between projects [@doi:10.1007/s00778-005-0153-9; @doi:10.1016/j.future.2017.05.041].
