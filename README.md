@@ -1,13 +1,13 @@
 # Streamlining data-intensive biology with workflow systems
 
-[![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/bluegenes/2020-gep/actions)
+[![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/dib-lab/2020-workflows-paper/actions)
 
 
 ## Current Manuscript
 
-PDF: [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://bluegenes.github.io/2020-gep/manuscript.pdf)
+PDF: [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf)
 
-HTML: [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://bluegenes.github.io/2020-gep/)
+HTML: [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://dib-lab.github.io/2020-workflows-paper/)
 
 
 
@@ -25,9 +25,9 @@ If you experience harassment or notice violations of the code of conduct, please
 
 As the scale of biological data generation has increased, the bottleneck of research has shifted from data generation to analysis. Researchers commonly need to build computational workflows that include multiple analytic tools and require incremental development as experimental insights demand tool and parameter modifications. 
 Data-centric workflow systems can alleviate some of these challenges, but knowledge of and training in these techniques is still lacking.
-We aim to generate a guide for biologists that are new to workflow-enabled data-intensive biology.
 
-Our goal is to generate a helpful set of "Good Enough" Practices (GEP) for leveraging workflow systems to streamline large-scale biological analyses. 
+Our goal is to generate a helpful set of strategies for leveraging workflow systems to streamline large-scale biological analyses. 
+
  [Our initial version](https://github.com/bluegenes/2020-latex-gep) has been much improved through iterations of feedback primarily from members and friends of the [DIB-lab](http://ivory.idyll.org/lab/). 
 While the practices are written with specific examples for high-throughput sequencing data, we hope many of the perspectives and guidance provided by the document apply more generally to all workflow-enabled biology. 
 
@@ -47,8 +47,8 @@ We will follow the [ICMJE Guidelines](http://www.icmje.org/recommendations/brows
 
 If you are not familiar with git and GitHub, you can use [these directions](INSTRUCTIONS.md) to start contributing.
 
-Please feel encouraged to ask questions by opening a [Request for Help issue](https://github.com/bluegenes/2020-gep/issues/new?assignees=rando2&labels=&template=request-for-help.md&title=Help%3A+%5BAdd+topic+here%5D)
-[![GitHub issues](https://img.shields.io/github/issues-raw/bluegenes/2020-gep?label=Open%20Issue&style=social)](https://github.com/bluegenes/2020-gep/issues/new/choose)
+Please feel encouraged to ask questions by opening a [Request for Help issue](https://github.com/dib-lab/2020-workflows-paper/issues/new?assignees=rando2&labels=&template=request-for-help.md&title=Help%3A+%5BAdd+topic+here%5D)
+[![GitHub issues](https://img.shields.io/github/issues-raw/dib-lab/2020-workflows-paper?label=Open%20Issue&style=social)](https://github.com/dib-lab/2020-workflows-paper/issues/new/choose)
 
 This project is a collaborative effort that will benefit from the expertise of scientists across a wide range of workflow applications!
 
@@ -96,7 +96,7 @@ We encourage users to openly license their manuscripts, which is the default as 
 [![License: CC0 1.0](https://img.shields.io/badge/License%20Parts-CC0%201.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 Except when noted otherwise, the entirety of this repository is licensed under a CC BY 4.0 License ([`LICENSE.md`](LICENSE.md)), which allows reuse with attribution.
-Please attribute by linking to https://github.com/bluegenes/2020-gep.
+Please attribute by linking to https://github.com/dib-lab/2020-workflows-paper.
 
 Since CC BY is not ideal for code and data, certain repository components are also released under the CC0 1.0 public domain dedication ([`LICENSE-CC0.md`](LICENSE-CC0.md)).
 All files matched by the following glob patterns are dual licensed under CC BY 4.0 and CC0 1.0:
