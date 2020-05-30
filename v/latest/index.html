@@ -56,9 +56,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,9 +72,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/392fc6307e30db9d31fb09e5af1e448b5c21f32f">dib-lab/2020-workflows-paper@392fc63</a>
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8">dib-lab/2020-workflows-paper@ec46598</a>
 on May 30, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -125,14 +125,14 @@ Here, we provide a series of practices and strategies for leveraging workflow sy
 Our main goal is to accelerate the research of scientists conducting sequence analyses by introducing them to organized workflow practices that not only benefit their own research but also facilitate open and reproducible science.</p>
 <h2 id="introduction">Introduction</h2>
 <p>Biological research has become increasingly computational.
-In particular, genomics has experienced a deluge of high-throughput sequencing data that has already revolutionized our understanding of the diversity and function of organisms and communities, building basic understanding from ecosystems to human health.
+In particular, genomics has experienced a deluge of high-throughput sequencing data that has already reshaped our understanding of the diversity and function of organisms and communities, building basic understanding from ecosystems to human health.
 The analysis workflows used to produce these insights often integrate hundreds of steps and involve a myriad of decisions ranging from small-scale tool and parameter choices to larger-scale design decisions around data processing and statistical analyses.
 Each step relies not just on analysis code written by the researcher, but on third-party software, its dependencies, and the compute infrastructure and operating system on which the code is executed.
 Historically, this has led to the patchwork availability of underlying code for analyses as well as a lack of interoperability of the resulting software and analysis pipelines across compute systems <span class="citation" data-cites="wq4G2CfQ">[<a href="#ref-wq4G2CfQ" role="doc-biblioref">1</a>]</span>.
 Combined with unmet training needs in biological data analysis, these conditions undermine the reuse of data and the reproducibility of biological research, vastly limiting the value of our generated data <span class="citation" data-cites="1b1v9x0E">[<a href="#ref-1b1v9x0E" role="doc-biblioref">2</a>]</span>.</p>
 <p>The biological research community is strongly committed to addressing these issues, recently formalizing the FAIR practices: the idea that all life sciences research (including data and analysis workflows) should be Findable, Accessible, Interoperable, and Reusable <span class="citation" data-cites="74cIRMFz">[<a href="#ref-74cIRMFz" role="doc-biblioref">3</a>]</span>.
 For computational analyses, these ideals are readily achievable with current technology, but implementing them in practice has proven difficult, particularly for biologists with little training in computing <span class="citation" data-cites="74cIRMFz">[<a href="#ref-74cIRMFz" role="doc-biblioref">3</a>]</span>.
-However, the recent maturation of data-centric workflow systems designed to automate and facilitate computational workflows is revolutionizing our capacity to conduct end-to-end FAIR analyses <span class="citation" data-cites="lebwQ6wD">[<a href="#ref-lebwQ6wD" role="doc-biblioref">5</a>]</span>.
+However, the recent maturation of data-centric workflow systems designed to automate and facilitate computational workflows is expanding our capacity to conduct end-to-end FAIR analyses <span class="citation" data-cites="lebwQ6wD">[<a href="#ref-lebwQ6wD" role="doc-biblioref">5</a>]</span>.
 These workflow systems are designed to handle some aspects of computational workflows internally: namely, the interactions with software and computing infrastructure, and the ordered execution of each step.
 By reducing the manual input and monitoring required at each analysis juncture, these integrated systems ensure that analyses are repeatable and can be executed at much larger scales.
 In concert, the standardized information and syntax required for rule-based workflow specification makes code inherently modular and more easily transferable between projects <span class="citation" data-cites="XwxJDpeh lebwQ6wD">[<a href="#ref-lebwQ6wD" role="doc-biblioref">5</a>,<a href="#ref-XwxJDpeh" role="doc-biblioref">6</a>]</span>.
