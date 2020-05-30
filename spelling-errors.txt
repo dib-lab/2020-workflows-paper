@@ -9,7 +9,7 @@ barcode
 bioconda
 bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-Checksums
+checksums
 chemistries
 Colab
 coli
@@ -42,9 +42,9 @@ elegans
 EMBL
 ENA
 Eukaryote
-Eukaryotic
+eukaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -76,10 +76,10 @@ Jupyter
 LFS
 lh
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 notetaking
 novo
@@ -94,7 +94,7 @@ preprocessed
 PyCharm
 quant
 Rabix
-rclone
+Rclone
 README
 Reiter
 ReiterTaylor
@@ -116,13 +116,13 @@ scrollable
 seqanswers
 sgc
 sha
-Snakemake
+snakemake
 SRA
 subsample
 subsampled
 taylorreiter
 transcriptional
-Transcriptome
+transcriptome
 UC
 WDL
 Wormbase

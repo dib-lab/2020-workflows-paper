@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,9 +113,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@86acccf](https://github.com/dib-lab/2020-workflows-paper/tree/86acccf6ce208ad4285402b42451cc49fb1d502a)
+from [dib-lab/2020-workflows-paper@195cf76](https://github.com/dib-lab/2020-workflows-paper/tree/195cf76579329462b5cc9c78ae0202183c88989c)
 on May 30, 2020.
 </em></small>
 
