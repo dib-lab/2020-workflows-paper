@@ -7,7 +7,7 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
 Bioinformatics
 Bionimbus
@@ -25,7 +25,7 @@ Colab
 coli
 conda
 csv
-ctb
+CTB
 ctitusbrown
 customizability
 CWL
@@ -44,7 +44,7 @@ ENA
 Eukaryote
 eukaryotic
 fasta
-FASTQ
+fastq
 FastQC
 Figshare
 filenaming
@@ -94,7 +94,7 @@ preprocessed
 PyCharm
 quant
 Rabix
-Rclone
+rclone
 README
 Reiter
 ReiterTaylor
@@ -116,7 +116,7 @@ scrollable
 seqanswers
 sgc
 sha
-snakemake
+Snakemake
 SRA
 subsample
 subsampled

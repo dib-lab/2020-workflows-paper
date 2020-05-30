@@ -76,11 +76,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,9 +113,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/195cf76579329462b5cc9c78ae0202183c88989c/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/392fc6307e30db9d31fb09e5af1e448b5c21f32f/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@195cf76](https://github.com/dib-lab/2020-workflows-paper/tree/195cf76579329462b5cc9c78ae0202183c88989c)
+from [dib-lab/2020-workflows-paper@392fc63](https://github.com/dib-lab/2020-workflows-paper/tree/392fc6307e30db9d31fb09e5af1e448b5c21f32f)
 on May 30, 2020.
 </em></small>
 
@@ -749,7 +749,7 @@ Although we specifically included data management strategies tailored to our own
 
 ### Acknowledgements
 
-Thank you to Shannon Joslin and all the members of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript.
+Thank you to Shannon Joslin and all the members of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us.
 
 ### Competing Interests
 
