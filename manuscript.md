@@ -64,23 +64,23 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@saltyscientist" />
 
-  <link rel="canonical" href="https://bluegenes.github.io/2020-gep/" />
+  <link rel="canonical" href="https://dib-lab.github.io/2020-workflows-paper/" />
 
-  <meta property="og:url" content="https://bluegenes.github.io/2020-gep/" />
+  <meta property="og:url" content="https://dib-lab.github.io/2020-workflows-paper/" />
 
-  <meta property="twitter:url" content="https://bluegenes.github.io/2020-gep/" />
+  <meta property="twitter:url" content="https://dib-lab.github.io/2020-workflows-paper/" />
 
-  <meta name="citation_fulltext_html_url" content="https://bluegenes.github.io/2020-gep/" />
+  <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
 
-  <meta name="citation_pdf_url" content="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
+  <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="application/pdf" href="https://bluegenes.github.io/2020-gep/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://bluegenes.github.io/2020-gep/v/489d3cab82b181dde21a81a5451e26f248acee98/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/" />
 
-  <meta name="manubot_html_url_versioned" content="https://bluegenes.github.io/2020-gep/v/489d3cab82b181dde21a81a5451e26f248acee98/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://bluegenes.github.io/2020-gep/v/489d3cab82b181dde21a81a5451e26f248acee98/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -113,9 +113,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://bluegenes.github.io/2020-gep/v/489d3cab82b181dde21a81a5451e26f248acee98/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/86acccf6ce208ad4285402b42451cc49fb1d502a/))
 was automatically generated
-from [bluegenes/2020-gep@489d3ca](https://github.com/bluegenes/2020-gep/tree/489d3cab82b181dde21a81a5451e26f248acee98)
+from [dib-lab/2020-workflows-paper@86acccf](https://github.com/dib-lab/2020-workflows-paper/tree/86acccf6ce208ad4285402b42451cc49fb1d502a)
 on May 30, 2020.
 </em></small>
 
