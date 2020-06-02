@@ -5,9 +5,10 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Taylor Reiter" />
+  <meta name="author" content="Luiz Irber" />
   <meta name="author" content="C. Titus Brown" />
   <meta name="author" content="N. Tessa Pierce" />
-  <meta name="dcterms.date" content="2020-05-30" />
+  <meta name="dcterms.date" content="2020-06-02" />
   <meta name="keywords" content="sequencing, bioinformatics, workflows, open access" />
   <title>Streamlining data-intensive biology with workflow systems</title>
   <style>
@@ -30,8 +31,8 @@
   <meta name="citation_title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="og:title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
-  <meta name="dc.date" content="2020-05-30" />
-  <meta name="citation_publication_date" content="2020-05-30" />
+  <meta name="dc.date" content="2020-06-02" />
+  <meta name="citation_publication_date" content="2020-06-02" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -42,6 +43,10 @@
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0002-7388-421X" />
   <meta name="twitter:creator" content="@ReiterTaylor" />
+  <meta name="citation_author" content="Luiz Irber" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+  <meta name="citation_author_orcid" content="0000-0003-4371-9659" />
+  <meta name="twitter:creator" content="@luizirber" />
   <meta name="citation_author" content="C. Titus Brown" />
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0001-6001-2677" />
@@ -56,9 +61,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -72,10 +77,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/ec46598196363ba4cdf2a7c3c3b91b76d1e1cad8">dib-lab/2020-workflows-paper@ec46598</a>
-on May 30, 2020.
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/00fe96542576d7f636c9f7d6af2d7f67ee24d344">dib-lab/2020-workflows-paper@00fe965</a>
+on June 2, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -89,6 +94,17 @@ on May 30, 2020.
 <small>
 Department of Population Health and Reproduction, University of California, Davis
 · Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Luiz Irber</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0003-4371-9659">0000-0003-4371-9659</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/luizirber">luizirber</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/luizirber">luizirber</a><br>
+<small>
+Department of Population Health and Reproduction, University of California, Davis
+· Funded by Moore Foundation GBMF4551
 </small></p></li>
 <li><p><strong>C. Titus Brown</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
@@ -1020,7 +1036,7 @@ DOI: <a href="https://doi.org/10.1371/journal.pone.0177459">10.1371/journal.pone
 <div id="ref-PljGS703">
 <p>34. <strong>QuantStack/mamba</strong><br />
 QuantStack<br />
-(2020-05-28) <a href="https://github.com/QuantStack/mamba">https://github.com/QuantStack/mamba</a></p>
+(2020-06-02) <a href="https://github.com/QuantStack/mamba">https://github.com/QuantStack/mamba</a></p>
 </div>
 <div id="ref-dpXky09I">
 <p>35. <strong>dib-lab/dib-MMETSP</strong><br />
@@ -1240,7 +1256,7 @@ DOI: <a href="https://doi.org/10.1186/s13073-017-0467-4">10.1186/s13073-017-0467
 <p>74. <strong>Zenodo - Research. Shared.</strong><a href="https://zenodo.org/">https://zenodo.org/</a></p>
 </div>
 <div id="ref-L1FmyUSP">
-<p>75. <a href="https://datadryad.org">https://datadryad.org</a></p>
+<p>75. <strong>Dryad Home - Publish and Preserve your Data</strong><a href="https://datadryad.org/stash">https://datadryad.org/stash</a></p>
 </div>
 <div id="ref-3Gg4ZEOM">
 <p>76. <strong>RClone: a package to identify MultiLocus Clonal Lineages and handle clonal data sets in .</strong><br />
