@@ -18,6 +18,16 @@ authors:
       - Department of Population Health and Reproduction, University of California, Davis
     funders: Grant XXXXXXXX
   -
+    github: luizirber
+    name: Luiz Irber
+    initials: LCIJ
+    orcid: 0000-0003-4371-9659
+    twitter: luizirber
+    email: lcirberjr@ucdavis.edu
+    affiliations:
+      - Department of Population Health and Reproduction, University of California, Davis
+    funders: Moore Foundation GBMF4551
+  -
    github: ctb
    name: C. Titus Brown
    initials: CTB
