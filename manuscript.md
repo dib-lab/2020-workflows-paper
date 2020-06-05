@@ -2,11 +2,12 @@
 author-meta:
 - Taylor Reiter
 - Luiz Irber
+- Shannon E.K. Joslin
 - C. Titus Brown
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-02'
+date-meta: '2020-06-05'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -25,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-06-02" />
+  <meta name="dc.date" content="2020-06-05" />
 
-  <meta name="citation_publication_date" content="2020-06-02" />
+  <meta name="citation_publication_date" content="2020-06-05" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -57,6 +58,14 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@luizirber" />
 
+  <meta name="citation_author" content="Shannon E.K. Joslin" />
+
+  <meta name="citation_author_institution" content="Department of Animal Science, University of California, Davis" />
+
+  <meta name="citation_author_orcid" content="0000-0001-5470-1193" />
+
+  <meta name="twitter:creator" content="@IntrprtngGnmcs" />
+
   <meta name="citation_author" content="C. Titus Brown" />
 
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
@@ -85,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -122,10 +131,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/00fe96542576d7f636c9f7d6af2d7f67ee24d344/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@00fe965](https://github.com/dib-lab/2020-workflows-paper/tree/00fe96542576d7f636c9f7d6af2d7f67ee24d344)
-on June 2, 2020.
+from [dib-lab/2020-workflows-paper@82f0f8c](https://github.com/dib-lab/2020-workflows-paper/tree/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540)
+on June 5, 2020.
 </em></small>
 
 ## Authors
@@ -154,6 +163,18 @@ on June 2, 2020.
   <small>
      Department of Population Health and Reproduction, University of California, Davis
      · Funded by Moore Foundation GBMF4551
+  </small>
+
++ **Shannon E.K. Joslin**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-5470-1193](https://orcid.org/0000-0001-5470-1193)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [shannonekj](https://github.com/shannonekj)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [IntrprtngGnmcs](https://twitter.com/IntrprtngGnmcs)<br>
+  <small>
+     Department of Animal Science, University of California, Davis
+     · Funded by State and Federal Water Contractors A19-1844
   </small>
 
 + **C. Titus Brown**<br>
@@ -187,7 +208,7 @@ on June 2, 2020.
 As the scale of biological data generation has increased, the bottleneck of research has shifted from data generation to analysis.
 Researchers commonly need to build computational workflows that include multiple analytic tools and require incremental development as experimental insights demand tool and parameter modifications.
 These workflows can produce hundreds to thousands of intermediate files and results that must be integrated for biological insight.
-The maturation of data-centric workflow systems that internally manage resources, software, and conditional execution of analysis steps are reshaping the landscape of biological data analysis, and empowering researchers to conduct reproducible analyses at scale.
+The maturation of data-centric workflow systems that internally manage computational resources, software, and conditional execution of analysis steps are reshaping the landscape of biological data analysis, and empowering researchers to conduct reproducible analyses at scale.
 Adoption of these tools can facilitate and expedite robust data analysis, but knowledge of these techniques is still lacking.
 Here, we provide a series of practices and strategies for leveraging workflow systems with structured project, data, and resource management to streamline large-scale biological analysis.
 
