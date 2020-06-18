@@ -9,7 +9,7 @@
   <meta name="author" content="Shannon E.K. Joslin" />
   <meta name="author" content="C. Titus Brown" />
   <meta name="author" content="N. Tessa Pierce" />
-  <meta name="dcterms.date" content="2020-06-05" />
+  <meta name="dcterms.date" content="2020-06-18" />
   <meta name="keywords" content="sequencing, bioinformatics, workflows, open access" />
   <title>Streamlining data-intensive biology with workflow systems</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="og:title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
-  <meta name="dc.date" content="2020-06-05" />
-  <meta name="citation_publication_date" content="2020-06-05" />
+  <meta name="dc.date" content="2020-06-18" />
+  <meta name="citation_publication_date" content="2020-06-18" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/82f0f8c56153f7a5c1badb29c63f9b3c39d4f540">dib-lab/2020-workflows-paper@82f0f8c</a>
-on June 5, 2020.
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/5f3222b12c2b24d7f63b1e066ab079ef5ee85866">dib-lab/2020-workflows-paper@5f3222b</a>
+on June 18, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -165,7 +165,7 @@ Combined with unmet training needs in biological data analysis, these conditions
 <p>The biological research community is strongly committed to addressing these issues, recently formalizing the FAIR practices: the idea that all life sciences research (including data and analysis workflows) should be Findable, Accessible, Interoperable, and Reusable <span class="citation" data-cites="74cIRMFz">[<a href="#ref-74cIRMFz" role="doc-biblioref">3</a>]</span>.
 For computational analyses, these ideals are readily achievable with current technology, but implementing them in practice has proven difficult, particularly for biologists with little training in computing <span class="citation" data-cites="74cIRMFz">[<a href="#ref-74cIRMFz" role="doc-biblioref">3</a>]</span>.
 However, the recent maturation of data-centric workflow systems designed to automate and facilitate computational workflows is expanding our capacity to conduct end-to-end FAIR analyses <span class="citation" data-cites="lebwQ6wD">[<a href="#ref-lebwQ6wD" role="doc-biblioref">5</a>]</span>.
-These workflow systems are designed to handle some aspects of computational workflows internally: namely, the interactions with software and computing infrastructure, and the ordered execution of each step.
+These workflow systems are designed to handle some aspects of computational workflows internally: namely, the interactions with software and computing infrastructure, and the ordered execution of each step of an analysis.
 By reducing the manual input and monitoring required at each analysis juncture, these integrated systems ensure that analyses are repeatable and can be executed at much larger scales.
 In concert, the standardized information and syntax required for rule-based workflow specification makes code inherently modular and more easily transferable between projects <span class="citation" data-cites="XwxJDpeh lebwQ6wD">[<a href="#ref-lebwQ6wD" role="doc-biblioref">5</a>,<a href="#ref-XwxJDpeh" role="doc-biblioref">6</a>]</span>.
 For these reasons, workflow systems are rapidly becoming the workhorses of modern bioinformatics.</p>
@@ -195,7 +195,7 @@ When paired with proper software management, fully-contained workflows are scala
 <strong>I. Portability:</strong> Analyses written in workflow languages (with integrated software management) can be run across computing systems without changes to code.</figcaption>
 </figure>
 </div>
-<p>To properly direct a workflow, workflow systems need to encode information about the relationships between workflow steps.
+<p>To properly direct an analysis, workflow systems need to encode information about the relationships between every workflow step.
 In practice, this means that each analysis step must specify the input (or types of inputs) needed for that step, and the output (or types of outputs) being produced.
 This structure provides several additional benefits.
 First, workflows become minimally self-documented, as the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see <strong>Figure <a href="#fig:sgc_workflow">5</a></strong>).
@@ -203,7 +203,7 @@ Next, workflows are more likely to be fully enclosed without undocumented steps 
 Finally, each step becomes a self-contained unit that can be used and re-used across multiple analysis workflows, so scientists can spend less time implementing standard steps, and more time on their specific research questions.
 In sum, the internal scaffolding provided by workflow systems helps build analyses that are generally better documented, repeatable, transferable, and scalable.</p>
 <h4 id="getting-started-with-workflows">Getting started with workflows</h4>
-<p><strong>Using workflows without learning workflow systems</strong> While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
+<p><strong>Using software without learning management systems</strong> While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
 It is possible to obtain the benefits of workflow systems without learning a workflow system.
 Websites like Galaxy, Cavatica, and EMBL-EBI MGnify offer online portals in which users build workflows around publicly-available or user-uploaded data <span class="citation" data-cites="WBsVRA32 qv3GO40c n9sYRgfE">[<a href="#ref-WBsVRA32" role="doc-biblioref">12</a>,<a href="#ref-qv3GO40c" role="doc-biblioref">13</a>,<a href="#ref-n9sYRgfE" role="doc-biblioref">14</a>]</span>.
 On the command line, many research groups have used workflow systems to build user-friendly pipelines that do not require learning or working with the underlying workflow software.
@@ -212,8 +212,8 @@ Rather than writing each workflow step, the user can specify data and parameters
 Some examples include the nf-core RNA-seq pipeline <span class="citation" data-cites="9C2akRh5 wq4G2CfQ">[<a href="#ref-wq4G2CfQ" role="doc-biblioref">1</a>,<a href="#ref-9C2akRh5" role="doc-biblioref">15</a>]</span>, the ATLAS metagenome assembly and binning pipeline <span class="citation" data-cites="CeVdUj5n so5fKJ5K">[<a href="#ref-CeVdUj5n" role="doc-biblioref">16</a>,<a href="#ref-so5fKJ5K" role="doc-biblioref">17</a>]</span>, the Sunbeam metagenome analysis pipeline <span class="citation" data-cites="B1ckDvru h9rLdvMM">[<a href="#ref-B1ckDvru" role="doc-biblioref">18</a>,<a href="#ref-h9rLdvMM" role="doc-biblioref">19</a>]</span>, and two from our own lab, the dammit eukaryotic transcriptome annotation pipeline <span class="citation" data-cites="1ABkx7mMC">[<a href="#ref-1ABkx7mMC" role="doc-biblioref">20</a>]</span> and the elvers <em>de novo</em> transcriptome pipeline <span class="citation" data-cites="vxcvKkG9">[<a href="#ref-vxcvKkG9" role="doc-biblioref">21</a>]</span>.
 These tools allow users to take advantage of the benefits of workflow software without needing to invest in curating and writing their own pipeline. They are designed to execute a series of standard steps, and provide varying degrees of customizability.</p>
 <p><strong>Choosing a workflow system</strong>
-If your use case extends beyond these tools, there are several scriptable workflow systems that offer comparable benefits for data intensive biology.
-Each has it own strengths, meaning each software will meet an individuals computing goals differently (see <strong>Table <a href="#tbl:workflows">1</a></strong>).
+If your use case extends beyond these tools, there are several scriptable workflow systems that offer comparable benefits for carrying out your own data-intensive analyses.
+Each has it own strengths, meaning each workflow software will meet an individuals computing goals differently (see <strong>Table <a href="#tbl:workflows">1</a></strong>).
 Our lab has adopted Snakemake, in part due to its similarity and integration with Python, its flexibility for building and testing new analyses in different languages, and its intuitive integration with software management tools (described below)<span class="citation" data-cites="NcYZqBux">[<a href="#ref-NcYZqBux" role="doc-biblioref">22</a>]</span>.
 Snakemake and Nextflow are commonly used for designing new research pipelines, where flexibility and iterative, branching development is a key feature <span class="citation" data-cites="4XDvZWxk">[<a href="#ref-4XDvZWxk" role="doc-biblioref">23</a>]</span>. Common Workflow Language (CWL) and Workflow Description Language (WDL) are interchangeable formats that are more geared towards scalability, making them ideal for production-level pipelines with hundreds of thousands of samples <span class="citation" data-cites="Ppg8PzBL">[<a href="#ref-Ppg8PzBL" role="doc-biblioref">24</a>]</span>. CWL and WDL are currently best built and used through wrapper tools such as Rabix or platforms such as Terra <span class="citation" data-cites="https://rabix.io https://terra.bio">[<span class="citeproc-not-found" data-reference-id="https://rabix.io"><strong>???</strong></span>,<span class="citeproc-not-found" data-reference-id="https://terra.bio"><strong>??</strong></span>]</span>.
 Language-specific workflow systems, such as ROpenSci’s Drake <span class="citation" data-cites="6ajFUkom">[<a href="#ref-6ajFUkom" role="doc-biblioref">25</a>]</span>, are limited in the scope of tasks they can execute, but are powerful within their language and easier to integrate for those comfortable with that language.</p>
@@ -276,8 +276,8 @@ These tools are heterogeneous in nature: they are written by researchers working
 Each program has a number of other programs it depends upon to function (“dependencies”), and as software changes over time to meet research needs, the results may change, even when run with identical parameters.
 As a result, it is critical to take an organized approach to installing, managing, and keeping track of software and software versions.
 To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker <span class="citation" data-cites="sYguBb3Q IMC1tV9m https://dl.acm.org/doi/10.5555/2600239.2600241">[<span class="citeproc-not-found" data-reference-id="https://dl.acm.org/doi/10.5555/2600239.2600241"><strong>???</strong></span>,<a href="#ref-sYguBb3Q" role="doc-biblioref">11</a>,<a href="#ref-IMC1tV9m" role="doc-biblioref">33</a>]</span>. (CTB: one of these citations fails.)</p>
-<p>Software management systems perform some combination of software installation, management, and packaging that alleviate problems that arise from dependencies and that facilitate documentation of software versions.
-On many systems, system-wide software management is overseen by system administrators, who ensure commonly-used and requested software is installed into a “module” system available to all users.
+<p>Software management systems perform some combination of software installation, management, and packaging that alleviate problems that arise from dependencies and facilitate documentation of software versions.
+On many compute systems, system-wide software management is overseen by system administrators, who ensure commonly-used and requested software is installed into a “module” system available to all users.
 Unfortunately, this system does not lend itself well for exploring new workflows and software, as researchers do not have permission to install software themselves.
 The Conda package manager has emerged as a leading solution, largely because it handles both cluster permission and version conflict issues with a user-based software environment system, and features a straightforward “recipe” system which simplifies the process of making new software installable (<strong>Figure <a href="#fig:conda_figure">2</a></strong>).
 Conda enables lightweight software installation and can be used with the same commands across platforms, but can still be impacted by differences in the host operating system.
@@ -286,10 +286,10 @@ Container-based software installation via docker and singularity is common for p
 <div id="fig:conda_figure" class="fignos">
 <figure>
 <img src="images/conda_figure.svg" style="height:8in" alt="" /><figcaption><span>Figure 2:</span> <strong>The conda package and environment manager simplifies software installation and management.</strong>
-<strong>A. Conda Recipe Repositories:</strong> Each program distributed via Conda has a “recipe” describing all software dependencies needed for Conda installation (each of which must also be installable via conda). These are stored and managed in separate “channels”, some of which specialize (e.g. “bioconda” specializes in bioinformatic software, “r” specializes in R language packages) <span class="citation" data-cites="sYguBb3Q">[<a href="#ref-sYguBb3Q" role="doc-biblioref">11</a>]</span>. <strong>B. Use Conda Environments to Avoid Installation Conflicts:</strong> Conda does not require root
+<strong>A. Conda Recipe Repositories:</strong> Each program distributed via Conda has a “recipe” describing all software dependencies needed for installation using Conda (each of which must also be installable via Conda). Recipes are stored and managed in the cloud in separate “channels”, some of which specialize in particular fields or languages (e.g. the “bioconda” channel specializes in bioinformatic software, the “r” channel specializes in R language packages) <span class="citation" data-cites="sYguBb3Q">[<a href="#ref-sYguBb3Q" role="doc-biblioref">11</a>]</span>. <strong>B. Use Conda Environments to Avoid Installation Conflicts:</strong> Conda does not require root
 privileges for software installation, thus enabling use by researchers working on shared cluster systems. However, even user-based software installation can encounter dependency conflicts. For example, you might need to use python2 to install and run a program (e.g. older scripts written by members of your lab), while also using snakemake to execute your workflows (requires python&gt;=3.5). By installing each program into an isolated “environment” that contains only the software required to run that
-program, you can ensure all programs will run without issue. Using small, separate environments for your software and building many simple environments to accommodate different steps in your workflow also reduces the amount of time it takes conda to resolve dependency conflicts between different software tools (“solve” an environment). Conda virtual environments can be created and installed either on the command line, or via an environment YAML file, as shown. In this case, the environment file
-also specifies which Conda channels to search and download programs from. When specified in a YAML file, conda environments are easily transferable between computers and operating systems. Further, because the version of each package installed in an environment is recorded, workflow reproducibility is enhanced. Although portions of conda may be superseded by alternative solutions <span class="citation" data-cites="PljGS703">[<a href="#ref-PljGS703" role="doc-biblioref">34</a>]</span>, this model of software installation and management will likely
+program, you can ensure all programs used throughout your analysis will run without issue. Using small, separate environments for your software and building many simple environments to accommodate different steps in your workflow also reduces the amount of time it takes conda to resolve dependency conflicts between different software tools (“solve” an environment). Conda virtual environments can be created and installed either on the command line, or via an environment YAML file, as shown. In this case, the environment file
+also specifies which Conda channels to search and download programs from. When specified in a YAML file, conda environments are easily transferable between computers and operating systems. Further, because the version of each package installed in an environment is recorded, workflow reproducibility is enhanced. Although portions of Conda may be superseded by alternative solutions <span class="citation" data-cites="PljGS703">[<a href="#ref-PljGS703" role="doc-biblioref">34</a>]</span>, this model of software installation and management will likely
 persist.</figcaption>
 </figure>
 </div>
@@ -301,7 +301,7 @@ Integrated development environments (IDE) like PyCharm and RStudio can manage so
 These approaches are ideal for testing a tool to determine whether it produces useful output on your data before integration with your reproducible workflow.</p>
 <p><strong>Integrating software management within workflows</strong>
 Workflow systems provide seamless integration with software management tools.
-Each workflow requires different specification for initiation of software management, but typically requires about one additional line of code per step using software.
+Each workflow system requires different specification for initiation of software management, but typically requires about one additional line of code per step that requires the use of software.
 If the software management tool is installed locally, the workflow will automatically download and install the specified environment or container and use it for specified step.</p>
 <p>In our experience, the complete solution for using scientific software involves starting with a combination of interactive and exploratory analyses in IDEs and local conda installation to develop an analysis strategy and create an initial workflow. This is then followed by workflow-integrated software management via conda, singularity, or docker for executing the resulting workflow on many samples.</p>
 <h2 id="workflow-based-project-management">Workflow-Based Project Management</h2>
@@ -311,7 +311,7 @@ Workflow systems both simplify and improve computational project management, but
 <h3 id="systematically-document-your-workflows">Systematically document your workflows</h3>
 <p>Pervasive documentation provides indispensable context for biological insights derived from an analysis, facilitates transparency in research, and increases reusability of the analysis code.
 Good documentation covers all aspects of a project, including file and results organization, clear and commented code, and accompanying explanatory documents for design decisions and metadata.
-Workflow systems facilitate building this documentation, as each analysis step (with chosen parameters) and the links between those steps are completely specified within workflow syntax.
+Workflow systems facilitate building this documentation, as each analysis step (with chosen parameters) and the links between those steps are completely specified within the workflow syntax.
 This feature streamlines code documentation, particularly if you include as much of the analysis as possible within the automated workflow framework.
 Outside of the analysis itself, applying consistent organizational design can capitalize on the structure and automation provided by workflows to simplify the generation of quality documentation for all aspects of your project.
 Below, we discuss project management strategies for building reproducible workflow-enabled biological analyses.</p>
@@ -322,7 +322,7 @@ For example, the file shown in <strong>Figure <a href="#fig:filenaming">3</a></s
 For large workflows, placing results from each step of your analysis in isolated, descriptive folders can be essential for keeping your project workspace clean and organized.</p>
 <div id="fig:filenaming" class="fignos">
 <figure>
-<img src="images/filenaming.svg" alt="" /><figcaption><span>Figure 3:</span> Consistent and informative file naming improves organization and interpretability. It is useful to keep unique sample identification in the filename, often with a metadata file explaining the meaning of each unique descriptor. For analysis scripts, it can help to implement a numbering scheme, where the name of first file in the analysis begins with “00”, the next with “01”, etc. For output files, it can help to add a short, unique identifier to output files processed with each analysis step. This particular file is a RAD sequencing fastq file of a fish species that has been preprocessed with a fastq quality trimming tool (courtesy of Shannon Joslin).</figcaption>
+<img src="images/filenaming.svg" alt="" /><figcaption><span>Figure 3:</span> Consistent and informative file naming improves organization and interpretability. For ease of grouping and referring to input files, it is useful to keep unique sample identification in the filename, often with a metadata file explaining the meaning of each unique descriptor. For analysis scripts, it can help to implement a numbering scheme, where the name of first file in the analysis begins with “00”, the next with “01”, etc. For output files, it can help to add a short, unique identifier to output files processed with each analysis step. This particular file is a RAD sequencing fastq file of a fish species that has been preprocessed with a fastq quality trimming tool.</figcaption>
 </figure>
 </div>
 <h4 id="store-workflow-metadata-with-the-workflow">Store workflow metadata with the workflow</h4>
@@ -332,7 +332,7 @@ How did you finally manage to get around the program or installation error?
 All of these pieces of information contextualize your results and may be helpful when sharing your findings.
 Keeping information about these decisions in an intuitive and easily accessible place helps you find it when you need it.
 To capitalize on the utility of version control systems described below, it is most useful to store this information in plain text files.
-Each main directory should include notes on the data or scripts contained within, so that a collaborator could look into the directory and understand what to find there (especially since that “collaborator” is likely to be you, a few months from now!).
+Each main directory of a project should include notes on the data or scripts contained within, so that a collaborator could look into the directory and understand what to find there (especially since that “collaborator” is likely to be you, a few months from now!).
 Code itself can contain documentation - you can include comments with the reasoning behind algorithm choice or include a link to the seqanswers post that helped you decide how to shape your differential expression analysis.
 Larger pieces of information can be kept in “README” or notes documents kept alongside your code and other documents.
 For example, a GitHub repository documenting the reanalysis of the Marine Microbial Eukaryote Transcriptome Sequencing Project uses a README alongside the code to document the workflow and digital object identifiers for data products <span class="citation" data-cites="dpXky09I 18F3tEMjQ">[<a href="#ref-dpXky09I" role="doc-biblioref">35</a>,<a href="#ref-18F3tEMjQ" role="doc-biblioref">36</a>]</span>.
@@ -343,13 +343,13 @@ These notebooks allow for fully documented iterative analysis development, and a
 <div id="fig:nb_figure" class="fignos">
 <figure>
 <img src="images/nb_figure.png" alt="" /><figcaption><span>Figure 4:</span> <strong>Examples of computational notebooks.</strong> Computational notebooks allow the user to mix text, code, and results in one document.
-<strong>Panel A</strong> shows an RMarkdown document viewed in the RStudio integrated development environment, while <strong>Panel B</strong> shows a rendered HTML file produced by knitting the RMarkdown document <span class="citation" data-cites="DJNUoP3l">[<a href="#ref-DJNUoP3l" role="doc-biblioref">37</a>]</span>.
-<strong>Panel C</strong> shows a Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed <span class="citation" data-cites="https://dx.doi.org/10.3233/978-1-61499-649-1-87">[<span class="citeproc-not-found" data-reference-id="https://dx.doi.org/10.3233/978-1-61499-649-1-87"><strong>???</strong></span>]</span>.
+<strong>Panel A.</strong> shows an RMarkdown document viewed in the RStudio integrated development environment, while <strong>Panel B.</strong> shows a rendered HTML file produced by knitting the RMarkdown document <span class="citation" data-cites="DJNUoP3l">[<a href="#ref-DJNUoP3l" role="doc-biblioref">37</a>]</span>.
+<strong>Panel C.</strong> shows a Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed <span class="citation" data-cites="https://dx.doi.org/10.3233/978-1-61499-649-1-87">[<span class="citeproc-not-found" data-reference-id="https://dx.doi.org/10.3233/978-1-61499-649-1-87"><strong>???</strong></span>]</span>.
 The second grey chunk is a raw Markdown chunk with text that will be rendered inline when executed.
 Both notebooks generate a histogram of a metadata feature, number of generations, from a long-term evolution experiment with <em>Escherichia coli</em> <span class="citation" data-cites="3515RwRB">[<a href="#ref-3515RwRB" role="doc-biblioref">38</a>]</span>.
 Computational notebooks facilitate sharing by packaging narrative, code, and visualizations together.
 Computational notebooks can be further packaged with tools like Binder <span class="citation" data-cites="Q20Bxdsr">[<a href="#ref-Q20Bxdsr" role="doc-biblioref">39</a>]</span>.
-Binder makes a GitHub repository executable by using package management systems and docker to build reproducible and executable software environments as specified in the repository.
+Binder builds an executable environment (capable of running RStudio and Jupyter notebooks) out of a GitHub repository using package management systems and docker to build reproducible and executable software environments as specified in the repository.
 Binders can be shared with collaborators (or students in a classroom setting), and analysis and visualization can be ephemerally reproduced or altered from the code provided in computational notebooks.<br />
 </figcaption>
 </figure>
@@ -362,23 +362,23 @@ For individual steps, a graphical representation of the output can show the stat
 <img src="images/hu_dag.png" alt="" /><figcaption><span>Figure 5:</span> A directed acyclic graph (DAG) that illustrates connections between all steps of a sequencing data analysis workflow. Each box represents a step in the workflow, while lines connect sequential steps.
 The DAG shown in this figure illustrates a real bioinformatics workflow from and was generated by modifying the default Snakemake workflow DAG <span class="citation" data-cites="yrQ7duwp">[<a href="#ref-yrQ7duwp" role="doc-biblioref">40</a>]</span>.
 The colors represent arms of the workflow that achieve a final result, such as a multiple sequence alignment of a protein of interest.
-While the workflow is complex, it is coordinated by a workflow system that alleviates the need for a user to manage file interdependencies.</figcaption>
+While the workflow is complex, it is coordinated by a workflow system that alleviates the need for a user to directly manage file interdependencies.</figcaption>
 </figure>
 </div>
 <h3 id="version-control-your-project">Version control your project</h3>
 <p>As your project develops, version control allows you to keep track of changes over time.
 You may already do this in some ways, perhaps with frequent hard drive backups or by manually saving different versions of the same file - e.g. by appending the date to a script name or appending “version_1” or “version_FINAL” to a manuscript draft.
 For computational workflows, using version control systems such as Git or Mercurial can be used to keep track of all changes over time, even across multiple systems, scripting languages, and project contributors (see <strong>Figure <a href="#fig:version_control">6</a></strong>).
-If a key piece of a workflow inexplicably stops working, good version control can allow you to rewind in time and identify differences from when the pipeline worked to when it stopped working.
+If a key piece of a workflow inexplicably stops working, consistent version control can allow you to rewind in time and identify differences from when the pipeline worked to when it stopped working.
 Backing up your version controlled analysis in an online repository such as GitHub, GitLab, or Bitbucket provides critical insurance as you iteratively modify and develop your workflow.</p>
 <div id="fig:version_control" class="fignos">
 <figure>
-<img src="images/version_control.svg" alt="" /><figcaption><span>Figure 6:</span> <strong>Version Control</strong> Version control systems (e.g. Git, Mercurial) work by storing incremental differences in files from one saved version (“commit”) to the next. To visualize the differences between each version, text editors such as Atom and online services such as GitHub, GitLab and Bitbucket use red highlight to denote deletions, and green highlighting to denote additions. In this trivial example, a typo in version 1 (in red) was corrected (green). These systems are extremely useful for code and manuscript development, as it is possible to return to the snapshot of any saved version. This means that version control systems save you from accidental deletions, preserve code you thought you no longer needed, and preserve a record of project changes over time.</figcaption>
+<img src="images/version_control.svg" alt="" /><figcaption><span>Figure 6:</span> <strong>Version Control</strong> Version control systems (e.g. Git, Mercurial) work by storing incremental differences in files from one saved version (“commit”) to the next. To visualize the differences between each version, text editors such as Atom and online services such as GitHub, GitLab and Bitbucket use red highlight to denote deletions, and green highlighting to denote additions. In this trivial example, a typo in version 1 (in red) was corrected in version 2 (in green). These systems are extremely useful for code and manuscript development, as it is possible to return to the snapshot of any saved version. This means that version control systems save you from accidental deletions, preserve code you thought you no longer needed and preserve a record of project changes over time.</figcaption>
 </figure>
 </div>
 <p>When combined with online backups, version control systems also facilitate code and data availability and reproducibility for publication.
-For example, to preserve the version of code that produced published results, you can create a “release”, a snapshot of the current code and files in a GitHub repository.
-You can then generate a digital object identifier (DOI) for that release using a permanent documentation service such as Zenodo and make it available to reviewers and beyond (see “sharing” section, below).</p>
+For example, to preserve the version of code that produced published results, you can create a “release”: a snapshot of the current code and files in a GitHub repository.
+You can then generate a digital object identifier (DOI) for that release using a permanent documentation service such as Zenodo (<span class="citation" data-cites="https://zenodo.org">[<span class="citeproc-not-found" data-reference-id="https://zenodo.org"><strong>???</strong></span>]</span>) and make it available to reviewers and beyond (see “sharing” section, below).</p>
 <h3 id="share-your-workflow-and-analysis-code">Share your workflow and analysis code</h3>
 <p>Sharing your workflow code with collaborators, peer reviewers, and scientists seeking to use a similar method can foster discussion and review of your analysis.
 Sticking to a clear documentation strategy, using a version control system, and packaging your code in notebooks or as a workflow prepare them to be easily shared with others.
@@ -387,12 +387,12 @@ These tools substantially reduce overhead associated with interacting with code 
 <div id="fig:interactiveviz" class="fignos">
 <figure>
 <img src="images/interactive_viz.png" alt="" /><figcaption><span>Figure 7:</span> Interactive visualizations facilitate sharing and repeatability.
-<strong>A</strong> Interactive visualization dashboard in the Pavian Shiny app for metagenomic analysis <span class="citation" data-cites="1rm0p82n 1FWTyC9rH">[<a href="#ref-1rm0p82n" role="doc-biblioref">43</a>,<a href="#ref-1FWTyC9rH" role="doc-biblioref">44</a>]</span>.
+<strong>A.</strong> Interactive visualization dashboard in the Pavian Shiny app for metagenomic analysis <span class="citation" data-cites="1rm0p82n 1FWTyC9rH">[<a href="#ref-1rm0p82n" role="doc-biblioref">43</a>,<a href="#ref-1FWTyC9rH" role="doc-biblioref">44</a>]</span>.
 Shiny allows you to build interactive web pages using R code.
 Data is manipulated by R code in real-time in a web page, producing analysis and visualizations of a data set.
 Shiny apps can contain user-specifiable parameters, allowing a user to control visualizations or analyses. As seen above, sample “PT1” is selected, and taxonomic ranks class and order are excluded.
 Shiny apps allow collaborators who may or may not know R to modify R visualizations to fit their interests.
-<strong>B</strong> Plotly heatmap of transcriptional profiling in human brain samples <span class="citation" data-cites="1C5wJzJ6h">[<a href="#ref-1C5wJzJ6h" role="doc-biblioref">45</a>]</span>.
+<strong>B.</strong> Plotly heatmap of transcriptional profiling in human brain samples <span class="citation" data-cites="1C5wJzJ6h">[<a href="#ref-1C5wJzJ6h" role="doc-biblioref">45</a>]</span>.
 Hovering over a cell in the heatmap displays the sample names from the x and y axis, as well as the intensity value.
 Plotting tools like plotly and vega-lite produce single interactive plots that can be shared with collaborators or integrated into websites <span class="citation" data-cites="xS76sIlp nyZChH5b">[<a href="#ref-xS76sIlp" role="doc-biblioref">46</a>,<a href="#ref-nyZChH5b" role="doc-biblioref">47</a>]</span>.
 Interactive visualizations are also helpful in exploratory data analysis.</figcaption>
@@ -407,14 +407,14 @@ Below, we provide a few practical strategies to try as you begin developing your
 When building a workflow for the first time, creating an initial workflow based on a subset of your sample data can help verify that the workflow, tools, and command line syntax function at a basic level.
 This functioning example code then provides a reliable workflow framework free of syntax errors which you can customize for your data without the overhead of generating correct workflow syntax from scratch.
 <strong>Table <a href="#tbl:workflows">1</a></strong> provides links to official repositories containing tutorials and example biological analysis workflows, and workflow tutorials and code sharing websites like GitHub, GitLab, and Bitbucket have many publicly available workflows for other analyses.
-If a workflow is available through Binder, you can test and experiment with workflow modification on Binder’s cloud system without needing to install a workflow manager or software management tool <span class="citation" data-cites="Q20Bxdsr">[<a href="#ref-Q20Bxdsr" role="doc-biblioref">39</a>]</span>.</p>
+If a workflow is available through Binder, you can test and experiment with workflow modification on Binder’s cloud system without needing to install a workflow manager or software management tool on your local compute system <span class="citation" data-cites="Q20Bxdsr">[<a href="#ref-Q20Bxdsr" role="doc-biblioref">39</a>]</span>.</p>
 <p><strong>Test with subsampled data</strong>
 While a workflow may run on test data, this is not a guarantee it will run on all data.
 After verifying your chosen example workflow is functional, try running it with your own data or some public data related to your species or condition of interest.
-Trying the workflow on a small subset of the data first can save time, energy, and computational resources.
+If your analysis allows, trying the workflow on a small subset of the data first can save time, energy, and computational resources.
 For example, if working with FASTQ data, you can subsample the first million lines of a file (first 250k reads) by running:</p>
 <p><code>head -n 1000000 FASTQ_FILE.fq &gt; test_fastq.fq</code></p>
-<p>While there are many more sophisticated ways to subsample reads, this technique should be sufficient for testing each step of a workflow prior to running your full dataset.</p>
+<p>While there are many more sophisticated ways to subsample reads, this technique should be sufficient for testing each step of a most workflows prior to running your full dataset. In specific cases, such as eukaryotic genome assembly, you may need to be more intentional with how you subsample reads.</p>
 <p><strong>Document your process</strong>
 Document your changes, explorations, and errors as you develop.
 We recommend using the Markdown language so your documentation is in plain text to facilitate version control, but can still include helpful visual headings, code formatting, and embedded images.
@@ -535,9 +535,9 @@ Once generated, it is always a good idea to have multiple independent backups of
 </tbody>
 </table>
 </div>
-<p>As your experiment progresses, keep track of as much information as possible: dates and times of sample collection, storage, and extraction, sample names, aberrations that occurred during collection, kit lot used for extraction, and any other sample measurements you might be able to obtain (temperature, location, metabolite concentration, name of collector, etc).
+<p>As your experiment progresses, keep track of as much information as possible: dates and times of sample collection, storage, and extraction, sample names, aberrations that occurred during collection, kit lot used for extraction, and any other sample and sequencing measurements you might be able to obtain (temperature, location, metabolite concentration, name of collector, well number, plate number, machine your data was sequenced, on etc).
 This metadata allows you to keep track of your samples, to control for batch effects that may arise from unintended batching during sampling or experimental procedures and makes the data you collect reusable for future applications and analysis by yourself and others.
-Wherever possible, follow the standard guidelines for formatting data for scientific computing to limit downstream processing and simplify analyses requiring these metadata (see: <span class="citation" data-cites="k9JCaCug">[<a href="#ref-k9JCaCug" role="doc-biblioref">10</a>]</span>).</p>
+Wherever possible, follow the standard guidelines for formatting metadata for scientific computing to limit downstream processing and simplify analyses requiring these metadata (see: <span class="citation" data-cites="k9JCaCug">[<a href="#ref-k9JCaCug" role="doc-biblioref">10</a>]</span>).</p>
 <h3 id="getting-started-with-sequencing-data">Getting started with sequencing data</h3>
 <h4 id="protect-valuable-data">Protect valuable data</h4>
 <p>Aside from the code itself, raw data are the most important files associated with a workflow, as they cannot be regenerated if accidentally altered or deleted.
@@ -556,7 +556,7 @@ Ongoing projects such as the NIH Common Fund Data Ecosystem aim to develop a dat
 Transferring compressed files (gzip, bzip2, BAM/CRAM, etc.) can improve transfer speed and save space, and checksums can be used to to ensure file integrity after transfer (see <strong>Figure <a href="#fig:checksum">8</a></strong>).</p>
 <div id="fig:checksum" class="fignos">
 <figure>
-<img src="images/checksum.svg" style="height:2.5in" alt="" /><figcaption><span>Figure 8:</span> <strong>Use Checksums to ensure file integrity</strong> Checksum programs (e.g. md5, sha256) encode file size in a single value known as a “checksum”. For any file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like Rsync and Rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. Cyberduck) can assess checksums when they are provided <span class="citation" data-cites="3Gg4ZEOM">[<a href="#ref-3Gg4ZEOM" role="doc-biblioref">76</a>]</span>.</figcaption>
+<img src="images/checksum.svg" style="height:2.5in" alt="" /><figcaption><span>Figure 8:</span> <strong>Use Checksums to ensure file integrity</strong> Checksum programs (e.g. md5, sha256) encode file size and content in a single value known as a “checksum”. For any given file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like rsync and rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. Cyberduck) can assess checksums when they are provided <span class="citation" data-cites="3Gg4ZEOM">[<a href="#ref-3Gg4ZEOM" role="doc-biblioref">76</a>]</span>. If you generated your own data and receieved sequencing files from a sequencing center, be certain you also receive a checksum for each of your files to ensure they download properly.</figcaption>
 </figure>
 </div>
 <h4 id="perform-quality-control-at-every-step">Perform quality control at every step</h4>
@@ -640,11 +640,12 @@ Visualizing raw sequencing data with FastQC (<strong>Figure <a href="#fig:multiq
 <div id="fig:multiqc" class="fignos">
 <figure>
 <img src="images/multiqc.svg" alt="" /><figcaption><span>Figure 9:</span> <strong>Visualizations produced by MultiQC.</strong>
-<strong>A</strong> MultiQC summary of FastQC Per Sequence GC Content for 1905 metagenome samples. FastQC provides quality control measurements and visualizations for raw sequencing data, and is a near-universal first step in sequencing data analysis because of the insights it provides <span class="citation" data-cites="R2o2aPyA F2D6lhmD">[<a href="#ref-R2o2aPyA" role="doc-biblioref">79</a>,<a href="#ref-F2D6lhmD" role="doc-biblioref">80</a>]</span>.
-FastQC measures and summarizes 10 quality metrics and provides recommendations for whether the sample is within an acceptable quality range.
+MultiQC finds and automatically parses log files from other tools and generates a combined report and parsed data tables that include all samples. MultiQC currently supports 88 tools.
+<strong>A.</strong> MultiQC summary of FastQC Per Sequence GC Content for 1905 metagenome samples. FastQC provides quality control measurements and visualizations for raw sequencing data from a single sample, and is a near-universal first step in sequencing data analysis because of the insights it provides <span class="citation" data-cites="R2o2aPyA F2D6lhmD">[<a href="#ref-R2o2aPyA" role="doc-biblioref">79</a>,<a href="#ref-F2D6lhmD" role="doc-biblioref">80</a>]</span>.
+FastQC measures and summarizes 10 quality metrics and provides recommendations for whether an individual sample is within an acceptable quality range.<br />
 Not all metrics readily apply to all sequencing data types. For example, while multiple GC peaks might be concerning in whole genome sequencing of a bacterial isolate, we would expect a non-normal distribution for some metagenome samples that contain organisms with diverse GC content.
 Samples like this can be seen in red in this figure.
-<strong>B</strong> MultiQC summary of Salmon <em>quant</em> reads mapped per sample for RNA-seq samples <span class="citation" data-cites="vrqQcFyx">[<a href="#ref-vrqQcFyx" role="doc-biblioref">81</a>]</span>. MultiQC finds and automatically parses log files from other tools and generates a combined report and parsed data tables that include all samples. MultiQC currently supports 88 tools. In this figure, we see that MultiQC summarizes the number of reads mapped and percent of reads mapped, two values that are reported in the Salmon log files.</figcaption>
+<strong>B.</strong> MultiQC summary of Salmon <em>quant</em> reads mapped per sample for RNA-seq samples <span class="citation" data-cites="vrqQcFyx">[<a href="#ref-vrqQcFyx" role="doc-biblioref">81</a>]</span>. In this figure, we see that MultiQC summarizes the number of reads mapped and percent of reads mapped, two values that are reported in the Salmon log files.</figcaption>
 </figure>
 </div>
 <p><strong>Pay attention to warnings and log files</strong>
@@ -654,7 +655,7 @@ Inspecting these files can be helpful to make sure tools ran properly and consis
 Parsing and visualizing log files with a tool like MultiQC can improve interpretability of program-specific log files (<strong>Figure <a href="#fig:multiqc">9</a></strong> <span class="citation" data-cites="U9WbDW7I">[<a href="#ref-U9WbDW7I" role="doc-biblioref">82</a>]</span>).</p>
 <p><strong>Look for common biases in sequencing data</strong>
 Biases in sequencing data originate from experimental design, methodology, sequencing chemistry, or workflows, and are helpful to target specifically with quality control measures.
-The exact biases in a specific data set or workflow will vary greatly between experiments.
+The exact biases in a specific data set or workflow will vary greatly between experiments so it is important to understand the sequencing method you have chosen and incorporate appropriate filtration steps into your workflow.
 For example, PCR duplicates can cause problems in libraries that underwent an amplification step, and often need to be removed prior to downstream analysis <span class="citation" data-cites="MmpwXJ9S KbGRuflQ di7r5Vq3 CdYXlaJQ Io9lIhcB">[<a href="#ref-MmpwXJ9S" role="doc-biblioref">83</a>,<a href="#ref-KbGRuflQ" role="doc-biblioref">84</a>,<a href="#ref-di7r5Vq3" role="doc-biblioref">85</a>,<a href="#ref-CdYXlaJQ" role="doc-biblioref">86</a>,<a href="#ref-Io9lIhcB" role="doc-biblioref">87</a>]</span>.</p>
 <p><strong>Check for contamination</strong>
 Contamination can arise during sample collection, nucleotide extraction, library preparation, or through sequencing spike-ins like PhiX, and could change data interpretation if not removed <span class="citation" data-cites="1FNab1rDP bzutebV 1BcD0ITS9">[<a href="#ref-1FNab1rDP" role="doc-biblioref">88</a>,<a href="#ref-bzutebV" role="doc-biblioref">89</a>,<a href="#ref-1BcD0ITS9" role="doc-biblioref">90</a>]</span>.
@@ -794,7 +795,7 @@ There are a vast array of online resources for bioinformatic help ranging from q
 This increases the discoverability of error messages and their solutions.</p>
 <p>Sometimes, programs fail without outputting an error message.
 In cases like these, the software’s help (usually accessible on the command line via <code>tool-name --help</code>) and official documentation may provide clues or additional example use cases that may be helpful in resolving an error.
-Syntax errors are extremely common, and typos as small as a single, misplaced character can affect the code.
+Syntax errors are extremely common, and typos as small as a single, misplaced character or amount of whitespace can affect the code.
 If a command matches the documentation and appears syntactically correct, the software version (often accessible at the command line <code>tool-name --version</code>) may be causing the error.<br />
 Best practices for software development follow “semantic versioning” principles, which aim to keep the arguments and functionality the same for all minor releases of the program (e.g. 1.1 to 1.2) and only change functions with major releases (e.g. 1.x to 2.0).</p>
 <h3 id="how-to-seek-help-include-the-right-details-with-your-question">How to seek help: include the right details with your question</h3>
@@ -809,9 +810,9 @@ Furthermore, it signals respect for the time that these developers and community
 <h3 id="where-to-seek-help-online-and-local-communities-of-practice">Where to seek help: online and local communities of practice</h3>
 <p>Online communities and forums are a rich source of archived bioinformatics errors with many helpful community members.
 For errors with specific programs, often the best place to post is the developers’ preferred location for answering questions and solving errors related to their program.
-For open source programs on GitHub, GitLab, or Bitbucket, this is often the “Issues” tab within the software repository, but it could alternatively be a google groups list, gitter page, or other specified forum.
+For open source programs on GitHub, GitLab, or Bitbucket, this is often the “Issues” tab within the software repository, but it could alternatively be a Google groups list, gitter page, or other specified forum.
 Usually, the documentation indicates the best location questions.
-If question is more general, such as asking about program choice or workflows, forums relevant to your field such as Stack Overflow or BioStars are good choices, as posts here are often seen by a large community of researchers.
+If question is more general, such as asking about program choice or workflows, forums relevant to your field such as Stack Overflow, BioStars, or SEQanswers are good choices, as posts here are often seen by a large community of researchers.
 Before posting, search through related topics to double check the question has not already been answered.
 As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harassment-free discussion environment <span class="citation" data-cites="bY9cHRxB">[<a href="#ref-bY9cHRxB" role="doc-biblioref">102</a>]</span>.
 Look for codes of conduct in the online forums you participate in, and make sure you do your part to help ensure a welcoming community for participants of all backgrounds and computational competencies.</p>
@@ -829,7 +830,7 @@ Shared, interoperable research code is enabling biologists to spend less time re
 With this manuscript, we have attempted to provide a directed set of “good enough” project, data, and resource management strategies sufficient for adopting workflow systems to facilitate and expedite reproducible biological research.
 Although we specifically included data management strategies tailored to our own experiences in high-throughput sequencing analysis, we hope that these principles enable biologists both within and beyond our field to reap the benefits of workflow-enabled data-intensive biology.</p>
 <h3 id="acknowledgements">Acknowledgements</h3>
-<p>Thank you to Shannon Joslin and all the members of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us.</p>
+<p>Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us.</p>
 <h3 id="competing-interests">Competing Interests</h3>
 <table>
 <thead>
@@ -943,12 +944,12 @@ DOI: <a href="https://doi.org/10.1093/nar/gkz1035">10.1093/nar/gkz1035</a> · PM
 <div id="ref-9C2akRh5">
 <p>15. <strong>nf-core/rnaseq</strong><br />
 nf-core<br />
-(2020-05-29) <a href="https://github.com/nf-core/rnaseq">https://github.com/nf-core/rnaseq</a></p>
+(2020-06-18) <a href="https://github.com/nf-core/rnaseq">https://github.com/nf-core/rnaseq</a></p>
 </div>
 <div id="ref-CeVdUj5n">
 <p>16. <strong>metagenome-atlas/atlas</strong><br />
 metagenome-atlas<br />
-(2020-06-03) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
+(2020-06-16) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
 </div>
 <div id="ref-so5fKJ5K">
 <p>17. <strong>ATLAS: a Snakemake workflow for assembly, annotation, and genomic binning of metagenome sequence data</strong><br />
@@ -959,7 +960,7 @@ DOI: <a href="https://doi.org/10.1101/737528">10.1101/737528</a></p>
 <div id="ref-B1ckDvru">
 <p>18. <strong>sunbeam-labs/sunbeam</strong><br />
 Sunbeam Labs<br />
-(2020-05-05) <a href="https://github.com/sunbeam-labs/sunbeam">https://github.com/sunbeam-labs/sunbeam</a></p>
+(2020-06-15) <a href="https://github.com/sunbeam-labs/sunbeam">https://github.com/sunbeam-labs/sunbeam</a></p>
 </div>
 <div id="ref-h9rLdvMM">
 <p>19. <strong>Sunbeam: an extensible pipeline for analyzing metagenomic sequencing experiments</strong><br />
@@ -1052,7 +1053,7 @@ DOI: <a href="https://doi.org/10.1371/journal.pone.0177459">10.1371/journal.pone
 <div id="ref-PljGS703">
 <p>34. <strong>QuantStack/mamba</strong><br />
 QuantStack<br />
-(2020-06-05) <a href="https://github.com/QuantStack/mamba">https://github.com/QuantStack/mamba</a></p>
+(2020-06-18) <a href="https://github.com/QuantStack/mamba">https://github.com/QuantStack/mamba</a></p>
 </div>
 <div id="ref-dpXky09I">
 <p>35. <strong>dib-lab/dib-MMETSP</strong><br />
@@ -1099,7 +1100,7 @@ Fernando Chirigati, Rémi Rampin, Dennis Shasha, Juliana Freire<br />
 DOI: <a href="https://doi.org/10.1145/2882903.2899401">10.1145/2882903.2899401</a></p>
 </div>
 <div id="ref-1rm0p82n">
-<p>43. <a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
+<p>43. <strong>Pavian</strong><a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
 </div>
 <div id="ref-1FWTyC9rH">
 <p>44. <strong>Pavian: interactive analysis of metagenomics data for microbiome studies and pathogen identification</strong><br />
