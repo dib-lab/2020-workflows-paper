@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/5f3222b12c2b24d7f63b1e066ab079ef5ee85866/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@5f3222b](https://github.com/dib-lab/2020-workflows-paper/tree/5f3222b12c2b24d7f63b1e066ab079ef5ee85866)
+from [dib-lab/2020-workflows-paper@c70f02b](https://github.com/dib-lab/2020-workflows-paper/tree/c70f02b964cdf5039869df94f61881b5232c8933)
 on June 18, 2020.
 </em></small>
 
@@ -259,9 +259,9 @@ When paired with proper software management, fully-contained workflows are scala
 ![**Workflow Systems:** Bioinformatic workflow systems have built-in functionality that facilitates and simplifies running analysis pipelines.
 **A. Samples:** Workflow systems enable you to use the same code to run each step on each sample. Samples can be easily added if the analysis expands.
 **B. Software Management:** Integration with software management tools (e.g. conda, singularity, docker) can automate software installation for each step.
-**C. Branching, F. Ordering, G. Parallelization:** Workflow systems handle conditional execution, ensuring that tasks are executed in the correct order for each sample file, including executing independent steps in parallel if possible given the resources provided.
-**D. Standard Steps:** Many steps are now considered "standard" (e.g. quality control). Workflow languages keep all information for a step together and can be written to enable you to remix and reuse individual steps across pipelines.
-**E. Rerun as necessary:** Workflow systems keep track of which steps executed properly and on which samples, and allow you to rerun failed steps (or additional steps) rather than re-executing the entire workflow.
+**C. Branching, D. Parallelization, and E. Ordering:** Workflow systems handle conditional execution, ensuring that tasks are executed in the correct order for each sample file, including executing independent steps in parallel if possible given the resources provided.
+**F. Standard Steps:** Many steps are now considered "standard" (e.g. quality control). Workflow languages keep all information for a step together and can be written to enable you to remix and reuse individual steps across pipelines.
+**G. Rerun as necessary:** Workflow systems keep track of which steps executed properly and on which samples, and allow you to rerun failed steps (or additional steps) rather than re-executing the entire workflow.
 **H. Reporting:** Workflow languages enable comprehensive reporting on workflow execution and resource utilization by each tool.
 **I. Portability:** Analyses written in workflow languages (with integrated software management) can be run across computing systems without changes to code.](images/workflow_figure.svg){#fig:workflow}
 

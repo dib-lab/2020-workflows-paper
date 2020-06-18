@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-checksums
+Checksums
 chemistries
 Colab
 coli
@@ -48,12 +48,12 @@ fastq
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
 GitLab
-gitter
+Gitter
 gz
 gzip
 gzipped
@@ -80,10 +80,10 @@ lh
 Luiz
 luizirber
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 notetaking
 novo
@@ -118,7 +118,7 @@ scalability
 scalable
 scriptable
 scrollable
-SEQanswers
+seqanswers
 sgc
 sha
 shannonekj
