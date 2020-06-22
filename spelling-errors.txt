@@ -7,9 +7,9 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -23,7 +23,7 @@ Checksums
 chemistries
 Colab
 coli
-conda
+Conda
 csv
 ctb
 ctitusbrown
@@ -42,7 +42,7 @@ elegans
 EMBL
 ENA
 Eukaryote
-Eukaryotic
+eukaryotic
 fasta
 fastq
 FastQC
@@ -54,7 +54,7 @@ GC
 GenBank
 genomic
 GitLab
-gitter
+Gitter
 gz
 gzip
 gzipped
@@ -82,10 +82,10 @@ lh
 Luiz
 luizirber
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 notetaking
 novo
@@ -131,7 +131,7 @@ subsample
 subsampled
 taylorreiter
 transcriptional
-Transcriptome
+transcriptome
 UC
 WDL
 whitespace

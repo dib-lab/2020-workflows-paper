@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@423e5c8](https://github.com/dib-lab/2020-workflows-paper/tree/423e5c82833f3add7d16789c7ac1ca6897d09751)
+from [dib-lab/2020-workflows-paper@645338d](https://github.com/dib-lab/2020-workflows-paper/tree/645338dab94dc565728fb37914893fe07300849e)
 on June 22, 2020.
 </em></small>
 
@@ -537,8 +537,6 @@ Finally, we discuss securing and managing appropriate computational resources fo
 Experimental design, finding or generating data, and quality control are quintessential parts of data intensive biology.
 There is no substitute for taking the time to properly design your analysis, identify appropriate data, and conduct sanity checks on your files.
 While these tasks are not automatable, many tools and databases can aid in these processes.
-
-*maybe link: Many of these considerations are addressed in a data carpentry lesson (https://datacarpentry.org/organization-genomics/).* (CTB: yes!)
 
 #### Look for appropriate publicly-available data
 
