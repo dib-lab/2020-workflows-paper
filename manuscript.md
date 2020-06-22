@@ -7,7 +7,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-18'
+date-meta: '2020-06-22'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-06-18" />
+  <meta name="dc.date" content="2020-06-22" />
 
-  <meta name="citation_publication_date" content="2020-06-18" />
+  <meta name="citation_publication_date" content="2020-06-22" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/c70f02b964cdf5039869df94f61881b5232c8933/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@c70f02b](https://github.com/dib-lab/2020-workflows-paper/tree/c70f02b964cdf5039869df94f61881b5232c8933)
-on June 18, 2020.
+from [dib-lab/2020-workflows-paper@c911b46](https://github.com/dib-lab/2020-workflows-paper/tree/c911b462abc8cd30f849e705b6a4b633adfa5077)
+on June 22, 2020.
 </em></small>
 
 ## Authors
@@ -249,11 +249,13 @@ We present these strategies in the context of our own experiences working with h
 
 Data-intensive biology typically requires that researchers execute computational workflows using multiple analytic tools and apply them to many experimental samples in a systematic manner.
 These workflows commonly produce hundreds to thousands of intermediate files and require incremental changes as experimental insights demand tool and parameter modifications.
-Managing these steps can be both time-consuming and error-prone, even when automated using scripting languages (e.g. bash).
+Many intermediate steps are central to the biological analysis, but others, such as converting between file formats, are rote computational tasks required to passage data from one tool to the next.
+Some of these steps can fail silently, producing incomplete intermediate files that imperceptively invalidate downstream results and biological inferences.
+Properly managing and executing all of these steps is vital, but can be both time-consuming and error-prone, even when automated with scripting languages such as bash.
 
 The emergence and maturation of workflow systems designed with bioinformatic challenges in mind has revolutionized computing in data intensive biology [@doi:10.1038/s41592-018-0046-7].
 Workflow systems contain powerful infrastructure for workflow management that can coordinate runtime behavior, self-monitor progress and resource usage, and compile reports documenting the results of a workflow (**Figure @fig:workflow**).
-These features ensure that the steps for data analysis are documented and repeatable from start to finish.
+These features ensure that the steps for data analysis are minimally documented and repeatable from start to finish.
 When paired with proper software management, fully-contained workflows are scalable, robust to software updates, and executable across platforms, meaning they will likely still execute the same set of commands with little investment by the user after weeks, months, or years.
 
 ![**Workflow Systems:** Bioinformatic workflow systems have built-in functionality that facilitates and simplifies running analysis pipelines.
@@ -276,14 +278,20 @@ In sum, the internal scaffolding provided by workflow systems helps build analys
 
 #### Getting started with workflows
 
-**Using software without learning management systems** While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
+The workflow system you choose will be largely dependent on your analysis needs.
+Here, we draw a distinction between two types of workflows: "research" workflows that are under iterative development to answer novel scientific questions, and "production" workflows, which have reached maturity and are primarily used to run a standard analysis on new samples.
+In particular, research workflows require flexibility and assessment at every step: outliers and edge cases may reveal interesting biological differences, rather than sample processing or technical errors.
+Many workflow systems can be used for either type, but we note cases where their properties facilitate one of these types over the other.
+
+**Using software without learning management systems**
+While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
 It is possible to obtain the benefits of workflow systems without learning a workflow system.
 Websites like Galaxy, Cavatica, and EMBL-EBI MGnify offer online portals in which users build workflows around publicly-available or user-uploaded data [@doi:10.1093/nar/gky379; @doi:10.14694/EDBK_175029; @doi:10.1093/nar/gkz1035].
 On the command line, many research groups have used workflow systems to build user-friendly pipelines that do not require learning or working with the underlying workflow software.
 These tools are specified in an underlying workflow language, but are packaged in a user-friendly command-line script that coordinates and executes the workflow.
 Rather than writing each workflow step, the user can specify data and parameters in a configuration file to customize the run.
 Some examples include the nf-core RNA-seq pipeline [@url:https://github.com/nf-core/rnaseq/; @doi:10.1038/s41587-020-0439-x], the ATLAS metagenome assembly and binning pipeline [@url:https://github.com/metagenome-atlas/atlas; @doi:10.1101/737528], the Sunbeam metagenome analysis pipeline [@url:https://github.com/sunbeam-labs/sunbeam; @doi:10.1186/s40168-019-0658-x], and two from our own lab, the dammit eukaryotic transcriptome annotation pipeline [@url:https://github.com/dib-lab/dammit] and the elvers *de novo* transcriptome pipeline [@url:https://github.com/dib-lab/elvers].
-These tools allow users to take advantage of the benefits of workflow software without needing to invest in curating and writing their own pipeline. They are designed to execute a series of standard steps, and provide varying degrees of customizability.
+These tools allow users to take advantage of the benefits of workflow software without needing to invest in curating and writing their own pipeline. The majority of these workflows are production-level workflows designed to execute a series of standard steps, but many provide varying degrees of customizability ranging from tool choice to parameter specification.
 
 **Choosing a workflow system**
 If your use case extends beyond these tools, there are several scriptable workflow systems that offer comparable benefits for carrying out your own data-intensive analyses.
@@ -291,6 +299,7 @@ Each has it own strengths, meaning each workflow software will meet an individua
 Our lab has adopted Snakemake, in part due to its similarity and integration with Python, its flexibility for building and testing new analyses in different languages, and its intuitive integration with software management tools (described below)[@doi:10.1093/bioinformatics/bts480].
 Snakemake and Nextflow are commonly used for designing new research pipelines, where flexibility and iterative, branching development is a key feature [@doi:10.1038/nbt.3820]. Common Workflow Language (CWL) and Workflow Description Language (WDL) are interchangeable formats that are more geared towards scalability, making them ideal for production-level pipelines with hundreds of thousands of samples [@doi:10.6084/m9.figshare.3115156.v2]. CWL and WDL are currently best built and used through wrapper tools such as Rabix or platforms such as Terra [@https://rabix.io; @https://terra.bio].
 Language-specific workflow systems, such as ROpenSci's Drake [@doi:10.21105/joss.00550], are limited in the scope of tasks they can execute, but are powerful within their language and easier to integrate for those comfortable with that language.
+
 
 |Workflow System | Documentation | Example Workflow | Tutorial |
 |----------------|---------------|------------------|------------------|
@@ -464,7 +473,6 @@ This functioning example code then provides a reliable workflow framework free o
 **Table @tbl:workflows** provides links to official repositories containing tutorials and example biological analysis workflows, and workflow tutorials and code sharing websites like GitHub, GitLab, and Bitbucket have many publicly available workflows for other analyses.
 If a workflow is available through Binder, you can test and experiment with workflow modification on Binder's cloud system without needing to install a workflow manager or software management tool on your local compute system [@doi:10.25080/Majora-4af1f417-011].
 
-
 **Test with subsampled data**
 While a workflow may run on test data, this is not a guarantee it will run on all data.
 After verifying your chosen example workflow is functional, try running it with your own data or some public data related to your species or condition of interest.
@@ -486,6 +494,13 @@ This strategy allows you to find and fix mistakes on small sections of the workf
 Periodically clean your output directory and rerun the entire workflow, to ensure all steps are fully interoperable (using small test data will improve the efficiency of this step!).
 If possible, using mock or control datasets can help you verify that the analysis you are building actually returns correct biological results.
 Tutorials and tool documentation are useful companions during development; as with any language, remembering workflow-specific syntax takes time and practice.
+
+**Assess your results**
+Evaluate your workflow results as you go.
+Consider what aspects (e.g. tool choice, program parameters) can be evaluated rigorously, and assess each step for expected behavior.
+Other aspects (e.g. filtering metadata, joining results across programs or analysis, software and workflow bugs) will be more difficult to evaluate.
+Wherever possible, set up positive and negative controls to ensure your analysis is performing the desired analysis properly.
+If you're certain an analysis is executing as designed, tracking down unusual results may reveal interesting biological differences.
 
 **Back up early and often**
 As you write new code, back up your changes in an online repository such as GitHub, GitLab, or Bitbucket.
@@ -663,12 +678,13 @@ It is important to think critically about the patterns you expect to see given y
 
 ### Securing and managing appropriate computational resources
 
-Independent of workflows, sequence analysis requires access to computing systems with adequate storage and analysis power for your data.
+Sequence analysis requires access to computing systems with adequate storage and analysis power for your data.
 For some smaller-scale datasets, local desktop or even laptop systems can be sufficient, especially if using tools that implement data-reduction strategies such as minhashing [@doi:10.1186/s40168-019-0653-2].
 However, larger projects require additional computing power, or may be restricted to certain operating systems (e.g. linux).
 For these projects, solutions range from research-focused high performance computing systems to research-integrated commercial analysis platforms.
 Both research-only and  and commercial clusters provide avenues for research and educational proposals to enable access to their computing resources (see **Table @tbl:computational_resources**).
 In preparing for data analysis, be sure to allocate sufficient computational resources and funding for storage and analysis, including large intermediate files and resources required for personnel training.
+Note that workflow systems can greatly facilitate faithful execution of your analysis across the range of computational resources available to you, including distribution across cloud computing systems.
 
 |  Cloud Provider | Standard Model | Limits |
 | --- | --- | --- |
@@ -687,7 +703,9 @@ Table: **Research cloud resources** Cloud provider indicates the name of the clo
 
 ### Getting started with resource management
 
-As the scale of data increases, the resources required for analysis can balloon. Bioinformatic workflows can be long-running, require high-memory systems, or involve intensive file manipulation. Some of the strategies below may help you manage computational resources for your project.
+As the scale of data increases, the resources required for analysis can balloon.
+Bioinformatic workflows can be long-running, require high-memory systems, or involve intensive file manipulation.
+Some of the strategies below may help you manage computational resources for your project.
 
 **Apply for research units if eligible**
 There are a number of cloud computing services that offer grants providing computing resources to data-intensive researchers (**Table {@tbl:computational_resources}**). In some cases, the resources provided may be sufficient to cover your entire analysis.
@@ -715,6 +733,10 @@ Many tools can be used to generate these counts by quantifying the number of rea
 For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts [@doi:10.1093/bioinformatics/bts635; @doi:10.1038/s41587-019-0201-4].
 However, these tools generate information-rich output, specifying per-base alignments for each read.
 If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information [@doi:10.1093/bioinformatics/btw277].
+
+**Seek help when you need it**
+In some cases, you may find that your accessible computing system is ill-equipped to handle the type or scope of your analysis.
+Depending on the system, staff members may be able to help direct you to properly scale your workflow to available resources, or guide you in tailoring computational unit allocations or purhcases to match your needs.
 
 
 ## Strategies for troubleshooting
@@ -786,8 +808,9 @@ In our experience, it can also be useful to set up a local online forum (e.g. di
 
 Bioinformatics-focused workflow systems have reshaped data-intensive biology, reducing execution hurdles and empowering biologists to conduct reproducible analyses at the massive scale of data now available.
 Shared, interoperable research code is enabling biologists to spend less time rewriting common analysis steps, and more time on interesting biological questions.
-With this manuscript, we have attempted to provide a directed set of "good enough" project, data, and resource management strategies sufficient for adopting workflow systems to facilitate and expedite reproducible biological research.
-Although we specifically included data management strategies tailored to our own experiences in high-throughput sequencing analysis, we hope that these principles enable biologists both within and beyond our field to reap the benefits of workflow-enabled data-intensive biology.
+We believe these workflow systems will become increasingly important as dataset size and complexity continue to grow.
+This manuscript provides a directed set of project, data, and resource management strategies for adopting workflow systems to facilitate and expedite reproducible biological research.
+While the included data management strategies are tailored to our own experiences in high-throughput sequencing analysis, we hope that these principles enable biologists both within and beyond our field to reap the benefits of workflow-enabled data-intensive biology.
 
 
 ### Acknowledgements

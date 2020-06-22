@@ -7,7 +7,7 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -19,13 +19,13 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-Checksums
+checksums
 chemistries
 Colab
 coli
 conda
 csv
-ctb
+CTB
 ctitusbrown
 customizability
 CWL
@@ -42,9 +42,9 @@ elegans
 EMBL
 ENA
 Eukaryote
-Eukaryotic
+eukaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -53,7 +53,7 @@ GBMF
 GC
 GenBank
 GitLab
-Gitter
+gitter
 gz
 gzip
 gzipped
@@ -61,6 +61,7 @@ HackMD
 hacky
 heatmap
 HISAT
+imperceptively
 INSDC
 installable
 interactiveviz
@@ -83,7 +84,7 @@ metagenome
 metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 notetaking
 novo
@@ -95,6 +96,7 @@ PhiX
 phylogenetic
 Plotly
 preprocessed
+purhcases
 PyCharm
 quant
 Rabix
@@ -118,7 +120,7 @@ scalability
 scalable
 scriptable
 scrollable
-seqanswers
+SEQanswers
 sgc
 sha
 shannonekj
@@ -128,7 +130,7 @@ subsample
 subsampled
 taylorreiter
 transcriptional
-transcriptome
+Transcriptome
 UC
 WDL
 whitespace
