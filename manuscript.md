@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/c911b462abc8cd30f849e705b6a4b633adfa5077/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@c911b46](https://github.com/dib-lab/2020-workflows-paper/tree/c911b462abc8cd30f849e705b6a4b633adfa5077)
+from [dib-lab/2020-workflows-paper@69e0a63](https://github.com/dib-lab/2020-workflows-paper/tree/69e0a639fd77580a57a3ce2733854b59988422bb)
 on June 22, 2020.
 </em></small>
 
@@ -307,9 +307,10 @@ Language-specific workflow systems, such as ROpenSci's Drake [@doi:10.21105/joss
 | Nextflow | https://www.nextflow.io/ | https://github.com/nf-core/sarek | https://www.nextflow.io/docs/latest/getstarted.html |
 | Common workflow language | https://www.commonwl.org/ | https://github.com/EBI-Metagenomics/pipeline-v5 | https://www.commonwl.org/user_guide/02-1st-example/index.html |
 | Workflow description language | https://openwdl.org/ | https://github.com/gatk-workflows/gatk4-data-processing |  https://support.terra.bio/hc/en-us/articles/360037127992--1-howto-Write-your-first-WDL-script-running-GATK-HaplotypeCaller |
-Table: Popular bioinformatics workflow systems, documentation, example workflows, and tutorials.
-While we have linked to general tutorials, there may be more relevant tutorials online for your field.
-Some workflow systems are not programming language-specific: they can interact with tools or tasks written in other languages, and some can even import workflows from other specification languages.
+Table: Four of the most widely used bioinformatics workflow systems (2020), with links to documentation, example workflows, and general tutorials.
+In many cases, there may be tutorials online that are tailored for use cases in your field.
+All of these systems can interact with tools or tasks written in other languages and can function across cloud computing systems and high-performance computing clusters.
+Some can also import full workflows from other specification languages.
 {#tbl:workflows}
 
 
@@ -725,7 +726,8 @@ These approximate representations retain enough information about the original s
 Most sketching algorithms estimate sequence similarity in some way, allowing you to gain insights from these comparisons.
 For example, sketching algorithms can be used to estimate all-by-all sample similarity which can be visualized as a Principle Component Analysis or a multidimensional scaling plot, or can be used to build a phylogenetic tree with accurate topology.
 Sketching algorithms also dramatically reduce the runtime for comparisons against databases (e.g. all of GenBank), allowing users to quickly compare their data against large public databases.
-Sketching algorithms have been reviewed in-depth by Rowe [@doi:10.1186/s40168-019-0653-2].
+
+Rowe 2019 [@doi:10.1186/s13059-019-1809-x] reviewed programs and genomic use cases for sketching algorithms, and provided a series of tutorial workbooks (e.g. Sample QC notebook: [@https://github.com/will-rowe/genome-sketching/blob/master/notebooks/r4.1.Sample-QC.ipynb]).
 
 **Use the right tools for your question**
 RNA-seq analysis approaches like differential expression or transcript clustering rely on transcript or gene counts.
