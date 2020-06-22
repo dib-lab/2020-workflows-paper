@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/69e0a639fd77580a57a3ce2733854b59988422bb/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/423e5c82833f3add7d16789c7ac1ca6897d09751/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@69e0a63](https://github.com/dib-lab/2020-workflows-paper/tree/69e0a639fd77580a57a3ce2733854b59988422bb)
+from [dib-lab/2020-workflows-paper@423e5c8](https://github.com/dib-lab/2020-workflows-paper/tree/423e5c82833f3add7d16789c7ac1ca6897d09751)
 on June 22, 2020.
 </em></small>
 
@@ -332,7 +332,7 @@ To meet this need, most workflow managers integrate with software management sys
 Software management systems perform some combination of software installation, management, and packaging that alleviate problems that arise from dependencies and facilitate documentation of software versions.
 On many compute systems, system-wide software management is overseen by system administrators, who ensure commonly-used and requested software is installed into a "module" system available to all users.
 Unfortunately, this system does not lend itself well for exploring new workflows and software, as researchers do not have permission to install software themselves.
-The Conda package manager has emerged as a leading solution, largely because it handles both cluster permission and version conflict issues with a user-based software environment system, and features a straightforward "recipe" system which simplifies the process of making new software installable (**Figure @fig:conda_figure**).
+The Conda package manager has emerged as a leading solution, largely because it handles both cluster permission and version conflict issues with a user-based software environment system, and features a straightforward "recipe" system which simplifies the process of making new software installable (**Figure @fig:conda_figure_ABC**).
 Conda enables lightweight software installation and can be used with the same commands across platforms, but can still be impacted by differences in the host operating system.
 Alternatively, wrapping software environments in "containers" that capture and reproduce all other aspects of the runtime environment can enhance reproducibility over time [@doi:10.1016/j.cels.2018.03.014].
 Container-based software installation via docker and singularity is common for production-level workflows.
@@ -343,7 +343,7 @@ Container-based software installation via docker and singularity is common for p
 privileges for software installation, thus enabling use by researchers working on shared cluster systems. However, even user-based software installation can encounter dependency conflicts. For example, you might need to use python2 to install and run a program (e.g. older scripts written by members of your lab), while also using snakemake to execute your workflows (requires python>=3.5). By installing each program into an isolated "environment" that contains only the software required to run that
 program, you can ensure all programs used throughout your analysis will run without issue. Using small, separate environments for your software and building many simple environments to accommodate different steps in your workflow also reduces the amount of time it takes conda to resolve dependency conflicts between different software tools ("solve" an environment). Conda virtual environments can be created and installed either on the command line, or via an environment YAML file, as shown. In this case, the environment file
 also specifies which Conda channels to search and download programs from. When specified in a YAML file, conda environments are easily transferable between computers and operating systems. Further, because the version of each package installed in an environment is recorded, workflow reproducibility is enhanced. Although portions of Conda may be superseded by alternative solutions [@url:https://github.com/QuantStack/mamba], this model of software installation and management will likely
-persist.](images/conda_figure.svg){#fig:conda_figure height=8in}
+persist.](images/conda_figure_ABC.svg){#fig:conda_figure_ABC height=8in}
 
 #### Getting started with software management
 
@@ -435,7 +435,7 @@ For computational workflows, using version control systems such as Git or Mercur
 If a key piece of a workflow inexplicably stops working, consistent version control can allow you to rewind in time and identify differences from when the pipeline worked to when it stopped working.
 Backing up your version controlled analysis in an online repository such as GitHub, GitLab, or Bitbucket provides critical insurance as you iteratively modify and develop your workflow.
 
-![**Version Control** Version control systems (e.g. Git, Mercurial) work by storing incremental differences in files from one saved version ("commit") to the next. To visualize the differences between each version, text editors such as Atom and online services such as GitHub, GitLab and Bitbucket use red highlight to denote deletions, and green highlighting to denote additions. In this trivial example, a typo in version 1 (in red) was corrected in version 2 (in green). These systems are extremely useful for code and manuscript development, as it is possible to return to the snapshot of any saved version. This means that version control systems save you from accidental deletions, preserve code you thought you no longer needed and preserve a record of project changes over time.](images/version_control.svg){#fig:version_control}
+![**Version Control** Version control systems (e.g. Git, Mercurial) work by storing incremental differences in files from one saved version ("commit") to the next. To visualize the differences between each version, text editors such as Atom and online services such as GitHub, GitLab and Bitbucket use red highlight to denote deletions, and green highlighting to denote additions. In this trivial example, a typo in version 1 (in red) was corrected in version 2 (in green). These systems are extremely useful for code and manuscript development, as it is possible to return to the snapshot of any saved version. This means that version control systems save you from accidental deletions, preserve code you thought you no longer needed and preserve a record of project changes over time.](images/version_control_diff_lines.svg){#fig:version_control}
 
 When combined with online backups, version control systems also facilitate code and data availability and reproducibility for publication.
 For example, to preserve the version of code that produced published results, you can create a "release":  a snapshot of the current code and files in a GitHub repository.
@@ -611,7 +611,7 @@ In most cases, you'll still need to transfer some data - either downloading raw 
 Transferring compressed files (gzip, bzip2, BAM/CRAM, etc.) can improve transfer speed and save space, and checksums can be used to to ensure file integrity after transfer (see **Figure @fig:checksum**).
 
 ![**Use Checksums to ensure file integrity** Checksum programs (e.g. md5, sha256) encode file size and content in a single value known as a "checksum". For any given file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like rsync and rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. Cyberduck) can assess checksums when they are provided [@doi:10.1111/2041-210X.12550, @url:https://cyberduck.io/]. If you generated your own data and receieved sequencing files from a sequencing center, be certain you also receive a checksum for each of your files to ensure they download properly. 
-](images/checksum.svg){#fig:checksum height=2.5in}
+](images/checksum_file.svg){#fig:checksum height=2.5in}
 
 #### Perform quality control at every step
 
@@ -651,7 +651,7 @@ FastQC measures and summarizes 10 quality metrics and provides recommendations f
 Not all metrics readily apply to all sequencing data types. For example, while multiple GC peaks might be concerning in whole genome sequencing of a bacterial isolate, we would expect a non-normal distribution for some metagenome samples that contain organisms with diverse GC content.
 Samples like this can be seen in red in this figure.
 **B.** MultiQC summary of Salmon *quant* reads mapped per sample for RNA-seq samples [@doi:10.1038/nmeth.4197]. In this figure, we see that MultiQC summarizes the number of reads mapped and percent of reads mapped, two values that are reported in the Salmon log files.
-](images/multiqc.svg){#fig:multiqc}
+](images/multiqc_viz.svg){#fig:multiqc}
 
 **Pay attention to warnings and log files**
 Many tools generate log files or messages while running.

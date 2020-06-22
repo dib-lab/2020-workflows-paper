@@ -7,7 +7,7 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-checksums
+Checksums
 chemistries
 Colab
 coli
@@ -54,7 +54,7 @@ GC
 GenBank
 genomic
 GitLab
-Gitter
+gitter
 gz
 gzip
 gzipped
@@ -95,7 +95,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-plotly
+Plotly
 preprocessed
 purhcases
 PyCharm
@@ -125,13 +125,13 @@ seqanswers
 sgc
 sha
 shannonekj
-snakemake
+Snakemake
 SRA
 subsample
 subsampled
 taylorreiter
 transcriptional
-transcriptome
+Transcriptome
 UC
 WDL
 whitespace
