@@ -9,7 +9,7 @@
   <meta name="author" content="Shannon E.K. Joslin" />
   <meta name="author" content="C. Titus Brown" />
   <meta name="author" content="N. Tessa Pierce" />
-  <meta name="dcterms.date" content="2020-06-22" />
+  <meta name="dcterms.date" content="2020-06-23" />
   <meta name="keywords" content="sequencing, bioinformatics, workflows, open access" />
   <title>Streamlining data-intensive biology with workflow systems</title>
   <style>
@@ -32,8 +32,8 @@
   <meta name="citation_title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="og:title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
-  <meta name="dc.date" content="2020-06-22" />
-  <meta name="citation_publication_date" content="2020-06-22" />
+  <meta name="dc.date" content="2020-06-23" />
+  <meta name="citation_publication_date" content="2020-06-23" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,9 +66,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +82,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/645338dab94dc565728fb37914893fe07300849e/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/645338dab94dc565728fb37914893fe07300849e">dib-lab/2020-workflows-paper@645338d</a>
-on June 22, 2020.
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a">dib-lab/2020-workflows-paper@9dd2b9c</a>
+on June 23, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -200,7 +200,7 @@ When paired with proper software management, fully-contained workflows are scala
 <p>To properly direct an analysis, workflow systems need to encode information about the relationships between every workflow step.
 In practice, this means that each analysis step must specify the input (or types of inputs) needed for that step, and the output (or types of outputs) being produced.
 This structure provides several additional benefits.
-First, workflows become minimally self-documented, as the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see <strong>Figure <a href="#fig:sgc_workflow">5</a></strong>).
+First, workflows become minimally self-documented, as the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see <strong>Figure ??</strong>).
 Next, workflows are more likely to be fully enclosed without undocumented steps that are executed by hand, meaning analyses are more likely to be reproducible.
 Finally, each step becomes a self-contained unit that can be used and re-used across multiple analysis workflows, so scientists can spend less time implementing standard steps, and more time on their specific research questions.
 In sum, the internal scaffolding provided by workflow systems helps build analyses that are generally better documented, repeatable, transferable, and scalable.</p>
@@ -364,12 +364,11 @@ Binders can be shared with collaborators (or students in a classroom setting), a
 </div>
 <h4 id="visualize-your-workflow">Visualize your workflow</h4>
 <p>Visual representations can help illustrate the connections in a workflow and improve the readability and reproducibility of your project. At the highest level, flowcharts that detail relationships between steps of a workflow can help provide big-picture clarification, especially when the pipeline is complicated.
-For individual steps, a graphical representation of the output can show the status of the project or provide insight on additional analyses that should be added. For example, <strong>Figure <a href="#fig:sgc_workflow">5</a></strong> exhibits a modified Snakemake workflow visualization from a recent publication <span class="citation" data-cites="yrQ7duwp">[<a href="#ref-yrQ7duwp" role="doc-biblioref">40</a>]</span>.</p>
-<div id="fig:sgc_workflow" class="fignos">
+For individual steps, a graphical representation of the output can show the status of the project or provide insight on additional analyses that should be added. For example, <strong>Figure <a href="#fig:rnaseq_workflow">5</a></strong> exhibits a modified Snakemake workflow visualization from an RNA-seq quantification pipeline <span class="citation" data-cites="1Fgs8XZZT">[<a href="#ref-1Fgs8XZZT" role="doc-biblioref">40</a>]</span>.</p>
+<div id="fig:rnaseq_workflow" class="fignos">
 <figure>
-<img src="images/hu_dag.png" alt="" /><figcaption><span>Figure 5:</span> A directed acyclic graph (DAG) that illustrates connections between all steps of a sequencing data analysis workflow. Each box represents a step in the workflow, while lines connect sequential steps.
-The DAG shown in this figure illustrates a real bioinformatics workflow from and was generated by modifying the default Snakemake workflow DAG <span class="citation" data-cites="yrQ7duwp">[<a href="#ref-yrQ7duwp" role="doc-biblioref">40</a>]</span>.
-The colors represent arms of the workflow that achieve a final result, such as a multiple sequence alignment of a protein of interest.
+<img src="images/rnaseq_dag.png" alt="" /><figcaption><span>Figure 5:</span> A directed acyclic graph (DAG) that illustrates connections between all steps of a sequencing data analysis workflow. Each box represents a step in the workflow, while lines connect sequential steps.
+The DAG shown in this figure illustrates a real bioinformatics workflow for RNA-seq quantification was generated by modifying the default Snakemake workflow DAG.
 While the workflow is complex, it is coordinated by a workflow system that alleviates the need for a user to directly manage file interdependencies.</figcaption>
 </figure>
 </div>
@@ -964,12 +963,12 @@ DOI: <a href="https://doi.org/10.1093/nar/gkz1035">10.1093/nar/gkz1035</a> · PM
 <div id="ref-9C2akRh5">
 <p>15. <strong>nf-core/rnaseq</strong><br />
 nf-core<br />
-(2020-06-20) <a href="https://github.com/nf-core/rnaseq">https://github.com/nf-core/rnaseq</a></p>
+(2020-06-23) <a href="https://github.com/nf-core/rnaseq">https://github.com/nf-core/rnaseq</a></p>
 </div>
 <div id="ref-CeVdUj5n">
 <p>16. <strong>metagenome-atlas/atlas</strong><br />
 metagenome-atlas<br />
-(2020-06-16) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
+(2020-06-23) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
 </div>
 <div id="ref-so5fKJ5K">
 <p>17. <strong>ATLAS: a Snakemake workflow for assembly, annotation, and genomic binning of metagenome sequence data</strong><br />
@@ -991,7 +990,7 @@ DOI: <a href="https://doi.org/10.1186/s40168-019-0658-x">10.1186/s40168-019-0658
 <div id="ref-1ABkx7mMC">
 <p>20. <strong>dib-lab/dammit</strong><br />
 The Lab for Data Intensive Biology<br />
-(2020-05-12) <a href="https://github.com/dib-lab/dammit">https://github.com/dib-lab/dammit</a></p>
+(2020-06-23) <a href="https://github.com/dib-lab/dammit">https://github.com/dib-lab/dammit</a></p>
 </div>
 <div id="ref-vxcvKkG9">
 <p>21. <strong>dib-lab/elvers</strong><br />
@@ -1073,7 +1072,7 @@ DOI: <a href="https://doi.org/10.1371/journal.pone.0177459">10.1371/journal.pone
 <div id="ref-PljGS703">
 <p>34. <strong>TheSnakePit/mamba</strong><br />
 Snakepit<br />
-(2020-06-22) <a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
+(2020-06-23) <a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
 </div>
 <div id="ref-dpXky09I">
 <p>35. <strong>dib-lab/dib-MMETSP</strong><br />
@@ -1101,11 +1100,10 @@ Project Jupyter, Matthias Bussonnier, Jessica Forde, Jeremy Freeman, Brian Grang
 <em>SciPy</em> (2018) <a href="https://doi.org/gfwcm6">https://doi.org/gfwcm6</a><br />
 DOI: <a href="https://doi.org/10.25080/majora-4af1f417-011">10.25080/majora-4af1f417-011</a></p>
 </div>
-<div id="ref-yrQ7duwp">
-<p>40. <strong>Exploring neighborhoods in large metagenome assembly graphs reveals hidden sequence diversity</strong><br />
-C. Titus Brown, Dominik Moritz, Michael P. O’Brien, Felix Reidl, Taylor Reiter, Blair D. Sullivan<br />
-<em>bioRxiv</em> (2020-01-22) <a href="https://doi.org/cwrw">https://doi.org/cwrw</a><br />
-DOI: <a href="https://doi.org/10.1101/462788">10.1101/462788</a></p>
+<div id="ref-1Fgs8XZZT">
+<p>40. <strong>ngs-docs/2020-ggg-201b-rnaseq</strong><br />
+GitHub<br />
+<a href="https://github.com/ngs-docs/2020-ggg-201b-rnaseq">https://github.com/ngs-docs/2020-ggg-201b-rnaseq</a></p>
 </div>
 <div id="ref-11T3orZkb">
 <p>41. <strong>Computing environments for reproducibility: Capturing the “Whole Tale”</strong><br />
@@ -1120,7 +1118,7 @@ Fernando Chirigati, Rémi Rampin, Dennis Shasha, Juliana Freire<br />
 DOI: <a href="https://doi.org/10.1145/2882903.2899401">10.1145/2882903.2899401</a></p>
 </div>
 <div id="ref-1rm0p82n">
-<p>43. <a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
+<p>43. <strong>Pavian</strong><a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
 </div>
 <div id="ref-1FWTyC9rH">
 <p>44. <strong>Pavian: interactive analysis of metagenomics data for microbiome studies and pathogen identification</strong><br />
