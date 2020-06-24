@@ -9,7 +9,7 @@ barcode
 bioconda
 bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -19,7 +19,7 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-Checksums
+checksums
 chemistries
 Colab
 coli
@@ -42,7 +42,7 @@ elegans
 EMBL
 ENA
 Eukaryote
-eukaryotic
+Eukaryotic
 fasta
 fastq
 FastQC
@@ -54,7 +54,7 @@ GC
 GenBank
 genomic
 GitLab
-Gitter
+gitter
 gz
 gzip
 gzipped
@@ -85,7 +85,7 @@ metagenome
 metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 notetaking
 novo
@@ -111,6 +111,7 @@ ReproZip
 resequencing
 reusability
 RMarkdown
+rnaseq
 ROpenSci’s
 RStudio
 rsync
@@ -121,7 +122,7 @@ scalability
 scalable
 scriptable
 scrollable
-seqanswers
+SEQanswers
 sgc
 sha
 shannonekj
