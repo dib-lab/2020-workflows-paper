@@ -19,11 +19,11 @@ Caenorhabditis
 Carpentries
 Cavatica
 centric
-checksums
+Checksums
 chemistries
 Colab
 coli
-Conda
+conda
 csv
 ctb
 ctitusbrown
@@ -44,7 +44,7 @@ ENA
 Eukaryote
 Eukaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -68,7 +68,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-interoperable
+Interoperable
 interpretability
 interpretable
 IntrprtngGnmcs
@@ -82,10 +82,10 @@ lh
 Luiz
 luizirber
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 notetaking
 novo

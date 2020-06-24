@@ -7,7 +7,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-23'
+date-meta: '2020-06-24'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-06-23" />
+  <meta name="dc.date" content="2020-06-24" />
 
-  <meta name="citation_publication_date" content="2020-06-23" />
+  <meta name="citation_publication_date" content="2020-06-24" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@9dd2b9c](https://github.com/dib-lab/2020-workflows-paper/tree/9dd2b9cdbd1ffa8c8c3d0eb63d8e0da72d356a7a)
-on June 23, 2020.
+from [dib-lab/2020-workflows-paper@2b37adc](https://github.com/dib-lab/2020-workflows-paper/tree/2b37adc14c961d56fe315211c1c63597f7fca3b9)
+on June 24, 2020.
 </em></small>
 
 ## Authors
@@ -297,7 +297,7 @@ These tools allow users to take advantage of the benefits of workflow software w
 If your use case extends beyond these tools, there are several scriptable workflow systems that offer comparable benefits for carrying out your own data-intensive analyses.
 Each has it own strengths, meaning each workflow software will meet an individuals computing goals differently (see **Table @tbl:workflows**).
 Our lab has adopted Snakemake, in part due to its similarity and integration with Python, its flexibility for building and testing new analyses in different languages, and its intuitive integration with software management tools (described below)[@doi:10.1093/bioinformatics/bts480].
-Snakemake and Nextflow are commonly used for designing new research pipelines, where flexibility and iterative, branching development is a key feature [@doi:10.1038/nbt.3820]. Common Workflow Language (CWL) and Workflow Description Language (WDL) are interchangeable formats that are more geared towards scalability, making them ideal for production-level pipelines with hundreds of thousands of samples [@doi:10.6084/m9.figshare.3115156.v2]. CWL and WDL are currently best built and used through wrapper tools such as Rabix or platforms such as Terra [@https://rabix.io; @https://terra.bio].
+Snakemake and Nextflow are commonly used for designing new research pipelines, where flexibility and iterative, branching development is a key feature [@doi:10.1038/nbt.3820]. Common Workflow Language (CWL) and Workflow Description Language (WDL) are interchangeable formats that are more geared towards scalability, making them ideal for production-level pipelines with hundreds of thousands of samples [@doi:10.6084/m9.figshare.3115156.v2]. CWL and WDL are currently best built and used through wrapper tools such as Rabix or platforms such as Terra [@url:https://rabix.io; @url:https://terra.bio].
 Language-specific workflow systems, such as ROpenSci's Drake [@doi:10.21105/joss.00550], are limited in the scope of tasks they can execute, but are powerful within their language and easier to integrate for those comfortable with that language.
 
 
@@ -327,7 +327,7 @@ Analysis workflows commonly rely on multiple software packages to generate final
 These tools are heterogeneous in nature: they are written by researchers working in different coding languages, with varied approaches to software design and optimization, and often for specific analysis goals.
 Each program has a number of other programs it depends upon to function ("dependencies"), and as software changes over time to meet research needs, the results may change, even when run with identical parameters.
 As a result, it is critical to take an organized approach to installing, managing, and keeping track of software and software versions.
-To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker [@doi:10.1038/s41592-018-0046-7; @doi:10.1371/journal.pone.0177459; @https://dl.acm.org/doi/10.5555/2600239.2600241]. (CTB: one of these citations fails.)
+To meet this need, most workflow managers integrate with software management systems like conda, singularity, and docker [@doi:10.1038/s41592-018-0046-7; @doi:10.1371/journal.pone.0177459; @url:https://dl.acm.org/doi/10.5555/2600239.2600241].
 
 Software management systems perform some combination of software installation, management, and packaging that alleviate problems that arise from dependencies and facilitate documentation of software versions.
 On many compute systems, system-wide software management is overseen by system administrators, who ensure commonly-used and requested software is installed into a "module" system available to all users.
@@ -407,7 +407,7 @@ These notebooks allow for fully documented iterative analysis development, and a
 
 ![**Examples of computational notebooks.** Computational notebooks allow the user to mix text, code, and results in one document.
 **Panel A.** shows an RMarkdown document viewed in the RStudio integrated development environment, while **Panel B.** shows a rendered HTML file produced by knitting the RMarkdown document [@url:https://rmarkdown.rstudio.com/].
-**Panel C.** shows a Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed [@https://dx.doi.org/10.3233/978-1-61499-649-1-87].
+**Panel C.** shows a Jupyter Notebook, where code, text, and results are rendered inline as each code chunk is executed [@url:https://dx.doi.org/10.3233/978-1-61499-649-1-87].
 The second grey chunk is a raw Markdown chunk with text that will be rendered inline when executed.
 Both notebooks generate a histogram of a metadata feature, number of generations, from a long-term evolution experiment with *Escherichia coli* [@doi:10.1038/nature18959].
 Computational notebooks facilitate sharing by packaging narrative, code, and visualizations together.
@@ -607,7 +607,7 @@ Ongoing projects such as the NIH Common Fund Data Ecosystem aim to develop a dat
 In most cases, you'll still need to transfer some data - either downloading raw data or transferring important intermediate and results files for backup and sharing (or both).
 Transferring compressed files (gzip, bzip2, BAM/CRAM, etc.) can improve transfer speed and save space, and checksums can be used to to ensure file integrity after transfer (see **Figure @fig:checksum**).
 
-![**Use Checksums to ensure file integrity** Checksum programs (e.g. md5, sha256) encode file size and content in a single value known as a "checksum". For any given file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like rsync and rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. Cyberduck) can assess checksums when they are provided [@doi:10.1111/2041-210X.12550, @url:https://cyberduck.io/]. If you generated your own data and receieved sequencing files from a sequencing center, be certain you also receive a checksum for each of your files to ensure they download properly. 
+![**Use Checksums to ensure file integrity** Checksum programs (e.g. md5, sha256) encode file size and content in a single value known as a "checksum". For any given file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like rsync and rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. Cyberduck) can assess checksums when they are provided [@doi:10.1111/2041-210X.12550, @url:https://cyberduck.io/]. If you generated your own data and receieved sequencing files from a sequencing center, be certain you also receive a checksum for each of your files to ensure they download properly.
 ](images/checksum_file.svg){#fig:checksum height=2.5in}
 
 #### Perform quality control at every step
@@ -642,7 +642,7 @@ Although large abnormalities may be clear from looking at files, others may be s
 Visualizing raw sequencing data with FastQC (**Figure {@fig:multiqc}A**) and processed sequencing data with tools like the Integrative Genome Viewer and plotting tabular results files using python or R can make aberrant or inconsistent results easier to track down [@url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc/; @doi:10.1093/bib/bbs017].
 
 ![**Visualizations produced by MultiQC.**
-MultiQC finds and automatically parses log files from other tools and generates a combined report and parsed data tables that include all samples. MultiQC currently supports 88 tools. 
+MultiQC finds and automatically parses log files from other tools and generates a combined report and parsed data tables that include all samples. MultiQC currently supports 88 tools.
 **A.** MultiQC summary of FastQC Per Sequence GC Content for 1905 metagenome samples. FastQC provides quality control measurements and visualizations for raw sequencing data from a single sample, and is a near-universal first step in sequencing data analysis because of the insights it provides  [@url:https://www.bioinformatics.babraham.ac.uk/projects/fastqc/; @doi:10.1093/bib/bbs017].
 FastQC measures and summarizes 10 quality metrics and provides recommendations for whether an individual sample is within an acceptable quality range.  
 Not all metrics readily apply to all sequencing data types. For example, while multiple GC peaks might be concerning in whole genome sequencing of a bacterial isolate, we would expect a non-normal distribution for some metagenome samples that contain organisms with diverse GC content.
@@ -659,7 +659,7 @@ Parsing and visualizing log files with a tool like MultiQC can improve interpret
 **Look for common biases in sequencing data**
 Biases in sequencing data originate from experimental design, methodology, sequencing chemistry, or workflows, and are helpful to target specifically with quality control measures.
 The exact biases in a specific data set or workflow will vary greatly between experiments so it is important to understand the sequencing method you have chosen and incorporate appropriate filtration steps into your workflow.
-For example, PCR duplicates can cause problems in libraries that underwent an amplification step, and often need to be removed prior to downstream analysis [@doi:10.1038/nrg3788; @doi:10.1038/srep25533; @doi:10.1086/BBLv227n2p146; @doi:10.1186/s12864-018-4933-1; @doi:10.1186/s13059-014-0420-4]. 
+For example, PCR duplicates can cause problems in libraries that underwent an amplification step, and often need to be removed prior to downstream analysis [@doi:10.1038/nrg3788; @doi:10.1038/srep25533; @doi:10.1086/BBLv227n2p146; @doi:10.1186/s12864-018-4933-1; @doi:10.1186/s13059-014-0420-4].
 
 **Check for contamination**
 Contamination can arise during sample collection, nucleotide extraction, library preparation, or through sequencing spike-ins like PhiX, and could change data interpretation if not removed [@doi:10.1073/pnas.1510461112; @doi:10.1073/pnas.1600338113; @doi:10.1186/1944-3277-10-18].
@@ -684,7 +684,7 @@ Both research-only and  and commercial clusters provide avenues for research and
 In preparing for data analysis, be sure to allocate sufficient computational resources and funding for storage and analysis, including large intermediate files and resources required for personnel training.
 Note that workflow systems can greatly facilitate faithful execution of your analysis across the range of computational resources available to you, including distribution across cloud computing systems.
 
-|  Cloud Provider | Standard Model | Limits |
+|  Provider | Access Model | Restrictions |
 | --- | --- | --- |
 |  Amazon Web Services | Paid |  |
 |  Bionimbus Protected Data Cloud | Research allocation | users with eRA commons account |
@@ -697,7 +697,7 @@ Note that workflow systems can greatly facilitate faithful execution of your ana
 |  NSF XSEDE | Research allocation | USA researchers or collaborators |
 |  Open Science Data Cloud | Research allocation |  |
 |  Wasabi | Paid | data storage solution only |
-Table: **Research cloud resources** Cloud provider indicates the name of the cloud, standard model indicates the most common route toward using the cloud, and limitations indicates limitations in access or services provided by the cloud. {#tbl:computational_resources}
+Table: **Computing Resources** Bioinformatic projects often require additional computing resources. If a local or university-run high-performance computing cluster is not available, computing resources are available via a number of grant-based or commercial providers. {#tbl:computational_resources}
 
 ### Getting started with resource management
 
