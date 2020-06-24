@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@da647be](https://github.com/dib-lab/2020-workflows-paper/tree/da647be9b50180fcd250e7d82c3521b84839f3ad)
+from [dib-lab/2020-workflows-paper@28f65d3](https://github.com/dib-lab/2020-workflows-paper/tree/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8)
 on June 24, 2020.
 </em></small>
 
@@ -569,13 +569,10 @@ Once generated, it is always a good idea to have multiple independent backups of
 |  Metagenomic sequencing | [@doi:10.1038/nbt.2235; @doi:10.1038/nbt.3935; @doi:10.1016/j.tim.2018.11.003]|
 |  Amplicon sequencing | [@doi:10.7554/eLife.46923; @doi:10.1371/journal.pone.0124671; @doi:10.1038/nbt.3981] |
 |  Microbial isolate sequencing | [@doi:10.1038/srep08747] |
-|  Eukaryotic genome sequencing |  |
+|  Eukaryotic genome sequencing | [@doi:10.1073/pnas.1720115115; @doi:10.1186/s13059-020-1935-5; @doi:10.1134/S102279541705012X; @doi:10.12688/f1000research.13598.1] |
 |  Whole-genome resequencing | [@doi:10.1111/mec.14264] |
-|  RAD seq |  |
-|  Chip seq |  |
-|  ATAC seq |  |
+|  RAD-sequencing | [@doi:10.1111/2041-210X.12700;@doi:10.3389/fgene.2019.00533; @doi:10.1038/nrg.2015.28; @doi:10.1111/1755-0998.12669; @doi:10.1111/1755-0998.12677; @doi:10.1111/2041-210X.12700] |
 |  single cell RNA-seq | [@doi:10.1186/s13059-016-0927-y; @doi:10.1186/s13073-017-0467-4] |
-|  ? |  |
 
 Table: References for experimental design and considerations for common sequencing chemistries. {#tbl:seq_resources}
 
