@@ -66,9 +66,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,9 +82,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/2b37adc14c961d56fe315211c1c63597f7fca3b9">dib-lab/2020-workflows-paper@2b37adc</a>
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/da647be9b50180fcd250e7d82c3521b84839f3ad">dib-lab/2020-workflows-paper@da647be</a>
 on June 24, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -200,7 +200,7 @@ When paired with proper software management, fully-contained workflows are scala
 <p>To properly direct an analysis, workflow systems need to encode information about the relationships between every workflow step.
 In practice, this means that each analysis step must specify the input (or types of inputs) needed for that step, and the output (or types of outputs) being produced.
 This structure provides several additional benefits.
-First, workflows become minimally self-documented, as the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see <strong>Figure ??</strong>).
+First, workflows become minimally self-documented, as the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see <strong>Figure <a href="#fig:rnaseq_workflow">5</a></strong>).
 Next, workflows are more likely to be fully enclosed without undocumented steps that are executed by hand, meaning analyses are more likely to be reproducible.
 Finally, each step becomes a self-contained unit that can be used and re-used across multiple analysis workflows, so scientists can spend less time implementing standard steps, and more time on their specific research questions.
 In sum, the internal scaffolding provided by workflow systems helps build analyses that are generally better documented, repeatable, transferable, and scalable.</p>
@@ -385,23 +385,23 @@ Backing up your version controlled analysis in an online repository such as GitH
 </div>
 <p>When combined with online backups, version control systems also facilitate code and data availability and reproducibility for publication.
 For example, to preserve the version of code that produced published results, you can create a “release”: a snapshot of the current code and files in a GitHub repository.
-You can then generate a digital object identifier (DOI) for that release using a permanent documentation service such as Zenodo (<span class="citation" data-cites="https://zenodo.org">[<span class="citeproc-not-found" data-reference-id="https://zenodo.org"><strong>???</strong></span>]</span>) and make it available to reviewers and beyond (see “sharing” section, below).</p>
+You can then generate a digital object identifier (DOI) for that release using a permanent documentation service such as Zenodo (<span class="citation" data-cites="Z6ni32OG">[<a href="#ref-Z6ni32OG" role="doc-biblioref">45</a>]</span>) and make it available to reviewers and beyond (see “sharing” section, below).</p>
 <h3 id="share-your-workflow-and-analysis-code">Share your workflow and analysis code</h3>
 <p>Sharing your workflow code with collaborators, peer reviewers, and scientists seeking to use a similar method can foster discussion and review of your analysis.
 Sticking to a clear documentation strategy, using a version control system, and packaging your code in notebooks or as a workflow prepare them to be easily shared with others.
-To go one step further, you can package your code with tools like Binder, ReproZip, or Whole Tale, or make interactive visualizations with tools like Shiny apps or Plotly. These approaches let others run the code on cloud computers in environments identical to those in which the original computation was performed (<strong>Figure <a href="#fig:nb_figure">4</a></strong>, <strong>Figure <a href="#fig:interactiveviz">7</a></strong>) <span class="citation" data-cites="Q20Bxdsr 11T3orZkb oovxkpWN">[<a href="#ref-Q20Bxdsr" role="doc-biblioref">43</a>,<a href="#ref-11T3orZkb" role="doc-biblioref">45</a>,<a href="#ref-oovxkpWN" role="doc-biblioref">46</a>]</span>.
+To go one step further, you can package your code with tools like Binder, ReproZip, or Whole Tale, or make interactive visualizations with tools like Shiny apps or Plotly. These approaches let others run the code on cloud computers in environments identical to those in which the original computation was performed (<strong>Figure <a href="#fig:nb_figure">4</a></strong>, <strong>Figure <a href="#fig:interactiveviz">7</a></strong>) <span class="citation" data-cites="Q20Bxdsr 11T3orZkb oovxkpWN">[<a href="#ref-Q20Bxdsr" role="doc-biblioref">43</a>,<a href="#ref-11T3orZkb" role="doc-biblioref">46</a>,<a href="#ref-oovxkpWN" role="doc-biblioref">47</a>]</span>.
 These tools substantially reduce overhead associated with interacting with code and data, and in doing so, make it fast and easy to rerun portions of the analysis, check accuracy, or even tweak the analysis to produce new results. If you also share your code and workflows publicly, you will also help contribute to the growing resources for open workflow-enabled biological research.</p>
 <div id="fig:interactiveviz" class="fignos">
 <figure>
 <img src="images/interactive_viz.png" alt="" /><figcaption><span>Figure 7:</span> Interactive visualizations facilitate sharing and repeatability.
-<strong>A.</strong> Interactive visualization dashboard in the Pavian Shiny app for metagenomic analysis <span class="citation" data-cites="1rm0p82n 1FWTyC9rH">[<a href="#ref-1rm0p82n" role="doc-biblioref">47</a>,<a href="#ref-1FWTyC9rH" role="doc-biblioref">48</a>]</span>.
+<strong>A.</strong> Interactive visualization dashboard in the Pavian Shiny app for metagenomic analysis <span class="citation" data-cites="1rm0p82n 1FWTyC9rH">[<a href="#ref-1rm0p82n" role="doc-biblioref">48</a>,<a href="#ref-1FWTyC9rH" role="doc-biblioref">49</a>]</span>.
 Shiny allows you to build interactive web pages using R code.
 Data is manipulated by R code in real-time in a web page, producing analysis and visualizations of a data set.
 Shiny apps can contain user-specifiable parameters, allowing a user to control visualizations or analyses. As seen above, sample “PT1” is selected, and taxonomic ranks class and order are excluded.
 Shiny apps allow collaborators who may or may not know R to modify R visualizations to fit their interests.
-<strong>B.</strong> Plotly heatmap of transcriptional profiling in human brain samples <span class="citation" data-cites="1C5wJzJ6h">[<a href="#ref-1C5wJzJ6h" role="doc-biblioref">49</a>]</span>.
+<strong>B.</strong> Plotly heatmap of transcriptional profiling in human brain samples <span class="citation" data-cites="1C5wJzJ6h">[<a href="#ref-1C5wJzJ6h" role="doc-biblioref">50</a>]</span>.
 Hovering over a cell in the heatmap displays the sample names from the x and y axis, as well as the intensity value.
-Plotting tools like plotly and vega-lite produce single interactive plots that can be shared with collaborators or integrated into websites <span class="citation" data-cites="xS76sIlp nyZChH5b">[<a href="#ref-xS76sIlp" role="doc-biblioref">50</a>,<a href="#ref-nyZChH5b" role="doc-biblioref">51</a>]</span>.
+Plotting tools like plotly and vega-lite produce single interactive plots that can be shared with collaborators or integrated into websites <span class="citation" data-cites="xS76sIlp nyZChH5b">[<a href="#ref-xS76sIlp" role="doc-biblioref">51</a>,<a href="#ref-nyZChH5b" role="doc-biblioref">52</a>]</span>.
 Interactive visualizations are also helpful in exploratory data analysis.</figcaption>
 </figure>
 </div>
@@ -425,7 +425,7 @@ For example, if working with FASTQ data, you can subsample the first million lin
 <p><strong>Document your process</strong>
 Document your changes, explorations, and errors as you develop.
 We recommend using the Markdown language so your documentation is in plain text to facilitate version control, but can still include helpful visual headings, code formatting, and embedded images.
-Markdown editors with visual previewing, such as HackMD, can greatly facilitate notetaking, and Markdown documents are visually rendered properly within your online version control backups on services such as GitHub <span class="citation" data-cites="12ytlgyL8">[<a href="#ref-12ytlgyL8" role="doc-biblioref">52</a>]</span>.</p>
+Markdown editors with visual previewing, such as HackMD, can greatly facilitate notetaking, and Markdown documents are visually rendered properly within your online version control backups on services such as GitHub <span class="citation" data-cites="12ytlgyL8">[<a href="#ref-12ytlgyL8" role="doc-biblioref">53</a>]</span>.</p>
 <p><strong>Develop your workflow</strong>
 From your working code, iteratively modify and add workflow steps to meet your data analysis needs.
 This strategy allows you to find and fix mistakes on small sections of the workflow.
@@ -456,7 +456,7 @@ After you’ve progressed, providing that same help to new users can help you ce
 Data-centric workflow systems have been enthusiastically adopted by the open science community, and as a consequence, there is a critical mass of tutorials and open access code, as well as code discussion on forums and via social media, particularly Twitter.
 Post in the relevant workflow forums when you have hit a stopping point you are unable to work through. Be respectful of people’s time and energy and be sure to include appropriate details important to your problem (see <a href="##%20strategic-troubleshooting">Strategic troubleshooting</a> section).</p>
 <h2 id="data-and-resource-management-for-workflow-enabled-biology">Data and resource management for workflow-enabled biology</h2>
-<p>Advancements in sequencing technologies have greatly increased the volume of data available for biological query <span class="citation" data-cites="1CvTx3vmK">[<a href="#ref-1CvTx3vmK" role="doc-biblioref">53</a>]</span>.
+<p>Advancements in sequencing technologies have greatly increased the volume of data available for biological query <span class="citation" data-cites="1CvTx3vmK">[<a href="#ref-1CvTx3vmK" role="doc-biblioref">54</a>]</span>.
 Workflow systems, by virtue of automating many of the time-intensive project management steps traditionally required for data-intensive biology, can increase our capacity for data analysis.
 However, conducting biological analyses at this scale requires a coordinated approach to data and computational resource management.
 Below, we provide recommendations for data acquisition, management, and quality control that have become especially important as the volume of data has increased.
@@ -470,14 +470,14 @@ While these tasks are not automatable, many tools and databases can aid in these
 In some cases, these data will be sufficient to conduct your entire analysis.
 In others cases, particularly for biologists conducting novel experiments, these data can inform decisions about sequencing type, depth, and replication, and can help uncover potential pitfalls before they cost valuable time and resources.</p>
 <p>Most journals now require data for all manuscripts to be made accessible, either at publication or after a short moratorium.
-Further, the FAIR (findable, accessible, interoperable, reusable) data movement has improved the data sharing ecosystem for data-intensive biology <span class="citation" data-cites="6DjakjNS 19nDvTlMX QIjCzZ9q 6PQpECwL Cl7G75hv UotiKLjf UotiKLjf yWY5wLFX">[<a href="#ref-6DjakjNS" role="doc-biblioref">54</a>,<a href="#ref-19nDvTlMX" role="doc-biblioref">55</a>,<a href="#ref-QIjCzZ9q" role="doc-biblioref">56</a>,<a href="#ref-6PQpECwL" role="doc-biblioref">57</a>,<a href="#ref-Cl7G75hv" role="doc-biblioref">58</a>,<a href="#ref-UotiKLjf" role="doc-biblioref">59</a>,<a href="#ref-UotiKLjf" role="doc-biblioref">59</a>,<a href="#ref-yWY5wLFX" role="doc-biblioref">60</a>]</span>.
+Further, the FAIR (findable, accessible, interoperable, reusable) data movement has improved the data sharing ecosystem for data-intensive biology <span class="citation" data-cites="6DjakjNS 19nDvTlMX QIjCzZ9q 6PQpECwL Cl7G75hv UotiKLjf UotiKLjf yWY5wLFX">[<a href="#ref-6DjakjNS" role="doc-biblioref">55</a>,<a href="#ref-19nDvTlMX" role="doc-biblioref">56</a>,<a href="#ref-QIjCzZ9q" role="doc-biblioref">57</a>,<a href="#ref-6PQpECwL" role="doc-biblioref">58</a>,<a href="#ref-Cl7G75hv" role="doc-biblioref">59</a>,<a href="#ref-UotiKLjf" role="doc-biblioref">60</a>,<a href="#ref-UotiKLjf" role="doc-biblioref">60</a>,<a href="#ref-yWY5wLFX" role="doc-biblioref">61</a>]</span>.
 You can find relevant sequencing data either by starting from the “data accessibility” sections of papers relevant to your research or by directly searching for your organism, environment, or treatment of choice in public data portals and repositories.
-The International Nucleotide Sequence Database Collaboration (INSDC), which includes the Sequence Read Archive (SRA), European Nucleotide Archive (ENA), and DataBank of Japan (DDBJ) is the largest repository for raw sequencing data, but no longer accepts sequencing data from large consortia projects <span class="citation" data-cites="14NnhAyAz">[<a href="#ref-14NnhAyAz" role="doc-biblioref">61</a>]</span>.
+The International Nucleotide Sequence Database Collaboration (INSDC), which includes the Sequence Read Archive (SRA), European Nucleotide Archive (ENA), and DataBank of Japan (DDBJ) is the largest repository for raw sequencing data, but no longer accepts sequencing data from large consortia projects <span class="citation" data-cites="14NnhAyAz">[<a href="#ref-14NnhAyAz" role="doc-biblioref">62</a>]</span>.
 These data are instead hosted in consortia-specific databases, which may require some domain-specific knowledge for identifying relevant datasets and have unique download and authentication protocols.
-For example, raw data from the Tara Oceans expedition is hosted by the Tara Ocean Foundation <span class="citation" data-cites="1EgnLmgbH">[<a href="#ref-1EgnLmgbH" role="doc-biblioref">62</a>]</span>.
-Additional curated databases focus on processed data instead, such as gene expression in the Gene Expression Omnibus (GEO) <span class="citation" data-cites="14VfbatMA">[<a href="#ref-14VfbatMA" role="doc-biblioref">63</a>]</span>.
-Organism-specific databases such as <strong>Wormbase</strong> (<em>Caenorhabditis elegans</em>) specialize on curating and integrating sequencing and other data associated with a model organism <span class="citation" data-cites="1GCZaM5As">[<a href="#ref-1GCZaM5As" role="doc-biblioref">64</a>]</span>.
-Finally, rather than focusing on certain data types or organisms, some repositories are designed to hold any data and metadata associated with a specific project or manuscript (e.g. Open Science Framework, Dryad, Zenodo <span class="citation" data-cites="J91RXtV1">[<a href="#ref-J91RXtV1" role="doc-biblioref">65</a>]</span>).</p>
+For example, raw data from the Tara Oceans expedition is hosted by the Tara Ocean Foundation <span class="citation" data-cites="1EgnLmgbH">[<a href="#ref-1EgnLmgbH" role="doc-biblioref">63</a>]</span>.
+Additional curated databases focus on processed data instead, such as gene expression in the Gene Expression Omnibus (GEO) <span class="citation" data-cites="14VfbatMA">[<a href="#ref-14VfbatMA" role="doc-biblioref">64</a>]</span>.
+Organism-specific databases such as <strong>Wormbase</strong> (<em>Caenorhabditis elegans</em>) specialize on curating and integrating sequencing and other data associated with a model organism <span class="citation" data-cites="1GCZaM5As">[<a href="#ref-1GCZaM5As" role="doc-biblioref">65</a>]</span>.
+Finally, rather than focusing on certain data types or organisms, some repositories are designed to hold any data and metadata associated with a specific project or manuscript (e.g. Open Science Framework, Dryad, Zenodo <span class="citation" data-cites="J91RXtV1">[<a href="#ref-J91RXtV1" role="doc-biblioref">66</a>]</span>).</p>
 <h4 id="consider-analysis-when-generating-your-own-data">Consider analysis when generating your own data</h4>
 <p>If generating your own data, proper experimental design and planning are essential.
 For cost-intensive sequencing data, there are a range of decisions about experimental design and sequencing (including sequencing type, sequencing depth per sample, and biological replication) that impact your ability to properly address your research question.
@@ -502,19 +502,19 @@ Once generated, it is always a good idea to have multiple independent backups of
 <tbody>
 <tr class="odd">
 <td>RNA-sequencing</td>
-<td><span class="citation" data-cites="1Dr56RRQK 1H93dhmme 14KANPT0R">[<a href="#ref-1Dr56RRQK" role="doc-biblioref">30</a>,<a href="#ref-1H93dhmme" role="doc-biblioref">66</a>,<a href="#ref-14KANPT0R" role="doc-biblioref">67</a>]</span></td>
+<td><span class="citation" data-cites="1Dr56RRQK 1H93dhmme 14KANPT0R">[<a href="#ref-1Dr56RRQK" role="doc-biblioref">30</a>,<a href="#ref-1H93dhmme" role="doc-biblioref">67</a>,<a href="#ref-14KANPT0R" role="doc-biblioref">68</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Metagenomic sequencing</td>
-<td><span class="citation" data-cites="DBGTf1wB 7RV1Ygsv 10TJF04lr">[<a href="#ref-7RV1Ygsv" role="doc-biblioref">31</a>,<a href="#ref-DBGTf1wB" role="doc-biblioref">68</a>,<a href="#ref-10TJF04lr" role="doc-biblioref">69</a>]</span></td>
+<td><span class="citation" data-cites="DBGTf1wB 7RV1Ygsv 10TJF04lr">[<a href="#ref-7RV1Ygsv" role="doc-biblioref">31</a>,<a href="#ref-DBGTf1wB" role="doc-biblioref">69</a>,<a href="#ref-10TJF04lr" role="doc-biblioref">70</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Amplicon sequencing</td>
-<td><span class="citation" data-cites="ConT5PhW y0qg4kBp vh6vYFeJ">[<a href="#ref-ConT5PhW" role="doc-biblioref">70</a>,<a href="#ref-y0qg4kBp" role="doc-biblioref">71</a>,<a href="#ref-vh6vYFeJ" role="doc-biblioref">72</a>]</span></td>
+<td><span class="citation" data-cites="ConT5PhW y0qg4kBp vh6vYFeJ">[<a href="#ref-ConT5PhW" role="doc-biblioref">71</a>,<a href="#ref-y0qg4kBp" role="doc-biblioref">72</a>,<a href="#ref-vh6vYFeJ" role="doc-biblioref">73</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Microbial isolate sequencing</td>
-<td><span class="citation" data-cites="R32XANCN">[<a href="#ref-R32XANCN" role="doc-biblioref">73</a>]</span></td>
+<td><span class="citation" data-cites="R32XANCN">[<a href="#ref-R32XANCN" role="doc-biblioref">74</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Eukaryotic genome sequencing</td>
@@ -522,7 +522,7 @@ Once generated, it is always a good idea to have multiple independent backups of
 </tr>
 <tr class="even">
 <td>Whole-genome resequencing</td>
-<td><span class="citation" data-cites="1C09Swnxy">[<a href="#ref-1C09Swnxy" role="doc-biblioref">74</a>]</span></td>
+<td><span class="citation" data-cites="1C09Swnxy">[<a href="#ref-1C09Swnxy" role="doc-biblioref">75</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>RAD seq</td>
@@ -538,7 +538,7 @@ Once generated, it is always a good idea to have multiple independent backups of
 </tr>
 <tr class="even">
 <td>single cell RNA-seq</td>
-<td><span class="citation" data-cites="cpzE71Oj 5m2b0cwV">[<a href="#ref-cpzE71Oj" role="doc-biblioref">75</a>,<a href="#ref-5m2b0cwV" role="doc-biblioref">76</a>]</span></td>
+<td><span class="citation" data-cites="cpzE71Oj 5m2b0cwV">[<a href="#ref-cpzE71Oj" role="doc-biblioref">76</a>,<a href="#ref-5m2b0cwV" role="doc-biblioref">77</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>?</td>
@@ -557,8 +557,8 @@ Keeping a read-only copy of raw data alongside a workflow as well multiple backu
 This also removes the imperative of storing intermediate files as these can be easily regenerated by the workflow.</p>
 <p>When sharing or storing files and results, data version control can keep track of differences in files such as changes from tool parameters or versions.
 The version control tools discussed in the <a href="##%20workflow-based-project-management">Workflow-based project management</a> section are primarily designed to handle small files, but repositories such as the Open Science Framework, Figshare, Zenodo, and Dryad can be used for storing larger files and datasets.</p>
-<p>The Open Science Framework (OSF; <span class="citation" data-cites="J91RXtV1">[<a href="#ref-J91RXtV1" role="doc-biblioref">65</a>]</span>) is a free service that provides powerful collaboration and sharing tools, provides built-in version control, integrates with other storage and version control repositories, guarantees data preservation, and enables you to keep projects private until they are ready to share. Like other services geared towards data sharing, OSF also enables generation of a digital object identifier (doi) for each project.
-While other services such as Git Large File Storage (LFS), Figshare <span class="citation" data-cites="19oGBm89D">[<a href="#ref-19oGBm89D" role="doc-biblioref">77</a>]</span>, Zenodo <span class="citation" data-cites="Z6ni32OG">[<a href="#ref-Z6ni32OG" role="doc-biblioref">78</a>]</span>, and the Dryad Digital Repository <span class="citation" data-cites="L1FmyUSP">[<a href="#ref-L1FmyUSP" role="doc-biblioref">79</a>]</span> each provide important services for sharing and version control, OSF provides the most comprehensive set of free tools for managing data storage and backup.
+<p>The Open Science Framework (OSF; <span class="citation" data-cites="J91RXtV1">[<a href="#ref-J91RXtV1" role="doc-biblioref">66</a>]</span>) is a free service that provides powerful collaboration and sharing tools, provides built-in version control, integrates with other storage and version control repositories, guarantees data preservation, and enables you to keep projects private until they are ready to share. Like other services geared towards data sharing, OSF also enables generation of a digital object identifier (doi) for each project.
+While other services such as Git Large File Storage (LFS), Figshare <span class="citation" data-cites="19oGBm89D">[<a href="#ref-19oGBm89D" role="doc-biblioref">78</a>]</span>, Zenodo <span class="citation" data-cites="Z6ni32OG">[<a href="#ref-Z6ni32OG" role="doc-biblioref">45</a>]</span>, and the Dryad Digital Repository <span class="citation" data-cites="L1FmyUSP">[<a href="#ref-L1FmyUSP" role="doc-biblioref">79</a>]</span> each provide important services for sharing and version control, OSF provides the most comprehensive set of free tools for managing data storage and backup.
 As free tools often limit the size of files that can be stored, a number of cloud backup and storage services are also available for purchase or via university contract, including Google Drive, Box, Dropbox, Amazon Web Services, and Backblaze. Full computer backups can be conducted to these storage locations with tools like rclone <span class="citation" data-cites="3Gg4ZEOM">[<a href="#ref-3Gg4ZEOM" role="doc-biblioref">80</a>]</span>.</p>
 <h4 id="ensure-data-integrity-during-transfers">Ensure data integrity during transfers</h4>
 <p>If you’re working with publicly-available data, you may be able to work on a compute system where the data are already available, circumventing time and effort required for downloading and moving the data.
@@ -781,25 +781,25 @@ These approximate representations retain enough information about the original s
 Most sketching algorithms estimate sequence similarity in some way, allowing you to gain insights from these comparisons.
 For example, sketching algorithms can be used to estimate all-by-all sample similarity which can be visualized as a Principle Component Analysis or a multidimensional scaling plot, or can be used to build a phylogenetic tree with accurate topology.
 Sketching algorithms also dramatically reduce the runtime for comparisons against databases (e.g. all of GenBank), allowing users to quickly compare their data against large public databases.</p>
-<p>Rowe 2019 <span class="citation" data-cites="cHw8gtst">[<a href="#ref-cHw8gtst" role="doc-biblioref">98</a>]</span> reviewed programs and genomic use cases for sketching algorithms, and provided a series of tutorial workbooks (e.g. Sample QC notebook: <span class="citation" data-cites="https://github.com/will-rowe/genome-sketching/blob/master/notebooks/r4.1.Sample-QC.ipynb">[<span class="citeproc-not-found" data-reference-id="https://github.com/will-rowe/genome-sketching/blob/master/notebooks/r4.1.Sample-QC.ipynb"><strong>???</strong></span>]</span>).</p>
+<p>Rowe 2019 <span class="citation" data-cites="cHw8gtst">[<a href="#ref-cHw8gtst" role="doc-biblioref">98</a>]</span> reviewed programs and genomic use cases for sketching algorithms, and provided a series of tutorial workbooks (e.g. Sample QC notebook: <span class="citation" data-cites="1BD5D1yRX">[<a href="#ref-1BD5D1yRX" role="doc-biblioref">99</a>]</span>).</p>
 <p><strong>Use the right tools for your question</strong>
 RNA-seq analysis approaches like differential expression or transcript clustering rely on transcript or gene counts.
 Many tools can be used to generate these counts by quantifying the number of reads that overlap with each transcript or gene.
-For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts <span class="citation" data-cites="tTu8Ds9Z 1GLBRcU8y">[<a href="#ref-tTu8Ds9Z" role="doc-biblioref">99</a>,<a href="#ref-1GLBRcU8y" role="doc-biblioref">100</a>]</span>.
+For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts <span class="citation" data-cites="tTu8Ds9Z 1GLBRcU8y">[<a href="#ref-tTu8Ds9Z" role="doc-biblioref">100</a>,<a href="#ref-1GLBRcU8y" role="doc-biblioref">101</a>]</span>.
 However, these tools generate information-rich output, specifying per-base alignments for each read.
-If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information <span class="citation" data-cites="92SRxcQI">[<a href="#ref-92SRxcQI" role="doc-biblioref">101</a>]</span>.</p>
+If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information <span class="citation" data-cites="92SRxcQI">[<a href="#ref-92SRxcQI" role="doc-biblioref">102</a>]</span>.</p>
 <p><strong>Seek help when you need it</strong>
 In some cases, you may find that your accessible computing system is ill-equipped to handle the type or scope of your analysis.
 Depending on the system, staff members may be able to help direct you to properly scale your workflow to available resources, or guide you in tailoring computational unit allocations or purhcases to match your needs.</p>
 <h2 id="strategies-for-troubleshooting">Strategies for troubleshooting</h2>
 <p>Workflows, and research software in general, invariably require troubleshooting and iteration.
 When first starting with a workflow system, it can be difficult to interpret code and usage errors from unfamiliar tools or languages <span class="citation" data-cites="1b1v9x0E">[<a href="#ref-1b1v9x0E" role="doc-biblioref">2</a>]</span>.
-Further, the iterative development process of research software means functionality may change, new features may be added, or documentation may be out of date <span class="citation" data-cites="10B55Rn6n">[<a href="#ref-10B55Rn6n" role="doc-biblioref">102</a>]</span>.
+Further, the iterative development process of research software means functionality may change, new features may be added, or documentation may be out of date <span class="citation" data-cites="10B55Rn6n">[<a href="#ref-10B55Rn6n" role="doc-biblioref">103</a>]</span>.
 The challenges of learning and interacting with research software require time and patience <span class="citation" data-cites="O2FBStK6">[<a href="#ref-O2FBStK6" role="doc-biblioref">4</a>]</span>.</p>
 <p>One of the largest barriers to surmounting these challenges is learning how, when, and where to ask for help.
 Below we outline a strategy for troubleshooting that can help build your own knowledge while respecting both your own time and that of research software developers and the larger bioinformatic community.
 In the “where to seek help” section, we also recommend locations for asking general questions around data-intensive analysis, including discussion of tool choice, parameter selection, and other analysis strategies.
-Beyond these tips, workshops and materials from training organizations such as the Carpentries, R-Ladies, RStudio can arm you with the tools you need to start troubleshooting and jump-start software and data literacy in your community <span class="citation" data-cites="EbC8IKt0">[<a href="#ref-EbC8IKt0" role="doc-biblioref">103</a>]</span>.
+Beyond these tips, workshops and materials from training organizations such as the Carpentries, R-Ladies, RStudio can arm you with the tools you need to start troubleshooting and jump-start software and data literacy in your community <span class="citation" data-cites="EbC8IKt0">[<a href="#ref-EbC8IKt0" role="doc-biblioref">104</a>]</span>.
 Getting involved with these workshops and communities not only provides educational benefits but also networking and career-building opportunities.</p>
 <h3 id="how-to-help-yourself-try-to-pinpoint-your-issue-or-error">How to help yourself: Try to pinpoint your issue or error</h3>
 <p>Software errors can be the result of syntax errors, dependency issues, operating system conflicts, bugs in the software, problems with the input data, and many other issues.
@@ -809,7 +809,7 @@ In many cases, the error you’ve encountered has been encountered many times be
 If there is a software issue tracker for the software (e.g. on the GitHub, GitLab, or Bitbucket repository), or a Gitter, Slack, or Google Groups page, performing a targeted search with the error message may provide additional context or a solution for the error.
 If targeted searches do not return a results, Googling the error message with the program name is a good next step.
 Searching with several variants and iteratively adding information such as the type of input data, the name of the coding language or computational platform, or other relevant information, can improve the likelihood that a there will be a match.
-There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs and even tutorials and lessons written by experts in the field <span class="citation" data-cites="FnFKPG8G">[<a href="#ref-FnFKPG8G" role="doc-biblioref">104</a>]</span>.
+There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs and even tutorials and lessons written by experts in the field <span class="citation" data-cites="FnFKPG8G">[<a href="#ref-FnFKPG8G" role="doc-biblioref">105</a>]</span>.
 This increases the discoverability of error messages and their solutions.</p>
 <p>Sometimes, programs fail without outputting an error message.
 In cases like these, the software’s help (usually accessible on the command line via <code>tool-name --help</code>) and official documentation may provide clues or additional example use cases that may be helpful in resolving an error.
@@ -822,7 +822,7 @@ When asking for help, it’s essential to provide the right details so that othe
 At minimum, include the name and version of the program, the method used to install it, whether or not the test data ran, the exact code that produced the error, the error message, and the full output text from the run (if any is produced).
 The type and version of the operating system you are using is also helpful to include.
 Sometimes, this is enough information for others to spot the error.
-However, if it appears that there may bug in the underlying code, specifying or providing the minimum amount of data required to reproduce the error (e.g. reproducible example <span class="citation" data-cites="S71Oc3RF mn58kiuB">[<a href="#ref-S71Oc3RF" role="doc-biblioref">105</a>,<a href="#ref-mn58kiuB" role="doc-biblioref">106</a>]</span>) enables other to reproduce and potentially solve the error at hand.
+However, if it appears that there may bug in the underlying code, specifying or providing the minimum amount of data required to reproduce the error (e.g. reproducible example <span class="citation" data-cites="S71Oc3RF mn58kiuB">[<a href="#ref-S71Oc3RF" role="doc-biblioref">106</a>,<a href="#ref-mn58kiuB" role="doc-biblioref">107</a>]</span>) enables other to reproduce and potentially solve the error at hand.
 Putting the effort into gathering this information both increases your own understanding of the problem and makes it easier and faster for others to help solve your issue.
 Furthermore, it signals respect for the time that these developers and community members dedicate to helping troubleshoot and solve user issues.</p>
 <h3 id="where-to-seek-help-online-and-local-communities-of-practice">Where to seek help: online and local communities of practice</h3>
@@ -832,7 +832,7 @@ For open source programs on GitHub, GitLab, or Bitbucket, this is often the “I
 Usually, the documentation indicates the best location questions.
 If question is more general, such as asking about program choice or workflows, forums relevant to your field such as Stack Overflow, BioStars, or SEQanswers are good choices, as posts here are often seen by a large community of researchers.
 Before posting, search through related topics to double check the question has not already been answered.
-As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harassment-free discussion environment <span class="citation" data-cites="bY9cHRxB">[<a href="#ref-bY9cHRxB" role="doc-biblioref">107</a>]</span>.
+As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harassment-free discussion environment <span class="citation" data-cites="bY9cHRxB">[<a href="#ref-bY9cHRxB" role="doc-biblioref">108</a>]</span>.
 Look for codes of conduct in the online forums you participate in, and make sure you do your part to help ensure a welcoming community for participants of all backgrounds and computational competencies.</p>
 <p>While there is lots of help available online, there is no substitute for local communities.
 Local communities may come in the form of a tech meetup, a users group, a hacky hour, or an informal meetup of researchers using similar tools.
@@ -840,7 +840,7 @@ While this may seem like just a local version of Stack Overflow, the local, memb
 The benefit to beginners is clear: learning the best way to post questions and the important parts of errors, while getting questions answered so they can move forward in their research.
 Intermediate users may actually find these communities most useful, as they can also accelerate their own troubleshooting skills by helping others solve issues that they have already struggled through.
 While it can be helpful to have some experts available to help answer questions or to know when to escalate to Stack Overflow or other communities, a collaborative community of practice with members at all experience levels can help all its members move their science forward faster.</p>
-<p>If such a community does not yet exist in your area, building this sort of community (discussed in detail in <span class="citation" data-cites="4jKjtPfJ">[<a href="#ref-4jKjtPfJ" role="doc-biblioref">108</a>]</span>), can be as simple as hosting a seminar series or starting meetup sessions for data analysis co-working.
+<p>If such a community does not yet exist in your area, building this sort of community (discussed in detail in <span class="citation" data-cites="4jKjtPfJ">[<a href="#ref-4jKjtPfJ" role="doc-biblioref">109</a>]</span>), can be as simple as hosting a seminar series or starting meetup sessions for data analysis co-working.
 In our experience, it can also be useful to set up a local online forum (e.g. discourse) for group troubleshooting.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Bioinformatics-focused workflow systems have reshaped data-intensive biology, reducing execution hurdles and empowering biologists to conduct reproducible analyses at the massive scale of data now available.
@@ -962,13 +962,13 @@ DOI: <a href="https://doi.org/10.1093/nar/gkz1035">10.1093/nar/gkz1035</a> · PM
 </div>
 <div id="ref-9C2akRh5">
 <p>15. <strong>nf-core/rnaseq</strong><br />
-GitHub<br />
-<a href="https://github.com/nf-core/rnaseq">https://github.com/nf-core/rnaseq</a></p>
+nf-core<br />
+(2020-06-23) <a href="https://github.com/nf-core/rnaseq">https://github.com/nf-core/rnaseq</a></p>
 </div>
 <div id="ref-CeVdUj5n">
 <p>16. <strong>metagenome-atlas/atlas</strong><br />
-GitHub<br />
-<a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
+metagenome-atlas<br />
+(2020-06-24) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
 </div>
 <div id="ref-so5fKJ5K">
 <p>17. <strong>ATLAS: a Snakemake workflow for assembly, annotation, and genomic binning of metagenome sequence data</strong><br />
@@ -978,8 +978,8 @@ DOI: <a href="https://doi.org/10.1101/737528">10.1101/737528</a></p>
 </div>
 <div id="ref-B1ckDvru">
 <p>18. <strong>sunbeam-labs/sunbeam</strong><br />
-GitHub<br />
-<a href="https://github.com/sunbeam-labs/sunbeam">https://github.com/sunbeam-labs/sunbeam</a></p>
+Sunbeam Labs<br />
+(2020-06-15) <a href="https://github.com/sunbeam-labs/sunbeam">https://github.com/sunbeam-labs/sunbeam</a></p>
 </div>
 <div id="ref-h9rLdvMM">
 <p>19. <strong>Sunbeam: an extensible pipeline for analyzing metagenomic sequencing experiments</strong><br />
@@ -989,13 +989,13 @@ DOI: <a href="https://doi.org/10.1186/s40168-019-0658-x">10.1186/s40168-019-0658
 </div>
 <div id="ref-1ABkx7mMC">
 <p>20. <strong>dib-lab/dammit</strong><br />
-GitHub<br />
-<a href="https://github.com/dib-lab/dammit">https://github.com/dib-lab/dammit</a></p>
+The Lab for Data Intensive Biology<br />
+(2020-06-23) <a href="https://github.com/dib-lab/dammit">https://github.com/dib-lab/dammit</a></p>
 </div>
 <div id="ref-vxcvKkG9">
 <p>21. <strong>dib-lab/elvers</strong><br />
-GitHub<br />
-<a href="https://github.com/dib-lab/elvers">https://github.com/dib-lab/elvers</a></p>
+The Lab for Data Intensive Biology<br />
+(2020-05-28) <a href="https://github.com/dib-lab/elvers">https://github.com/dib-lab/elvers</a></p>
 </div>
 <div id="ref-NcYZqBux">
 <p>22. <strong>Snakemake–a scalable bioinformatics workflow engine</strong><br />
@@ -1086,13 +1086,13 @@ Dirk Merkel<br />
 </div>
 <div id="ref-PljGS703">
 <p>37. <strong>TheSnakePit/mamba</strong><br />
-GitHub<br />
-<a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
+Snakepit<br />
+(2020-06-24) <a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
 </div>
 <div id="ref-dpXky09I">
 <p>38. <strong>dib-lab/dib-MMETSP</strong><br />
-GitHub<br />
-<a href="https://github.com/dib-lab/dib-MMETSP">https://github.com/dib-lab/dib-MMETSP</a></p>
+The Lab for Data Intensive Biology<br />
+(2019-10-13) <a href="https://github.com/dib-lab/dib-MMETSP">https://github.com/dib-lab/dib-MMETSP</a></p>
 </div>
 <div id="ref-18F3tEMjQ">
 <p>39. <strong>Re-assembly, quality evaluation, and annotation of 678 microbial eukaryotic reference transcriptomes</strong><br />
@@ -1123,190 +1123,190 @@ DOI: <a href="https://doi.org/10.25080/majora-4af1f417-011">10.25080/majora-4af1
 GitHub<br />
 <a href="https://github.com/ngs-docs/2020-ggg-201b-rnaseq">https://github.com/ngs-docs/2020-ggg-201b-rnaseq</a></p>
 </div>
+<div id="ref-Z6ni32OG">
+<p>45. <strong>Zenodo - Research. Shared.</strong><a href="https://zenodo.org/">https://zenodo.org/</a></p>
+</div>
 <div id="ref-11T3orZkb">
-<p>45. <strong>Computing environments for reproducibility: Capturing the “Whole Tale”</strong><br />
+<p>46. <strong>Computing environments for reproducibility: Capturing the “Whole Tale”</strong><br />
 Adam Brinckman, Kyle Chard, Niall Gaffney, Mihael Hategan, Matthew B. Jones, Kacper Kowalik, Sivakumar Kulasekaran, Bertram Ludäscher, Bryce D. Mecum, Jarek Nabrzyski, … Kandace Turner<br />
 <em>Future Generation Computer Systems</em> (2019-05) <a href="https://doi.org/ggv5zj">https://doi.org/ggv5zj</a><br />
 DOI: <a href="https://doi.org/10.1016/j.future.2017.12.029">10.1016/j.future.2017.12.029</a></p>
 </div>
 <div id="ref-oovxkpWN">
-<p>46. <strong>ReproZip</strong><br />
+<p>47. <strong>ReproZip</strong><br />
 Fernando Chirigati, Rémi Rampin, Dennis Shasha, Juliana Freire<br />
 <em>Association for Computing Machinery (ACM)</em> (2016) <a href="https://doi.org/ggxs3d">https://doi.org/ggxs3d</a><br />
 DOI: <a href="https://doi.org/10.1145/2882903.2899401">10.1145/2882903.2899401</a></p>
 </div>
 <div id="ref-1rm0p82n">
-<p>47. <strong>Pavian</strong><a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
+<p>48. <strong>Pavian</strong><a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
 </div>
 <div id="ref-1FWTyC9rH">
-<p>48. <strong>Pavian: interactive analysis of metagenomics data for microbiome studies and pathogen identification</strong><br />
+<p>49. <strong>Pavian: interactive analysis of metagenomics data for microbiome studies and pathogen identification</strong><br />
 Florian P Breitwieser, Steven L Salzberg<br />
 <em>Bioinformatics</em> (2019-09-25) <a href="https://doi.org/ggnb3n">https://doi.org/ggnb3n</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btz715">10.1093/bioinformatics/btz715</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31553437">31553437</a></p>
 </div>
 <div id="ref-1C5wJzJ6h">
-<p>49. <strong>Visualizing Biological Data</strong><a href="https://plotly.com/python/v3/ipython-notebooks/bioinformatics/">https://plotly.com/python/v3/ipython-notebooks/bioinformatics/</a></p>
+<p>50. <strong>Visualizing Biological Data</strong><a href="https://plotly.com/python/v3/ipython-notebooks/bioinformatics/">https://plotly.com/python/v3/ipython-notebooks/bioinformatics/</a></p>
 </div>
 <div id="ref-xS76sIlp">
-<p>50. <strong>Plotly: The front-end for ML and data science models</strong><a href="/">/</a></p>
+<p>51. <strong>Plotly: The front-end for ML and data science models</strong><a href="/">/</a></p>
 </div>
 <div id="ref-nyZChH5b">
-<p>51. <strong>Vega-Lite: A Grammar of Interactive Graphics</strong><br />
+<p>52. <strong>Vega-Lite: A Grammar of Interactive Graphics</strong><br />
 Arvind Satyanarayan, Dominik Moritz, Kanit Wongsuphasawat, Jeffrey Heer<br />
 <em>IEEE Transactions on Visualization and Computer Graphics</em> (2017-01) <a href="https://doi.org/f92f32">https://doi.org/f92f32</a><br />
 DOI: <a href="https://doi.org/10.1109/tvcg.2016.2599030">10.1109/tvcg.2016.2599030</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27875150">27875150</a></p>
 </div>
 <div id="ref-12ytlgyL8">
-<p>52. <strong>HackMD - Collaborative Markdown Knowledge Base</strong><br />
+<p>53. <strong>HackMD - Collaborative Markdown Knowledge Base</strong><br />
 HackMD<br />
 <a href="https://hackmd.io">https://hackmd.io</a></p>
 </div>
 <div id="ref-1CvTx3vmK">
-<p>53. <strong>Documentation</strong><a href="https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/">https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/</a></p>
+<p>54. <strong>Documentation</strong><a href="https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/">https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/</a></p>
 </div>
 <div id="ref-6DjakjNS">
-<p>54. <strong>The FAIR Guiding Principles for scientific data management and stewardship</strong><br />
+<p>55. <strong>The FAIR Guiding Principles for scientific data management and stewardship</strong><br />
 Mark D. Wilkinson, Michel Dumontier, IJsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, Jan-Willem Boiten, Luiz Bonino da Silva Santos, Philip E. Bourne, … Barend Mons<br />
 <em>Scientific Data</em> (2016-03-15) <a href="https://doi.org/bdd4">https://doi.org/bdd4</a><br />
 DOI: <a href="https://doi.org/10.1038/sdata.2016.18">10.1038/sdata.2016.18</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26978244">26978244</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4792175">PMC4792175</a></p>
 </div>
 <div id="ref-19nDvTlMX">
-<p>55. <strong>The international nucleotide sequence database collaboration</strong><br />
+<p>56. <strong>The international nucleotide sequence database collaboration</strong><br />
 Ilene Karsch-Mizrachi, Toshihisa Takagi, Guy Cochrane, on behalf of the International Nucleotide Sequence Database Collaboration<br />
 <em>Nucleic Acids Research</em> (2018-01-04) <a href="https://doi.org/ggwp7h">https://doi.org/ggwp7h</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkx1097">10.1093/nar/gkx1097</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29190397">29190397</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753279">PMC5753279</a></p>
 </div>
 <div id="ref-QIjCzZ9q">
-<p>56. <strong>Public Microbial Resource Centers: Key Hubs for Findable, Accessible, Interoperable, and Reusable (FAIR) Microorganisms and Genetic Materials</strong><br />
+<p>57. <strong>Public Microbial Resource Centers: Key Hubs for Findable, Accessible, Interoperable, and Reusable (FAIR) Microorganisms and Genetic Materials</strong><br />
 P. Becker, M. Bosschaerts, P. Chaerle, H.-M. Daniel, A. Hellemans, A. Olbrechts, L. Rigouts, A. Wilmotte, M. Hendrickx<br />
 <em>Applied and Environmental Microbiology</em> (2019-10-16) <a href="https://doi.org/ggbpc9">https://doi.org/ggbpc9</a><br />
 DOI: <a href="https://doi.org/10.1128/aem.01444-19">10.1128/aem.01444-19</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31471301">31471301</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6803313">PMC6803313</a></p>
 </div>
 <div id="ref-6PQpECwL">
-<p>57. <strong>Linking the International Wheat Genome Sequencing Consortium bread wheat reference genome sequence to wheat genetic and phenomic data</strong><br />
+<p>58. <strong>Linking the International Wheat Genome Sequencing Consortium bread wheat reference genome sequence to wheat genetic and phenomic data</strong><br />
 Michael Alaux, Jane Rogers, Thomas Letellier, Raphaël Flores, Françoise Alfama, Cyril Pommier, Nacer Mohellibi, Sophie Durand, Erik Kimmel, Célia Michotey, … International Wheat Genome Sequencing Consortium<br />
 <em>Genome Biology</em> (2018-08-17) <a href="https://doi.org/gf23xv">https://doi.org/gf23xv</a><br />
 DOI: <a href="https://doi.org/10.1186/s13059-018-1491-4">10.1186/s13059-018-1491-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30115101">30115101</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6097284">PMC6097284</a></p>
 </div>
 <div id="ref-Cl7G75hv">
-<p>58. <strong>FAIR: A Call to Make Published Data More Findable, Accessible, Interoperable, and Reusable</strong><br />
+<p>59. <strong>FAIR: A Call to Make Published Data More Findable, Accessible, Interoperable, and Reusable</strong><br />
 Leonore Reiser, Lisa Harper, Michael Freeling, Bin Han, Sheng Luan<br />
 <em>Molecular Plant</em> (2018-09) <a href="https://doi.org/ggwp69">https://doi.org/ggwp69</a><br />
 DOI: <a href="https://doi.org/10.1016/j.molp.2018.07.005">10.1016/j.molp.2018.07.005</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30076986">30076986</a></p>
 </div>
 <div id="ref-UotiKLjf">
-<p>59. <strong>The Integrative Human Microbiome Project</strong><br />
+<p>60. <strong>The Integrative Human Microbiome Project</strong><br />
 The Integrative HMP (iHMP) Research Network Consortium<br />
 <em>Nature</em> (2019-05-29) <a href="https://doi.org/gf3wp9">https://doi.org/gf3wp9</a><br />
 DOI: <a href="https://doi.org/10.1038/s41586-019-1238-8">10.1038/s41586-019-1238-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31142853">31142853</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6784865">PMC6784865</a></p>
 </div>
 <div id="ref-yWY5wLFX">
-<p>60. <strong>The Pfam protein families database in 2019</strong><br />
+<p>61. <strong>The Pfam protein families database in 2019</strong><br />
 Sara El-Gebali, Jaina Mistry, Alex Bateman, Sean R Eddy, Aurélien Luciani, Simon C Potter, Matloob Qureshi, Lorna J Richardson, Gustavo A Salazar, Alfredo Smart, … Robert D Finn<br />
 <em>Nucleic Acids Research</em> (2019-01-08) <a href="https://doi.org/gfhx7r">https://doi.org/gfhx7r</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gky995">10.1093/nar/gky995</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30357350">30357350</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6324024">PMC6324024</a></p>
 </div>
 <div id="ref-14NnhAyAz">
-<p>61. <strong>The International Nucleotide Sequence Database Collaboration</strong><br />
+<p>62. <strong>The International Nucleotide Sequence Database Collaboration</strong><br />
 Guy Cochrane, Ilene Karsch-Mizrachi, Toshihisa Takagi, International Nucleotide Sequence Database Collaboration<br />
 <em>Nucleic Acids Research</em> (2016-01-04) <a href="https://doi.org/gf28sk">https://doi.org/gf28sk</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkv1323">10.1093/nar/gkv1323</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26657633">26657633</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702924">PMC4702924</a></p>
 </div>
 <div id="ref-1EgnLmgbH">
-<p>62. <strong>Open science resources for the discovery and analysis of Tara Oceans data</strong><br />
+<p>63. <strong>Open science resources for the discovery and analysis of Tara Oceans data</strong><br />
 Stéphane Pesant, Fabrice Not, Marc Picheral, Stefanie Kandels-Lewis, Noan Le Bescot, Gabriel Gorsky, Daniele Iudicone, Eric Karsenti, Sabrina Speich, Romain Troublé, … Sarah Searson<br />
 <em>Scientific Data</em> (2015-05-26) <a href="https://doi.org/gd32xw">https://doi.org/gd32xw</a><br />
 DOI: <a href="https://doi.org/10.1038/sdata.2015.23">10.1038/sdata.2015.23</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26029378">26029378</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4443879">PMC4443879</a></p>
 </div>
 <div id="ref-14VfbatMA">
-<p>63. <strong>Gene Expression Omnibus: NCBI gene expression and hybridization array data repository</strong><br />
+<p>64. <strong>Gene Expression Omnibus: NCBI gene expression and hybridization array data repository</strong><br />
 R. Edgar<br />
 <em>Nucleic Acids Research</em> (2002-01-01) <a href="https://doi.org/fttpkn">https://doi.org/fttpkn</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/30.1.207">10.1093/nar/30.1.207</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/11752295">11752295</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC99122">PMC99122</a></p>
 </div>
 <div id="ref-1GCZaM5As">
-<p>64. <strong>WormBase: a modern Model Organism Information Resource</strong><br />
+<p>65. <strong>WormBase: a modern Model Organism Information Resource</strong><br />
 Todd W Harris, Valerio Arnaboldi, Scott Cain, Juancarlos Chan, Wen J Chen, Jaehyoung Cho, Paul Davis, Sibyl Gao, Christian A Grove, Ranjana Kishore, … Paul W Sternberg<br />
 <em>Nucleic Acids Research</em> (2019-10-23) <a href="https://doi.org/ggv5zk">https://doi.org/ggv5zk</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkz920">10.1093/nar/gkz920</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31642470">31642470</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7145598">PMC7145598</a></p>
 </div>
 <div id="ref-J91RXtV1">
-<p>65. <strong>Open Science Framework (OSF)</strong><br />
+<p>66. <strong>Open Science Framework (OSF)</strong><br />
 Erin D. Foster, MSLS, Ariel Deardorff, MLIS<br />
 <em>Journal of the Medical Library Association</em> (2017-04-04) <a href="https://doi.org/gfxvhq">https://doi.org/gfxvhq</a><br />
 DOI: <a href="https://doi.org/10.5195/jmla.2017.88">10.5195/jmla.2017.88</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5370619">PMC5370619</a></p>
 </div>
 <div id="ref-1H93dhmme">
-<p>66. <strong>Erratum: How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use?</strong><br />
+<p>67. <strong>Erratum: How many biological replicates are needed in an RNA-seq experiment and which differential expression tool should you use?</strong><br />
 Nicholas J. Schurch, Pietà Schofield, Marek Gierliński, Christian Cole, Alexander Sherstnev, Vijender Singh, Nicola Wrobel, Karim Gharbi, Gordon G. Simpson, Tom Owen-Hughes, … Geoffrey J. Barton<br />
 <em>RNA</em> (2016-09-16) <a href="https://doi.org/ggv5zr">https://doi.org/ggv5zr</a><br />
 DOI: <a href="https://doi.org/10.1261/rna.058339.116">10.1261/rna.058339.116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27638913">27638913</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5029462">PMC5029462</a></p>
 </div>
 <div id="ref-14KANPT0R">
-<p>67. <strong>Power analysis and sample size estimation for RNA-Seq differential expression</strong><br />
+<p>68. <strong>Power analysis and sample size estimation for RNA-Seq differential expression</strong><br />
 Travers Ching, Sijia Huang, Lana X. Garmire<br />
 <em>RNA</em> (2014-11) <a href="https://doi.org/f6nstp">https://doi.org/f6nstp</a><br />
 DOI: <a href="https://doi.org/10.1261/rna.046011.114">10.1261/rna.046011.114</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25246651">25246651</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4201821">PMC4201821</a></p>
 </div>
 <div id="ref-DBGTf1wB">
-<p>68. <strong>Unlocking the potential of metagenomics through replicated experimental design</strong><br />
+<p>69. <strong>Unlocking the potential of metagenomics through replicated experimental design</strong><br />
 Rob Knight, Janet Jansson, Dawn Field, Noah Fierer, Narayan Desai, Jed A Fuhrman, Phil Hugenholtz, Daniel van der Lelie, Folker Meyer, Rick Stevens, … Jack A Gilbert<br />
 <em>Nature Biotechnology</em> (2012-06-07) <a href="https://doi.org/f32nds">https://doi.org/f32nds</a><br />
 DOI: <a href="https://doi.org/10.1038/nbt.2235">10.1038/nbt.2235</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22678395">22678395</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4902277">PMC4902277</a></p>
 </div>
 <div id="ref-10TJF04lr">
-<p>69. <strong>Contamination in Low Microbial Biomass Microbiome Studies: Issues and Recommendations</strong><br />
+<p>70. <strong>Contamination in Low Microbial Biomass Microbiome Studies: Issues and Recommendations</strong><br />
 Raphael Eisenhofer, Jeremiah J. Minich, Clarisse Marotz, Alan Cooper, Rob Knight, Laura S. Weyrich<br />
 <em>Trends in Microbiology</em> (2019-02) <a href="https://doi.org/gfpfkt">https://doi.org/gfpfkt</a><br />
 DOI: <a href="https://doi.org/10.1016/j.tim.2018.11.003">10.1016/j.tim.2018.11.003</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30497919">30497919</a></p>
 </div>
 <div id="ref-ConT5PhW">
-<p>70. <strong>Consistent and correctable bias in metagenomic sequencing experiments</strong><br />
+<p>71. <strong>Consistent and correctable bias in metagenomic sequencing experiments</strong><br />
 Michael R McLaren, Amy D Willis, Benjamin J Callahan<br />
 <em>eLife</em> (2019-09-10) <a href="https://doi.org/gf7wbr">https://doi.org/gf7wbr</a><br />
 DOI: <a href="https://doi.org/10.7554/elife.46923">10.7554/elife.46923</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31502536">31502536</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6739870">PMC6739870</a></p>
 </div>
 <div id="ref-y0qg4kBp">
-<p>71. <strong>From Benchtop to Desktop: Important Considerations when Designing Amplicon Sequencing Workflows</strong><br />
+<p>72. <strong>From Benchtop to Desktop: Important Considerations when Designing Amplicon Sequencing Workflows</strong><br />
 Dáithí C. Murray, Megan L. Coghlan, Michael Bunce<br />
 <em>PLOS ONE</em> (2015-04-22) <a href="https://doi.org/f7hjz7">https://doi.org/f7hjz7</a><br />
 DOI: <a href="https://doi.org/10.1371/journal.pone.0124671">10.1371/journal.pone.0124671</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25902146">25902146</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4406758">PMC4406758</a></p>
 </div>
 <div id="ref-vh6vYFeJ">
-<p>72. <strong>Assessment of variation in microbial community amplicon sequencing by the Microbiome Quality Control (MBQC) project consortium</strong><br />
+<p>73. <strong>Assessment of variation in microbial community amplicon sequencing by the Microbiome Quality Control (MBQC) project consortium</strong><br />
 Rashmi Sinha, Galeb Abu-Ali, Emily Vogtmann, Anthony A Fodor, Boyu Ren, Amnon Amir, Emma Schwager, Jonathan Crabtree, Siyuan Ma, Christian C Abnet, … The Microbiome Quality Control Project Consortium<br />
 <em>Nature Biotechnology</em> (2017-10-02) <a href="https://doi.org/gbzrdx">https://doi.org/gbzrdx</a><br />
 DOI: <a href="https://doi.org/10.1038/nbt.3981">10.1038/nbt.3981</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28967885">28967885</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5839636">PMC5839636</a></p>
 </div>
 <div id="ref-R32XANCN">
-<p>73. <strong>Completing bacterial genome assemblies: strategy and performance comparisons</strong><br />
+<p>74. <strong>Completing bacterial genome assemblies: strategy and performance comparisons</strong><br />
 Yu-Chieh Liao, Shu-Hung Lin, Hsin-Hung Lin<br />
 <em>Scientific Reports</em> (2015-03-04) <a href="https://doi.org/f686w8">https://doi.org/f686w8</a><br />
 DOI: <a href="https://doi.org/10.1038/srep08747">10.1038/srep08747</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25735824">25735824</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4348652">PMC4348652</a></p>
 </div>
 <div id="ref-1C09Swnxy">
-<p>74. <strong>Whole-genome sequencing approaches for conservation biology: Advantages, limitations and practical recommendations</strong><br />
+<p>75. <strong>Whole-genome sequencing approaches for conservation biology: Advantages, limitations and practical recommendations</strong><br />
 Angela P. Fuentes-Pardo, Daniel E. Ruzzante<br />
 <em>Molecular Ecology</em> (2017-10) <a href="https://doi.org/gfzn9r">https://doi.org/gfzn9r</a><br />
 DOI: <a href="https://doi.org/10.1111/mec.14264">10.1111/mec.14264</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28746784">28746784</a></p>
 </div>
 <div id="ref-cpzE71Oj">
-<p>75. <strong>Design and computational analysis of single-cell RNA-sequencing experiments</strong><br />
+<p>76. <strong>Design and computational analysis of single-cell RNA-sequencing experiments</strong><br />
 Rhonda Bacher, Christina Kendziorski<br />
 <em>Genome Biology</em> (2016-04-07) <a href="https://doi.org/gc958g">https://doi.org/gc958g</a><br />
 DOI: <a href="https://doi.org/10.1186/s13059-016-0927-y">10.1186/s13059-016-0927-y</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27052890">27052890</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4823857">PMC4823857</a></p>
 </div>
 <div id="ref-5m2b0cwV">
-<p>76. <strong>A practical guide to single-cell RNA-sequencing for biomedical research and clinical applications</strong><br />
+<p>77. <strong>A practical guide to single-cell RNA-sequencing for biomedical research and clinical applications</strong><br />
 Ashraful Haque, Jessica Engel, Sarah A. Teichmann, Tapio Lönnberg<br />
 <em>Genome Medicine</em> (2017-08-18) <a href="https://doi.org/gfgppz">https://doi.org/gfgppz</a><br />
 DOI: <a href="https://doi.org/10.1186/s13073-017-0467-4">10.1186/s13073-017-0467-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28821273">28821273</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5561556">PMC5561556</a></p>
 </div>
 <div id="ref-19oGBm89D">
-<p>77. <strong>figshare - credit for all your research</strong><a href="https://figshare.com/">https://figshare.com/</a></p>
-</div>
-<div id="ref-Z6ni32OG">
-<p>78. <strong>Zenodo - Research. Shared.</strong><a href="https://zenodo.org/">https://zenodo.org/</a></p>
+<p>78. <strong>figshare - credit for all your research</strong><a href="https://figshare.com/">https://figshare.com/</a></p>
 </div>
 <div id="ref-L1FmyUSP">
 <p>79. <strong>Dryad Home - Publish and Preserve your Data</strong><a href="https://datadryad.org/stash">https://datadryad.org/stash</a></p>
@@ -1413,63 +1413,68 @@ DOI: <a href="https://doi.org/10.1186/s40168-019-0653-2">10.1186/s40168-019-0653
 <div id="ref-cHw8gtst">
 <p>98. <strong>When the levee breaks: a practical guide to sketching algorithms for processing the flood of genomic data</strong><br />
 Will P. M. Rowe<br />
-<em>Genome Biology</em> (2019-09-13) <a href="https://doi.org/gf8bfj">https://doi.org/gf8bfj</a><br />
+<em>Genome Biology</em> (2019-12) <a href="https://doi.org/gf8bfj">https://doi.org/gf8bfj</a><br />
 DOI: <a href="https://doi.org/10.1186/s13059-019-1809-x">10.1186/s13059-019-1809-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31519212">31519212</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6744645">PMC6744645</a></p>
 </div>
+<div id="ref-1BD5D1yRX">
+<p>99. <strong>will-rowe/genome-sketching</strong><br />
+GitHub<br />
+<a href="https://github.com/will-rowe/genome-sketching">https://github.com/will-rowe/genome-sketching</a></p>
+</div>
 <div id="ref-tTu8Ds9Z">
-<p>99. <strong>STAR: ultrafast universal RNA-seq aligner</strong><br />
+<p>100. <strong>STAR: ultrafast universal RNA-seq aligner</strong><br />
 Alexander Dobin, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R. Gingeras<br />
 <em>Bioinformatics</em> (2013-01) <a href="https://doi.org/f4h523">https://doi.org/f4h523</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/bts635">10.1093/bioinformatics/bts635</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23104886">23104886</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905">PMC3530905</a></p>
 </div>
 <div id="ref-1GLBRcU8y">
-<p>100. <strong>Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype</strong><br />
+<p>101. <strong>Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype</strong><br />
 Daehwan Kim, Joseph M. Paggi, Chanhee Park, Christopher Bennett, Steven L. Salzberg<br />
 <em>Nature Biotechnology</em> (2019-08-02) <a href="https://doi.org/gf5395">https://doi.org/gf5395</a><br />
 DOI: <a href="https://doi.org/10.1038/s41587-019-0201-4">10.1038/s41587-019-0201-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31375807">31375807</a></p>
 </div>
 <div id="ref-92SRxcQI">
-<p>101. <strong>RapMap: a rapid, sensitive and accurate tool for mapping RNA-seq reads to transcriptomes</strong><br />
+<p>102. <strong>RapMap: a rapid, sensitive and accurate tool for mapping RNA-seq reads to transcriptomes</strong><br />
 Avi Srivastava, Hirak Sarkar, Nitish Gupta, Rob Patro<br />
 <em>Bioinformatics</em> (2016-06-15) <a href="https://doi.org/f8vm2j">https://doi.org/f8vm2j</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btw277">10.1093/bioinformatics/btw277</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27307617">27307617</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4908361">PMC4908361</a></p>
 </div>
 <div id="ref-10B55Rn6n">
-<p>102. <strong>The Types, Roles, and Practices of Documentation in Data Analytics Open Source Software Libraries</strong><br />
+<p>103. <strong>The Types, Roles, and Practices of Documentation in Data Analytics Open Source Software Libraries</strong><br />
 R. Stuart Geiger, Nelle Varoquaux, Charlotte Mazel-Cabasse, Chris Holdgraf<br />
 <em>Computer Supported Cooperative Work (CSCW)</em> (2018-05-29) <a href="https://doi.org/gd4rhr">https://doi.org/gd4rhr</a><br />
 DOI: <a href="https://doi.org/10.1007/s10606-018-9333-1">10.1007/s10606-018-9333-1</a></p>
 </div>
 <div id="ref-EbC8IKt0">
-<p>103. <strong>Data Carpentry: Workshops to Increase Data Literacy for Researchers</strong><br />
+<p>104. <strong>Data Carpentry: Workshops to Increase Data Literacy for Researchers</strong><br />
 Tracy K. Teal, Karen A. Cranston, Hilmar Lapp, Ethan White, Greg Wilson, Karthik Ram, Aleksandra Pawlik<br />
 <em>International Journal of Digital Curation</em> (2015-03-18) <a href="https://doi.org/gf5hjw">https://doi.org/gf5hjw</a><br />
 DOI: <a href="https://doi.org/10.2218/ijdc.v10i1.351">10.2218/ijdc.v10i1.351</a></p>
 </div>
 <div id="ref-FnFKPG8G">
-<p>104. <strong>BioStar: An Online Question &amp; Answer Resource for the Bioinformatics Community</strong><br />
+<p>105. <strong>BioStar: An Online Question &amp; Answer Resource for the Bioinformatics Community</strong><br />
 Laurence D. Parnell, Pierre Lindenbaum, Khader Shameer, Giovanni Marco Dall’Olio, Daniel C. Swan, Lars Juhl Jensen, Simon J. Cockell, Brent S. Pedersen, Mary E. Mangan, Christopher A. Miller, Istvan Albert<br />
 <em>PLoS Computational Biology</em> (2011-10-27) <a href="https://doi.org/dhsz4k">https://doi.org/dhsz4k</a><br />
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1002216">10.1371/journal.pcbi.1002216</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22046109">22046109</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3203049">PMC3203049</a></p>
 </div>
 <div id="ref-S71Oc3RF">
-<p>105. <strong>How to create a Minimal, Reproducible Example - Help Center</strong><br />
+<p>106. <strong>How to create a Minimal, Reproducible Example - Help Center</strong><br />
 Stack Overflow<br />
 <a href="https://stackoverflow.com/help/minimal-reproducible-example">https://stackoverflow.com/help/minimal-reproducible-example</a></p>
 </div>
 <div id="ref-mn58kiuB">
-<p>106. <strong>FAQ: How to do a minimal reproducible example ( reprex ) for beginners</strong><br />
+<p>107. <strong>FAQ: How to do a minimal reproducible example ( reprex ) for beginners</strong><br />
 RStudio Community<br />
 (2020-03-25) <a href="https://community.rstudio.com/t/faq-how-to-do-a-minimal-reproducible-example-reprex-for-beginners/23061">https://community.rstudio.com/t/faq-how-to-do-a-minimal-reproducible-example-reprex-for-beginners/23061</a></p>
 </div>
 <div id="ref-bY9cHRxB">
-<p>107. <strong>Code of conduct in open source projects</strong><br />
+<p>108. <strong>Code of conduct in open source projects</strong><br />
 Parastou Tourani, Bram Adams, Alexander Serebrenik<br />
 <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2017-02) <a href="https://doi.org/gfzbs6">https://doi.org/gfzbs6</a><br />
 DOI: <a href="https://doi.org/10.1109/saner.2017.7884606">10.1109/saner.2017.7884606</a></p>
 </div>
 <div id="ref-4jKjtPfJ">
-<p>108. <strong>Building a local community of practice in scientific programming for life scientists</strong><br />
+<p>109. <strong>Building a local community of practice in scientific programming for life scientists</strong><br />
 Sarah L. R. Stevens, Mateusz Kuzak, Carlos Martinez, Aurelia Moser, Petra Bleeker, Marc Galland<br />
 <em>PLOS Biology</em> (2018-11-28) <a href="https://doi.org/gfpwkb">https://doi.org/gfpwkb</a><br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio.2005561</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30485260">30485260</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6287879">PMC6287879</a></p>
