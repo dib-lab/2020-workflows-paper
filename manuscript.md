@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,9 +131,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/2b37adc14c961d56fe315211c1c63597f7fca3b9/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/da647be9b50180fcd250e7d82c3521b84839f3ad/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@2b37adc](https://github.com/dib-lab/2020-workflows-paper/tree/2b37adc14c961d56fe315211c1c63597f7fca3b9)
+from [dib-lab/2020-workflows-paper@da647be](https://github.com/dib-lab/2020-workflows-paper/tree/da647be9b50180fcd250e7d82c3521b84839f3ad)
 on June 24, 2020.
 </em></small>
 
@@ -270,7 +270,7 @@ When paired with proper software management, fully-contained workflows are scala
 To properly direct an analysis, workflow systems need to encode information about the relationships between every workflow step.
 In practice, this means that each analysis step must specify the input (or types of inputs) needed for that step, and the output (or types of outputs) being produced.
 This structure provides several additional benefits.
-First, workflows become minimally self-documented, as the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see **Figure @fig:sgc_workflow**).
+First, workflows become minimally self-documented, as the directed graph produced by workflow systems can be exported and visualized, producing a graphical representation of the relationships between all steps in a pipeline (see **Figure @fig:rnaseq_workflow**).
 Next, workflows are more likely to be fully enclosed without undocumented steps that are executed by hand, meaning analyses are more likely to be reproducible.
 Finally, each step becomes a self-contained unit that can be used and re-used across multiple analysis workflows, so scientists can spend less time implementing standard steps, and more time on their specific research questions.
 In sum, the internal scaffolding provided by workflow systems helps build analyses that are generally better documented, repeatable, transferable, and scalable.
@@ -438,7 +438,7 @@ Backing up your version controlled analysis in an online repository such as GitH
 
 When combined with online backups, version control systems also facilitate code and data availability and reproducibility for publication.
 For example, to preserve the version of code that produced published results, you can create a "release":  a snapshot of the current code and files in a GitHub repository.
-You can then generate a digital object identifier (DOI) for that release using a permanent documentation service such as Zenodo ([@https://zenodo.org]) and make it available to reviewers and beyond (see "sharing" section, below).
+You can then generate a digital object identifier (DOI) for that release using a permanent documentation service such as Zenodo ([@url:https://zenodo.org]) and make it available to reviewers and beyond (see "sharing" section, below).
 
 ### Share your workflow and analysis code
 
@@ -724,7 +724,7 @@ Most sketching algorithms estimate sequence similarity in some way, allowing you
 For example, sketching algorithms can be used to estimate all-by-all sample similarity which can be visualized as a Principle Component Analysis or a multidimensional scaling plot, or can be used to build a phylogenetic tree with accurate topology.
 Sketching algorithms also dramatically reduce the runtime for comparisons against databases (e.g. all of GenBank), allowing users to quickly compare their data against large public databases.
 
-Rowe 2019 [@doi:10.1186/s13059-019-1809-x] reviewed programs and genomic use cases for sketching algorithms, and provided a series of tutorial workbooks (e.g. Sample QC notebook: [@https://github.com/will-rowe/genome-sketching/blob/master/notebooks/r4.1.Sample-QC.ipynb]).
+Rowe 2019 [@doi:10.1186/s13059-019-1809-x] reviewed programs and genomic use cases for sketching algorithms, and provided a series of tutorial workbooks (e.g. Sample QC notebook: [@url:https://github.com/will-rowe/genome-sketching/blob/master/notebooks/r4.1.Sample-QC.ipynb]).
 
 **Use the right tools for your question**
 RNA-seq analysis approaches like differential expression or transcript clustering rely on transcript or gene counts.
