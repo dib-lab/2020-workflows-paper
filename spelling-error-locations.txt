@@ -301,4 +301,10 @@ content/08.conclusion.md:3:Bioinformatics
 content/08.conclusion.md:4:interoperable
 content/08.conclusion.md:5:dataset
 content/09.acknowledgments-contrib-etc.md:1:Acknowledgements
+content/09.acknowledgments-contrib-etc.md:3:Carpentries
 content/09.acknowledgments-contrib-etc.md:3:UC
+content/09.acknowledgments-contrib-etc.md:14:TER
+content/09.acknowledgments-contrib-etc.md:15:LCI
+content/09.acknowledgments-contrib-etc.md:16:SEJ
+content/09.acknowledgments-contrib-etc.md:17:CTB
+content/09.acknowledgments-contrib-etc.md:18:NTP

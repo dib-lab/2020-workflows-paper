@@ -7,7 +7,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-24'
+date-meta: '2020-06-25'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +26,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-06-24" />
+  <meta name="dc.date" content="2020-06-25" />
 
-  <meta name="citation_publication_date" content="2020-06-24" />
+  <meta name="citation_publication_date" content="2020-06-25" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -94,11 +94,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +131,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@28f65d3](https://github.com/dib-lab/2020-workflows-paper/tree/28f65d3a667c5ecc0193cd61e0cc1d05dedf2fe8)
-on June 24, 2020.
+from [dib-lab/2020-workflows-paper@8397879](https://github.com/dib-lab/2020-workflows-paper/tree/839787904b79f84b50c29731d59208c2ded5c530)
+on June 25, 2020.
 </em></small>
 
 ## Authors
@@ -811,7 +811,7 @@ While the included data management strategies are tailored to our own experience
 
 ### Acknowledgements
 
-Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us.
+Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us. We also thank the Carpentries Community for fundamentally shaping many of the ideas and practices we cover in this manuscript.
 
 ### Competing Interests
 
@@ -822,6 +822,11 @@ Thank you to all the members and affiliates of the Lab for Data-Intensive Biolog
 
 |Author|Contributions|
 |---|---|
+|TER| Conceptualization; Methodology; Writing - Original Draft; Writing - Review and Editing; Visualization |
+|LCI| Methodology; Writing - Review and Editing |
+|SEJ| Methodology; Visualization; Writing - Review and Editing |
+|CTB| Methodology; Writing - Review and Editing; Supervision; Funding Acquisition |
+|NTP| Conceptualization; Methodology; Writing - Original Draft; Writing - Review and Editing; Visualization; Supervision; Funding Acquisition |
 
 
 ## References {.page_break_before}
