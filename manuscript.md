@@ -112,11 +112,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2b60b1b2f2245d9c39755207650aa973622b2271/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b60b1b2f2245d9c39755207650aa973622b2271/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2b60b1b2f2245d9c39755207650aa973622b2271/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -149,9 +149,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/2b60b1b2f2245d9c39755207650aa973622b2271/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@d1aaa0d](https://github.com/dib-lab/2020-workflows-paper/tree/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0)
+from [dib-lab/2020-workflows-paper@2b60b1b](https://github.com/dib-lab/2020-workflows-paper/tree/2b60b1b2f2245d9c39755207650aa973622b2271)
 on June 29, 2020.
 </em></small>
 
@@ -867,6 +867,7 @@ Thank you to all the members and affiliates of the Lab for Data-Intensive Biolog
 |PTB| Methodology; Writing - Review and Editing |
 |LCI| Methodology; Writing - Review and Editing |
 |SEJ| Methodology; Visualization; Writing - Review and Editing |
+|CSW| Methodology; Writing - Review and Editing |
 |CTB| Methodology; Writing - Review and Editing; Supervision; Funding Acquisition |
 |NTP| Conceptualization; Methodology; Writing - Original Draft; Writing - Review and Editing; Visualization; Supervision; Funding Acquisition |
 
