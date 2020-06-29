@@ -20,13 +20,13 @@ header-includes: '<!--
 
   <meta name="dc.format" content="text/html" />
 
-  <meta name="dc.title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta name="dc.title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
-  <meta name="citation_title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta name="citation_title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
-  <meta property="og:title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta property="og:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
-  <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
+  <meta property="twitter:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
   <meta name="dc.date" content="2020-06-29" />
 
@@ -112,11 +112,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/dad2a1d828ffe294e70db9a4c8bac8431a1695a7/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/89dbff1383ca18daf819cb88578548350888f240/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/dad2a1d828ffe294e70db9a4c8bac8431a1695a7/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/89dbff1383ca18daf819cb88578548350888f240/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/dad2a1d828ffe294e70db9a4c8bac8431a1695a7/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/89dbff1383ca18daf819cb88578548350888f240/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -139,7 +139,7 @@ manubot-clear-requests-cache: false
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
 manubot-requests-cache-path: ci/cache/requests-cache
-title: Streamlining data-intensive biology with workflow systems
+title: Streamlining Data-Intensive Biology With Workflow Systems
 ...
 
 
@@ -149,9 +149,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/dad2a1d828ffe294e70db9a4c8bac8431a1695a7/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/89dbff1383ca18daf819cb88578548350888f240/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@dad2a1d](https://github.com/dib-lab/2020-workflows-paper/tree/dad2a1d828ffe294e70db9a4c8bac8431a1695a7)
+from [dib-lab/2020-workflows-paper@89dbff1](https://github.com/dib-lab/2020-workflows-paper/tree/89dbff1383ca18daf819cb88578548350888f240)
 on June 29, 2020.
 </em></small>
 

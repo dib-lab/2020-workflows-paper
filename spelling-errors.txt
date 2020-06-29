@@ -8,7 +8,7 @@ barcode
 bioconda
 bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -24,7 +24,7 @@ Checksums
 chemistries
 Colab
 coli
-conda
+Conda
 csv
 CSW
 ctb
@@ -44,9 +44,9 @@ elegans
 EMBL
 ENA
 Eukaryote
-eukaryotic
+Eukaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -85,10 +85,10 @@ lh
 Luiz
 luizirber
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 notetaking
 novo
@@ -131,7 +131,7 @@ SEJ
 SEQanswers
 sha
 shannonekj
-Snakemake
+snakemake
 SRA
 subsample
 subsampled
