@@ -103,11 +103,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -140,9 +140,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@362bfed](https://github.com/dib-lab/2020-workflows-paper/tree/362bfeda8760f442e487e75217edf08de64d8273)
+from [dib-lab/2020-workflows-paper@a855ead](https://github.com/dib-lab/2020-workflows-paper/tree/a855ead49a620334d70c01dc12dce6bb48288981)
 on June 29, 2020.
 </em></small>
 
@@ -843,6 +843,7 @@ Thank you to all the members and affiliates of the Lab for Data-Intensive Biolog
 |Author|Contributions|
 |---|---|
 |TER| Conceptualization; Methodology; Writing - Original Draft; Writing - Review and Editing; Visualization |
+|PTB| Methodology; Writing - Review and Editing |
 |LCI| Methodology; Writing - Review and Editing |
 |SEJ| Methodology; Visualization; Writing - Review and Editing |
 |CTB| Methodology; Writing - Review and Editing; Supervision; Funding Acquisition |

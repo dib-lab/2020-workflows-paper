@@ -23,9 +23,9 @@ Checksums
 chemistries
 Colab
 coli
-Conda
+conda
 csv
-CTB
+ctb
 ctitusbrown
 customizability
 CWL
@@ -42,13 +42,13 @@ elegans
 EMBL
 ENA
 Eukaryote
-Eukaryotic
+eukaryotic
 fasta
 fastq
 FastQC
 Figshare
 filenaming
-findable
+Findable
 GBMF
 GC
 GenBank
@@ -83,7 +83,7 @@ lh
 Luiz
 luizirber
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
 multiqc
@@ -97,8 +97,9 @@ Pavian
 PCR
 PhiX
 phylogenetic
-Plotly
+plotly
 preprocessed
+PTB
 purhcases
 PyCharm
 quant
