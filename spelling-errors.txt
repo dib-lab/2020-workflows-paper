@@ -6,7 +6,7 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -24,10 +24,10 @@ Checksums
 chemistries
 Colab
 coli
-conda
+Conda
 csv
 CSW
-ctb
+CTB
 ctitusbrown
 customizability
 CWL
@@ -50,7 +50,7 @@ fastq
 FastQC
 Figshare
 filenaming
-findable
+Findable
 GBMF
 GC
 GenBank
@@ -99,7 +99,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-Plotly
+plotly
 preprocessed
 PTB
 purhcases
@@ -131,7 +131,7 @@ SEJ
 SEQanswers
 sha
 shannonekj
-Snakemake
+snakemake
 SRA
 subsample
 subsampled
