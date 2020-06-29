@@ -1,4 +1,4 @@
-# Streamlining data-intensive biology with workflow systems
+# Streamlining Data-Intensive Biology With Workflow Systems
 
 [![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/dib-lab/2020-workflows-paper/actions)
 
