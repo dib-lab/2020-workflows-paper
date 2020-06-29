@@ -18,6 +18,16 @@ authors:
       - Department of Population Health and Reproduction, University of California, Davis
     funders: Grant XXXXXXXX
   -
+    github: brooksph
+    name: Phillip T. Brooks
+    initials: PTB
+    orcid: 0000-0003-3987-244X
+    twitter: brooksph
+    email: philliptbrooks@gmail.com
+    affiliations:
+      - Department of Population Health and Reproduction, University of California, Davis
+    funders: 
+  -
     github: luizirber
     name: Luiz Irber
     initials: LCIJ
