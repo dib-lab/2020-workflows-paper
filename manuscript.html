@@ -5,11 +5,12 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Taylor Reiter" />
+  <meta name="author" content="Phillip T. Brooks" />
   <meta name="author" content="Luiz Irber" />
   <meta name="author" content="Shannon E.K. Joslin" />
   <meta name="author" content="C. Titus Brown" />
   <meta name="author" content="N. Tessa Pierce" />
-  <meta name="dcterms.date" content="2020-06-25" />
+  <meta name="dcterms.date" content="2020-06-29" />
   <meta name="keywords" content="sequencing, bioinformatics, workflows, open access" />
   <title>Streamlining data-intensive biology with workflow systems</title>
   <style>
@@ -32,8 +33,8 @@
   <meta name="citation_title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="og:title" content="Streamlining data-intensive biology with workflow systems" />
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
-  <meta name="dc.date" content="2020-06-25" />
-  <meta name="citation_publication_date" content="2020-06-25" />
+  <meta name="dc.date" content="2020-06-29" />
+  <meta name="citation_publication_date" content="2020-06-29" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -44,6 +45,10 @@
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0002-7388-421X" />
   <meta name="twitter:creator" content="@ReiterTaylor" />
+  <meta name="citation_author" content="Phillip T. Brooks" />
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+  <meta name="citation_author_orcid" content="0000-0003-3987-244X" />
+  <meta name="twitter:creator" content="@brooksph" />
   <meta name="citation_author" content="Luiz Irber" />
   <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
   <meta name="citation_author_orcid" content="0000-0003-4371-9659" />
@@ -66,9 +71,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -82,10 +87,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/839787904b79f84b50c29731d59208c2ded5c530">dib-lab/2020-workflows-paper@8397879</a>
-on June 25, 2020.
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/362bfeda8760f442e487e75217edf08de64d8273">dib-lab/2020-workflows-paper@362bfed</a>
+on June 29, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -98,7 +103,17 @@ on June 25, 2020.
 <a href="https://twitter.com/ReiterTaylor">ReiterTaylor</a><br>
 <small>
 Department of Population Health and Reproduction, University of California, Davis
-· Funded by Grant XXXXXXXX
+· Funded by Moore Foundation GBMF4551
+</small></p></li>
+<li><p><strong>Phillip T. Brooks</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0003-3987-244X">0000-0003-3987-244X</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/brooksph">brooksph</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/brooksph">brooksph</a><br>
+<small>
+Department of Population Health and Reproduction, University of California, Davis
 </small></p></li>
 <li><p><strong>Luiz Irber</strong><br>
 <img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
@@ -980,7 +995,7 @@ nf-core<br />
 <div id="ref-CeVdUj5n">
 <p>16. <strong>metagenome-atlas/atlas</strong><br />
 metagenome-atlas<br />
-(2020-06-25) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
+(2020-06-26) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
 </div>
 <div id="ref-so5fKJ5K">
 <p>17. <strong>ATLAS: a Snakemake workflow for assembly, annotation, and genomic binning of metagenome sequence data</strong><br />
@@ -1099,7 +1114,7 @@ Dirk Merkel<br />
 <div id="ref-PljGS703">
 <p>37. <strong>TheSnakePit/mamba</strong><br />
 Snakepit<br />
-(2020-06-25) <a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
+(2020-06-29) <a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
 </div>
 <div id="ref-dpXky09I">
 <p>38. <strong>dib-lab/dib-MMETSP</strong><br />

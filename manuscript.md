@@ -1,13 +1,14 @@
 ---
 author-meta:
 - Taylor Reiter
+- Phillip T. Brooks
 - Luiz Irber
 - Shannon E.K. Joslin
 - C. Titus Brown
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-25'
+date-meta: '2020-06-29'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -26,9 +27,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining data-intensive biology with workflow systems" />
 
-  <meta name="dc.date" content="2020-06-25" />
+  <meta name="dc.date" content="2020-06-29" />
 
-  <meta name="citation_publication_date" content="2020-06-25" />
+  <meta name="citation_publication_date" content="2020-06-29" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -49,6 +50,14 @@ header-includes: '<!--
   <meta name="citation_author_orcid" content="0000-0002-7388-421X" />
 
   <meta name="twitter:creator" content="@ReiterTaylor" />
+
+  <meta name="citation_author" content="Phillip T. Brooks" />
+
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+
+  <meta name="citation_author_orcid" content="0000-0003-3987-244X" />
+
+  <meta name="twitter:creator" content="@brooksph" />
 
   <meta name="citation_author" content="Luiz Irber" />
 
@@ -94,11 +103,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -131,10 +140,10 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/839787904b79f84b50c29731d59208c2ded5c530/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@8397879](https://github.com/dib-lab/2020-workflows-paper/tree/839787904b79f84b50c29731d59208c2ded5c530)
-on June 25, 2020.
+from [dib-lab/2020-workflows-paper@362bfed](https://github.com/dib-lab/2020-workflows-paper/tree/362bfeda8760f442e487e75217edf08de64d8273)
+on June 29, 2020.
 </em></small>
 
 ## Authors
@@ -150,7 +159,18 @@ on June 25, 2020.
     [ReiterTaylor](https://twitter.com/ReiterTaylor)<br>
   <small>
      Department of Population Health and Reproduction, University of California, Davis
-     · Funded by Grant XXXXXXXX
+     · Funded by Moore Foundation GBMF4551
+  </small>
+
++ **Phillip T. Brooks**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0003-3987-244X](https://orcid.org/0000-0003-3987-244X)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [brooksph](https://github.com/brooksph)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [brooksph](https://twitter.com/brooksph)<br>
+  <small>
+     Department of Population Health and Reproduction, University of California, Davis
   </small>
 
 + **Luiz Irber**<br>
