@@ -3,6 +3,7 @@ author-meta:
 - Taylor Reiter
 - Phillip T. Brooks
 - Luiz Irber
+- Camille Scott
 - Shannon E.K. Joslin
 - C. Titus Brown
 - N. Tessa Pierce
@@ -67,6 +68,14 @@ header-includes: '<!--
 
   <meta name="twitter:creator" content="@luizirber" />
 
+  <meta name="citation_author" content="Camille Scott" />
+
+  <meta name="citation_author_institution" content="Department of Population Health and Reproduction, University of California, Davis" />
+
+  <meta name="citation_author_orcid" content="0000-0001-8822-8779" />
+
+  <meta name="twitter:creator" content="@camille_codon" />
+
   <meta name="citation_author" content="Shannon E.K. Joslin" />
 
   <meta name="citation_author_institution" content="Department of Animal Science, University of California, Davis" />
@@ -103,11 +112,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -140,9 +149,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@a855ead](https://github.com/dib-lab/2020-workflows-paper/tree/a855ead49a620334d70c01dc12dce6bb48288981)
+from [dib-lab/2020-workflows-paper@d1aaa0d](https://github.com/dib-lab/2020-workflows-paper/tree/d1aaa0d197e80cb8e84572447f6ad0691ed50dc0)
 on June 29, 2020.
 </em></small>
 
@@ -180,6 +189,18 @@ on June 29, 2020.
     [luizirber](https://github.com/luizirber)
     · ![Twitter icon](images/twitter.svg){.inline_icon}
     [luizirber](https://twitter.com/luizirber)<br>
+  <small>
+     Department of Population Health and Reproduction, University of California, Davis
+     · Funded by Moore Foundation GBMF4551
+  </small>
+
++ **Camille Scott**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-8822-8779](https://orcid.org/0000-0001-8822-8779)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [camillescott](https://github.com/camillescott)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [camille_codon](https://twitter.com/camille_codon)<br>
   <small>
      Department of Population Health and Reproduction, University of California, Davis
      · Funded by Moore Foundation GBMF4551

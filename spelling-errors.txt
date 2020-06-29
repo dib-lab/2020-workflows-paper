@@ -6,7 +6,7 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -16,14 +16,15 @@ bluegenes
 brooksph
 bzip
 Caenorhabditis
+camillescott
 Carpentries
 Cavatica
 centric
-Checksums
+checksums
 chemistries
 Colab
 coli
-conda
+Conda
 csv
 ctb
 ctitusbrown
@@ -44,7 +45,7 @@ ENA
 Eukaryote
 eukaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -97,7 +98,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-plotly
+Plotly
 preprocessed
 PTB
 purhcases
@@ -126,7 +127,7 @@ scalable
 scriptable
 scrollable
 SEJ
-seqanswers
+SEQanswers
 sha
 shannonekj
 Snakemake
