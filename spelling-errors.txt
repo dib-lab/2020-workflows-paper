@@ -6,7 +6,7 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -24,7 +24,7 @@ Checksums
 chemistries
 Colab
 coli
-Conda
+conda
 csv
 CSW
 CTB
@@ -50,7 +50,7 @@ fastq
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
@@ -85,7 +85,7 @@ lh
 Luiz
 luizirber
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
 MultiQC
@@ -128,17 +128,17 @@ scalable
 scriptable
 scrollable
 SEJ
-SEQanswers
+seqanswers
 sha
 shannonekj
-snakemake
+Snakemake
 SRA
 subsample
 subsampled
 taylorreiter
 TER
 transcriptional
-Transcriptome
+transcriptome
 UC
 WDL
 whitespace

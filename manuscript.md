@@ -112,11 +112,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/80eb844a2f425a814a93ceaf21c7eb571642aabb/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2d0925128171965f6e6d37a9cad72ab847e47481/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/80eb844a2f425a814a93ceaf21c7eb571642aabb/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2d0925128171965f6e6d37a9cad72ab847e47481/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/80eb844a2f425a814a93ceaf21c7eb571642aabb/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2d0925128171965f6e6d37a9cad72ab847e47481/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -149,9 +149,9 @@ title: Streamlining data-intensive biology with workflow systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/80eb844a2f425a814a93ceaf21c7eb571642aabb/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/2d0925128171965f6e6d37a9cad72ab847e47481/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@80eb844](https://github.com/dib-lab/2020-workflows-paper/tree/80eb844a2f425a814a93ceaf21c7eb571642aabb)
+from [dib-lab/2020-workflows-paper@2d09251](https://github.com/dib-lab/2020-workflows-paper/tree/2d0925128171965f6e6d37a9cad72ab847e47481)
 on June 29, 2020.
 </em></small>
 
@@ -856,8 +856,7 @@ Thank you to all the members and affiliates of the Lab for Data-Intensive Biolog
 
 ### Competing Interests
 
-|Author|Competing Interests|Last Reviewed|
-|---|---|---|
+The authors declare no competing interests.
 
 ### Author Contributions
 
