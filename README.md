@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/dib-lab/2020-workflows-paper/tree/gh-pages) branch hosts the contents of this directory at <https://dib-lab.github.io/2020-workflows-paper/>.
-The permalink for this webpage version is <https://dib-lab.github.io/2020-workflows-paper/v/362bfeda8760f442e487e75217edf08de64d8273/>.
+The permalink for this webpage version is <https://dib-lab.github.io/2020-workflows-paper/v/a855ead49a620334d70c01dc12dce6bb48288981/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://dib-lab.github.io/2020-workflows-paper/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`362bfeda8760f442e487e75217edf08de64d8273`](https://github.com/dib-lab/2020-workflows-paper/commit/362bfeda8760f442e487e75217edf08de64d8273).
+[`a855ead49a620334d70c01dc12dce6bb48288981`](https://github.com/dib-lab/2020-workflows-paper/commit/a855ead49a620334d70c01dc12dce6bb48288981).
