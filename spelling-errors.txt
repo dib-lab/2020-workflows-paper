@@ -6,7 +6,7 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
 Bioinformatics
 Bionimbus
@@ -20,6 +20,7 @@ camillescott
 Carpentries
 Cavatica
 centric
+charlesreid
 checksums
 chemistries
 Colab
@@ -131,7 +132,7 @@ SEJ
 seqanswers
 sha
 shannonekj
-Snakemake
+snakemake
 SRA
 subsample
 subsampled
