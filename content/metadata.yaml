@@ -57,15 +57,24 @@ authors:
       - Department of Population Health and Reproduction, University of California, Davis
     funders: Moore Foundation GBMF4551
   -
-   github: ctb
-   name: C. Titus Brown
-   initials: CTB
-   orcid: 0000-0001-6001-2677
-   twitter: ctitusbrown
-   email: ctbrown@ucdavis.edu
-   affiliations:
-    - Department of Population Health and Reproduction, University of California, Davis
-   funders: Moore Foundation GBMF4551
+    github: charlesreid1
+    name: Charles M. Reid
+    initials: CMR
+    orcid: 0000-0002-7337-8894
+    email: charles@charlesreid1.com
+    affiliations:
+      - Department of Population Health and Reproduction, University of California, Davis
+    funders: Moore Foundation GBMF4551
+  -
+    github: ctb
+    name: C. Titus Brown
+    initials: CTB
+    orcid: 0000-0001-6001-2677
+    twitter: ctitusbrown
+    email: ctbrown@ucdavis.edu
+    affiliations:
+      - Department of Population Health and Reproduction, University of California, Davis
+    funders: Moore Foundation GBMF4551
   -
     github: bluegenes
     name: N. Tessa Pierce
