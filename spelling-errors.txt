@@ -6,9 +6,9 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -44,9 +44,9 @@ elegans
 EMBL
 ENA
 Eukaryote
-eukaryotic
+Eukaryotic
 fasta
-FASTQ
+fastq
 FastQC
 Figshare
 filenaming
@@ -56,7 +56,7 @@ GC
 GenBank
 genomic
 GitLab
-gitter
+Gitter
 gz
 gzip
 gzipped
@@ -70,7 +70,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-interoperable
+Interoperable
 interpretability
 interpretable
 IntrprtngGnmcs
@@ -85,7 +85,7 @@ lh
 Luiz
 luizirber
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
 MultiQC
@@ -99,7 +99,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-plotly
+Plotly
 preprocessed
 PTB
 purhcases
@@ -131,7 +131,7 @@ SEJ
 SEQanswers
 sha
 shannonekj
-Snakemake
+snakemake
 SRA
 subsample
 subsampled

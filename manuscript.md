@@ -112,11 +112,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/ef72eb691ad900c7c95e91e77f5d13ea00e92434/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ef72eb691ad900c7c95e91e77f5d13ea00e92434/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ef72eb691ad900c7c95e91e77f5d13ea00e92434/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -149,9 +149,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/ef72eb691ad900c7c95e91e77f5d13ea00e92434/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@06269a7](https://github.com/dib-lab/2020-workflows-paper/tree/06269a744cf60f3e7ca24a56adca360f88fe333d)
+from [dib-lab/2020-workflows-paper@ef72eb6](https://github.com/dib-lab/2020-workflows-paper/tree/ef72eb691ad900c7c95e91e77f5d13ea00e92434)
 on June 30, 2020.
 </em></small>
 
@@ -863,12 +863,14 @@ The authors declare no competing interests.
 |Author|Contributions|
 |---|---|
 |TER| Conceptualization; Methodology; Writing - Original Draft; Writing - Review and Editing; Visualization |
-|PTB| Methodology; Writing - Review and Editing |
-|LCI| Methodology; Writing - Review and Editing |
-|SEJ| Methodology; Visualization; Writing - Review and Editing |
-|CSW| Methodology; Writing - Review and Editing |
+|PTB**| Methodology; Writing - Review and Editing |
+|LCI**| Methodology; Writing - Review and Editing |
+|SEJ**| Methodology; Visualization; Writing - Review and Editing |
+|CSW**| Methodology; Writing - Review and Editing |
 |CTB| Methodology; Writing - Review and Editing; Supervision; Funding Acquisition |
 |NTP| Conceptualization; Methodology; Writing - Original Draft; Writing - Review and Editing; Visualization; Supervision; Funding Acquisition |
+
+**co-equal contributions
 
 
 ## References {.page_break_before}
