@@ -6,7 +6,7 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
 bioinformatics
 Bionimbus
@@ -20,7 +20,7 @@ camillescott
 Carpentries
 Cavatica
 centric
-checksums
+Checksums
 chemistries
 Colab
 coli
@@ -44,9 +44,9 @@ elegans
 EMBL
 ENA
 Eukaryote
-Eukaryotic
+eukaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
@@ -88,7 +88,7 @@ metagenome
 Metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 notetaking
 novo
@@ -128,7 +128,7 @@ scalable
 scriptable
 scrollable
 SEJ
-seqanswers
+SEQanswers
 sha
 shannonekj
 Snakemake
@@ -138,7 +138,7 @@ subsampled
 taylorreiter
 TER
 transcriptional
-Transcriptome
+transcriptome
 UC
 WDL
 whitespace
