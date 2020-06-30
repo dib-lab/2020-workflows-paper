@@ -1,0 +1,8 @@
+## Sources for interactive vizualization figure
+
+Shiny: Pavian
++ https://fbreitwieser.shinyapps.io/pavian/
++ https://academic.oup.com/bioinformatics/article/36/4/1303/5573755
+
+Plotly:
++ https://plotly.com/python/v3/ipython-notebooks/bioinformatics/#4-heatmap-of-gene-expression
