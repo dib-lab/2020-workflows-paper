@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/1ecb2a763d0cbd6aea97e5909441a4f6656d3cd0/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/1ecb2a763d0cbd6aea97e5909441a4f6656d3cd0/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/1ecb2a763d0cbd6aea97e5909441a4f6656d3cd0/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -156,9 +156,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/1ecb2a763d0cbd6aea97e5909441a4f6656d3cd0/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@1ecb2a7](https://github.com/dib-lab/2020-workflows-paper/tree/1ecb2a763d0cbd6aea97e5909441a4f6656d3cd0)
+from [dib-lab/2020-workflows-paper@2e8e4f8](https://github.com/dib-lab/2020-workflows-paper/tree/2e8e4f856d6846a928ee6a6791304ddca91fd782)
 on June 30, 2020.
 </em></small>
 
@@ -871,10 +871,6 @@ While the included data management strategies are tailored to our own experience
 
 Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us. We also thank the Carpentries Community for fundamentally shaping many of the ideas and practices we cover in this manuscript.
 
-### Competing Interests
-
-The authors declare no competing interests.
-
 ### Author Contributions
 
 |Author|Contributions|
@@ -883,11 +879,16 @@ The authors declare no competing interests.
 |PTB**| Methodology; Writing - Review and Editing |
 |LCI**| Methodology; Writing - Review and Editing |
 |SEJ**| Methodology; Visualization; Writing - Review and Editing |
+|CMR**| Methodology; Writing - Review and Editing |
 |CSW**| Methodology; Writing - Review and Editing |
 |CTB| Methodology; Writing - Review and Editing; Supervision; Funding Acquisition |
 |NTP| Conceptualization; Methodology; Writing - Original Draft; Writing - Review and Editing; Visualization; Supervision; Funding Acquisition |
 
 **co-equal contributions
+
+### Competing Interests
+
+The authors declare no competing interests.
 
 
 ## References {.page_break_before}
