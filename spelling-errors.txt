@@ -6,9 +6,9 @@ Backblaze
 BAM
 barcode
 bioconda
-Bioinformatic
+bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -29,7 +29,7 @@ coli
 conda
 csv
 CSW
-ctb
+CTB
 ctitusbrown
 customizability
 CWL
@@ -46,13 +46,13 @@ elegans
 EMBL
 ENA
 Eukaryote
-eukaryotic
+Eukaryotic
 fasta
-FASTQ
+fastq
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
@@ -130,7 +130,7 @@ scalable
 scriptable
 scrollable
 SEJ
-seqanswers
+SEQanswers
 sha
 shannonekj
 Snakemake
