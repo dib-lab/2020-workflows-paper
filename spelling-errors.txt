@@ -8,7 +8,7 @@ barcode
 bioconda
 Bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -85,10 +85,10 @@ lh
 Luiz
 luizirber
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 notetaking
 novo
@@ -131,7 +131,7 @@ SEJ
 seqanswers
 sha
 shannonekj
-snakemake
+Snakemake
 SRA
 subsample
 subsampled
