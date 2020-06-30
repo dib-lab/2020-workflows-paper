@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -140,6 +140,7 @@ keywords:
 - sequencing
 - bioinformatics
 - workflows
+- computational biology
 - open access
 lang: en-US
 manubot-clear-requests-cache: false
@@ -156,9 +157,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/2e8e4f856d6846a928ee6a6791304ddca91fd782/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@2e8e4f8](https://github.com/dib-lab/2020-workflows-paper/tree/2e8e4f856d6846a928ee6a6791304ddca91fd782)
+from [dib-lab/2020-workflows-paper@e094ac6](https://github.com/dib-lab/2020-workflows-paper/tree/e094ac619577372c0bc962810e703e6476faa156)
 on June 30, 2020.
 </em></small>
 
