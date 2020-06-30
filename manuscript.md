@@ -112,11 +112,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/8a8b942dc609008ca12f669b1a4eb01fdb47aee2/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/8a8b942dc609008ca12f669b1a4eb01fdb47aee2/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/8a8b942dc609008ca12f669b1a4eb01fdb47aee2/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -149,9 +149,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/8a8b942dc609008ca12f669b1a4eb01fdb47aee2/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@8a8b942](https://github.com/dib-lab/2020-workflows-paper/tree/8a8b942dc609008ca12f669b1a4eb01fdb47aee2)
+from [dib-lab/2020-workflows-paper@3a282a9](https://github.com/dib-lab/2020-workflows-paper/tree/3a282a99253dbf9dafb5c7beba485d0863ddfe0d)
 on June 30, 2020.
 </em></small>
 
@@ -384,7 +384,7 @@ Container-based software installation via docker and singularity is common for p
 privileges for software installation, thus enabling use by researchers working on shared cluster systems. However, even user-based software installation can encounter dependency conflicts. For example, you might need to use python2 to install and run a program (e.g. older scripts written by members of your lab), while also using snakemake to execute your workflows (requires python>=3.5). By installing each program into an isolated "environment" that contains only the software required to run that
 program, you can ensure all programs used throughout your analysis will run without issue. Using small, separate environments for your software and building many simple environments to accommodate different steps in your workflow also reduces the amount of time it takes conda to resolve dependency conflicts between different software tools ("solve" an environment). Conda virtual environments can be created and installed either on the command line, or via an environment YAML file, as shown. In this case, the environment file
 also specifies which Conda channels to search and download programs from. When specified in a YAML file, conda environments are easily transferable between computers and operating systems. Further, because the version of each package installed in an environment is recorded, workflow reproducibility is enhanced. Although portions of Conda may be superseded by alternative solutions [@url:https://github.com/QuantStack/mamba], this model of software installation and management will likely
-persist.](images/conda_figure_ABC.svg){#fig:conda_figure_ABC height=8in}
+persist.](images/conda_figure_ABC.svg){#fig:conda_figure_ABC height=7in}
 
 #### Getting started with software management
 
