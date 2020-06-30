@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -92,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/3a282a99253dbf9dafb5c7beba485d0863ddfe0d/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/06269a744cf60f3e7ca24a56adca360f88fe333d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/3a282a99253dbf9dafb5c7beba485d0863ddfe0d">dib-lab/2020-workflows-paper@3a282a9</a>
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/06269a744cf60f3e7ca24a56adca360f88fe333d">dib-lab/2020-workflows-paper@06269a7</a>
 on June 30, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -361,7 +361,7 @@ For example, the file shown in <strong>Figure <a href="#fig:filenaming">3</a></s
 For large workflows, placing results from each step of your analysis in isolated, descriptive folders can be essential for keeping your project workspace clean and organized.</p>
 <div id="fig:filenaming" class="fignos">
 <figure>
-<img src="images/filenaming.svg" alt="" /><figcaption><span>Figure 3:</span> Consistent and informative file naming improves organization and interpretability. For ease of grouping and referring to input files, it is useful to keep unique sample identification in the filename, often with a metadata file explaining the meaning of each unique descriptor. For analysis scripts, it can help to implement a numbering scheme, where the name of first file in the analysis begins with “00”, the next with “01”, etc. For output files, it can help to add a short, unique identifier to output files processed with each analysis step. This particular file is a RAD sequencing fastq file of a fish species that has been preprocessed with a fastq quality trimming tool.</figcaption>
+<img src="images/filenaming.svg" style="height:2in" alt="" /><figcaption><span>Figure 3:</span> Consistent and informative file naming improves organization and interpretability. For ease of grouping and referring to input files, it is useful to keep unique sample identification in the filename, often with a metadata file explaining the meaning of each unique descriptor. For analysis scripts, it can help to implement a numbering scheme, where the name of first file in the analysis begins with “00”, the next with “01”, etc. For output files, it can help to add a short, unique identifier to output files processed with each analysis step. This particular file is a RAD sequencing fastq file of a fish species that has been preprocessed with a fastq quality trimming tool.</figcaption>
 </figure>
 </div>
 <h4 id="store-workflow-metadata-with-the-workflow">Store workflow metadata with the workflow</h4>
@@ -398,7 +398,7 @@ Binders can be shared with collaborators (or students in a classroom setting), a
 For individual steps, a graphical representation of the output can show the status of the project or provide insight on additional analyses that should be added. For example, <strong>Figure <a href="#fig:rnaseq_workflow">5</a></strong> exhibits a modified Snakemake workflow visualization from an RNA-seq quantification pipeline <span class="citation" data-cites="1Fgs8XZZT">[<a href="#ref-1Fgs8XZZT" role="doc-biblioref">44</a>]</span>.</p>
 <div id="fig:rnaseq_workflow" class="fignos">
 <figure>
-<img src="images/rnaseq_dag.png" alt="" /><figcaption><span>Figure 5:</span> A directed acyclic graph (DAG) that illustrates connections between all steps of a sequencing data analysis workflow. Each box represents a step in the workflow, while lines connect sequential steps.
+<img src="images/rnaseq_dag.png" style="height:4in" alt="" /><figcaption><span>Figure 5:</span> A directed acyclic graph (DAG) that illustrates connections between all steps of a sequencing data analysis workflow. Each box represents a step in the workflow, while lines connect sequential steps.
 The DAG shown in this figure illustrates a real bioinformatics workflow for RNA-seq quantification was generated by modifying the default Snakemake workflow DAG.
 While the workflow is complex, it is coordinated by a workflow system that alleviates the need for a user to directly manage file interdependencies.</figcaption>
 </figure>
