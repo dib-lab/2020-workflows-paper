@@ -8,7 +8,7 @@ barcode
 bioconda
 bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -27,7 +27,7 @@ coli
 Conda
 csv
 CSW
-CTB
+ctb
 ctitusbrown
 customizability
 CWL
@@ -44,9 +44,9 @@ elegans
 EMBL
 ENA
 Eukaryote
-eukaryotic
+Eukaryotic
 fasta
-FASTQ
+fastq
 FastQC
 Figshare
 filenaming
@@ -70,7 +70,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-interoperable
+Interoperable
 interpretability
 interpretable
 IntrprtngGnmcs
@@ -88,7 +88,7 @@ metagenome
 metagenomic
 MGnify
 minhashing
-multiqc
+MultiQC
 Nextflow
 notetaking
 novo
@@ -138,7 +138,7 @@ subsampled
 taylorreiter
 TER
 transcriptional
-transcriptome
+Transcriptome
 UC
 WDL
 whitespace
