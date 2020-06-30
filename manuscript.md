@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,9 +157,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/e094ac619577372c0bc962810e703e6476faa156/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@e094ac6](https://github.com/dib-lab/2020-workflows-paper/tree/e094ac619577372c0bc962810e703e6476faa156)
+from [dib-lab/2020-workflows-paper@f098d6c](https://github.com/dib-lab/2020-workflows-paper/tree/f098d6c14b295a374c22c9678046e8ed7fadaa57)
 on June 30, 2020.
 </em></small>
 
@@ -356,7 +356,7 @@ These tools allow users to take advantage of the benefits of workflow software w
 If your use case extends beyond these tools, there are several scriptable workflow systems that offer comparable benefits for carrying out your own data-intensive analyses.
 Each has it own strengths, meaning each workflow software will meet an individuals computing goals differently (see **Table @tbl:workflows**).
 Our lab has adopted Snakemake, in part due to its similarity and integration with Python, its flexibility for building and testing new analyses in different languages, and its intuitive integration with software management tools (described below)[@doi:10.1093/bioinformatics/bts480].
-Snakemake and Nextflow are commonly used for designing new research pipelines, where flexibility and iterative, branching development is a key feature [@doi:10.1038/nbt.3820]. Common Workflow Language (CWL) and Workflow Description Language (WDL) are interchangeable formats that are more geared towards scalability, making them ideal for production-level pipelines with hundreds of thousands of samples [@doi:10.6084/m9.figshare.3115156.v2]. CWL and WDL are currently best built and used through wrapper tools such as Rabix or platforms such as Terra [@url:https://rabix.io; @url:https://terra.bio].
+Snakemake and Nextflow are commonly used for devloping new research pipelines, where flexibility and iterative, branching development is a key feature [@doi:10.1038/nbt.3820]. Common Workflow Language (CWL) and Workflow Description Language (WDL) are workflow specification formats that are more geared towards scalability, making them ideal for production-level pipelines with hundreds of thousands of samples [@doi:10.6084/m9.figshare.3115156.v2]. WDL and CWL are commonly executed on platforms such as Terra [@url:https://terra.bio] or Seven Bridges Platform [@url:https://www.sevenbridges.com/platform/].
 Language-specific workflow systems, such as ROpenSci's Drake [@doi:10.21105/joss.00550], are limited in the scope of tasks they can execute, but are powerful within their language and easier to integrate for those comfortable with that language.
 
 

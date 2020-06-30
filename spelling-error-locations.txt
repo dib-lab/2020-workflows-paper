@@ -32,10 +32,9 @@ content/04.workflows-and-software.md:52:bioinformatics
 content/04.workflows-and-software.md:52:Snakemake
 content/04.workflows-and-software.md:53:CWL
 content/04.workflows-and-software.md:53:CWL
+content/04.workflows-and-software.md:53:devloping
 content/04.workflows-and-software.md:53:figshare
 content/04.workflows-and-software.md:53:Nextflow
-content/04.workflows-and-software.md:53:rabix
-content/04.workflows-and-software.md:53:Rabix
 content/04.workflows-and-software.md:53:scalability
 content/04.workflows-and-software.md:53:Snakemake
 content/04.workflows-and-software.md:53:WDL

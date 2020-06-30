@@ -26,7 +26,7 @@ chemistries
 CMR
 Colab
 coli
-Conda
+conda
 csv
 CSW
 ctb
@@ -38,6 +38,7 @@ DataBank
 dataset
 datasets
 DDBJ
+devloping
 discoverability
 EBI
 ecoli
@@ -46,7 +47,7 @@ elegans
 EMBL
 ENA
 Eukaryote
-eukaryotic
+Eukaryotic
 fasta
 fastq
 FastQC
@@ -58,7 +59,7 @@ GC
 GenBank
 genomic
 GitLab
-gitter
+Gitter
 gz
 gzip
 gzipped
@@ -72,7 +73,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-Interoperable
+interoperable
 interpretability
 interpretable
 IntrprtngGnmcs
@@ -107,7 +108,6 @@ PTB
 purhcases
 PyCharm
 quant
-Rabix
 rclone
 README
 receieved
@@ -140,7 +140,7 @@ subsampled
 taylorreiter
 TER
 transcriptional
-Transcriptome
+transcriptome
 UC
 WDL
 whitespace
