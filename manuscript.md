@@ -10,7 +10,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-06-30'
+date-meta: '2020-07-03'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -29,9 +29,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
-  <meta name="dc.date" content="2020-06-30" />
+  <meta name="dc.date" content="2020-07-03" />
 
-  <meta name="citation_publication_date" content="2020-06-30" />
+  <meta name="citation_publication_date" content="2020-07-03" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,10 +157,10 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@f098d6c](https://github.com/dib-lab/2020-workflows-paper/tree/f098d6c14b295a374c22c9678046e8ed7fadaa57)
-on June 30, 2020.
+from [dib-lab/2020-workflows-paper@2824cdd](https://github.com/dib-lab/2020-workflows-paper/tree/2824cdde2d7394dccb21a593d2fb270ff1e29ba3)
+on July 3, 2020.
 </em></small>
 
 ## Authors
@@ -787,7 +787,7 @@ RNA-seq analysis approaches like differential expression or transcript clusterin
 Many tools can be used to generate these counts by quantifying the number of reads that overlap with each transcript or gene.
 For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts [@doi:10.1093/bioinformatics/bts635; @doi:10.1038/s41587-019-0201-4].
 However, these tools generate information-rich output, specifying per-base alignments for each read.
-If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information [@doi:10.1093/bioinformatics/btw277].
+If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information [@doi:10.1038/nbt.3519; @doi:10.1093/bioinformatics/btw277].
 
 **Seek help when you need it**
 In some cases, you may find that your accessible computing system is ill-equipped to handle the type or scope of your analysis.

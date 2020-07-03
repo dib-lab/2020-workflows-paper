@@ -8,7 +8,7 @@ barcode
 bioconda
 bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -26,10 +26,10 @@ chemistries
 CMR
 Colab
 coli
-conda
+Conda
 csv
 CSW
-ctb
+CTB
 ctitusbrown
 customizability
 CWL
@@ -53,13 +53,13 @@ fastq
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
 genomic
 GitLab
-Gitter
+gitter
 gz
 gzip
 gzipped
@@ -73,7 +73,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-interoperable
+Interoperable
 interpretability
 interpretable
 IntrprtngGnmcs
@@ -140,7 +140,7 @@ subsampled
 taylorreiter
 TER
 transcriptional
-transcriptome
+Transcriptome
 UC
 WDL
 whitespace

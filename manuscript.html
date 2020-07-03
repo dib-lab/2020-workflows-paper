@@ -12,7 +12,7 @@
   <meta name="author" content="Camille Scott" />
   <meta name="author" content="C. Titus Brown" />
   <meta name="author" content="N. Tessa Pierce" />
-  <meta name="dcterms.date" content="2020-06-30" />
+  <meta name="dcterms.date" content="2020-07-03" />
   <meta name="keywords" content="sequencing, bioinformatics, workflows, computational biology, open access" />
   <title>Streamlining Data-Intensive Biology With Workflow Systems</title>
   <style>
@@ -35,8 +35,8 @@
   <meta name="citation_title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
   <meta property="og:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
   <meta property="twitter:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
-  <meta name="dc.date" content="2020-06-30" />
-  <meta name="citation_publication_date" content="2020-06-30" />
+  <meta name="dc.date" content="2020-07-03" />
+  <meta name="citation_publication_date" content="2020-07-03" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/f098d6c14b295a374c22c9678046e8ed7fadaa57/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/2824cdde2d7394dccb21a593d2fb270ff1e29ba3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/f098d6c14b295a374c22c9678046e8ed7fadaa57">dib-lab/2020-workflows-paper@f098d6c</a>
-on June 30, 2020.
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/2824cdde2d7394dccb21a593d2fb270ff1e29ba3">dib-lab/2020-workflows-paper@2824cdd</a>
+on July 3, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -819,19 +819,19 @@ RNA-seq analysis approaches like differential expression or transcript clusterin
 Many tools can be used to generate these counts by quantifying the number of reads that overlap with each transcript or gene.
 For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts <span class="citation" data-cites="tTu8Ds9Z 1GLBRcU8y">[<a href="#ref-tTu8Ds9Z" role="doc-biblioref">109</a>,<a href="#ref-1GLBRcU8y" role="doc-biblioref">110</a>]</span>.
 However, these tools generate information-rich output, specifying per-base alignments for each read.
-If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information <span class="citation" data-cites="92SRxcQI">[<a href="#ref-92SRxcQI" role="doc-biblioref">111</a>]</span>.</p>
+If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information <span class="citation" data-cites="12KZMHMQl 92SRxcQI">[<a href="#ref-12KZMHMQl" role="doc-biblioref">111</a>,<a href="#ref-92SRxcQI" role="doc-biblioref">112</a>]</span>.</p>
 <p><strong>Seek help when you need it</strong>
 In some cases, you may find that your accessible computing system is ill-equipped to handle the type or scope of your analysis.
 Depending on the system, staff members may be able to help direct you to properly scale your workflow to available resources, or guide you in tailoring computational unit allocations or purhcases to match your needs.</p>
 <h2 id="strategies-for-troubleshooting">Strategies for troubleshooting</h2>
 <p>Workflows, and research software in general, invariably require troubleshooting and iteration.
 When first starting with a workflow system, it can be difficult to interpret code and usage errors from unfamiliar tools or languages <span class="citation" data-cites="1b1v9x0E">[<a href="#ref-1b1v9x0E" role="doc-biblioref">2</a>]</span>.
-Further, the iterative development process of research software means functionality may change, new features may be added, or documentation may be out of date <span class="citation" data-cites="10B55Rn6n">[<a href="#ref-10B55Rn6n" role="doc-biblioref">112</a>]</span>.
+Further, the iterative development process of research software means functionality may change, new features may be added, or documentation may be out of date <span class="citation" data-cites="10B55Rn6n">[<a href="#ref-10B55Rn6n" role="doc-biblioref">113</a>]</span>.
 The challenges of learning and interacting with research software require time and patience <span class="citation" data-cites="O2FBStK6">[<a href="#ref-O2FBStK6" role="doc-biblioref">4</a>]</span>.</p>
 <p>One of the largest barriers to surmounting these challenges is learning how, when, and where to ask for help.
 Below we outline a strategy for troubleshooting that can help build your own knowledge while respecting both your own time and that of research software developers and the larger bioinformatic community.
 In the “where to seek help” section, we also recommend locations for asking general questions around data-intensive analysis, including discussion of tool choice, parameter selection, and other analysis strategies.
-Beyond these tips, workshops and materials from training organizations such as the Carpentries, R-Ladies, RStudio can arm you with the tools you need to start troubleshooting and jump-start software and data literacy in your community <span class="citation" data-cites="EbC8IKt0">[<a href="#ref-EbC8IKt0" role="doc-biblioref">113</a>]</span>.
+Beyond these tips, workshops and materials from training organizations such as the Carpentries, R-Ladies, RStudio can arm you with the tools you need to start troubleshooting and jump-start software and data literacy in your community <span class="citation" data-cites="EbC8IKt0">[<a href="#ref-EbC8IKt0" role="doc-biblioref">114</a>]</span>.
 Getting involved with these workshops and communities not only provides educational benefits but also networking and career-building opportunities.</p>
 <h3 id="how-to-help-yourself-try-to-pinpoint-your-issue-or-error">How to help yourself: Try to pinpoint your issue or error</h3>
 <p>Software errors can be the result of syntax errors, dependency issues, operating system conflicts, bugs in the software, problems with the input data, and many other issues.
@@ -841,7 +841,7 @@ In many cases, the error you’ve encountered has been encountered many times be
 If there is a software issue tracker for the software (e.g. on the GitHub, GitLab, or Bitbucket repository), or a Gitter, Slack, or Google Groups page, performing a targeted search with the error message may provide additional context or a solution for the error.
 If targeted searches do not return a results, Googling the error message with the program name is a good next step.
 Searching with several variants and iteratively adding information such as the type of input data, the name of the coding language or computational platform, or other relevant information, can improve the likelihood that a there will be a match.
-There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs and even tutorials and lessons written by experts in the field <span class="citation" data-cites="FnFKPG8G">[<a href="#ref-FnFKPG8G" role="doc-biblioref">114</a>]</span>.
+There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs and even tutorials and lessons written by experts in the field <span class="citation" data-cites="FnFKPG8G">[<a href="#ref-FnFKPG8G" role="doc-biblioref">115</a>]</span>.
 This increases the discoverability of error messages and their solutions.</p>
 <p>Sometimes, programs fail without outputting an error message.
 In cases like these, the software’s help (usually accessible on the command line via <code>tool-name --help</code>) and official documentation may provide clues or additional example use cases that may be helpful in resolving an error.
@@ -854,7 +854,7 @@ When asking for help, it’s essential to provide the right details so that othe
 At minimum, include the name and version of the program, the method used to install it, whether or not the test data ran, the exact code that produced the error, the error message, and the full output text from the run (if any is produced).
 The type and version of the operating system you are using is also helpful to include.
 Sometimes, this is enough information for others to spot the error.
-However, if it appears that there may bug in the underlying code, specifying or providing the minimum amount of data required to reproduce the error (e.g. reproducible example <span class="citation" data-cites="S71Oc3RF mn58kiuB">[<a href="#ref-S71Oc3RF" role="doc-biblioref">115</a>,<a href="#ref-mn58kiuB" role="doc-biblioref">116</a>]</span>) enables other to reproduce and potentially solve the error at hand.
+However, if it appears that there may bug in the underlying code, specifying or providing the minimum amount of data required to reproduce the error (e.g. reproducible example <span class="citation" data-cites="S71Oc3RF mn58kiuB">[<a href="#ref-S71Oc3RF" role="doc-biblioref">116</a>,<a href="#ref-mn58kiuB" role="doc-biblioref">117</a>]</span>) enables other to reproduce and potentially solve the error at hand.
 Putting the effort into gathering this information both increases your own understanding of the problem and makes it easier and faster for others to help solve your issue.
 Furthermore, it signals respect for the time that these developers and community members dedicate to helping troubleshoot and solve user issues.</p>
 <h3 id="where-to-seek-help-online-and-local-communities-of-practice">Where to seek help: online and local communities of practice</h3>
@@ -864,7 +864,7 @@ For open source programs on GitHub, GitLab, or Bitbucket, this is often the “I
 Usually, the documentation indicates the best location questions.
 If question is more general, such as asking about program choice or workflows, forums relevant to your field such as Stack Overflow, BioStars, or SEQanswers are good choices, as posts here are often seen by a large community of researchers.
 Before posting, search through related topics to double check the question has not already been answered.
-As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harassment-free discussion environment <span class="citation" data-cites="bY9cHRxB">[<a href="#ref-bY9cHRxB" role="doc-biblioref">117</a>]</span>.
+As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harassment-free discussion environment <span class="citation" data-cites="bY9cHRxB">[<a href="#ref-bY9cHRxB" role="doc-biblioref">118</a>]</span>.
 Look for codes of conduct in the online forums you participate in, and make sure you do your part to help ensure a welcoming community for participants of all backgrounds and computational competencies.</p>
 <p>While there is lots of help available online, there is no substitute for local communities.
 Local communities may come in the form of a tech meetup, a users group, a hacky hour, or an informal meetup of researchers using similar tools.
@@ -872,7 +872,7 @@ While this may seem like just a local version of Stack Overflow, the local, memb
 The benefit to beginners is clear: learning the best way to post questions and the important parts of errors, while getting questions answered so they can move forward in their research.
 Intermediate users may actually find these communities most useful, as they can also accelerate their own troubleshooting skills by helping others solve issues that they have already struggled through.
 While it can be helpful to have some experts available to help answer questions or to know when to escalate to Stack Overflow or other communities, a collaborative community of practice with members at all experience levels can help all its members move their science forward faster.</p>
-<p>If such a community does not yet exist in your area, building this sort of community (discussed in detail in <span class="citation" data-cites="4jKjtPfJ">[<a href="#ref-4jKjtPfJ" role="doc-biblioref">118</a>]</span>), can be as simple as hosting a seminar series or starting meetup sessions for data analysis co-working.
+<p>If such a community does not yet exist in your area, building this sort of community (discussed in detail in <span class="citation" data-cites="4jKjtPfJ">[<a href="#ref-4jKjtPfJ" role="doc-biblioref">119</a>]</span>), can be as simple as hosting a seminar series or starting meetup sessions for data analysis co-working.
 In our experience, it can also be useful to set up a local online forum (e.g. discourse) for group troubleshooting.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Bioinformatics-focused workflow systems have reshaped data-intensive biology, reducing execution hurdles and empowering biologists to conduct reproducible analyses at the massive scale of data now available.
@@ -1027,7 +1027,7 @@ nf-core<br />
 <div id="ref-CeVdUj5n">
 <p>16. <strong>metagenome-atlas/atlas</strong> <br />
 metagenome-atlas<br />
-(2020-06-30) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
+(2020-07-01) <a href="https://github.com/metagenome-atlas/atlas">https://github.com/metagenome-atlas/atlas</a></p>
 </div>
 <div id="ref-so5fKJ5K">
 <p>17. <strong>ATLAS: a Snakemake workflow for assembly, annotation, and genomic binning of metagenome sequence data</strong> <br />
@@ -1146,7 +1146,7 @@ Dirk Merkel<br />
 <div id="ref-PljGS703">
 <p>37. <strong>TheSnakePit/mamba</strong> <br />
 Snakepit<br />
-(2020-06-30) <a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
+(2020-07-03) <a href="https://github.com/TheSnakePit/mamba">https://github.com/TheSnakePit/mamba</a></p>
 </div>
 <div id="ref-dpXky09I">
 <p>38. <strong>dib-lab/dib-MMETSP</strong> <br />
@@ -1355,13 +1355,13 @@ DOI: <a href="https://doi.org/10.1073/pnas.1720115115">10.1073/pnas.1720115115</
 <div id="ref-zrui9aEX">
 <p>76. <strong>Opportunities and challenges in long-read sequencing data analysis</strong> <br />
 Shanika L. Amarasinghe, Shian Su, Xueyi Dong, Luke Zappia, Matthew E. Ritchie, Quentin Gouil<br />
-<em>Genome Biology</em> (2020-02-07) <a href="https://doi.org/ggkpv7">https://doi.org/ggkpv7</a> <br />
+<em>Genome Biology</em> (2020-12) <a href="https://doi.org/ggkpv7">https://doi.org/ggkpv7</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-020-1935-5">10.1186/s13059-020-1935-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32033565">32033565</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7006217">PMC7006217</a></p>
 </div>
 <div id="ref-lXajraQj">
 <p>77. <strong>Whole-genome sequencing of eukaryotes: From sequencing of DNA fragments to a genome assembly</strong> <br />
 K. S. Zadesenets, N. I. Ershov, N. B. Rubtsov<br />
-<em>Russian Journal of Genetics</em> (2017-07-12) <a href="https://doi.org/gg26n5">https://doi.org/gg26n5</a> <br />
+<em>Russian Journal of Genetics</em> (2017-06) <a href="https://doi.org/gg26n5">https://doi.org/gg26n5</a> <br />
 DOI: <a href="https://doi.org/10.1134/s102279541705012x">10.1134/s102279541705012x</a></p>
 </div>
 <div id="ref-xClhQQgj">
@@ -1391,7 +1391,7 @@ DOI: <a href="https://doi.org/10.3389/fgene.2019.00533">10.3389/fgene.2019.00533
 <div id="ref-Mp4OYBjT">
 <p>82. <strong>Harnessing the power of RADseq for ecological and evolutionary genomics</strong> <br />
 Kimberly R. Andrews, Jeffrey M. Good, Michael R. Miller, Gordon Luikart, Paul A. Hohenlohe<br />
-<em>Nature Reviews Genetics</em> (2016-01-05) <a href="https://doi.org/gd85wf">https://doi.org/gd85wf</a> <br />
+<em>Nature Reviews Genetics</em> (2016-02) <a href="https://doi.org/gd85wf">https://doi.org/gd85wf</a> <br />
 DOI: <a href="https://doi.org/10.1038/nrg.2015.28">10.1038/nrg.2015.28</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26729255">26729255</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4823021">PMC4823021</a></p>
 </div>
 <div id="ref-LvhLk2Yc">
@@ -1526,7 +1526,7 @@ DOI: <a href="https://doi.org/10.1186/s40168-019-0653-2">10.1186/s40168-019-0653
 <div id="ref-cHw8gtst">
 <p>107. <strong>When the levee breaks: a practical guide to sketching algorithms for processing the flood of genomic data</strong> <br />
 Will P. M. Rowe<br />
-<em>Genome Biology</em> (2019-09-13) <a href="https://doi.org/gf8bfj">https://doi.org/gf8bfj</a> <br />
+<em>Genome Biology</em> (2019-12) <a href="https://doi.org/gf8bfj">https://doi.org/gf8bfj</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-019-1809-x">10.1186/s13059-019-1809-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31519212">31519212</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6744645">PMC6744645</a></p>
 </div>
 <div id="ref-1BD5D1yRX">
@@ -1546,48 +1546,54 @@ Daehwan Kim, Joseph M. Paggi, Chanhee Park, Christopher Bennett, Steven L. Salzb
 <em>Nature Biotechnology</em> (2019-08-02) <a href="https://doi.org/gf5395">https://doi.org/gf5395</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41587-019-0201-4">10.1038/s41587-019-0201-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31375807">31375807</a></p>
 </div>
+<div id="ref-12KZMHMQl">
+<p>111. <strong>Near-optimal probabilistic RNA-seq quantification</strong> <br />
+Nicolas L Bray, Harold Pimentel, Páll Melsted, Lior Pachter<br />
+<em>Nature Biotechnology</em> (2016-05) <a href="https://doi.org/f8nvsp">https://doi.org/f8nvsp</a> <br />
+DOI: <a href="https://doi.org/10.1038/nbt.3519">10.1038/nbt.3519</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27043002">27043002</a></p>
+</div>
 <div id="ref-92SRxcQI">
-<p>111. <strong>RapMap: a rapid, sensitive and accurate tool for mapping RNA-seq reads to transcriptomes</strong> <br />
+<p>112. <strong>RapMap: a rapid, sensitive and accurate tool for mapping RNA-seq reads to transcriptomes</strong> <br />
 Avi Srivastava, Hirak Sarkar, Nitish Gupta, Rob Patro<br />
 <em>Bioinformatics</em> (2016-06-15) <a href="https://doi.org/f8vm2j">https://doi.org/f8vm2j</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btw277">10.1093/bioinformatics/btw277</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27307617">27307617</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4908361">PMC4908361</a></p>
 </div>
 <div id="ref-10B55Rn6n">
-<p>112. <strong>The Types, Roles, and Practices of Documentation in Data Analytics Open Source Software Libraries</strong> <br />
+<p>113. <strong>The Types, Roles, and Practices of Documentation in Data Analytics Open Source Software Libraries</strong> <br />
 R. Stuart Geiger, Nelle Varoquaux, Charlotte Mazel-Cabasse, Chris Holdgraf<br />
 <em>Computer Supported Cooperative Work (CSCW)</em> (2018-05-29) <a href="https://doi.org/gd4rhr">https://doi.org/gd4rhr</a> <br />
 DOI: <a href="https://doi.org/10.1007/s10606-018-9333-1">10.1007/s10606-018-9333-1</a></p>
 </div>
 <div id="ref-EbC8IKt0">
-<p>113. <strong>Data Carpentry: Workshops to Increase Data Literacy for Researchers</strong> <br />
+<p>114. <strong>Data Carpentry: Workshops to Increase Data Literacy for Researchers</strong> <br />
 Tracy K. Teal, Karen A. Cranston, Hilmar Lapp, Ethan White, Greg Wilson, Karthik Ram, Aleksandra Pawlik<br />
 <em>International Journal of Digital Curation</em> (2015-03-18) <a href="https://doi.org/gf5hjw">https://doi.org/gf5hjw</a> <br />
 DOI: <a href="https://doi.org/10.2218/ijdc.v10i1.351">10.2218/ijdc.v10i1.351</a></p>
 </div>
 <div id="ref-FnFKPG8G">
-<p>114. <strong>BioStar: An Online Question &amp; Answer Resource for the Bioinformatics Community</strong> <br />
+<p>115. <strong>BioStar: An Online Question &amp; Answer Resource for the Bioinformatics Community</strong> <br />
 Laurence D. Parnell, Pierre Lindenbaum, Khader Shameer, Giovanni Marco Dall’Olio, Daniel C. Swan, Lars Juhl Jensen, Simon J. Cockell, Brent S. Pedersen, Mary E. Mangan, Christopher A. Miller, Istvan Albert<br />
 <em>PLoS Computational Biology</em> (2011-10-27) <a href="https://doi.org/dhsz4k">https://doi.org/dhsz4k</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1002216">10.1371/journal.pcbi.1002216</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22046109">22046109</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3203049">PMC3203049</a></p>
 </div>
 <div id="ref-S71Oc3RF">
-<p>115. <strong>How to create a Minimal, Reproducible Example - Help Center</strong> <br />
+<p>116. <strong>How to create a Minimal, Reproducible Example - Help Center</strong> <br />
 Stack Overflow<br />
 <a href="https://stackoverflow.com/help/minimal-reproducible-example">https://stackoverflow.com/help/minimal-reproducible-example</a></p>
 </div>
 <div id="ref-mn58kiuB">
-<p>116. <strong>FAQ: How to do a minimal reproducible example ( reprex ) for beginners</strong> <br />
+<p>117. <strong>FAQ: How to do a minimal reproducible example ( reprex ) for beginners</strong> <br />
 RStudio Community<br />
 (2020-03-25) <a href="https://community.rstudio.com/t/faq-how-to-do-a-minimal-reproducible-example-reprex-for-beginners/23061">https://community.rstudio.com/t/faq-how-to-do-a-minimal-reproducible-example-reprex-for-beginners/23061</a></p>
 </div>
 <div id="ref-bY9cHRxB">
-<p>117. <strong>Code of conduct in open source projects</strong> <br />
+<p>118. <strong>Code of conduct in open source projects</strong> <br />
 Parastou Tourani, Bram Adams, Alexander Serebrenik<br />
 <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2017-02) <a href="https://doi.org/gfzbs6">https://doi.org/gfzbs6</a> <br />
 DOI: <a href="https://doi.org/10.1109/saner.2017.7884606">10.1109/saner.2017.7884606</a></p>
 </div>
 <div id="ref-4jKjtPfJ">
-<p>118. <strong>Building a local community of practice in scientific programming for life scientists</strong> <br />
+<p>119. <strong>Building a local community of practice in scientific programming for life scientists</strong> <br />
 Sarah L. R. Stevens, Mateusz Kuzak, Carlos Martinez, Aurelia Moser, Petra Bleeker, Marc Galland<br />
 <em>PLOS Biology</em> (2018-11-28) <a href="https://doi.org/gfpwkb">https://doi.org/gfpwkb</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio.2005561</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30485260">30485260</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6287879">PMC6287879</a></p>
