@@ -5,6 +5,8 @@
 
 ## Current Manuscript
 
+[bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2020.06.30.178673v1) (preprinted 07/01/2020)
+
 PDF: [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf)
 
 HTML: [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://dib-lab.github.io/2020-workflows-paper/)
