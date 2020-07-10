@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/6fe61832d4ac5104733782254b063a7a769aac0e/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/ad479ba9bedea7eb979d1cf3f7de6eb31c55d5eb/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/6fe61832d4ac5104733782254b063a7a769aac0e/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ad479ba9bedea7eb979d1cf3f7de6eb31c55d5eb/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/6fe61832d4ac5104733782254b063a7a769aac0e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/ad479ba9bedea7eb979d1cf3f7de6eb31c55d5eb/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,9 +157,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/6fe61832d4ac5104733782254b063a7a769aac0e/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/ad479ba9bedea7eb979d1cf3f7de6eb31c55d5eb/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@6fe6183](https://github.com/dib-lab/2020-workflows-paper/tree/6fe61832d4ac5104733782254b063a7a769aac0e)
+from [dib-lab/2020-workflows-paper@ad479ba](https://github.com/dib-lab/2020-workflows-paper/tree/ad479ba9bedea7eb979d1cf3f7de6eb31c55d5eb)
 on July 10, 2020.
 </em></small>
 
@@ -342,7 +342,7 @@ Here, we draw a distinction between two types of workflows: "research" workflows
 In particular, research workflows require flexibility and assessment at every step: outliers and edge cases may reveal interesting biological differences, rather than sample processing or technical errors.
 Many workflow systems can be used for either type, but we note cases where their properties facilitate one of these types over the other.
 
-**Using software without learning management systems**
+**Using workflows without learning management systems**
 While the benefits of encoding a workflow in a workflow system are immense, the learning curve associated with implementing complete workflows in a new syntax can be daunting.
 It is possible to obtain the benefits of workflow systems without learning a workflow system.
 Websites like Galaxy, Cavatica, and EMBL-EBI MGnify offer online portals in which users build workflows around publicly-available or user-uploaded data [@doi:10.1093/nar/gky379; @doi:10.14694/EDBK_175029; @doi:10.1093/nar/gkz1035].
