@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/649071017447d008c5502920867b52e37976fc18">dib-lab/2020-workflows-paper@6490710</a>
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/690fd35847435b84b4401a5af67ac90a48ee320d">dib-lab/2020-workflows-paper@690fd35</a>
 on July 14, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -582,7 +582,7 @@ Once generated, it is always a good idea to have multiple independent backups of
 <p>As your experiment progresses, keep track of as much information as possible: dates and times of sample collection, storage, and extraction, sample names, aberrations that occurred during collection, kit lot used for extraction, and any other sample and sequencing measurements you might be able to obtain (temperature, location, metabolite concentration, name of collector, well number, plate number, machine your data was sequenced, on etc).
 This metadata allows you to keep track of your samples, to control for batch effects that may arise from unintended batching during sampling or experimental procedures and makes the data you collect reusable for future applications and analysis by yourself and others.
 Wherever possible, follow the standard guidelines for formatting metadata for scientific computing to limit downstream processing and simplify analyses requiring these metadata (see: <span class="citation" data-cites="k9JCaCug">[<a href="#ref-k9JCaCug" role="doc-biblioref">10</a>]</span>).
-We have focused here on sequencing data; for data management over long-term ecological studies, we recommend <span class="citation" data-cites="doi">[<span class="citeproc-not-found" data-reference-id="doi"><strong>???</strong></span> https://doi.org/10.1101/344804]</span>.</p>
+We have focused here on sequencing data; for data management over long-term ecological studies, we recommend <span class="citation" data-cites="lXvpQxeN">[<a href="#ref-lXvpQxeN" role="doc-biblioref">87</a>]</span>.</p>
 <h3 id="getting-started-with-sequencing-data">Getting started with sequencing data</h3>
 <h4 id="protect-valuable-data">Protect valuable data</h4>
 <p>Aside from the code itself, raw data are the most important files associated with a workflow, as they cannot be regenerated if accidentally altered or deleted.
@@ -591,17 +591,17 @@ This also removes the imperative of storing intermediate files as these can be e
 <p>When sharing or storing files and results, data version control can keep track of differences in files such as changes from tool parameters or versions.
 The version control tools discussed in the <a href="##%20workflow-based-project-management">Workflow-based project management</a> section are primarily designed to handle small files, but repositories such as the Open Science Framework, Figshare, Zenodo, and Dryad can be used for storing larger files and datasets.</p>
 <p>The Open Science Framework (OSF; <span class="citation" data-cites="J91RXtV1">[<a href="#ref-J91RXtV1" role="doc-biblioref">66</a>]</span>) is a free service that provides powerful collaboration and sharing tools, provides built-in version control, integrates with other storage and version control repositories, guarantees data preservation, and enables you to keep projects private until they are ready to share. Like other services geared towards data sharing, OSF also enables generation of a digital object identifier (doi) for each project.
-While other services such as Git Large File Storage (LFS), Figshare <span class="citation" data-cites="19oGBm89D">[<a href="#ref-19oGBm89D" role="doc-biblioref">87</a>]</span>, Zenodo <span class="citation" data-cites="Z6ni32OG">[<a href="#ref-Z6ni32OG" role="doc-biblioref">45</a>]</span>, and the Dryad Digital Repository <span class="citation" data-cites="L1FmyUSP">[<a href="#ref-L1FmyUSP" role="doc-biblioref">88</a>]</span> each provide important services for sharing and version control, OSF provides the most comprehensive set of free tools for managing data storage and backup.
-As free tools often limit the size of files that can be stored, a number of cloud backup and storage services are also available for purchase or via university contract, including Google Drive, Box, Dropbox, Amazon Web Services, and Backblaze. Full computer backups can be conducted to these storage locations with tools like rclone <span class="citation" data-cites="3Gg4ZEOM">[<a href="#ref-3Gg4ZEOM" role="doc-biblioref">89</a>]</span>.</p>
+While other services such as Git Large File Storage (LFS), Figshare <span class="citation" data-cites="19oGBm89D">[<a href="#ref-19oGBm89D" role="doc-biblioref">88</a>]</span>, Zenodo <span class="citation" data-cites="Z6ni32OG">[<a href="#ref-Z6ni32OG" role="doc-biblioref">45</a>]</span>, and the Dryad Digital Repository <span class="citation" data-cites="L1FmyUSP">[<a href="#ref-L1FmyUSP" role="doc-biblioref">89</a>]</span> each provide important services for sharing and version control, OSF provides the most comprehensive set of free tools for managing data storage and backup.
+As free tools often limit the size of files that can be stored, a number of cloud backup and storage services are also available for purchase or via university contract, including Google Drive, Box, Dropbox, Amazon Web Services, and Backblaze. Full computer backups can be conducted to these storage locations with tools like rclone <span class="citation" data-cites="3Gg4ZEOM">[<a href="#ref-3Gg4ZEOM" role="doc-biblioref">90</a>]</span>.</p>
 <h4 id="ensure-data-integrity-during-transfers">Ensure data integrity during transfers</h4>
 <p>If you’re working with publicly-available data, you may be able to work on a compute system where the data are already available, circumventing time and effort required for downloading and moving the data.
-Databases such as the Sequence Read Archive (SRA) are now available on commercial cloud computing systems, and open source projects such as Galaxy enable working with SRA sequence files directly from a web browser <span class="citation" data-cites="WBsVRA32 Pg3uljVs">[<a href="#ref-WBsVRA32" role="doc-biblioref">12</a>,<a href="#ref-Pg3uljVs" role="doc-biblioref">90</a>]</span>.
+Databases such as the Sequence Read Archive (SRA) are now available on commercial cloud computing systems, and open source projects such as Galaxy enable working with SRA sequence files directly from a web browser <span class="citation" data-cites="WBsVRA32 Pg3uljVs">[<a href="#ref-WBsVRA32" role="doc-biblioref">12</a>,<a href="#ref-Pg3uljVs" role="doc-biblioref">91</a>]</span>.
 Ongoing projects such as the NIH Common Fund Data Ecosystem aim to develop a data portal to make NIH Common Fund data, including biomedical sequencing data, more findable, accessible, interoperable, and reusable (FAIR).</p>
 <p>In most cases, you’ll still need to transfer some data - either downloading raw data or transferring important intermediate and results files for backup and sharing (or both).
 Transferring compressed files (gzip, bzip2, BAM/CRAM, etc.) can improve transfer speed and save space, and checksums can be used to to ensure file integrity after transfer (see <strong>Figure <a href="#fig:checksum">8</a></strong>).</p>
 <div id="fig:checksum" class="fignos">
 <figure>
-<img src="images/checksum_file.svg" style="height:2.5in" alt="" /><figcaption><span>Figure 8:</span> <strong>Use Checksums to ensure file integrity</strong> Checksum programs (e.g. md5, sha256) encode file size and content in a single value known as a “checksum”. For any given file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like rsync and rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. Cyberduck) can assess checksums when they are provided <span class="citation" data-cites="3Gg4ZEOM">[<a href="#ref-3Gg4ZEOM" role="doc-biblioref">89</a>]</span>. If you generated your own data and receieved sequencing files from a sequencing center, be certain you also receive a checksum for each of your files to ensure they download properly.</figcaption>
+<img src="images/checksum_file.svg" style="height:2.5in" alt="" /><figcaption><span>Figure 8:</span> <strong>Use Checksums to ensure file integrity</strong> Checksum programs (e.g. md5, sha256) encode file size and content in a single value known as a “checksum”. For any given file, this value will be identical across platforms when calculated using the same checksum program. When transferring files, calculate the value of the checksum prior to transfer, and then again after transfer. If the value is not identical, there was an error introduced during transfer (e.g. file truncation, etc). Checksums are often provided alongside publicly available files, so that you can verify proper download. Tools like rsync and rclone that automate file transfers use checksums internally to verify that files were transferred properly, and some GUI file transfer tools (e.g. Cyberduck) can assess checksums when they are provided <span class="citation" data-cites="3Gg4ZEOM">[<a href="#ref-3Gg4ZEOM" role="doc-biblioref">90</a>]</span>. If you generated your own data and receieved sequencing files from a sequencing center, be certain you also receive a checksum for each of your files to ensure they download properly.</figcaption>
 </figure>
 </div>
 <h4 id="perform-quality-control-at-every-step">Perform quality control at every step</h4>
@@ -681,40 +681,40 @@ Comparing these input and output file formats to your own data can help identify
 <p><strong>Visualize your data</strong>
 Visualization is another powerful way to pick out unusual or unexpected patterns.
 Although large abnormalities may be clear from looking at files, others may be small and difficult to find.
-Visualizing raw sequencing data with FastQC (<strong>Figure <a href="#fig:multiqc">9</a>A</strong>) and processed sequencing data with tools like the Integrative Genome Viewer and plotting tabular results files using python or R can make aberrant or inconsistent results easier to track down <span class="citation" data-cites="R2o2aPyA F2D6lhmD">[<a href="#ref-R2o2aPyA" role="doc-biblioref">92</a>,<a href="#ref-F2D6lhmD" role="doc-biblioref">93</a>]</span>.</p>
+Visualizing raw sequencing data with FastQC (<strong>Figure <a href="#fig:multiqc">9</a>A</strong>) and processed sequencing data with tools like the Integrative Genome Viewer and plotting tabular results files using python or R can make aberrant or inconsistent results easier to track down <span class="citation" data-cites="R2o2aPyA F2D6lhmD">[<a href="#ref-R2o2aPyA" role="doc-biblioref">93</a>,<a href="#ref-F2D6lhmD" role="doc-biblioref">94</a>]</span>.</p>
 <div id="fig:multiqc" class="fignos">
 <figure>
 <img src="images/multiqc_viz.svg" alt="" /><figcaption><span>Figure 9:</span> <strong>Visualizations produced by MultiQC.</strong>
 MultiQC finds and automatically parses log files from other tools and generates a combined report and parsed data tables that include all samples. MultiQC currently supports 88 tools.
-<strong>A.</strong> MultiQC summary of FastQC Per Sequence GC Content for 1905 metagenome samples. FastQC provides quality control measurements and visualizations for raw sequencing data from a single sample, and is a near-universal first step in sequencing data analysis because of the insights it provides <span class="citation" data-cites="R2o2aPyA F2D6lhmD">[<a href="#ref-R2o2aPyA" role="doc-biblioref">92</a>,<a href="#ref-F2D6lhmD" role="doc-biblioref">93</a>]</span>.
+<strong>A.</strong> MultiQC summary of FastQC Per Sequence GC Content for 1905 metagenome samples. FastQC provides quality control measurements and visualizations for raw sequencing data from a single sample, and is a near-universal first step in sequencing data analysis because of the insights it provides <span class="citation" data-cites="R2o2aPyA F2D6lhmD">[<a href="#ref-R2o2aPyA" role="doc-biblioref">93</a>,<a href="#ref-F2D6lhmD" role="doc-biblioref">94</a>]</span>.
 FastQC measures and summarizes 10 quality metrics and provides recommendations for whether an individual sample is within an acceptable quality range.<br />
 Not all metrics readily apply to all sequencing data types. For example, while multiple GC peaks might be concerning in whole genome sequencing of a bacterial isolate, we would expect a non-normal distribution for some metagenome samples that contain organisms with diverse GC content.
 Samples like this can be seen in red in this figure.
-<strong>B.</strong> MultiQC summary of Salmon <em>quant</em> reads mapped per sample for RNA-seq samples <span class="citation" data-cites="vrqQcFyx">[<a href="#ref-vrqQcFyx" role="doc-biblioref">94</a>]</span>. In this figure, we see that MultiQC summarizes the number of reads mapped and percent of reads mapped, two values that are reported in the Salmon log files.</figcaption>
+<strong>B.</strong> MultiQC summary of Salmon <em>quant</em> reads mapped per sample for RNA-seq samples <span class="citation" data-cites="vrqQcFyx">[<a href="#ref-vrqQcFyx" role="doc-biblioref">95</a>]</span>. In this figure, we see that MultiQC summarizes the number of reads mapped and percent of reads mapped, two values that are reported in the Salmon log files.</figcaption>
 </figure>
 </div>
 <p><strong>Pay attention to warnings and log files</strong>
 Many tools generate log files or messages while running.
 These files contain information about the quantity, quality, and results from the run, or error messages about why a run failed.
 Inspecting these files can be helpful to make sure tools ran properly and consistently, or to debug failed runs.
-Parsing and visualizing log files with a tool like MultiQC can improve interpretability of program-specific log files (<strong>Figure <a href="#fig:multiqc">9</a></strong> <span class="citation" data-cites="U9WbDW7I">[<a href="#ref-U9WbDW7I" role="doc-biblioref">95</a>]</span>).</p>
+Parsing and visualizing log files with a tool like MultiQC can improve interpretability of program-specific log files (<strong>Figure <a href="#fig:multiqc">9</a></strong> <span class="citation" data-cites="U9WbDW7I">[<a href="#ref-U9WbDW7I" role="doc-biblioref">96</a>]</span>).</p>
 <p><strong>Look for common biases in sequencing data</strong>
 Biases in sequencing data originate from experimental design, methodology, sequencing chemistry, or workflows, and are helpful to target specifically with quality control measures.
 The exact biases in a specific data set or workflow will vary greatly between experiments so it is important to understand the sequencing method you have chosen and incorporate appropriate filtration steps into your workflow.
-For example, PCR duplicates can cause problems in libraries that underwent an amplification step, and often need to be removed prior to downstream analysis <span class="citation" data-cites="MmpwXJ9S KbGRuflQ di7r5Vq3 CdYXlaJQ Io9lIhcB">[<a href="#ref-MmpwXJ9S" role="doc-biblioref">96</a>,<a href="#ref-KbGRuflQ" role="doc-biblioref">97</a>,<a href="#ref-di7r5Vq3" role="doc-biblioref">98</a>,<a href="#ref-CdYXlaJQ" role="doc-biblioref">99</a>,<a href="#ref-Io9lIhcB" role="doc-biblioref">100</a>]</span>.</p>
+For example, PCR duplicates can cause problems in libraries that underwent an amplification step, and often need to be removed prior to downstream analysis <span class="citation" data-cites="MmpwXJ9S KbGRuflQ di7r5Vq3 CdYXlaJQ Io9lIhcB">[<a href="#ref-MmpwXJ9S" role="doc-biblioref">97</a>,<a href="#ref-KbGRuflQ" role="doc-biblioref">98</a>,<a href="#ref-di7r5Vq3" role="doc-biblioref">99</a>,<a href="#ref-CdYXlaJQ" role="doc-biblioref">100</a>,<a href="#ref-Io9lIhcB" role="doc-biblioref">101</a>]</span>.</p>
 <p><strong>Check for contamination</strong>
-Contamination can arise during sample collection, nucleotide extraction, library preparation, or through sequencing spike-ins like PhiX, and could change data interpretation if not removed <span class="citation" data-cites="1FNab1rDP bzutebV 1BcD0ITS9">[<a href="#ref-1FNab1rDP" role="doc-biblioref">101</a>,<a href="#ref-bzutebV" role="doc-biblioref">102</a>,<a href="#ref-1BcD0ITS9" role="doc-biblioref">103</a>]</span>.
-Libraries sequenced with high concentrations of free adapters or with low concentration samples may have increased barcode hopping, leading to contamination between samples <span class="citation" data-cites="192ZXTgCr">[<a href="#ref-192ZXTgCr" role="doc-biblioref">104</a>]</span>.</p>
+Contamination can arise during sample collection, nucleotide extraction, library preparation, or through sequencing spike-ins like PhiX, and could change data interpretation if not removed <span class="citation" data-cites="1FNab1rDP bzutebV 1BcD0ITS9">[<a href="#ref-1FNab1rDP" role="doc-biblioref">102</a>,<a href="#ref-bzutebV" role="doc-biblioref">103</a>,<a href="#ref-1BcD0ITS9" role="doc-biblioref">104</a>]</span>.
+Libraries sequenced with high concentrations of free adapters or with low concentration samples may have increased barcode hopping, leading to contamination between samples <span class="citation" data-cites="192ZXTgCr">[<a href="#ref-192ZXTgCr" role="doc-biblioref">105</a>]</span>.</p>
 <p><strong>Consider the costs and benefits of stringent quality control for your data</strong>
 Good quality data is essential for good downstream analysis.
 However, stringent quality control can sometimes do more harm than good.
-For example, depending on sequencing depth, stringent quality trimming of RNA-sequencing data may reduce isoform discovery <span class="citation" data-cites="1057Fa7sL">[<a href="#ref-1057Fa7sL" role="doc-biblioref">105</a>]</span>.
+For example, depending on sequencing depth, stringent quality trimming of RNA-sequencing data may reduce isoform discovery <span class="citation" data-cites="1057Fa7sL">[<a href="#ref-1057Fa7sL" role="doc-biblioref">106</a>]</span>.
 To determine what issues are most likely to plague your specific data set, it can be helpful to find recent publications using a similar experimental design, or to speak with experts at a sequencing core.</p>
 <p>Because sequencing data and applications are so diverse, there is no one-size-fits-all solution for quality control.
 It is important to think critically about the patterns you expect to see given your data and your biological problem, and consult with technical experts whenever possible.</p>
 <h3 id="securing-and-managing-appropriate-computational-resources">Securing and managing appropriate computational resources</h3>
 <p>Sequence analysis requires access to computing systems with adequate storage and analysis power for your data.
-For some smaller-scale datasets, local desktop or even laptop systems can be sufficient, especially if using tools that implement data-reduction strategies such as minhashing <span class="citation" data-cites="1Go5U29x6">[<a href="#ref-1Go5U29x6" role="doc-biblioref">106</a>]</span>.
+For some smaller-scale datasets, local desktop or even laptop systems can be sufficient, especially if using tools that implement data-reduction strategies such as minhashing <span class="citation" data-cites="1Go5U29x6">[<a href="#ref-1Go5U29x6" role="doc-biblioref">107</a>]</span>.
 However, larger projects require additional computing power, or may be restricted to certain operating systems (e.g. linux).
 For these projects, solutions range from research-focused high performance computing systems to research-integrated commercial analysis platforms.
 Both research-only and and commercial clusters provide avenues for research and educational proposals to enable access to their computing resources (see <strong>Table <a href="#tbl:computational_resources">4</a></strong>).
@@ -814,25 +814,25 @@ These approximate representations retain enough information about the original s
 Most sketching algorithms estimate sequence similarity in some way, allowing you to gain insights from these comparisons.
 For example, sketching algorithms can be used to estimate all-by-all sample similarity which can be visualized as a Principle Component Analysis or a multidimensional scaling plot, or can be used to build a phylogenetic tree with accurate topology.
 Sketching algorithms also dramatically reduce the runtime for comparisons against databases (e.g. all of GenBank), allowing users to quickly compare their data against large public databases.</p>
-<p>Rowe 2019 <span class="citation" data-cites="cHw8gtst">[<a href="#ref-cHw8gtst" role="doc-biblioref">107</a>]</span> reviewed programs and genomic use cases for sketching algorithms, and provided a series of tutorial workbooks (e.g. Sample QC notebook: <span class="citation" data-cites="1BD5D1yRX">[<a href="#ref-1BD5D1yRX" role="doc-biblioref">108</a>]</span>).</p>
+<p>Rowe 2019 <span class="citation" data-cites="cHw8gtst">[<a href="#ref-cHw8gtst" role="doc-biblioref">108</a>]</span> reviewed programs and genomic use cases for sketching algorithms, and provided a series of tutorial workbooks (e.g. Sample QC notebook: <span class="citation" data-cites="1BD5D1yRX">[<a href="#ref-1BD5D1yRX" role="doc-biblioref">109</a>]</span>).</p>
 <p><strong>Use the right tools for your question</strong>
 RNA-seq analysis approaches like differential expression or transcript clustering rely on transcript or gene counts.
 Many tools can be used to generate these counts by quantifying the number of reads that overlap with each transcript or gene.
-For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts <span class="citation" data-cites="tTu8Ds9Z 1GLBRcU8y">[<a href="#ref-tTu8Ds9Z" role="doc-biblioref">109</a>,<a href="#ref-1GLBRcU8y" role="doc-biblioref">110</a>]</span>.
+For example, tools like STAR and HISAT2 produce alignments that can be post-processed to generate per-transcript read counts <span class="citation" data-cites="tTu8Ds9Z 1GLBRcU8y">[<a href="#ref-tTu8Ds9Z" role="doc-biblioref">110</a>,<a href="#ref-1GLBRcU8y" role="doc-biblioref">111</a>]</span>.
 However, these tools generate information-rich output, specifying per-base alignments for each read.
-If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information <span class="citation" data-cites="12KZMHMQl 92SRxcQI">[<a href="#ref-12KZMHMQl" role="doc-biblioref">111</a>,<a href="#ref-92SRxcQI" role="doc-biblioref">112</a>]</span>.</p>
+If you are only interested in read quantification, quasi-mapping tools provide the desired results while reducing the time and resources needed to generate and store read count information <span class="citation" data-cites="12KZMHMQl 92SRxcQI">[<a href="#ref-12KZMHMQl" role="doc-biblioref">112</a>,<a href="#ref-92SRxcQI" role="doc-biblioref">113</a>]</span>.</p>
 <p><strong>Seek help when you need it</strong>
 In some cases, you may find that your accessible computing system is ill-equipped to handle the type or scope of your analysis.
 Depending on the system, staff members may be able to help direct you to properly scale your workflow to available resources, or guide you in tailoring computational unit allocations or purhcases to match your needs.</p>
 <h2 id="strategies-for-troubleshooting">Strategies for troubleshooting</h2>
 <p>Workflows, and research software in general, invariably require troubleshooting and iteration.
 When first starting with a workflow system, it can be difficult to interpret code and usage errors from unfamiliar tools or languages <span class="citation" data-cites="1b1v9x0E">[<a href="#ref-1b1v9x0E" role="doc-biblioref">2</a>]</span>.
-Further, the iterative development process of research software means functionality may change, new features may be added, or documentation may be out of date <span class="citation" data-cites="10B55Rn6n">[<a href="#ref-10B55Rn6n" role="doc-biblioref">113</a>]</span>.
+Further, the iterative development process of research software means functionality may change, new features may be added, or documentation may be out of date <span class="citation" data-cites="10B55Rn6n">[<a href="#ref-10B55Rn6n" role="doc-biblioref">114</a>]</span>.
 The challenges of learning and interacting with research software require time and patience <span class="citation" data-cites="O2FBStK6">[<a href="#ref-O2FBStK6" role="doc-biblioref">4</a>]</span>.</p>
 <p>One of the largest barriers to surmounting these challenges is learning how, when, and where to ask for help.
 Below we outline a strategy for troubleshooting that can help build your own knowledge while respecting both your own time and that of research software developers and the larger bioinformatic community.
 In the “where to seek help” section, we also recommend locations for asking general questions around data-intensive analysis, including discussion of tool choice, parameter selection, and other analysis strategies.
-Beyond these tips, workshops and materials from training organizations such as the Carpentries, R-Ladies, RStudio can arm you with the tools you need to start troubleshooting and jump-start software and data literacy in your community <span class="citation" data-cites="EbC8IKt0">[<a href="#ref-EbC8IKt0" role="doc-biblioref">114</a>]</span>.
+Beyond these tips, workshops and materials from training organizations such as the Carpentries, R-Ladies, RStudio can arm you with the tools you need to start troubleshooting and jump-start software and data literacy in your community <span class="citation" data-cites="EbC8IKt0">[<a href="#ref-EbC8IKt0" role="doc-biblioref">115</a>]</span>.
 Getting involved with these workshops and communities not only provides educational benefits but also networking and career-building opportunities.</p>
 <h3 id="how-to-help-yourself-try-to-pinpoint-your-issue-or-error">How to help yourself: Try to pinpoint your issue or error</h3>
 <p>Software errors can be the result of syntax errors, dependency issues, operating system conflicts, bugs in the software, problems with the input data, and many other issues.
@@ -842,7 +842,7 @@ In many cases, the error you’ve encountered has been encountered many times be
 If there is a software issue tracker for the software (e.g. on the GitHub, GitLab, or Bitbucket repository), or a Gitter, Slack, or Google Groups page, performing a targeted search with the error message may provide additional context or a solution for the error.
 If targeted searches do not return a results, Googling the error message with the program name is a good next step.
 Searching with several variants and iteratively adding information such as the type of input data, the name of the coding language or computational platform, or other relevant information, can improve the likelihood that a there will be a match.
-There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs and even tutorials and lessons written by experts in the field <span class="citation" data-cites="FnFKPG8G">[<a href="#ref-FnFKPG8G" role="doc-biblioref">115</a>]</span>.
+There are a vast array of online resources for bioinformatic help ranging from question sites such as Stack Overflow and BioStars, to personal or academic blogs and even tutorials and lessons written by experts in the field <span class="citation" data-cites="FnFKPG8G">[<a href="#ref-FnFKPG8G" role="doc-biblioref">116</a>]</span>.
 This increases the discoverability of error messages and their solutions.</p>
 <p>Sometimes, programs fail without outputting an error message.
 In cases like these, the software’s help (usually accessible on the command line via <code>tool-name --help</code>) and official documentation may provide clues or additional example use cases that may be helpful in resolving an error.
@@ -855,7 +855,7 @@ When asking for help, it’s essential to provide the right details so that othe
 At minimum, include the name and version of the program, the method used to install it, whether or not the test data ran, the exact code that produced the error, the error message, and the full output text from the run (if any is produced).
 The type and version of the operating system you are using is also helpful to include.
 Sometimes, this is enough information for others to spot the error.
-However, if it appears that there may bug in the underlying code, specifying or providing the minimum amount of data required to reproduce the error (e.g. reproducible example <span class="citation" data-cites="S71Oc3RF mn58kiuB">[<a href="#ref-S71Oc3RF" role="doc-biblioref">116</a>,<a href="#ref-mn58kiuB" role="doc-biblioref">117</a>]</span>) enables other to reproduce and potentially solve the error at hand.
+However, if it appears that there may bug in the underlying code, specifying or providing the minimum amount of data required to reproduce the error (e.g. reproducible example <span class="citation" data-cites="S71Oc3RF mn58kiuB">[<a href="#ref-S71Oc3RF" role="doc-biblioref">117</a>,<a href="#ref-mn58kiuB" role="doc-biblioref">118</a>]</span>) enables other to reproduce and potentially solve the error at hand.
 Putting the effort into gathering this information both increases your own understanding of the problem and makes it easier and faster for others to help solve your issue.
 Furthermore, it signals respect for the time that these developers and community members dedicate to helping troubleshoot and solve user issues.</p>
 <h3 id="where-to-seek-help-online-and-local-communities-of-practice">Where to seek help: online and local communities of practice</h3>
@@ -865,7 +865,7 @@ For open source programs on GitHub, GitLab, or Bitbucket, this is often the “I
 Usually, the documentation indicates the best location questions.
 If question is more general, such as asking about program choice or workflows, forums relevant to your field such as Stack Overflow, BioStars, or SEQanswers are good choices, as posts here are often seen by a large community of researchers.
 Before posting, search through related topics to double check the question has not already been answered.
-As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harassment-free discussion environment <span class="citation" data-cites="bY9cHRxB">[<a href="#ref-bY9cHRxB" role="doc-biblioref">118</a>]</span>.
+As more research software development and troubleshooting is happening openly in online repositories, it is becoming more important than ever to follow a code of conduct that promotes open and harassment-free discussion environment <span class="citation" data-cites="bY9cHRxB">[<a href="#ref-bY9cHRxB" role="doc-biblioref">119</a>]</span>.
 Look for codes of conduct in the online forums you participate in, and make sure you do your part to help ensure a welcoming community for participants of all backgrounds and computational competencies.</p>
 <p>While there is lots of help available online, there is no substitute for local communities.
 Local communities may come in the form of a tech meetup, a users group, a hacky hour, or an informal meetup of researchers using similar tools.
@@ -873,7 +873,7 @@ While this may seem like just a local version of Stack Overflow, the local, memb
 The benefit to beginners is clear: learning the best way to post questions and the important parts of errors, while getting questions answered so they can move forward in their research.
 Intermediate users may actually find these communities most useful, as they can also accelerate their own troubleshooting skills by helping others solve issues that they have already struggled through.
 While it can be helpful to have some experts available to help answer questions or to know when to escalate to Stack Overflow or other communities, a collaborative community of practice with members at all experience levels can help all its members move their science forward faster.</p>
-<p>If such a community does not yet exist in your area, building this sort of community (discussed in detail in <span class="citation" data-cites="4jKjtPfJ">[<a href="#ref-4jKjtPfJ" role="doc-biblioref">119</a>]</span>), can be as simple as hosting a seminar series or starting meetup sessions for data analysis co-working.
+<p>If such a community does not yet exist in your area, building this sort of community (discussed in detail in <span class="citation" data-cites="4jKjtPfJ">[<a href="#ref-4jKjtPfJ" role="doc-biblioref">120</a>]</span>), can be as simple as hosting a seminar series or starting meetup sessions for data analysis co-working.
 In our experience, it can also be useful to set up a local online forum (e.g. discourse) for group troubleshooting.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Bioinformatics-focused workflow systems have reshaped data-intensive biology, reducing execution hurdles and empowering biologists to conduct reproducible analyses at the massive scale of data now available.
@@ -1199,7 +1199,7 @@ Fernando Chirigati, Rémi Rampin, Dennis Shasha, Juliana Freire<br />
 DOI: <a href="https://doi.org/10.1145/2882903.2899401">10.1145/2882903.2899401</a></p>
 </div>
 <div id="ref-1rm0p82n">
-<p>48. <a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
+<p>48. <strong>Pavian</strong> <a href="https://fbreitwieser.shinyapps.io/pavian/">https://fbreitwieser.shinyapps.io/pavian/</a></p>
 </div>
 <div id="ref-1FWTyC9rH">
 <p>49. <strong>Pavian: interactive analysis of metagenomics data for microbiome studies and pathogen identification</strong> <br />
@@ -1419,182 +1419,188 @@ Ashraful Haque, Jessica Engel, Sarah A. Teichmann, Tapio Lönnberg<br />
 <em>Genome Medicine</em> (2017-08-18) <a href="https://doi.org/gfgppz">https://doi.org/gfgppz</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13073-017-0467-4">10.1186/s13073-017-0467-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28821273">28821273</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5561556">PMC5561556</a></p>
 </div>
+<div id="ref-lXvpQxeN">
+<p>87. <strong>Developing a modern data workflow for evolving data</strong> <br />
+Glenda M. Yenni, Erica M. Christensen, Ellen K. Bledsoe, Sarah R. Supp, Renata M. Diaz, Ethan P. White, S. K. Morgan Ernest<br />
+<em>bioRxiv</em> (2018-07-24) <a href="https://doi.org/gdqbzn">https://doi.org/gdqbzn</a> <br />
+DOI: <a href="https://doi.org/10.1101/344804">10.1101/344804</a></p>
+</div>
 <div id="ref-19oGBm89D">
-<p>87. <strong>figshare - credit for all your research</strong> <a href="https://figshare.com/">https://figshare.com/</a></p>
+<p>88. <strong>figshare - credit for all your research</strong> <a href="https://figshare.com/">https://figshare.com/</a></p>
 </div>
 <div id="ref-L1FmyUSP">
-<p>88. <strong>Dryad Home - Publish and Preserve your Data</strong> <a href="https://datadryad.org/stash">https://datadryad.org/stash</a></p>
+<p>89. <strong>Dryad Home - Publish and Preserve your Data</strong> <a href="https://datadryad.org/stash">https://datadryad.org/stash</a></p>
 </div>
 <div id="ref-3Gg4ZEOM">
-<p>89. <strong>RClone: a package to identify MultiLocus Clonal Lineages and handle clonal data sets in .</strong> <br />
+<p>90. <strong>RClone: a package to identify MultiLocus Clonal Lineages and handle clonal data sets in .</strong> <br />
 Diane Bailleul, Solenn Stoeckel, Sophie Arnaud-Haond<br />
 <em>Methods in Ecology and Evolution</em> (2016-08) <a href="https://doi.org/f82t65">https://doi.org/f82t65</a> <br />
 DOI: <a href="https://doi.org/10.1111/2041-210x.12550">10.1111/2041-210x.12550</a></p>
 </div>
 <div id="ref-Pg3uljVs">
-<p>90. <strong>SRA in the Cloud</strong> <a href="https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/">https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/</a></p>
+<p>91. <strong>SRA in the Cloud</strong> <a href="https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/">https://www.ncbi.nlm.nih.gov/sra/docs/sra-cloud/</a></p>
 </div>
 <div id="ref-QcEZalL8">
-<p>91. <strong>Cyberduck | Libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure &amp; OneDrive, Google Drive and Dropbox</strong> <a href="https://cyberduck.io/">https://cyberduck.io/</a></p>
+<p>92. <strong>Cyberduck | Libre server and cloud storage browser for Mac and Windows with support for FTP, SFTP, WebDAV, Amazon S3, OpenStack Swift, Backblaze B2, Microsoft Azure &amp; OneDrive, Google Drive and Dropbox</strong> <a href="https://cyberduck.io/">https://cyberduck.io/</a></p>
 </div>
 <div id="ref-R2o2aPyA">
-<p>92. <strong>Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data</strong> <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></p>
+<p>93. <strong>Babraham Bioinformatics - FastQC A Quality Control tool for High Throughput Sequence Data</strong> <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">https://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></p>
 </div>
 <div id="ref-F2D6lhmD">
-<p>93. <strong>Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration</strong> <br />
+<p>94. <strong>Integrative Genomics Viewer (IGV): high-performance genomics data visualization and exploration</strong> <br />
 H. Thorvaldsdottir, J. T. Robinson, J. P. Mesirov<br />
 <em>Briefings in Bioinformatics</em> (2012-04-19) <a href="https://doi.org/f4sc43">https://doi.org/f4sc43</a> <br />
 DOI: <a href="https://doi.org/10.1093/bib/bbs017">10.1093/bib/bbs017</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22517427">22517427</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3603213">PMC3603213</a></p>
 </div>
 <div id="ref-vrqQcFyx">
-<p>94. <strong>Salmon provides fast and bias-aware quantification of transcript expression</strong> <br />
+<p>95. <strong>Salmon provides fast and bias-aware quantification of transcript expression</strong> <br />
 Rob Patro, Geet Duggal, Michael I Love, Rafael A Irizarry, Carl Kingsford<br />
 <em>Nature Methods</em> (2017-03-06) <a href="https://doi.org/gcw9f5">https://doi.org/gcw9f5</a> <br />
 DOI: <a href="https://doi.org/10.1038/nmeth.4197">10.1038/nmeth.4197</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28263959">28263959</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5600148">PMC5600148</a></p>
 </div>
 <div id="ref-U9WbDW7I">
-<p>95. <strong>MultiQC: summarize analysis results for multiple tools and samples in a single report</strong> <br />
+<p>96. <strong>MultiQC: summarize analysis results for multiple tools and samples in a single report</strong> <br />
 Philip Ewels, Måns Magnusson, Sverker Lundin, Max Käller<br />
 <em>Bioinformatics</em> (2016-10-01) <a href="https://doi.org/f3s996">https://doi.org/f3s996</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btw354">10.1093/bioinformatics/btw354</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27312411">27312411</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5039924">PMC5039924</a></p>
 </div>
 <div id="ref-MmpwXJ9S">
-<p>96. <strong>Identifying and mitigating bias in next-generation sequencing methods for chromatin biology</strong> <br />
+<p>97. <strong>Identifying and mitigating bias in next-generation sequencing methods for chromatin biology</strong> <br />
 Clifford A. Meyer, X. Shirley Liu<br />
 <em>Nature Reviews Genetics</em> (2014-09-16) <a href="https://doi.org/ggd9m9">https://doi.org/ggd9m9</a> <br />
 DOI: <a href="https://doi.org/10.1038/nrg3788">10.1038/nrg3788</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25223782">25223782</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4473780">PMC4473780</a></p>
 </div>
 <div id="ref-KbGRuflQ">
-<p>97. <strong>The impact of amplification on differential expression analyses by RNA-seq</strong> <br />
+<p>98. <strong>The impact of amplification on differential expression analyses by RNA-seq</strong> <br />
 Swati Parekh, Christoph Ziegenhain, Beate Vieth, Wolfgang Enard, Ines Hellmann<br />
 <em>Scientific Reports</em> (2016-05-09) <a href="https://doi.org/f8kzcp">https://doi.org/f8kzcp</a> <br />
 DOI: <a href="https://doi.org/10.1038/srep25533">10.1038/srep25533</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27156886">27156886</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4860583">PMC4860583</a></p>
 </div>
 <div id="ref-di7r5Vq3">
-<p>98. <strong>Detection and Removal of PCR Duplicates in Population Genomic ddRAD Studies by Addition of a Degenerate Base Region (DBR) in Sequencing Adapters</strong> <br />
+<p>99. <strong>Detection and Removal of PCR Duplicates in Population Genomic ddRAD Studies by Addition of a Degenerate Base Region (DBR) in Sequencing Adapters</strong> <br />
 Hannah Schweyen, Andrey Rozenberg, Florian Leese<br />
 <em>The Biological Bulletin</em> (2014-10) <a href="https://doi.org/f6q76c">https://doi.org/f6q76c</a> <br />
 DOI: <a href="https://doi.org/10.1086/bblv227n2p146">10.1086/bblv227n2p146</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25411373">25411373</a></p>
 </div>
 <div id="ref-CdYXlaJQ">
-<p>99. <strong>Elimination of PCR duplicates in RNA-seq and small RNA-seq using unique molecular identifiers</strong> <br />
+<p>100. <strong>Elimination of PCR duplicates in RNA-seq and small RNA-seq using unique molecular identifiers</strong> <br />
 Yu Fu, Pei-Hsuan Wu, Timothy Beane, Phillip D. Zamore, Zhiping Weng<br />
 <em>BMC Genomics</em> (2018-07-13) <a href="https://doi.org/ggv5zp">https://doi.org/ggv5zp</a> <br />
 DOI: <a href="https://doi.org/10.1186/s12864-018-4933-1">10.1186/s12864-018-4933-1</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30001700">30001700</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6044086">PMC6044086</a></p>
 </div>
 <div id="ref-Io9lIhcB">
-<p>100. <strong>Biased estimates of clonal evolution and subclonal heterogeneity can arise from PCR duplicates in deep sequencing experiments</strong> <br />
+<p>101. <strong>Biased estimates of clonal evolution and subclonal heterogeneity can arise from PCR duplicates in deep sequencing experiments</strong> <br />
 Erin N Smith, Kristen Jepsen, Mahdieh Khosroheidari, Laura Z Rassenti, Matteo D’Antonio, Emanuela M Ghia, Dennis A Carson, Catriona HM Jamieson, Thomas J Kipps, Kelly A Frazer<br />
 <em>Genome Biology</em> (2014-08-07) <a href="https://doi.org/ggfhv7">https://doi.org/ggfhv7</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-014-0420-4">10.1186/s13059-014-0420-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25103687">25103687</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4165357">PMC4165357</a></p>
 </div>
 <div id="ref-1FNab1rDP">
-<p>101. <strong>Evidence for extensive horizontal gene transfer from the draft genome of a tardigrade</strong> <br />
+<p>102. <strong>Evidence for extensive horizontal gene transfer from the draft genome of a tardigrade</strong> <br />
 Thomas C. Boothby, Jennifer R. Tenlen, Frank W. Smith, Jeremy R. Wang, Kiera A. Patanella, Erin Osborne Nishimura, Sophia C. Tintori, Qing Li, Corbin D. Jones, Mark Yandell, … Bob Goldstein<br />
 <em>Proceedings of the National Academy of Sciences</em> (2015-12-29) <a href="https://doi.org/9gs">https://doi.org/9gs</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.1510461112">10.1073/pnas.1510461112</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26598659">26598659</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702960">PMC4702960</a></p>
 </div>
 <div id="ref-bzutebV">
-<p>102. <strong>No evidence for extensive horizontal gene transfer in the genome of the tardigrade <em>Hypsibius dujardini</em></strong> <br />
+<p>103. <strong>No evidence for extensive horizontal gene transfer in the genome of the tardigrade <em>Hypsibius dujardini</em></strong> <br />
 Georgios Koutsovoulos, Sujai Kumar, Dominik R. Laetsch, Lewis Stevens, Jennifer Daub, Claire Conlon, Habib Maroon, Fran Thomas, Aziz A. Aboobaker, Mark Blaxter<br />
 <em>Proceedings of the National Academy of Sciences</em> (2016-05-03) <a href="https://doi.org/f8nrtb">https://doi.org/f8nrtb</a> <br />
 DOI: <a href="https://doi.org/10.1073/pnas.1600338113">10.1073/pnas.1600338113</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27035985">27035985</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4983863">PMC4983863</a></p>
 </div>
 <div id="ref-1BcD0ITS9">
-<p>103. <strong>Large-scale contamination of microbial isolate genomes by Illumina PhiX control</strong> <br />
+<p>104. <strong>Large-scale contamination of microbial isolate genomes by Illumina PhiX control</strong> <br />
 Supratim Mukherjee, Marcel Huntemann, Natalia Ivanova, Nikos C Kyrpides, Amrita Pati<br />
 <em>Standards in Genomic Sciences</em> (2015-03-30) <a href="https://doi.org/ggv5zn">https://doi.org/ggv5zn</a> <br />
 DOI: <a href="https://doi.org/10.1186/1944-3277-10-18">10.1186/1944-3277-10-18</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26203331">26203331</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4511556">PMC4511556</a></p>
 </div>
 <div id="ref-192ZXTgCr">
-<p>104. <strong>Index hopping on the Illumina HiseqX platform and its consequences for ancient DNA studies</strong> <br />
+<p>105. <strong>Index hopping on the Illumina HiseqX platform and its consequences for ancient DNA studies</strong> <br />
 Tom van der Valk, Francesco Vezzi, Mattias Ormestad, Love Dalén, Katerina Guschanski<br />
 <em>Molecular Ecology Resources</em> (2019-05-05) <a href="https://doi.org/gfwtvw">https://doi.org/gfwtvw</a> <br />
 DOI: <a href="https://doi.org/10.1111/1755-0998.13009">10.1111/1755-0998.13009</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30848092">30848092</a></p>
 </div>
 <div id="ref-1057Fa7sL">
-<p>105. <strong>On the optimal trimming of high-throughput mRNA sequence data</strong> <br />
+<p>106. <strong>On the optimal trimming of high-throughput mRNA sequence data</strong> <br />
 Matthew D. MacManes<br />
 <em>Frontiers in Genetics</em> (2014) <a href="https://doi.org/gfn5g7">https://doi.org/gfn5g7</a> <br />
 DOI: <a href="https://doi.org/10.3389/fgene.2014.00013">10.3389/fgene.2014.00013</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24567737">24567737</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3908319">PMC3908319</a></p>
 </div>
 <div id="ref-1Go5U29x6">
-<p>106. <strong>Streaming histogram sketching for rapid microbiome analytics</strong> <br />
+<p>107. <strong>Streaming histogram sketching for rapid microbiome analytics</strong> <br />
 Will PM Rowe, Anna Paola Carrieri, Cristina Alcon-Giner, Shabhonam Caim, Alex Shaw, Kathleen Sim, J. Simon Kroll, Lindsay J. Hall, Edward O. Pyzer-Knapp, Martyn D. Winn<br />
 <em>Microbiome</em> (2019-03-16) <a href="https://doi.org/ggv5zq">https://doi.org/ggv5zq</a> <br />
 DOI: <a href="https://doi.org/10.1186/s40168-019-0653-2">10.1186/s40168-019-0653-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30878035">30878035</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6420756">PMC6420756</a></p>
 </div>
 <div id="ref-cHw8gtst">
-<p>107. <strong>When the levee breaks: a practical guide to sketching algorithms for processing the flood of genomic data</strong> <br />
+<p>108. <strong>When the levee breaks: a practical guide to sketching algorithms for processing the flood of genomic data</strong> <br />
 Will P. M. Rowe<br />
 <em>Genome Biology</em> (2019-09-13) <a href="https://doi.org/gf8bfj">https://doi.org/gf8bfj</a> <br />
 DOI: <a href="https://doi.org/10.1186/s13059-019-1809-x">10.1186/s13059-019-1809-x</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31519212">31519212</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6744645">PMC6744645</a></p>
 </div>
 <div id="ref-1BD5D1yRX">
-<p>108. <strong>will-rowe/genome-sketching</strong> <br />
+<p>109. <strong>will-rowe/genome-sketching</strong> <br />
 GitHub<br />
 <a href="https://github.com/will-rowe/genome-sketching">https://github.com/will-rowe/genome-sketching</a></p>
 </div>
 <div id="ref-tTu8Ds9Z">
-<p>109. <strong>STAR: ultrafast universal RNA-seq aligner</strong> <br />
+<p>110. <strong>STAR: ultrafast universal RNA-seq aligner</strong> <br />
 Alexander Dobin, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R. Gingeras<br />
 <em>Bioinformatics</em> (2013-01) <a href="https://doi.org/f4h523">https://doi.org/f4h523</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/bts635">10.1093/bioinformatics/bts635</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23104886">23104886</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3530905">PMC3530905</a></p>
 </div>
 <div id="ref-1GLBRcU8y">
-<p>110. <strong>Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype</strong> <br />
+<p>111. <strong>Graph-based genome alignment and genotyping with HISAT2 and HISAT-genotype</strong> <br />
 Daehwan Kim, Joseph M. Paggi, Chanhee Park, Christopher Bennett, Steven L. Salzberg<br />
 <em>Nature Biotechnology</em> (2019-08-02) <a href="https://doi.org/gf5395">https://doi.org/gf5395</a> <br />
 DOI: <a href="https://doi.org/10.1038/s41587-019-0201-4">10.1038/s41587-019-0201-4</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31375807">31375807</a></p>
 </div>
 <div id="ref-12KZMHMQl">
-<p>111. <strong>Near-optimal probabilistic RNA-seq quantification</strong> <br />
+<p>112. <strong>Near-optimal probabilistic RNA-seq quantification</strong> <br />
 Nicolas L Bray, Harold Pimentel, Páll Melsted, Lior Pachter<br />
 <em>Nature Biotechnology</em> (2016-04-04) <a href="https://doi.org/f8nvsp">https://doi.org/f8nvsp</a> <br />
 DOI: <a href="https://doi.org/10.1038/nbt.3519">10.1038/nbt.3519</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27043002">27043002</a></p>
 </div>
 <div id="ref-92SRxcQI">
-<p>112. <strong>RapMap: a rapid, sensitive and accurate tool for mapping RNA-seq reads to transcriptomes</strong> <br />
+<p>113. <strong>RapMap: a rapid, sensitive and accurate tool for mapping RNA-seq reads to transcriptomes</strong> <br />
 Avi Srivastava, Hirak Sarkar, Nitish Gupta, Rob Patro<br />
 <em>Bioinformatics</em> (2016-06-15) <a href="https://doi.org/f8vm2j">https://doi.org/f8vm2j</a> <br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btw277">10.1093/bioinformatics/btw277</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27307617">27307617</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4908361">PMC4908361</a></p>
 </div>
 <div id="ref-10B55Rn6n">
-<p>113. <strong>The Types, Roles, and Practices of Documentation in Data Analytics Open Source Software Libraries</strong> <br />
+<p>114. <strong>The Types, Roles, and Practices of Documentation in Data Analytics Open Source Software Libraries</strong> <br />
 R. Stuart Geiger, Nelle Varoquaux, Charlotte Mazel-Cabasse, Chris Holdgraf<br />
 <em>Computer Supported Cooperative Work (CSCW)</em> (2018-05-29) <a href="https://doi.org/gd4rhr">https://doi.org/gd4rhr</a> <br />
 DOI: <a href="https://doi.org/10.1007/s10606-018-9333-1">10.1007/s10606-018-9333-1</a></p>
 </div>
 <div id="ref-EbC8IKt0">
-<p>114. <strong>Data Carpentry: Workshops to Increase Data Literacy for Researchers</strong> <br />
+<p>115. <strong>Data Carpentry: Workshops to Increase Data Literacy for Researchers</strong> <br />
 Tracy K. Teal, Karen A. Cranston, Hilmar Lapp, Ethan White, Greg Wilson, Karthik Ram, Aleksandra Pawlik<br />
 <em>International Journal of Digital Curation</em> (2015-03-18) <a href="https://doi.org/gf5hjw">https://doi.org/gf5hjw</a> <br />
 DOI: <a href="https://doi.org/10.2218/ijdc.v10i1.351">10.2218/ijdc.v10i1.351</a></p>
 </div>
 <div id="ref-FnFKPG8G">
-<p>115. <strong>BioStar: An Online Question &amp; Answer Resource for the Bioinformatics Community</strong> <br />
+<p>116. <strong>BioStar: An Online Question &amp; Answer Resource for the Bioinformatics Community</strong> <br />
 Laurence D. Parnell, Pierre Lindenbaum, Khader Shameer, Giovanni Marco Dall’Olio, Daniel C. Swan, Lars Juhl Jensen, Simon J. Cockell, Brent S. Pedersen, Mary E. Mangan, Christopher A. Miller, Istvan Albert<br />
 <em>PLoS Computational Biology</em> (2011-10-27) <a href="https://doi.org/dhsz4k">https://doi.org/dhsz4k</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pcbi.1002216">10.1371/journal.pcbi.1002216</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22046109">22046109</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3203049">PMC3203049</a></p>
 </div>
 <div id="ref-S71Oc3RF">
-<p>116. <strong>How to create a Minimal, Reproducible Example - Help Center</strong> <br />
+<p>117. <strong>How to create a Minimal, Reproducible Example - Help Center</strong> <br />
 Stack Overflow<br />
 <a href="https://stackoverflow.com/help/minimal-reproducible-example">https://stackoverflow.com/help/minimal-reproducible-example</a></p>
 </div>
 <div id="ref-mn58kiuB">
-<p>117. <strong>FAQ: How to do a minimal reproducible example ( reprex ) for beginners</strong> <br />
+<p>118. <strong>FAQ: How to do a minimal reproducible example ( reprex ) for beginners</strong> <br />
 RStudio Community<br />
 (2020-03-25) <a href="https://community.rstudio.com/t/faq-how-to-do-a-minimal-reproducible-example-reprex-for-beginners/23061">https://community.rstudio.com/t/faq-how-to-do-a-minimal-reproducible-example-reprex-for-beginners/23061</a></p>
 </div>
 <div id="ref-bY9cHRxB">
-<p>118. <strong>Code of conduct in open source projects</strong> <br />
+<p>119. <strong>Code of conduct in open source projects</strong> <br />
 Parastou Tourani, Bram Adams, Alexander Serebrenik<br />
 <em>Institute of Electrical and Electronics Engineers (IEEE)</em> (2017-02) <a href="https://doi.org/gfzbs6">https://doi.org/gfzbs6</a> <br />
 DOI: <a href="https://doi.org/10.1109/saner.2017.7884606">10.1109/saner.2017.7884606</a></p>
 </div>
 <div id="ref-4jKjtPfJ">
-<p>119. <strong>Building a local community of practice in scientific programming for life scientists</strong> <br />
+<p>120. <strong>Building a local community of practice in scientific programming for life scientists</strong> <br />
 Sarah L. R. Stevens, Mateusz Kuzak, Carlos Martinez, Aurelia Moser, Petra Bleeker, Marc Galland<br />
 <em>PLOS Biology</em> (2018-11-28) <a href="https://doi.org/gfpwkb">https://doi.org/gfpwkb</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio.2005561</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30485260">30485260</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6287879">PMC6287879</a></p>
