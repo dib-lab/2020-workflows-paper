@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,9 +157,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/649071017447d008c5502920867b52e37976fc18/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@6490710](https://github.com/dib-lab/2020-workflows-paper/tree/649071017447d008c5502920867b52e37976fc18)
+from [dib-lab/2020-workflows-paper@690fd35](https://github.com/dib-lab/2020-workflows-paper/tree/690fd35847435b84b4401a5af67ac90a48ee320d)
 on July 14, 2020.
 </em></small>
 
@@ -638,7 +638,7 @@ Table: References for experimental design and considerations for common sequenci
 As your experiment progresses, keep track of as much information as possible: dates and times of sample collection, storage, and extraction, sample names, aberrations that occurred during collection, kit lot used for extraction, and any other sample and sequencing measurements you might be able to obtain (temperature, location, metabolite concentration, name of collector, well number, plate number, machine your data was sequenced, on etc).
 This metadata allows you to keep track of your samples, to control for batch effects that may arise from unintended batching during sampling or experimental procedures and makes the data you collect reusable for future applications and analysis by yourself and others.
 Wherever possible, follow the standard guidelines for formatting metadata for scientific computing to limit downstream processing and simplify analyses requiring these metadata (see: [@doi:10.1371/journal.pcbi.1005510]).
-We have focused here on sequencing data; for data management over long-term ecological studies, we recommend [@doi: https://doi.org/10.1101/344804].
+We have focused here on sequencing data; for data management over long-term ecological studies, we recommend [@doi:10.1101/344804].
 
 
 ### Getting started with sequencing data
