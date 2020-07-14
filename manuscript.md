@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,9 +157,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/690fd35847435b84b4401a5af67ac90a48ee320d/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@690fd35](https://github.com/dib-lab/2020-workflows-paper/tree/690fd35847435b84b4401a5af67ac90a48ee320d)
+from [dib-lab/2020-workflows-paper@5626cdd](https://github.com/dib-lab/2020-workflows-paper/tree/5626cddd1973779ded0302abb071e05d15700572)
 on July 14, 2020.
 </em></small>
 
@@ -267,7 +267,7 @@ on July 14, 2020.
 As the scale of biological data generation has increased, the bottleneck of research has shifted from data generation to analysis.
 Researchers commonly need to build computational workflows that include multiple analytic tools and require incremental development as experimental insights demand tool and parameter modifications.
 These workflows can produce hundreds to thousands of intermediate files and results that must be integrated for biological insight.
-The maturation of data-centric workflow systems that internally manage computational resources, software, and conditional execution of analysis steps are reshaping the landscape of biological data analysis, and empowering researchers to conduct reproducible analyses at scale.
+Data-centric workflow systems that internally manage computational resources, software, and conditional execution of analysis steps are reshaping the landscape of biological data analysis, and empowering researchers to conduct reproducible analyses at scale.
 Adoption of these tools can facilitate and expedite robust data analysis, but knowledge of these techniques is still lacking.
 Here, we provide a series of practices and strategies for leveraging workflow systems with structured project, data, and resource management to streamline large-scale biological analysis.
 

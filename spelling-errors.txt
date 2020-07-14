@@ -8,7 +8,7 @@ barcode
 bioconda
 bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -29,7 +29,7 @@ coli
 conda
 csv
 CSW
-CTB
+ctb
 ctitusbrown
 customizability
 CWL
@@ -53,7 +53,7 @@ fastq
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
@@ -88,10 +88,10 @@ lh
 Luiz
 luizirber
 metagenome
-Metagenomic
+metagenomic
 MGnify
 minhashing
-MultiQC
+multiqc
 Nextflow
 notetaking
 novo
@@ -140,7 +140,7 @@ subsampled
 taylorreiter
 TER
 transcriptional
-Transcriptome
+transcriptome
 UC
 WDL
 whitespace
