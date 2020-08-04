@@ -6,9 +6,9 @@ Backblaze
 BAM
 barcode
 bioconda
-bioinformatic
+Bioinformatic
 bioinformaticians
-bioinformatics
+Bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -26,10 +26,10 @@ chemistries
 CMR
 Colab
 coli
-conda
+Conda
 csv
 CSW
-ctb
+CTB
 ctitusbrown
 customizability
 CWL
@@ -53,7 +53,7 @@ fastq
 FastQC
 Figshare
 filenaming
-findable
+Findable
 GBMF
 GC
 GenBank
@@ -73,7 +73,7 @@ installable
 interactiveviz
 interdependencies
 interoperability
-Interoperable
+interoperable
 interpretability
 interpretable
 IntrprtngGnmcs
@@ -133,7 +133,7 @@ SEJ
 SEQanswers
 sha
 shannonekj
-Snakemake
+snakemake
 SRA
 subsample
 subsampled

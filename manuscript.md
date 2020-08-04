@@ -10,7 +10,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-07-14'
+date-meta: '2020-08-04'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -29,9 +29,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
-  <meta name="dc.date" content="2020-07-14" />
+  <meta name="dc.date" content="2020-08-04" />
 
-  <meta name="citation_publication_date" content="2020-07-14" />
+  <meta name="citation_publication_date" content="2020-08-04" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,10 +157,10 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/5626cddd1973779ded0302abb071e05d15700572/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@5626cdd](https://github.com/dib-lab/2020-workflows-paper/tree/5626cddd1973779ded0302abb071e05d15700572)
-on July 14, 2020.
+from [dib-lab/2020-workflows-paper@4519839](https://github.com/dib-lab/2020-workflows-paper/tree/45198396e6ba242ac008fc58854052b30ee4ee6f)
+on August 4, 2020.
 </em></small>
 
 ## Authors
@@ -493,7 +493,7 @@ For computational workflows, using version control systems such as Git or Mercur
 If a key piece of a workflow inexplicably stops working, consistent version control can allow you to rewind in time and identify differences from when the pipeline worked to when it stopped working.
 Backing up your version controlled analysis in an online repository such as GitHub, GitLab, or Bitbucket provides critical insurance as you iteratively modify and develop your workflow.
 
-![**Version Control** Version control systems (e.g. Git, Mercurial) work by storing incremental differences in files from one saved version ("commit") to the next. To visualize the differences between each version, text editors such as Atom and online services such as GitHub, GitLab and Bitbucket use red highlight to denote deletions, and green highlighting to denote additions. In this trivial example, a typo in version 1 (in red) was corrected in version 2 (in green). These systems are extremely useful for code and manuscript development, as it is possible to return to the snapshot of any saved version. This means that version control systems save you from accidental deletions, preserve code you thought you no longer needed and preserve a record of project changes over time.](images/version_control_diff_lines.svg){#fig:version_control height=2.5in}
+![**Version Control** Version control systems (e.g. Git, Mercurial) work by storing incremental differences in files from one saved version ("commit") to the next. To visualize the differences between each version, text editors such as Atom and online services such as GitHub, GitLab and Bitbucket use red highlighting to denote deletions, and green highlighting to denote additions. In this trivial example, a typo in version 1 (in red) was corrected in version 2 (in green). These systems are extremely useful for code and manuscript development, as it is possible to return to the snapshot of any saved version. This means that version control systems save you from accidental deletions, preserve code you thought you no longer needed and preserve a record of project changes over time.](images/version_control_diff_lines.svg){#fig:version_control height=2.5in}
 
 When combined with online backups, version control systems also facilitate code and data availability and reproducibility for publication.
 For example, to preserve the version of code that produced published results, you can create a "release":  a snapshot of the current code and files in a GitHub repository.
