@@ -10,7 +10,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-08-04'
+date-meta: '2020-08-05'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -29,9 +29,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
-  <meta name="dc.date" content="2020-08-04" />
+  <meta name="dc.date" content="2020-08-05" />
 
-  <meta name="citation_publication_date" content="2020-08-04" />
+  <meta name="citation_publication_date" content="2020-08-05" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/d401e38bdd3cc4ffd75d807b7adf27721e3f9a46/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/d401e38bdd3cc4ffd75d807b7adf27721e3f9a46/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/d401e38bdd3cc4ffd75d807b7adf27721e3f9a46/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,10 +157,10 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/45198396e6ba242ac008fc58854052b30ee4ee6f/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/d401e38bdd3cc4ffd75d807b7adf27721e3f9a46/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@4519839](https://github.com/dib-lab/2020-workflows-paper/tree/45198396e6ba242ac008fc58854052b30ee4ee6f)
-on August 4, 2020.
+from [dib-lab/2020-workflows-paper@d401e38](https://github.com/dib-lab/2020-workflows-paper/tree/d401e38bdd3cc4ffd75d807b7adf27721e3f9a46)
+on August 5, 2020.
 </em></small>
 
 ## Authors

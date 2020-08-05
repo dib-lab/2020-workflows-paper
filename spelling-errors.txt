@@ -26,7 +26,7 @@ chemistries
 CMR
 Colab
 coli
-Conda
+conda
 csv
 CSW
 CTB
@@ -49,11 +49,11 @@ ENA
 Eukaryote
 Eukaryotic
 fasta
-fastq
+FASTQ
 FastQC
 Figshare
 filenaming
-Findable
+findable
 GBMF
 GC
 GenBank
@@ -88,7 +88,7 @@ lh
 Luiz
 luizirber
 metagenome
-metagenomic
+Metagenomic
 MGnify
 minhashing
 multiqc
@@ -102,7 +102,7 @@ Pavian
 PCR
 PhiX
 phylogenetic
-Plotly
+plotly
 preprocessed
 PTB
 purhcases
