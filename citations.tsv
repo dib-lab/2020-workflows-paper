@@ -14,12 +14,14 @@ doi:10.1093/nar/gky379	doi:10.1093/nar/gky379	doi:10.1093/nar/gky379	WBsVRA32
 doi:10.14694/EDBK_175029	doi:10.14694/EDBK_175029	doi:10.14694/edbk_175029	qv3GO40c
 doi:10.1093/nar/gkz1035	doi:10.1093/nar/gkz1035	doi:10.1093/nar/gkz1035	n9sYRgfE
 url:https://github.com/nf-core/rnaseq	url:https://github.com/nf-core/rnaseq	url:https://github.com/nf-core/rnaseq	9C2akRh5
+doi:10.1093/gigascience/giy123	doi:10.1093/gigascience/giy123	doi:10.1093/gigascience/giy123	1FtwfP8lA
 url:https://github.com/metagenome-atlas/atlas	url:https://github.com/metagenome-atlas/atlas	url:https://github.com/metagenome-atlas/atlas	CeVdUj5n
 doi:10.1101/737528	doi:10.1101/737528	doi:10.1101/737528	so5fKJ5K
 url:https://github.com/sunbeam-labs/sunbeam	url:https://github.com/sunbeam-labs/sunbeam	url:https://github.com/sunbeam-labs/sunbeam	B1ckDvru
 doi:10.1186/s40168-019-0658-x	doi:10.1186/s40168-019-0658-x	doi:10.1186/s40168-019-0658-x	h9rLdvMM
 url:https://github.com/dib-lab/dammit	url:https://github.com/dib-lab/dammit	url:https://github.com/dib-lab/dammit	1ABkx7mMC
 url:https://github.com/dib-lab/elvers	url:https://github.com/dib-lab/elvers	url:https://github.com/dib-lab/elvers	vxcvKkG9
+doi:10.5281/zenodo.4067137	doi:10.5281/zenodo.4067137	doi:10.5281/zenodo.4067137	136QLEBc7
 doi:10.1093/bioinformatics/bts480	doi:10.1093/bioinformatics/bts480	doi:10.1093/bioinformatics/bts480	NcYZqBux
 doi:10.1038/nbt.3820	doi:10.1038/nbt.3820	doi:10.1038/nbt.3820	4XDvZWxk
 doi:10.6084/m9.figshare.3115156.v2	doi:10.6084/m9.figshare.3115156.v2	doi:10.6084/m9.figshare.3115156.v2	Ppg8PzBL
@@ -36,6 +38,7 @@ doi:10.1038/s41579-018-0029-9	doi:10.1038/s41579-018-0029-9	doi:10.1038/s41579-0
 doi:10.1371/journal.pone.0177459	doi:10.1371/journal.pone.0177459	doi:10.1371/journal.pone.0177459	IMC1tV9m
 url:https://dl.acm.org/doi/10.5555/2600239.2600241	url:https://dl.acm.org/doi/10.5555/2600239.2600241	url:https://dl.acm.org/doi/10.5555/2600239.2600241	1CJTmbOqr
 url:https://github.com/QuantStack/mamba	url:https://github.com/QuantStack/mamba	url:https://github.com/QuantStack/mamba	PljGS703
+doi:https://doi.org/10.1101/2020.07.21.187609	doi:https://doi.org/10.1101/2020.07.21.187609	doi:https://doi.org/10.1101/2020.07.21.187609	CV0PZ1xi
 url:https://github.com/dib-lab/dib-MMETSP	url:https://github.com/dib-lab/dib-MMETSP	url:https://github.com/dib-lab/dib-MMETSP	dpXky09I
 doi:10.1093/gigascience/giy158	doi:10.1093/gigascience/giy158	doi:10.1093/gigascience/giy158	18F3tEMjQ
 url:https://rmarkdown.rstudio.com	url:https://rmarkdown.rstudio.com	url:https://rmarkdown.rstudio.com	DJNUoP3l
@@ -43,6 +46,7 @@ url:https://dx.doi.org/10.3233/978-1-61499-649-1-87	url:https://dx.doi.org/10.32
 doi:10.1038/nature18959	doi:10.1038/nature18959	doi:10.1038/nature18959	3515RwRB
 doi:10.25080/Majora-4af1f417-011	doi:10.25080/Majora-4af1f417-011	doi:10.25080/majora-4af1f417-011	Q20Bxdsr
 url:https://github.com/ngs-docs/2020-ggg-201b-rnaseq/blob/master/Snakefile	url:https://github.com/ngs-docs/2020-ggg-201b-rnaseq/blob/master/Snakefile	url:https://github.com/ngs-docs/2020-ggg-201b-rnaseq/blob/master/Snakefile	1Fgs8XZZT
+doi:10.1186/s13059-020-02066-4	doi:10.1186/s13059-020-02066-4	doi:10.1186/s13059-020-02066-4	VsLophuT
 url:https://zenodo.org	url:https://zenodo.org	url:https://zenodo.org	Z6ni32OG
 doi:10.1016/j.future.2017.12.029	doi:10.1016/j.future.2017.12.029	doi:10.1016/j.future.2017.12.029	11T3orZkb
 doi:10.1145/2882903.2899401	doi:10.1145/2882903.2899401	doi:10.1145/2882903.2899401	oovxkpWN
@@ -86,6 +90,7 @@ doi:10.1111/1755-0998.12677	doi:10.1111/1755-0998.12677	doi:10.1111/1755-0998.12
 doi:10.1186/s13059-016-0927-y	doi:10.1186/s13059-016-0927-y	doi:10.1186/s13059-016-0927-y	cpzE71Oj
 doi:10.1186/s13073-017-0467-4	doi:10.1186/s13073-017-0467-4	doi:10.1186/s13073-017-0467-4	5m2b0cwV
 doi:10.1101/344804	doi:10.1101/344804	doi:10.1101/344804	lXvpQxeN
+url:https://git-lfs.github.com	url:https://git-lfs.github.com	url:https://git-lfs.github.com	11GtZ7icJ
 url:https://figshare.com	url:https://figshare.com	url:https://figshare.com	19oGBm89D
 url:https://datadryad.org	url:https://datadryad.org	url:https://datadryad.org	L1FmyUSP
 doi:10.1111/2041-210X.12550	doi:10.1111/2041-210X.12550	doi:10.1111/2041-210x.12550	3Gg4ZEOM
