@@ -9,7 +9,7 @@ bioconda
 BioContainers
 Bioinformatic
 bioinformaticians
-Bioinformatics
+bioinformatics
 Bionimbus
 BioStars
 Bitbucket
@@ -23,7 +23,7 @@ Carpentries
 Cavatica
 centric
 charlesreid
-checksums
+Checksums
 chemistries
 CMR
 Colab
@@ -83,7 +83,7 @@ Irber
 isoform
 iteratively
 Joslin
-jupyter
+Jupyter
 LCI
 LFS
 lh
@@ -106,7 +106,7 @@ PCR
 PhiX
 phylogenetic
 PiGx
-plotly
+Plotly
 preprints
 preprocessed
 PTB
@@ -138,14 +138,14 @@ SEJ
 SEQanswers
 sha
 shannonekj
-Snakemake
+snakemake
 SRA
 subsample
 subsampled
 taylorreiter
 TER
 transcriptional
-transcriptome
+Transcriptome
 UC
 WDL
 whitespace

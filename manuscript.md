@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/4e6550bdfa8a34ba87c02a070922de7ed1164d78/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/4e6550bdfa8a34ba87c02a070922de7ed1164d78/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/4e6550bdfa8a34ba87c02a070922de7ed1164d78/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,9 +157,9 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/4e6550bdfa8a34ba87c02a070922de7ed1164d78/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@4e6550b](https://github.com/dib-lab/2020-workflows-paper/tree/4e6550bdfa8a34ba87c02a070922de7ed1164d78)
+from [dib-lab/2020-workflows-paper@09910b4](https://github.com/dib-lab/2020-workflows-paper/tree/09910b4e77280c979f332d6b11a8547fbb305d84)
 on November 6, 2020.
 </em></small>
 
@@ -270,6 +270,7 @@ These workflows can produce hundreds to thousands of intermediate files and resu
 Data-centric workflow systems that internally manage computational resources, software, and conditional execution of analysis steps are reshaping the landscape of biological data analysis, and empowering researchers to conduct reproducible analyses at scale.
 Adoption of these tools can facilitate and expedite robust data analysis, but knowledge of these techniques is still lacking.
 Here, we provide a series of practices and strategies for leveraging workflow systems with structured project, data, and resource management to streamline large-scale biological analysis.
+We present these strategies in the context of high-throughput sequencing data analysis, but the principles are broadly applicable to biologists working beyond this field.
 
 
 ## Author Summary {.page_break_before}
