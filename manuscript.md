@@ -10,7 +10,7 @@ author-meta:
 - N. Tessa Pierce
 bibliography:
 - content/manual-references.json
-date-meta: '2020-11-06'
+date-meta: '2020-11-16'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -29,9 +29,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
 
-  <meta name="dc.date" content="2020-11-06" />
+  <meta name="dc.date" content="2020-11-16" />
 
-  <meta name="citation_publication_date" content="2020-11-06" />
+  <meta name="citation_publication_date" content="2020-11-16" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -119,11 +119,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/" />
 
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -157,10 +157,10 @@ title: Streamlining Data-Intensive Biology With Workflow Systems
 
 <small><em>
 This manuscript
-([permalink](https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/))
+([permalink](https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/))
 was automatically generated
-from [dib-lab/2020-workflows-paper@09910b4](https://github.com/dib-lab/2020-workflows-paper/tree/09910b4e77280c979f332d6b11a8547fbb305d84)
-on November 6, 2020.
+from [dib-lab/2020-workflows-paper@c96632e](https://github.com/dib-lab/2020-workflows-paper/tree/c96632e42b87a617cd50abc806e04a79512221f4)
+on November 16, 2020.
 </em></small>
 
 ## Authors
@@ -411,7 +411,7 @@ also specifies which conda channels to search and download programs from.
 When specified in a YAML file, conda environments are easily transferable between computers and operating systems. 
 Broad community adoption has resulted in a proliferation of both conda-installable scientific software and tools that leverage conda installation specifications.
 For example, the Mamba package manager is an open source reimplementation of the conda manager that can install conda-style environments with increased efficiency  [@url:https://github.com/QuantStack/mamba]. 
-The BioContainers Registry is a project that automatically builds and distributes docker and singularity containers for bioinformatics software packages using each package's conda installation recipe [@doi:https://doi.org/10.1101/2020.07.21.187609]. 
+The BioContainers Registry is a project that automatically builds and distributes docker and singularity containers for bioinformatics software packages using each package's conda installation recipe [@doi:10.1101/2020.07.21.187609].
 ](images/conda_figure_ABC.svg){#fig:conda_figure_ABC height=7in}
 
 
@@ -895,7 +895,7 @@ While the included data management strategies are tailored to our own experience
 
 ### Acknowledgements
 
-Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us. We also thank the Carpentries Community for fundamentally shaping many of the ideas and practices we cover in this manuscript.
+Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us. We also thank the Carpentries Community for fundamentally shaping many of the ideas and practices we cover in this manuscript. This manuscript was collaboratively written using manubot [@url:https://manubot.org/] and is available in a GitHub repository [@url:https://github.com/dib-lab/2020-workflows-paper/tree/09910b4e77280c979f332d6b11a8547fbb305d84].
 
 ### Author Contributions
 
