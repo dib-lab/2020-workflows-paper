@@ -3,9 +3,11 @@
 [![GitHub Actions Status](https://github.com/greenelab/covid19-review/workflows/Manubot/badge.svg)](https://github.com/dib-lab/2020-workflows-paper/actions)
 
 
-## Current Manuscript
+## Accepted Manuscript
 
-[bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2020.06.30.178673v1) (preprinted 07/01/2020)
+[![DOI](https://zenodo.org/badge/263999217.svg)](https://zenodo.org/badge/latestdoi/263999217)
+
+[bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2020.06.30.178673v3) (initially preprinted 07/01/2020)
 
 PDF: [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf)
 
