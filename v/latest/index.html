@@ -12,7 +12,7 @@
   <meta name="author" content="Camille Scott" />
   <meta name="author" content="C. Titus Brown" />
   <meta name="author" content="N. Tessa Pierce" />
-  <meta name="dcterms.date" content="2020-11-06" />
+  <meta name="dcterms.date" content="2020-11-16" />
   <meta name="keywords" content="sequencing, bioinformatics, workflows, computational biology, open access" />
   <title>Streamlining Data-Intensive Biology With Workflow Systems</title>
   <style>
@@ -35,8 +35,8 @@
   <meta name="citation_title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
   <meta property="og:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
   <meta property="twitter:title" content="Streamlining Data-Intensive Biology With Workflow Systems" />
-  <meta name="dc.date" content="2020-11-06" />
-  <meta name="citation_publication_date" content="2020-11-06" />
+  <meta name="dc.date" content="2020-11-16" />
+  <meta name="citation_publication_date" content="2020-11-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://dib-lab.github.io/2020-workflows-paper/" />
   <meta name="citation_pdf_url" content="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://dib-lab.github.io/2020-workflows-paper/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/" />
-  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/" />
-  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/" />
+  <meta name="manubot_html_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://dib-lab.github.io/2020-workflows-paper/v/09910b4e77280c979f332d6b11a8547fbb305d84/">permalink</a>)
+(<a href="https://dib-lab.github.io/2020-workflows-paper/v/c96632e42b87a617cd50abc806e04a79512221f4/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/09910b4e77280c979f332d6b11a8547fbb305d84">dib-lab/2020-workflows-paper@09910b4</a>
-on November 6, 2020.
+from <a href="https://github.com/dib-lab/2020-workflows-paper/tree/c96632e42b87a617cd50abc806e04a79512221f4">dib-lab/2020-workflows-paper@c96632e</a>
+on November 16, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -270,7 +270,7 @@ Snakemake and Nextflow <span class="citation" data-cites="4XDvZWxk">[<a href="#r
 Language-specific workflow systems, such as ROpenSci’s Drake <span class="citation" data-cites="6ajFUkom">[<a href="#ref-6ajFUkom" role="doc-biblioref">29</a>]</span>, can take full advantage of the language’s internal data structures, and provide automation and reproducibility benefits for workflows executed primarily within the language ecosystem.</p>
 <div id="tbl:workflows" class="tablenos">
 <table>
-<caption><span>Table 1:</span> Four of the most widely used bioinformatics workflow systems (2020), with links to documentation, example workflows, and general tutorials.
+<caption><span>Table 1:</span> Four of the most widely used bioinformatics workflow systems (2020), with links to documentation, example workflows, and general tutorials.
 In many cases, there may be tutorials online that are tailored for use cases in your field.
 All of these systems can interact with tools or tasks written in other languages and can function across cloud computing systems and high-performance computing clusters.
 Some can also import full workflows from other specification languages.
@@ -351,7 +351,7 @@ also specifies which conda channels to search and download programs from.
 When specified in a YAML file, conda environments are easily transferable between computers and operating systems.
 Broad community adoption has resulted in a proliferation of both conda-installable scientific software and tools that leverage conda installation specifications.
 For example, the Mamba package manager is an open source reimplementation of the conda manager that can install conda-style environments with increased efficiency <span class="citation" data-cites="PljGS703">[<a href="#ref-PljGS703" role="doc-biblioref">39</a>]</span>.
-The BioContainers Registry is a project that automatically builds and distributes docker and singularity containers for bioinformatics software packages using each package’s conda installation recipe <span class="citation" data-cites="CV0PZ1xi">[<a href="#ref-CV0PZ1xi" role="doc-biblioref">40</a>]</span>.</figcaption>
+The BioContainers Registry is a project that automatically builds and distributes docker and singularity containers for bioinformatics software packages using each package’s conda installation recipe <span class="citation" data-cites="OpJoxHcr">[<a href="#ref-OpJoxHcr" role="doc-biblioref">40</a>]</span>.</figcaption>
 </figure>
 </div>
 <h4 id="getting-started-with-software-management">Getting started with software management</h4>
@@ -552,7 +552,7 @@ Given the resources invested in collecting samples for sequencing, it’s import
 Once generated, it is always a good idea to have multiple independent backups of raw sequencing data, as it typically cannot be easily regenerated if lost to computer failure or other unforeseeable events.</p>
 <div id="tbl:seq_resources" class="tablenos">
 <table>
-<caption><span>Table 2:</span> References for experimental design and considerations for common sequencing chemistries. </caption>
+<caption><span>Table 2:</span> References for experimental design and considerations for common sequencing chemistries. </caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -635,7 +635,7 @@ To develop an intuition for what proper inputs and outputs look like for a given
 Comparing these input and output file formats to your own data can help identify and address inconsistencies.</p>
 <div id="tbl:bash_commands" class="tablenos">
 <table>
-<caption><span>Table 3:</span> Some commands to quickly explore the contents of a file. These commands can be used on Unix and Linux operating systems to detect common formatting problems or other abnormalities. </caption>
+<caption><span>Table 3:</span> Some commands to quickly explore the contents of a file. These commands can be used on Unix and Linux operating systems to detect common formatting problems or other abnormalities. </caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -741,7 +741,7 @@ In preparing for data analysis, be sure to allocate sufficient computational res
 Note that workflow systems can greatly facilitate faithful execution of your analysis across the range of computational resources available to you, including distribution across cloud computing systems.</p>
 <div id="tbl:computational_resources" class="tablenos">
 <table>
-<caption><span>Table 4:</span> <strong>Computing Resources</strong> Bioinformatic projects often require additional computing resources. If a local or university-run high-performance computing cluster is not available, computing resources are available via a number of grant-based or commercial providers. </caption>
+<caption><span>Table 4:</span> <strong>Computing Resources</strong> Bioinformatic projects often require additional computing resources. If a local or university-run high-performance computing cluster is not available, computing resources are available via a number of grant-based or commercial providers. </caption>
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
@@ -901,7 +901,7 @@ We believe these workflow systems will become increasingly important as dataset 
 This manuscript provides a directed set of project, data, and resource management strategies for adopting workflow systems to facilitate and expedite reproducible biological research.
 While the included data management strategies are tailored to our own experiences in high-throughput sequencing analysis, we hope that these principles enable biologists both within and beyond our field to reap the benefits of workflow-enabled data-intensive biology.</p>
 <h3 id="acknowledgements">Acknowledgements</h3>
-<p>Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us. We also thank the Carpentries Community for fundamentally shaping many of the ideas and practices we cover in this manuscript.</p>
+<p>Thank you to all the members and affiliates of the Lab for Data-Intensive Biology at UC Davis for providing valuable feedback on earlier versions of this manuscript and growing these practices alongside us. We also thank the Carpentries Community for fundamentally shaping many of the ideas and practices we cover in this manuscript. This manuscript was collaboratively written using manubot <span class="citation" data-cites="petulEc2">[<a href="#ref-petulEc2" role="doc-biblioref">126</a>]</span> and is available in a GitHub repository <span class="citation" data-cites="5g221Bde">[<a href="#ref-5g221Bde" role="doc-biblioref">127</a>]</span>.</p>
 <h3 id="author-contributions">Author Contributions</h3>
 <table>
 <colgroup>
@@ -1173,18 +1173,18 @@ DOI: <a href="https://doi.org/10.1371/journal.pone.0177459">10.1371/journal.pone
 <div id="ref-1CJTmbOqr">
 <p>38. <strong>Docker: lightweight Linux containers for consistent development and deployment</strong> <br />
 Dirk Merkel<br />
-<em>Linux Journal</em> (2014-03-01)</p>
+<em>Linux Journal</em> (2014-03-01) <a href="https://dl.acm.org/doi/10.5555/2600239.2600241">https://dl.acm.org/doi/10.5555/2600239.2600241</a></p>
 </div>
 <div id="ref-PljGS703">
 <p>39. <strong>mamba-org/mamba</strong> <br />
 GitHub<br />
 <a href="https://github.com/mamba-org/mamba">https://github.com/mamba-org/mamba</a></p>
 </div>
-<div id="ref-CV0PZ1xi">
+<div id="ref-OpJoxHcr">
 <p>40. <strong>BioContainers Registry: searching for bioinformatics tools, packages and containers</strong> <br />
 Jingwen Bai, Chakradhar Bandla, Jiaxin Guo, Roberto Vera Alvarez, Juan Antonio Vizcaíno, Mingze Bai, Pablo Moreno, Björn A. Grüning, Olivier Sallou, Yasset Perez-Riverol<br />
 <em>Cold Spring Harbor Laboratory</em> (2020-07-22) <a href="https://doi.org/ghhfgn">https://doi.org/ghhfgn</a> <br />
-DOI: <a href="https://doi.org/https://doi.org/10.1101/2020.07.21.187609">https://doi.org/10.1101/2020.07.21.187609</a></p>
+DOI: <a href="https://doi.org/10.1101/2020.07.21.187609">10.1101/2020.07.21.187609</a></p>
 </div>
 <div id="ref-dpXky09I">
 <p>41. <strong>dib-lab/dib-MMETSP</strong> <br />
@@ -1653,6 +1653,14 @@ Sarah L. R. Stevens, Mateusz Kuzak, Carlos Martinez, Aurelia Moser, Petra Bleeke
 <em>PLOS Biology</em> (2018-11-28) <a href="https://doi.org/gfpwkb">https://doi.org/gfpwkb</a> <br />
 DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio.2005561</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30485260">30485260</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6287879">PMC6287879</a></p>
 </div>
+<div id="ref-petulEc2">
+<p>126. <strong>Manubot - Manuscripts, open and automated</strong> <a href="https://manubot.org">https://manubot.org</a></p>
+</div>
+<div id="ref-5g221Bde">
+<p>127. <strong>dib-lab/2020-workflows-paper</strong> <br />
+GitHub<br />
+<a href="https://github.com/dib-lab/2020-workflows-paper">https://github.com/dib-lab/2020-workflows-paper</a></p>
+</div>
 </div>
 <!-- default theme -->
 
@@ -1872,7 +1880,8 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
     }
 
     /* figure image element */
-    figure img {
+    figure > img,
+    figure > svg {
         max-width: 100%;
         display: block;
         margin-left: auto;
@@ -1880,7 +1889,8 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
     }
 
     /* figure auto-number */
-    img + figcaption > span:first-of-type {
+    img + figcaption > span:first-of-type,
+    svg + figcaption > span:first-of-type {
         font-weight: bold;
         margin-right: 5px;
     }
@@ -2460,7 +2470,8 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
         }
 
         /* tooltip copy of <img> */
-        #tooltip_content > figure > img {
+        #tooltip_content > figure > img,
+        #tooltip_content > figure > svg {
             max-height: 260px;
         }
 
@@ -2711,7 +2722,7 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
 
     @media only screen {
         /* regular <img> in document when hovered */
-        .lightbox_document_img:hover {
+        img.lightbox_document_img:hover {
             cursor: pointer;
         }
 
@@ -4393,8 +4404,6 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
             window.addEventListener('load', start);
     })();
 </script>
-<!-- table of contents plugin -->
-
 <script>
     (function() {
         // /////////////////////////
@@ -4417,10 +4426,13 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
             // which types of elements to add links for, in
             // "document.querySelector" format
             typesQuery: 'h1, h2, h3',
-            // whether default behavior is to be closed ('false'), open
-            // ('true'), or only open when screen wide enough to fit panel
-            // ('auto'). note: still always starts closed when page loads.
-            open: 'auto',
+            // whether toc starts open. use 'true' or 'false', or 'auto' to
+            // use 'true' behavior when screen wide enough and 'false' when not
+            startOpen: 'false',
+            // whether toc closes when clicking on toc link. use 'true' or
+            // 'false', or 'auto' to use 'false' behavior when screen wide
+            // enough and 'true' when not
+            clickClose: 'auto',
             // if list item is more than this many characters, text will be
             // truncated
             charLimit: '50',
@@ -4445,13 +4457,21 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
             if (!panel)
                 return;
             makeEntries(panel);
+            // attach panel to document after making entries, so 'toc' heading
+            // in panel isn't included in toc
             document.body.insertBefore(panel, document.body.firstChild);
 
-            closePanel();
+            // initial panel state
+            if (
+                options.startOpen === 'true' ||
+                (options.startOpen === 'auto' && !isSmallScreen())
+            )
+                openPanel();
+            else
+                closePanel();
 
             // attach click, scroll, and hash change listeners to window
             window.addEventListener('click', onClick);
-            window.addEventListener('touchstart', onClick);
             window.addEventListener('scroll', onScroll);
             window.addEventListener('hashchange', onScroll);
             window.addEventListener('keyup', onKeyUp);
@@ -4469,25 +4489,10 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
             return window.innerWidth < 816 + 260 * 2;
         }
 
-        // open/close panel based on option and screen size
-        function openOrClosePanel() {
-            if (
-                options.open === 'true' ||
-                (options.open === 'auto' && !isSmallScreen())
-            )
-                openPanel();
-            else
-                closePanel();
-        }
-
         // when mouse is clicked anywhere in window
         function onClick() {
-            const panel = document.getElementById('toc_panel');
-            if (!panel)
-                return;
-
-            if (panel.dataset.open === 'true')
-                openOrClosePanel();
+            if (isSmallScreen())
+                closePanel();
         }
 
         // when window is scrolled or hash changed
@@ -4569,8 +4574,8 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
             button.classList.add('icon_button');
 
             // create header text
-            const text = document.createElement('h3');
-            text.innerHTML = 'View Table of Contents';
+            const text = document.createElement('h4');
+            text.innerHTML = 'Table of Contents';
 
             // create container for toc list
             const list = document.createElement('div');
@@ -4647,8 +4652,14 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
         }
 
         // when link is clicked
-        function onLinkClick() {
-            openOrClosePanel();
+        function onLinkClick(event) {
+            if (
+                options.clickClose === 'true' ||
+                (options.clickClose === 'auto' && isSmallScreen())
+            )
+                closePanel();
+            else
+                openPanel();
         }
 
         // open panel if closed, close if opened
@@ -5458,7 +5469,7 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
             window.addEventListener('load', start);
     })();
 </script>
-<!-- math plugin configuration -->
+<!-- mathjax plugin configuration -->
 
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -5466,12 +5477,16 @@ DOI: <a href="https://doi.org/10.1371/journal.pbio.2005561">10.1371/journal.pbio
         "HTML-CSS": { linebreaks: { automatic: true } },
         "SVG": { linebreaks: { automatic: true } },
         "fast-preview": { disabled: true }
-    });
+  });
 </script>
 
-<!-- math plugin -->
+<!-- mathjax plugin -->
 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+    integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A=="
+    crossorigin="anonymous"
+>
     // /////////////////////////
     // DESCRIPTION
     // /////////////////////////
